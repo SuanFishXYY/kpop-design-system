@@ -1,0 +1,5 @@
+﻿node_modules/
+.commit-msg.txt
+*.log
+.DS_Store
+.idols-*.xml

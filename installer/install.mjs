@@ -1,0 +1,201 @@
+﻿#!/usr/bin/env node
+// kpop-design-system one-shot installer
+// usage: npx github:SuanFishXYY/kpop-design-system
+//        npx -y github:SuanFishXYY/kpop-design-system update
+//        npx -y github:SuanFishXYY/kpop-design-system uninstall
+
+import { execSync } from 'node:child_process';
+import { existsSync, mkdirSync, symlinkSync, lstatSync, unlinkSync, readdirSync, rmdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { homedir, platform } from 'node:os';
+import { join } from 'node:path';
+
+const REPO = 'https://github.com/SuanFishXYY/kpop-design-system.git';
+const NAME = 'kpop-design-system';
+const HOME = homedir();
+const TARGET = process.env.SUANFISH_HOME || join(HOME, '.' + NAME);
+const IS_WIN = platform() === 'win32';
+const CLIS = [
+  { name: 'GitHub Copilot CLI', dir: '.copilot'      },
+  { name: 'Claude Code',        dir: '.claude'       },
+  { name: '通用 agents 目录',    dir: '.agents'       },
+  { name: 'Codex CLI',           dir: '.codex'        },
+  { name: 'Gemini CLI',          dir: '.gemini'       },
+  { name: 'Antigravity (Google)', dir: '.antigravity' },
+];
+
+const c = (s, code) => `\x1b[${code}m${s}\x1b[0m`;
+const ok    = s => console.log(c('  ✓ ', 32) + s);
+const warn  = s => console.log(c('  ⚠ ', 33) + s);
+const err   = s => console.log(c('  ✗ ', 31) + s);
+const info  = s => console.log(c('  · ', 90) + s);
+const head  = s => console.log('\n' + c(s, '1;36'));
+
+const sh = (cmd) => execSync(cmd, { stdio: 'inherit' });
+const shq = (cmd) => execSync(cmd, { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+
+function checkGit() {
+  try { shq('git --version'); }
+  catch { err('需要安装 git: https://git-scm.com/downloads'); process.exit(1); }
+}
+
+function cloneOrPull() {
+  if (existsSync(join(TARGET, '.git'))) {
+    info(`已存在 ${TARGET}, 执行 git pull`);
+    try { sh(`git -C "${TARGET}" pull --ff-only --quiet`); ok('已更新到最新版'); }
+    catch { warn('git pull 失败 (可能本地有改动), 跳过更新'); }
+  } else {
+    info(`克隆到 ${TARGET}`);
+    sh(`git clone --depth=1 --quiet ${REPO} "${TARGET}"`);
+    ok('克隆完成');
+  }
+}
+
+function isSymlink(p) {
+  try { return lstatSync(p).isSymbolicLink(); } catch { return false; }
+}
+
+function linkInto(cliDir) {
+  const skillsDir = join(HOME, cliDir, 'skills');
+  const link = join(skillsDir, NAME);
+  mkdirSync(skillsDir, { recursive: true });
+
+  if (existsSync(link) || isSymlink(link)) {
+    if (isSymlink(link)) {
+      try { unlinkSync(link); } catch {}
+    } else {
+      // v4.2.1 修: 真实目录如果为空 (空文件夹), 直接删除并 symlink
+      // (常见于旧版 marketplace 安装但内容缺失的情况)
+      try {
+        const items = readdirSync(link);
+        if (items.length === 0) {
+          rmdirSync(link);
+          info(`${link} 是空目录, 已清理并将建立 symlink`);
+        } else {
+          warn(`${link} 已存在且不是 symlink (${items.length} 个文件), 跳过 (手动删除后重试)`);
+          return false;
+        }
+      } catch {
+        warn(`${link} 已存在且不是 symlink, 跳过 (手动删除后重试)`);
+        return false;
+      }
+    }
+  }
+
+  try {
+    symlinkSync(TARGET, link, IS_WIN ? 'junction' : 'dir');
+    return true;
+  } catch (e) {
+    err(`symlink 失败: ${e.message}`);
+    return false;
+  }
+}
+
+function unlinkFrom(cliDir) {
+  const link = join(HOME, cliDir, 'skills', NAME);
+  if (isSymlink(link)) {
+    try { unlinkSync(link); return true; } catch { return false; }
+  }
+  return false;
+}
+
+// v4.2.2: 把 ~/.<cli>/skills 注册到 Copilot CLI 的 skillDirectories,
+// 让 /skill list 自动识别 (无需用户手动跑 /skill add)
+function registerSkillDir(cliDir) {
+  const settingsPath = join(HOME, cliDir, 'settings.json');
+  const skillsParent = join(HOME, cliDir, 'skills');
+  try {
+    let cfg = {};
+    if (existsSync(settingsPath)) {
+      const raw = readFileSync(settingsPath, 'utf8').replace(/^\uFEFF/, '');
+      cfg = raw.trim() ? JSON.parse(raw) : {};
+    }
+    if (!Array.isArray(cfg.skillDirectories)) cfg.skillDirectories = [];
+    if (cfg.skillDirectories.includes(skillsParent)) return false;
+    cfg.skillDirectories.push(skillsParent);
+    writeFileSync(settingsPath, JSON.stringify(cfg, null, 2));
+    return true;
+  } catch (e) {
+    warn(`无法注册到 ${cliDir}/settings.json: ${e.message}`);
+    return false;
+  }
+}
+
+function unregisterSkillDir(cliDir) {
+  const settingsPath = join(HOME, cliDir, 'settings.json');
+  if (!existsSync(settingsPath)) return false;
+  try {
+    const cfg = JSON.parse(readFileSync(settingsPath, 'utf8').replace(/^\uFEFF/, ''));
+    const skillsParent = join(HOME, cliDir, 'skills');
+    if (!Array.isArray(cfg.skillDirectories)) return false;
+    const before = cfg.skillDirectories.length;
+    cfg.skillDirectories = cfg.skillDirectories.filter(d => d !== skillsParent);
+    if (cfg.skillDirectories.length === before) return false;
+    writeFileSync(settingsPath, JSON.stringify(cfg, null, 2));
+    return true;
+  } catch { return false; }
+}
+
+function detect() {
+  return CLIS.filter(cli => existsSync(join(HOME, cli.dir)));
+}
+
+function cmdInstall() {
+  head('🎤 KPOP 设计系统 · 一键安装');
+  checkGit();
+  cloneOrPull();
+
+  head('🔌 检测已安装的 CLI');
+  const found = detect();
+  if (found.length === 0) {
+    warn('未检测到 .copilot / .claude / .agents / .codex / .gemini / .antigravity');
+    info('如已安装某 CLI 但目录名不同, 手动 symlink:');
+    info(IS_WIN
+      ? `  cmd /c mklink /J "<你的目录>\\skills\\${NAME}" "${TARGET}"`
+      : `  ln -sf "${TARGET}" ~/<你的目录>/skills/${NAME}`);
+    process.exit(0);
+  }
+
+  for (const cli of found) {
+    const ok_ = linkInto(cli.dir);
+    if (ok_) ok(`${cli.name.padEnd(18)} ← ~/${cli.dir}/skills/${NAME}`);
+    if (registerSkillDir(cli.dir)) {
+      info(`  └─ 已注册 ~/${cli.dir}/skills 到 settings.json skillDirectories`);
+    }
+  }
+
+  head('✅ 安装完成');
+  info('试一下:');
+  info('  Claude Code   →  /plugin (查看)  或  直接说 "我要做一个 dashboard"');
+  info('  Copilot CLI   →  /skills');
+  info('  Antigravity   →  侧边栏 skills · 或在 prompt 中 @ 调用 agent');
+  info('  更新          →  npx -y github:SuanFishXYY/kpop-design-system update');
+  info('  卸载          →  npx -y github:SuanFishXYY/kpop-design-system uninstall');
+  console.log();
+}
+
+function cmdUpdate() {
+  head('🔄 更新算鱼设计系统');
+  checkGit();
+  cloneOrPull();
+  ok('完成');
+}
+
+function cmdUninstall() {
+  head('🗑  卸载算鱼设计系统');
+  let removed = 0;
+  for (const cli of CLIS) {
+    if (unlinkFrom(cli.dir)) { ok(`已移除 ~/${cli.dir}/skills/${NAME}`); removed++; }
+    unregisterSkillDir(cli.dir);
+  }
+  if (removed === 0) warn('未发现 symlink');
+  info(`仓库目录 ${TARGET} 仍保留 (手动删除: rm -rf "${TARGET}")`);
+}
+
+const arg = (process.argv[2] || 'install').toLowerCase();
+({
+  install:   cmdInstall,
+  update:    cmdUpdate,
+  upgrade:   cmdUpdate,
+  uninstall: cmdUninstall,
+  remove:    cmdUninstall,
+}[arg] || cmdInstall)();
