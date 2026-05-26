@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["nj", "illit", "wonyoung-line", "stayc"]
 fusion_synergy: "公主感 + 极简治愈"
 fusion_rules: "主语前置宣言不可丢"
+fandom_name: "DIVE"
+palette:
+  primary: "#7B68EE"
+  secondary: "#FFFFFF"
+  accent: "#FFD700"
+mood_keywords: ["prestige", "royal", "majestic"]
+signature_tracks:
+  - { title: "I AM", year: 2023, mood: "self-declare,majestic", bpm: 118 }
+  - { title: "Eleven", year: 2021, mood: "fairy-tale,marching", bpm: 122 }
+  - { title: "Love Dive", year: 2022, mood: "princess,electric", bpm: 118 }
 ---
 
 # 👯 团魂 · IVE (4 代 · 2021)

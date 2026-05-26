@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["itzy","stayc","illit"]
 fusion_synergy: "Y2K girl crush"
 fusion_rules: "复古色板与现代锐感的并置不可丢"
+fandom_name: "KIIIRUSH"
+palette:
+  primary: "#FFA500"
+  secondary: "#FF1493"
+  accent: "#000000"
+mood_keywords: ["y2k", "girl-crush", "sharp"]
+signature_tracks:
+  - { title: "I Do Me", year: 2025, mood: "y2k,manifesto", bpm: 125 }
+  - { title: "Drift", year: 2025, mood: "y2k-pop,attitude", bpm: 118 }
+  - { title: "Untitled", year: 2025, mood: "fresh", bpm: 120 }
 ---
 
 # 👯 团魂 · KiiiKiii (5 代 · 2025)

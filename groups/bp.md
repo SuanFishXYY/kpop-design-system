@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["twice", "2ne1", "mmm", "lsf"]
 fusion_synergy: "奢华军队 vs 花束 / 反抗鼻祖 / 宣言派 / fearless 接班"
 fusion_rules: "对决式语言不可丢"
+fandom_name: "BLINK"
+palette:
+  primary: "#FF1493"
+  secondary: "#000000"
+  accent: "#FFD700"
+mood_keywords: ["luxury", "sharp", "bold"]
+signature_tracks:
+  - { title: "Kill This Love", year: 2019, mood: "aggressive,brass", bpm: 132 }
+  - { title: "How You Like That", year: 2020, mood: "baroque,brutal", bpm: 130 }
+  - { title: "Pink Venom", year: 2022, mood: "opulent,trap", bpm: 90 }
 ---
 
 # 👯 团魂 · BLACKPINK (3 代 · 2016)

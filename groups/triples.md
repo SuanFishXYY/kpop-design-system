@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["katseye", "bm", "kep1er"]
 fusion_synergy: "矩阵编队"
 fusion_rules: "grid 反单中心不可丢"
+fandom_name: "Crown"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#FFD700"
+  accent: "#FFFFFF"
+mood_keywords: ["cosmic", "teen", "fairy"]
+signature_tracks:
+  - { title: "Rising", year: 2023, mood: "sweet-pop,bright", bpm: 118 }
+  - { title: "Girls Capitalism", year: 2023, mood: "sweet,manifesto", bpm: 122 }
+  - { title: "Hit The Floor", year: 2024, mood: "teen-pop,energetic", bpm: 125 }
 ---
 
 # 👯 团魂 · tripleS (4 代 · 2023)

@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["tara", "4min", "sistar"]
 fusion_synergy: "性感旗手"
 fusion_rules: "黄金比裁切不可丢"
+fandom_name: "Elvis"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#000000"
+  accent: "#FFD700"
+mood_keywords: ["sexy", "swing", "dance"]
+signature_tracks:
+  - { title: "Miniskirt", year: 2014, mood: "swing,sexy", bpm: 115 }
+  - { title: "Like A Cat", year: 2014, mood: "jazz-pop,playful", bpm: 118 }
+  - { title: "Heart Attack", year: 2015, mood: "disco-pop,cute", bpm: 125 }
 ---
 
 # 👯 团魂 · AOA (2.5 代 · 2012)

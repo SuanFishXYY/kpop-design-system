@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["apink", "lovelyz", "gd"]
 fusion_synergy: "纯净体育生"
 fusion_rules: "校园格子布局不可丢"
+fandom_name: "BUDDY"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#FFD700"
+  accent: "#FFFFFF"
+mood_keywords: ["power-vocal", "cinematic", "narrative"]
+signature_tracks:
+  - { title: "Mago", year: 2020, mood: "disco-pop,confident", bpm: 125 }
+  - { title: "Rough", year: 2016, mood: "orchestra-pop,cinematic", bpm: 115 }
+  - { title: "Time For The Moon Night", year: 2018, mood: "emotional,strings", bpm: 110 }
 ---
 
 # 👯 团魂 · GFriend (2.5 代 · 2015)

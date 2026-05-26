@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["bp", "nj", "illit", "stayc"]
 fusion_synergy: "9色花束 vs 极致对比 / 治愈青春 / 接班 / 清新"
 fusion_rules: "多元色彩,群像感不可丢"
+fandom_name: "ONCE"
+palette:
+  primary: "#FFCDD2"
+  secondary: "#FFFFFF"
+  accent: "#FF80AB"
+mood_keywords: ["bright", "sweet", "playful"]
+signature_tracks:
+  - { title: "Cheer Up", year: 2016, mood: "bright,shooting star", bpm: 132 }
+  - { title: "TT", year: 2016, mood: "playful,heartbreak", bpm: 118 }
+  - { title: "Feel Special", year: 2019, mood: "intimate,string", bpm: 105 }
 ---
 
 # 👯 团魂 · TWICE (3 代 · 2015)

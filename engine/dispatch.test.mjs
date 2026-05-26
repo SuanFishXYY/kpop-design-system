@@ -135,5 +135,26 @@ test("Kep1er 补齐 6 人 (选秀团) + Starship 评委到场", () => {
   assert(starshipJudge, "Kep1er → 应自动召唤 Starship 评委");
 });
 
+
+test("loadAllAgents 加载 45 fandoms 粉丝团", () => {
+  const { fandoms } = loadAllAgents();
+  console.log(`     fandoms=${(fandoms||[]).length}`);
+  if ((fandoms||[]).length !== 45) throw new Error(`expected 45 fandoms, got ${(fandoms||[]).length}`);
+});
+
+test("brief 提到 TWICE → 召集 ONCE 粉丝团", () => {
+  const c = summonCouncil("帮 TWICE 设计新专辑封面");
+  const once = (c.fandoms||[]).find(f => f.fandom_name === "ONCE");
+  console.log(`     ONCE summoned=${!!once}`);
+  if (!once) throw new Error("TWICE brief 应召集 ONCE 粉丝团");
+});
+
+test("dispatchBrief 含 fandom 投票 user_proxy", () => {
+  const r = dispatchBrief("BLACKPINK 限定快闪");
+  const fandomVotes = r.votes.filter(v => v.layer === "fandom");
+  console.log(`     fandom votes=${fandomVotes.length}`);
+  if (fandomVotes.length < 1) throw new Error("应至少 1 个 fandom 投票");
+  if (!fandomVotes.every(v => v.perspective === "user_proxy")) throw new Error("fandom 必须 user_proxy");
+});
 console.log(`\n=== ${pass} passed · ${fail} failed ===\n`);
 if (fail > 0) process.exit(1);

@@ -12,7 +12,17 @@ vote_weight: 3
 priority: above_tier_0
 fusion_compatible: ["2ne1", "mmm", "aespa"]
 fusion_synergy: "tomboy 自制"
-fusion_rules: ""反工业流水线"标识不可丢"
+fusion_rules: ""
+fandom_name: "NEVERLAND"
+palette:
+  primary: "#FF4500"
+  secondary: "#000000"
+  accent: "#FFD700"
+mood_keywords: ["individual", "charismatic", "fierce"]
+signature_tracks:
+  - { title: "Tomboy", year: 2022, mood: "punk-pop,middle finger", bpm: 125 }
+  - { title: "Nxde", year: 2022, mood: "cabaret,satire", bpm: 105 }
+  - { title: "Queencard", year: 2023, mood: "pop-punk,confidence", bpm: 92 }反工业流水线"标识不可丢"
 ---
 
 # 👯 团魂 · (G)I-DLE (4 代 · 2018)

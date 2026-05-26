@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["mmm","rv","aespa"]
 fusion_synergy: "R&B 慢速性感"
 fusion_rules: "低饱和暖色 + 气声留白不可丢"
+fandom_name: "KISSY"
+palette:
+  primary: "#FFA500"
+  secondary: "#FFD700"
+  accent: "#FFB6C1"
+mood_keywords: ["r&b", "sensual", "warm"]
+signature_tracks:
+  - { title: "Shhh", year: 2023, mood: "alt-rnb,sensual", bpm: 95 }
+  - { title: "Bad News", year: 2023, mood: "alt-rnb,confident", bpm: 92 }
+  - { title: "Midas Touch", year: 2024, mood: "funk-rnb,golden", bpm: 105 }
 ---
 
 # 👯 团魂 · KISS OF LIFE (4 代 · 2023)

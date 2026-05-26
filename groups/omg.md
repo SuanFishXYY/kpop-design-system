@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["apink", "wjsn", "gfriend"]
 fusion_synergy: "童话治愈"
 fusion_rules: "奶油柔焦不可丢"
+fandom_name: "MIRACLE"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#FFD700"
+  accent: "#FFFFFF"
+mood_keywords: ["fairy", "innocent", "wholesome"]
+signature_tracks:
+  - { title: "Dolphin", year: 2020, mood: "tropical-house,carefree", bpm: 118 }
+  - { title: "Closer", year: 2015, mood: "sweet,bus-stop", bpm: 122 }
+  - { title: "Nonstop", year: 2020, mood: "sweet-pop,playful", bpm: 125 }
 ---
 
 # 👯 团魂 · Oh My Girl (3 代 · 2015)

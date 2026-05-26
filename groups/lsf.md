@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["itzy", "bp", "2ne1"]
 fusion_synergy: "fearless 自由女性"
 fusion_rules: "不需要被认可的宣言不可丢"
+fandom_name: "FEARNOT"
+palette:
+  primary: "#000080"
+  secondary: "#FFFFFF"
+  accent: "#C0C0C0"
+mood_keywords: ["fearless", "bold", "cinematic"]
+signature_tracks:
+  - { title: "Fearless", year: 2022, mood: "trap-pop,sharp", bpm: 114 }
+  - { title: "Antifragile", year: 2022, mood: "reggaeton,attitude", bpm: 100 }
+  - { title: "Easy", year: 2024, mood: "alt-rnb,sensual", bpm: 95 }
 ---
 
 # 👯 团魂 · LE SSERAFIM (4 代 · 2022)

@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["nj", "gfriend", "lovelyz"]
 fusion_synergy: "纯爱治愈"
 fusion_rules: "粉色分层不可丢"
+fandom_name: "PANDA"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#FFFFFF"
+  accent: "#FFD700"
+mood_keywords: ["pure", "girl-next-door", "cinema"]
+signature_tracks:
+  - { title: "Mr. Chu", year: 2014, mood: "sweet,confession", bpm: 120 }
+  - { title: "LUV", year: 2014, mood: "sweet,confession", bpm: 122 }
+  - { title: "NoNoNo", year: 2013, mood: "sweet-pop,encouragement", bpm: 118 }
 ---
 
 # 👯 团魂 · Apink (2 代 · 2011)

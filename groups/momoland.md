@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["aoa", "exid", "gfriend"]
 fusion_synergy: "魔性洗脑"
 fusion_rules: "循环动效不可丢"
+fandom_name: "MERRY"
+palette:
+  primary: "#FF1493"
+  secondary: "#FFD700"
+  accent: "#FF0000"
+mood_keywords: ["fun", "disco", "carefree"]
+signature_tracks:
+  - { title: "Bboom Bboom", year: 2018, mood: "brass-funk,viral", bpm: 110 }
+  - { title: "Baam", year: 2018, mood: "trap-pop,carefree", bpm: 105 }
+  - { title: "Wonderful Love", year: 2017, mood: "disco,fun", bpm: 125 }
 ---
 
 # 👯 团魂 · MOMOLAND (3 代 · 2016)

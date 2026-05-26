@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["illit", "nj", "ive"]
 fusion_synergy: "teen fresh"
 fusion_rules: "薄荷珊瑚色不可丢"
+fandom_name: "SWITH"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#87CEEB"
+  accent: "#FFFFFF"
+mood_keywords: ["teen-fresh", "crush", "innocent"]
+signature_tracks:
+  - { title: "ASAP", year: 2021, mood: "teen-fresh,sweet", bpm: 118 }
+  - { title: "Run2u", year: 2022, mood: "2010s-pop,nostalgic", bpm: 115 }
+  - { title: "Bubble", year: 2023, mood: "y2k-pop,bubblegum", bpm: 125 }
 ---
 
 # 👯 团魂 · STAYC (4 代 · 2020)

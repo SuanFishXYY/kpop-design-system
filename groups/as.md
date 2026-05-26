@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["secret", "sistar", "exid"]
 fusion_synergy: "集体编队"
 fusion_rules: "对称制服不可丢"
+fandom_name: "PLAYGIRLZ"
+palette:
+  primary: "#000080"
+  secondary: "#FFD700"
+  accent: "#FFFFFF"
+mood_keywords: ["sexy", "vocal", "prep"]
+signature_tracks:
+  - { title: "Because Of You", year: 2009, mood: "electropop,sexy", bpm: 115 }
+  - { title: "Bang!", year: 2010, mood: "marching,energetic", bpm: 130 }
+  - { title: "Shampoo", year: 2010, mood: "cute,playful", bpm: 125 }
 ---
 
 # 👯 团魂 · After School (2 代 · 2009)

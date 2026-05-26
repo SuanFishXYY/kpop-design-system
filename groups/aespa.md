@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["dc", "fx", "nmixx", "illit"]
 fusion_synergy: "sci-fi vs 黑暗童话 / 实验前卫 / 多曲风"
 fusion_rules: "alter ego B 面不可丢"
+fandom_name: "MY"
+palette:
+  primary: "#000000"
+  secondary: "#FF00FF"
+  accent: "#00FFFF"
+mood_keywords: ["futuristic", "metaverse", "cyber"]
+signature_tracks:
+  - { title: "Next Level", year: 2021, mood: "industrial,cyber", bpm: 118 }
+  - { title: "Black Mamba", year: 2020, mood: "hyperpop,glitch", bpm: 130 }
+  - { title: "Spicy", year: 2023, mood: "new-jack,playful", bpm: 120 }
 ---
 
 # 👯 团魂 · aespa (4 代 · 2020)

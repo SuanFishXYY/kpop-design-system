@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["aespa", "rv", "meovv"]
 fusion_synergy: "黑暗童话"
 fusion_rules: "深紫血红光晕不可丢"
+fandom_name: "InSomnia"
+palette:
+  primary: "#000000"
+  secondary: "#FF0000"
+  accent: "#C0C0C0"
+mood_keywords: ["metal", "nightmare", "dark"]
+signature_tracks:
+  - { title: "Chase Me", year: 2017, mood: "rock-metal,nightmare", bpm: 115 }
+  - { title: "YOU and I", year: 2018, mood: "alt-rock,intense", bpm: 125 }
+  - { title: "Scream", year: 2020, mood: "melodic-metal,emotional", bpm: 130 }
 ---
 
 # 👯 团魂 · Dreamcatcher (3 代 · 2017)

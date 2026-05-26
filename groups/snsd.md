@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["kara", "wg", "2ne1"]
 fusion_synergy: "2 代国民"
 fusion_rules: "9 人编队对称不可丢"
+fandom_name: "SONE"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#FFD700"
+  accent: "#FFFFFF"
+mood_keywords: ["legend", "sweet", "bright"]
+signature_tracks:
+  - { title: "Gee", year: 2009, mood: "disco-pop,iconic", bpm: 125 }
+  - { title: "I Got A Boy", year: 2013, mood: "experimental-mashup", bpm: 135 }
+  - { title: "Lion Heart", year: 2015, mood: "brass-funk,confident", bpm: 115 }
 ---
 
 # 👯 团魂 · Girls' Generation (2 代 · 2007)

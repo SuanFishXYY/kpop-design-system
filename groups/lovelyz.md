@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["apink", "gfriend", "omg"]
 fusion_synergy: "纯爱童话"
 fusion_rules: "柔和色卡不可丢"
+fandom_name: "LOVELINUS"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#FFFFFF"
+  accent: "#FFD700"
+mood_keywords: ["fairy", "pure", "theme-park"]
+signature_tracks:
+  - { title: "Ah-Choo", year: 2014, mood: "sweet,confession", bpm: 125 }
+  - { title: "Destiny", year: 2016, mood: "magical,fairy", bpm: 120 }
+  - { title: "Now We", year: 2017, mood: "sweet,bright", bpm: 122 }
 ---
 
 # 👯 团魂 · Lovelyz (2.5 代 · 2014)

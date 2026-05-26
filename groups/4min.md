@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["2ne1", "aoa", "fx"]
 fusion_synergy: "短小精爆"
 fusion_rules: "≤7字短句不可丢"
+fandom_name: "4NIA"
+palette:
+  primary: "#FF1493"
+  secondary: "#000000"
+  accent: "#FFD700"
+mood_keywords: ["hot-issue", "sexy", "sharp"]
+signature_tracks:
+  - { title: "Hot Issue", year: 2009, mood: "electropop,confident", bpm: 125 }
+  - { title: "Hate", year: 2016, mood: "trap,sass", bpm: 95 }
+  - { title: "Crazy", year: 2015, mood: "moombahton,fierce", bpm: 108 }
 ---
 
 # 👯 团魂 · 4MINUTE (2 代 · 2009)

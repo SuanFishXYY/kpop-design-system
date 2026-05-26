@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["sistar", "beg", "as"]
 fusion_synergy: "性感舞曲"
 fusion_rules: "金黑配色不可丢"
+fandom_name: "SECRET TIME"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#FFD700"
+  accent: "#000000"
+mood_keywords: ["sexy", "swing", "charm"]
+signature_tracks:
+  - { title: "Madonna", year: 2010, mood: "brass-funk,sexy", bpm: 115 }
+  - { title: "Shy Boy", year: 2011, mood: "swing,cute", bpm: 120 }
+  - { title: "Magic", year: 2010, mood: "electropop,sweet", bpm: 125 }
 ---
 
 # 👯 团魂 · Secret (2 代 · 2009)

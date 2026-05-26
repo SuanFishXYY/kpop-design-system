@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["snsd", "kara", "beg"]
 fusion_synergy: "complex band"
 fusion_rules: "复古 8-bit 不可丢"
+fandom_name: "Wonderful"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#FFD700"
+  accent: "#000000"
+mood_keywords: ["retro", "nobody", "classic"]
+signature_tracks:
+  - { title: "Nobody", year: 2008, mood: "retro-disco,iconic", bpm: 110 }
+  - { title: "Tell Me", year: 2007, mood: "retro-pop,viral", bpm: 130 }
+  - { title: "I Feel You", year: 2015, mood: "80s-retro,sass", bpm: 118 }
 ---
 
 # 👯 团魂 · Wonder Girls (2 代 · 2007)

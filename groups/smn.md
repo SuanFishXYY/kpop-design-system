@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["katseye","lsf","illit"]
 fusion_synergy: "name-as-brand"
 fusion_rules: "名字宣言式排版与 HYBE 全球感不可丢"
+fandom_name: "CALLERS"
+palette:
+  primary: "#000080"
+  secondary: "#FFD700"
+  accent: "#FFFFFF"
+mood_keywords: ["name-brand", "global", "hybe"]
+signature_tracks:
+  - { title: "Say My Name", year: 2025, mood: "narrative,brand", bpm: 118 }
+  - { title: "Debut", year: 2025, mood: "narrative-pop", bpm: 120 }
+  - { title: "Untitled", year: 2025, mood: "fresh", bpm: 120 }
 ---
 
 # 👯 团魂 · SAY MY NAME (5 代 · 2025)

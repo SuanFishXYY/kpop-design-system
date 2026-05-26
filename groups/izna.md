@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["bm", "illit", "kep1er"]
 fusion_synergy: "新生 Y2K"
 fusion_rules: "5 代节奏不可丢"
+fandom_name: "izoner"
+palette:
+  primary: "#FF1493"
+  secondary: "#FFD700"
+  accent: "#FFFFFF"
+mood_keywords: ["debut", "fresh", "teen"]
+signature_tracks:
+  - { title: "Izna", year: 2024, mood: "pop,debut", bpm: 120 }
+  - { title: "N/Y", year: 2024, mood: "teen-pop,bright", bpm: 118 }
+  - { title: "Beep", year: 2024, mood: "sweet-pop,playful", bpm: 125 }
 ---
 
 # 👯 团魂 · izna (5 代 · 2024)

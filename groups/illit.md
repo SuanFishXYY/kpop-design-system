@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["nj", "ive", "stayc"]
 fusion_synergy: "Y2K 治愈系"
 fusion_rules: "奶油色系不可丢"
+fandom_name: "GLLIT"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#FFFFFF"
+  accent: "#E6E6FA"
+mood_keywords: ["magnetic", "teen", "fresh"]
+signature_tracks:
+  - { title: "Magnetic", year: 2024, mood: "y2k-bedroom-pop,crush", bpm: 130 }
+  - { title: "Cherish", year: 2024, mood: "sweet,confession", bpm: 118 }
+  - { title: "Tick-Tack", year: 2024, mood: "bright,playful", bpm: 125 }
 ---
 
 # 👯 团魂 · ILLIT (5 代 · 2024)

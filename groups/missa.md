@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["2ne1", "sistar"]
 fusion_synergy: "独立宣言"
 fusion_rules: "姜黄+海军蓝不可丢"
+fandom_name: "SAY A"
+palette:
+  primary: "#FF1493"
+  secondary: "#000000"
+  accent: "#FFD700"
+mood_keywords: ["bad-girl", "R&B", "sharp"]
+signature_tracks:
+  - { title: "Bad Girl Good Girl", year: 2010, mood: "hip-hop,manifesto", bpm: 105 }
+  - { title: "Hush", year: 2013, mood: "deep-house,seductive", bpm: 115 }
+  - { title: "Only You", year: 2015, mood: "disco-funk,confident", bpm: 118 }
 ---
 
 # 👯 团魂 · miss A (2 代 · 2010)

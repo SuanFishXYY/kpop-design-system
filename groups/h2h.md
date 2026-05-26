@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["nj","illit","katseye"]
 fusion_synergy: "Y2K 纯净 + 真实少女"
 fusion_rules: "纯净不矫饰 · 自然光感不可丢"
+fandom_name: "HEARTBEAT"
+palette:
+  primary: "#FFFAF0"
+  secondary: "#FFD700"
+  accent: "#FFB6C1"
+mood_keywords: ["natural", "innocent", "pure"]
+signature_tracks:
+  - { title: "The Chase", year: 2025, mood: "y2k-natural,fresh", bpm: 118 }
+  - { title: "Style", year: 2025, mood: "sweet,natural", bpm: 120 }
+  - { title: "Pretty Dead", year: 2025, mood: "natural-pop,real", bpm: 115 }
 ---
 
 # 👯 团魂 · Hearts2Hearts (5 代 · 2025)

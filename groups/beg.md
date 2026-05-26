@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["wg", "tara", "fx"]
 fusion_synergy: "暗黑电子"
 fusion_rules: "霓虹点缀不可丢"
+fandom_name: "Everlasting"
+palette:
+  primary: "#000000"
+  secondary: "#FF1493"
+  accent: "#FFD700"
+mood_keywords: ["abracadabra", "sexy", "witchy"]
+signature_tracks:
+  - { title: "Abracadabra", year: 2009, mood: "electronic,iconic", bpm: 125 }
+  - { title: "Sixth Sense", year: 2011, mood: "electro-pop,fierce", bpm: 130 }
+  - { title: "Sign", year: 2010, mood: "electro-pop,confident", bpm: 125 }
 ---
 
 # 👯 团魂 · Brown Eyed Girls (2 代 · 2006)

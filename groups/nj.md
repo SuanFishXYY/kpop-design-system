@@ -12,7 +12,17 @@ vote_weight: 3
 priority: above_tier_0
 fusion_compatible: ["ive", "illit", "stayc", "apink"]
 fusion_synergy: "Y2K 治愈系姐妹"
-fusion_rules: ""少即多"反宣传感不可丢"
+fusion_rules: ""
+fandom_name: "BUNNIES"
+palette:
+  primary: "#F5DEB3"
+  secondary: "#FFFFFF"
+  accent: "#87CEEB"
+mood_keywords: ["nostalgia", "natural", "y2k"]
+signature_tracks:
+  - { title: "Attention", year: 2022, mood: "y2k,jangle pop", bpm: 110 }
+  - { title: "Hype Boy", year: 2022, mood: "y2k,bedroom pop", bpm: 112 }
+  - { title: "OMG", year: 2023, mood: "sample-pop,carefree", bpm: 125 }少即多"反宣传感不可丢"
 ---
 
 # 👯 团魂 · NewJeans (4 代 · 2022)

@@ -92,7 +92,7 @@ export function tallyCouncilVotes(votes) {
  */
 export function isEligibleVoter(agent) {
   if (!agent || !agent.layer) return false;
-  if (!["judge", "group_soul", "tier_0", "tier_1"].includes(agent.layer)) return false;
+  if (!["judge", "group_soul", "tier_0", "tier_1", "fandom"].includes(agent.layer)) return false;
   if (typeof agent.weight !== "number" || agent.weight <= 0) return false;
   return true;
 }

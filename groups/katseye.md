@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["bm", "kep1er", "triples"]
 fusion_synergy: "跨文化全球"
 fusion_rules: "RTL/LTR 双向适配不可丢"
+fandom_name: "EYEKONS"
+palette:
+  primary: "#FF1493"
+  secondary: "#FFD700"
+  accent: "#000080"
+mood_keywords: ["global", "multi-culture", "narrative"]
+signature_tracks:
+  - { title: "Touch", year: 2024, mood: "alt-pop,global", bpm: 115 }
+  - { title: "Debut", year: 2024, mood: "narrative-pop,intro", bpm: 120 }
+  - { title: "Gnarly", year: 2024, mood: "hyperpop,quirky", bpm: 140 }
 ---
 
 # 👯 团魂 · KATSEYE (5 代 · 2024)

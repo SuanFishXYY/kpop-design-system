@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["omg", "lovelyz", "rv"]
 fusion_synergy: "宇宙少女"
 fusion_rules: "星空渐变不可丢"
+fandom_name: "UJUNG"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#FFD700"
+  accent: "#00CED1"
+mood_keywords: ["cosmic", "fairy", "dreamy"]
+signature_tracks:
+  - { title: "Save Me Save You", year: 2018, mood: "dance-pop,space", bpm: 125 }
+  - { title: "Boogie Up", year: 2019, mood: "disco-funk,bright", bpm: 118 }
+  - { title: "As You Wish", year: 2019, mood: "cinematic,dreamy", bpm: 110 }
 ---
 
 # 👯 团魂 · WJSN (3 代 · 2016)

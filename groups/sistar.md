@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["secret", "missa", "aoa"]
 fusion_synergy: "海边夏日"
 fusion_rules: "暖渐变不可丢"
+fandom_name: "STAR1"
+palette:
+  primary: "#FF1493"
+  secondary: "#FFD700"
+  accent: "#000000"
+mood_keywords: ["sexy", "summer", "confident"]
+signature_tracks:
+  - { title: "Touch My Body", year: 2014, mood: "summer-disco,sexy", bpm: 125 }
+  - { title: "Loving U", year: 2012, mood: "summer-pop,sweet", bpm: 120 }
+  - { title: "I Like That", year: 2016, mood: "tropical-house,deep", bpm: 115 }
 ---
 
 # 👯 团魂 · SISTAR (2 代 · 2010)

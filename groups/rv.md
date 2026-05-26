@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["aespa", "wjsn", "dc"]
 fusion_synergy: "双概念"
 fusion_rules: "red/velvet 切换组件不可丢"
+fandom_name: "ReVeluv"
+palette:
+  primary: "#FF0000"
+  secondary: "#0000FF"
+  accent: "#FFFFFF"
+mood_keywords: ["dual-concept", "psyche", "sweet"]
+signature_tracks:
+  - { title: "Psycho", year: 2019, mood: "r&b,obsession", bpm: 115 }
+  - { title: "Bad Boy", year: 2018, mood: "hip-hop,confident", bpm: 105 }
+  - { title: "Feel My Rhythm", year: 2022, mood: "baroque,bach", bpm: 118 }
 ---
 
 # 👯 团魂 · Red Velvet (3 代 · 2014)

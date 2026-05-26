@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["bp", "2ne1", "dc"]
 fusion_synergy: "暗夜神秘"
 fusion_rules: "月光银紫不可丢"
+fandom_name: "MEOVVERS"
+palette:
+  primary: "#000000"
+  secondary: "#FF1493"
+  accent: "#C0C0C0"
+mood_keywords: ["girl-crush", "fresh", "YG"]
+signature_tracks:
+  - { title: "Meow", year: 2024, mood: "trap-pop,sharp", bpm: 105 }
+  - { title: "Toxic", year: 2024, mood: "edm,dark", bpm: 125 }
+  - { title: "Hands Up", year: 2025, mood: "hip-hop,attitude", bpm: 110 }
 ---
 
 # 👯 团魂 · MEOVV (5 代 · 2024)

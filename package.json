@@ -1,13 +1,13 @@
 {
     "name":  "kpop-design-system",
-    "version": "1.3.1",
-    "description": "KPOP idol congress design system ¡¤ 116 idols ¡¤ 45 group souls ¡¤ 7 judges ¡¤ 4-layer council ¡¤ real voting engine",
+    "version": "1.4.0",
+    "description": "KPOP idol congress design system Â· 116 idols Â· 45 group souls Â· 7 judges Â· 45 fandoms Â· 5-layer council Â· palette+tracks Â· real voting engine",
     "bin":  {
                 "kpop-install":  "installer/install.mjs"
             },
     "type":  "module",
     "license":  "MIT",
-    "author":  "ç®—é±¼å·¥ä½œå®?(SuanFishXYY)",
+    "author":  "ç®—é±¼å·¥ä½œï¿½?(SuanFishXYY)",
     "repository":  {
                        "type":  "git",
                        "url":  "https://github.com/SuanFishXYY/kpop-design-system.git"

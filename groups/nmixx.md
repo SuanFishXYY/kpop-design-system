@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["aespa", "fx", "kep1er"]
 fusion_synergy: "多曲风混搭"
 fusion_rules: "风格切换动效不可丢"
+fandom_name: "NSWER"
+palette:
+  primary: "#9370DB"
+  secondary: "#FFD700"
+  accent: "#00CED1"
+mood_keywords: ["mixxpop", "switch", "multi"]
+signature_tracks:
+  - { title: "O.O", year: 2022, mood: "mixxpop,multi-bpm", bpm: 140 }
+  - { title: "Dice", year: 2022, mood: "pop,roll", bpm: 118 }
+  - { title: "Love Me Like This", year: 2023, mood: "funky-pop,confident", bpm: 118 }
 ---
 
 # 👯 团魂 · NMIXX (4 代 · 2022)

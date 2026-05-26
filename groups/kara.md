@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["snsd", "wg", "apink"]
 fusion_synergy: "sweet+chic 平衡"
 fusion_rules: "留呼吸感不可丢"
+fandom_name: "KAMILIA"
+palette:
+  primary: "#FFC0CB"
+  secondary: "#FFD700"
+  accent: "#000000"
+mood_keywords: ["charm", "disco", "sweet"]
+signature_tracks:
+  - { title: "Mister", year: 2009, mood: "disco,butt-dance", bpm: 118 }
+  - { title: "Step", year: 2011, mood: "electro-disco,trendy", bpm: 125 }
+  - { title: "Pretty Girl", year: 2008, mood: "girly-pop,sweet", bpm: 110 }
 ---
 
 # 👯 团魂 · KARA (2 代 · 2007)

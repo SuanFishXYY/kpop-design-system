@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["aoa", "gd", "4min"]
 fusion_synergy: "直拍逆袭"
 fusion_rules: "stop motion 不可丢"
+fandom_name: "LEGGO"
+palette:
+  primary: "#FFA500"
+  secondary: "#FF1493"
+  accent: "#000000"
+mood_keywords: ["comeback-queen", "sexy", "sass"]
+signature_tracks:
+  - { title: "Up & Down", year: 2014, mood: "electro-pop,sexy", bpm: 125 }
+  - { title: "Hot Pink", year: 2015, mood: "electropop,witchy", bpm: 128 }
+  - { title: "L.I.E", year: 2016, mood: "hip-hop,assertive", bpm: 105 }
 ---
 
 # 👯 团魂 · EXID (2 代 · 2012)

@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["illit", "katseye", "kep1er"]
 fusion_synergy: "5 代新势力"
 fusion_rules: "Z 世代节奏不可丢"
+fandom_name: "MONSTIEZ"
+palette:
+  primary: "#FF0000"
+  secondary: "#000000"
+  accent: "#FFD700"
+mood_keywords: ["hardcore", "monster", "powerful"]
+signature_tracks:
+  - { title: "Sheesh", year: 2024, mood: "hyperpop,aggression", bpm: 130 }
+  - { title: "Stuck In The Middle", year: 2024, mood: "alt-rnb,assertive", bpm: 95 }
+  - { title: "Drip", year: 2024, mood: "hip-hop,swag", bpm: 105 }
 ---
 
 # 👯 团魂 · BABYMONSTER (5 代 · 2024)

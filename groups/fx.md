@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["aespa", "nmixx", "dc"]
 fusion_synergy: "实验前卫"
 fusion_rules: "反中心对称不可丢"
+fandom_name: "AFF(x)tion"
+palette:
+  primary: "#00CED1"
+  secondary: "#FF00FF"
+  accent: "#FFD700"
+mood_keywords: ["experimental", "electronic", "art"]
+signature_tracks:
+  - { title: "4 Walls", year: 2015, mood: "deep-house,art", bpm: 125 }
+  - { title: "Electric Shock", year: 2012, mood: "electropop,addictive", bpm: 130 }
+  - { title: "Hot Summer", year: 2011, mood: "electro,summer", bpm: 125 }
 ---
 
 # 👯 团魂 · f(x) (2 代 · 2009)

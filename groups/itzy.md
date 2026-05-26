@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["lsf", "2ne1", "idle"]
 fusion_synergy: "自我热爱"
 fusion_rules: "命令式 CTA 不可丢"
+fandom_name: "MIDZY"
+palette:
+  primary: "#FF6600"
+  secondary: "#FFD700"
+  accent: "#000000"
+mood_keywords: ["girl-crush", "swag", "energetic"]
+signature_tracks:
+  - { title: "Wannabe", year: 2020, mood: "trap,aggressive", bpm: 105 }
+  - { title: "Dalla Dalla", year: 2019, mood: "pop-house,confident", bpm: 115 }
+  - { title: "Cheshire", year: 2022, mood: "alt-pop,witchy", bpm: 112 }
 ---
 
 # 👯 团魂 · ITZY (4 代 · 2019)

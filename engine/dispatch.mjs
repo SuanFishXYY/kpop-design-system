@@ -92,7 +92,25 @@ export function loadAllAgents() {
       };
     });
   } catch (e) { /* judges/ optional */ }
-  _cache = { souls, idols, judges };
+  // 粉丝团层 (fandom): weight=1, no veto, user proxy
+  let fandoms = [];
+  try {
+    fandoms = readdirSync(join(ROOT, "fandoms")).filter(f => f.endsWith(".md")).map(f => {
+      const raw = readFileSync(join(ROOT, "fandoms", f), "utf-8");
+      const fm = parseFrontmatter(raw);
+      return {
+        slug: `fandom-${f.replace(/\.md$/, "")}`,
+        fandom_name: fm.fandom_name || "",
+        group_slug: fm.group_slug || f.replace(/\.md$/, ""),
+        group_name: fm.group_name || "",
+        layer: "fandom",
+        weight: Number(fm.vote_weight) || 1,
+        catchphrase: fm.catchphrase || "",
+        perspective: fm.perspective || "user_proxy",
+      };
+    });
+  } catch (e) { /* fandoms/ optional */ }
+  _cache = { souls, idols, judges, fandoms };
   return _cache;
 }
 
@@ -124,12 +142,17 @@ export function parseBrief(brief) {
 export function summonCouncil(brief, opts = {}) {
   const maxIdols = opts.maxIdols || 15;
   const { mentioned_groups, mentioned_idols } = parseBrief(brief);
-  const { idols, judges } = loadAllAgents();
+  const { idols, judges, fandoms } = loadAllAgents();
   
   // 0. 评委层: 旗下含被提到团的评委自动召唤
   const mentionedSlugs = new Set(mentioned_groups.map(g => g.group_slug.toLowerCase()));
   const summonedJudges = (judges || []).filter(j =>
     (j.portfolio || []).some(p => mentionedSlugs.has((p || "").toLowerCase()))
+  );
+  
+  // 0b. 粉丝团层: 同 group_slug 命中即召
+  const summonedFandoms = (fandoms || []).filter(f =>
+    mentionedSlugs.has((f.group_slug || "").toLowerCase())
   );
   
   // 1. 团魂层: 所有被提及的团
@@ -170,7 +193,8 @@ export function summonCouncil(brief, opts = {}) {
     judges: summonedJudges,
     souls,
     invited,
-    council_size: summonedJudges.length + souls.length + invited.length,
+    fandoms: summonedFandoms,
+    council_size: summonedJudges.length + souls.length + invited.length + summonedFandoms.length,
     fusion_check,
     cross_label_check,
   };
@@ -261,6 +285,13 @@ export function dispatchBrief(brief, voteSimulator) {
       vote: v.vote, reason: v.reason
     });
   }
+  for (const fandom of (council.fandoms || [])) {
+    const v = voteSimulator ? voteSimulator(fandom, brief) : { vote: "yes", reason: "fandom approval" };
+    votes.push({
+      slug: fandom.slug, layer: "fandom", weight: fandom.weight || 1,
+      vote: v.vote, reason: v.reason, perspective: "user_proxy"
+    });
+  }
   
   const result = tallyCouncilVotes(votes);
   
@@ -269,6 +300,7 @@ export function dispatchBrief(brief, voteSimulator) {
       judges: (council.judges || []).map(j => j.judge_slug),
       souls: council.souls.map(s => s.group_slug),
       idol_count: council.invited.length,
+      fandoms: (council.fandoms || []).map(f => f.fandom_name),
       fusion: council.fusion_check.is_fusion,
       cross_label: council.cross_label_check.is_cross_label,
       cross_label_gate_passed: council.cross_label_check.gate_passed,

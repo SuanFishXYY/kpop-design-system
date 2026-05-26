@@ -1,4 +1,25 @@
-﻿# Changelog
+## v1.4.0 (2026-05-26) — 🎨 A+B+C 三连闭环 (palette + fandom + tracks)
+
+**A · 团色 HEX palette (45 souls)**
+- 每个 group_soul frontmatter 新增 `palette: { primary, secondary, accent }` (HEX)
+- 新增 `mood_keywords: [3 词]` 气质标签
+- LLM 可直接消费输出视觉方案
+
+**B · FANDOM 层 (新 45 文件 + 引擎接入)**
+- 新目录 `fandoms/` 含 45 粉丝团 agent (ONCE / BLINK / DIVE / BUNNIES / MY / MIDZY...)
+- Layer=`fandom`, weight=1, no veto, perspective=`user_proxy`
+- 引擎: loadAllAgents 加载 fandoms · summonCouncil 同 group_slug 命中即召 · dispatchBrief 在 idol 之后追加 fandom 投票 · voting.isEligibleVoter 接受 fandom layer
+- 议会从 4 层升级到 **5 层** (评委 > 团魂 > Tier0 > Tier1 > 粉丝团)
+
+**C · signature_tracks 主打歌 (45 souls)**
+- frontmatter 新增 `signature_tracks: [3 首]` 每首 `title/year/mood/bpm`
+
+**Tests**: voting 7/7 + dispatch 18/18 = **25/25 PASS**
+
+**Docs**: SKILL.md 5 层架构表 · package.json description 升级
+
+---
+# Changelog
 
 ## v1.3.1 · 2025 · 体检修复 (data integrity)
 

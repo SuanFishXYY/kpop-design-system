@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["katseye", "triples", "bm"]
 fusion_synergy: "国际联合"
 fusion_rules: "多元国旗色拼接不可丢"
+fandom_name: "Kep1ian"
+palette:
+  primary: "#FF69B4"
+  secondary: "#FFD700"
+  accent: "#FFFFFF"
+mood_keywords: ["wadada", "princess", "debut"]
+signature_tracks:
+  - { title: "Wa Da Da", year: 2022, mood: "euphoric,debut", bpm: 120 }
+  - { title: "Up!", year: 2022, mood: "pop,confident", bpm: 118 }
+  - { title: "Galileo", year: 2022, mood: "space,cinematic", bpm: 115 }
 ---
 
 # 👯 团魂 · Kep1er (4 代 · 2022)

@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["exid", "apink", "gfriend"]
 fusion_synergy: "双面"
 fusion_rules: "双 mode 切换不可丢"
+fandom_name: "Daisy"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#FFFFFF"
+  accent: "#FFD700"
+mood_keywords: ["sweet", "expectation", "simple"]
+signature_tracks:
+  - { title: "Expectation", year: 2013, mood: "disco-pop,sweet", bpm: 118 }
+  - { title: "Twinkle Twinkle", year: 2011, mood: "sweet-pop,confession", bpm: 125 }
+  - { title: "Something", year: 2014, mood: "swing,sweet", bpm: 120 }
 ---
 
 # 👯 团魂 · Girl's Day (2 代 · 2010)

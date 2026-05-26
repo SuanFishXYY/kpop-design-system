@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["bp", "2ne1", "idle"]
 fusion_synergy: "vocal monster 宣言派"
 fusion_rules: "大字加粗走人风格不可丢"
+fandom_name: "MOOMOO"
+palette:
+  primary: "#FF6347"
+  secondary: "#FFA500"
+  accent: "#FFD700"
+mood_keywords: ["vocal-power", "swag", "sassy"]
+signature_tracks:
+  - { title: "Hip", year: 2019, mood: "sass,brass", bpm: 110 }
+  - { title: "Egotistic", year: 2018, mood: "moombahton,exotic", bpm: 100 }
+  - { title: "Decalcomanie", year: 2016, mood: "disco-funk,confident", bpm: 112 }
 ---
 
 # 👯 团魂 · MAMAMOO (3 代 · 2014)

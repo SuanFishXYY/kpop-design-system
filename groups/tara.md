@@ -13,6 +13,16 @@ priority: above_tier_0
 fusion_compatible: ["aoa", "sistar", "beg"]
 fusion_synergy: "复古迪斯科"
 fusion_rules: "70s 暖色不可丢"
+fandom_name: "QUEENS"
+palette:
+  primary: "#FFB6C1"
+  secondary: "#FFD700"
+  accent: "#000000"
+mood_keywords: ["disco", "charm", "cute"]
+signature_tracks:
+  - { title: "Roly-Poly", year: 2011, mood: "disco,viral", bpm: 125 }
+  - { title: "Bo Peep Bo Peep", year: 2009, mood: "disco,cute", bpm: 120 }
+  - { title: "Sexy Love", year: 2012, mood: "electro-pop,robot", bpm: 118 }
 ---
 
 # 👯 团魂 · T-ARA (2 代 · 2009)
