@@ -1,7 +1,7 @@
 ---
 name: group-soul-bp
 description: 团魂 · BLACKPINK 集体灵魂 · era 3 代 · '奢华黑粉对撞'。当 brief 提到 BLACKPINK 团名时优先激活——召集本团 idol 之前先宣读团魂宣言，确保设计方案承载该团的集体 DNA。
-layer: group_soul
+layer: group_anchor
 group_slug: bp
 group_name: "BLACKPINK"
 era: "3 代"

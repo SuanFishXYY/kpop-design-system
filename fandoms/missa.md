@@ -1,7 +1,7 @@
 ---
 name: fandom-missa
 description: 粉丝团 · SAY A · miss A 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: missa-fandom
 fandom_name: "SAY A"
 group_slug: missa

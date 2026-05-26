@@ -1,7 +1,7 @@
 ---
 name: fandom-mmm
 description: 粉丝团 · MOOMOO · MAMAMOO 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: mmm-fandom
 fandom_name: "MOOMOO"
 group_slug: mmm

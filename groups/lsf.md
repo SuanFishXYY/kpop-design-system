@@ -1,7 +1,7 @@
 ---
 name: group-soul-lsf
 description: 团魂 · LE SSERAFIM 集体灵魂 · era 4 代 · '"fearless" 自由女王'。当 brief 提到 LE SSERAFIM 团名时优先激活——召集本团 idol 之前先宣读团魂宣言，确保设计方案承载该团的集体 DNA。
-layer: group_soul
+layer: group_anchor
 group_slug: lsf
 group_name: "LE SSERAFIM"
 era: "4 代"

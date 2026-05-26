@@ -1,7 +1,7 @@
 ---
 name: lineage-main_vocal
 description: 谱系 · 主唱师承 Main Vocal Lineage · 2代→5代传承链
-layer: lineage
+layer: legacy_lineage
 lineage_slug: main_vocal
 soul: "高音爆发 + 情绪叙事 + 团长式凝聚力"
 ---

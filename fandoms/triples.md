@@ -1,7 +1,7 @@
 ---
 name: fandom-triples
 description: 粉丝团 · Crown · tripleS 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: triples-fandom
 fandom_name: "Crown"
 group_slug: triples

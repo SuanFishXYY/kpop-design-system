@@ -1,7 +1,7 @@
 ---
 name: stage-concert
 description: 场景模板 · 演唱会主视觉 Concert KV · 预设议会构成 + 检查清单
-layer: stage_template
+layer: award_category
 stage_slug: concert
 sample_brief: "[TEAM] [城市] 演唱会主视觉 · 主题 [THEME]"
 ---

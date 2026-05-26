@@ -1,7 +1,7 @@
 ---
 name: fandom-4min
 description: 粉丝团 · 4NIA · 4MINUTE 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: 4min-fandom
 fandom_name: "4NIA"
 group_slug: 4min

@@ -1,7 +1,7 @@
 ---
 name: lineage-dance_machine
 description: 谱系 · Dance Machine 师承 · 2代→5代传承链
-layer: lineage
+layer: legacy_lineage
 lineage_slug: dance_machine
 soul: "killing part 担当 + body wave + 编舞改良力"
 ---

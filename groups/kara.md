@@ -1,7 +1,7 @@
 ---
 name: group-soul-kara
 description: 团魂 · KARA 集体灵魂 · era 2 代 · '"mister" 性感成熟可爱并存'。当 brief 提到 KARA 团名时优先激活——召集本团 idol 之前先宣读团魂宣言，确保设计方案承载该团的集体 DNA。
-layer: group_soul
+layer: group_anchor
 group_slug: kara
 group_name: "KARA"
 era: "2 代"

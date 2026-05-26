@@ -1,7 +1,7 @@
 ---
 name: group-soul-tara
 description: 团魂 · T-ARA 集体灵魂 · era 2 代 · '"roly poly" 复古迪斯科'。当 brief 提到 T-ARA 团名时优先激活——召集本团 idol 之前先宣读团魂宣言，确保设计方案承载该团的集体 DNA。
-layer: group_soul
+layer: group_anchor
 group_slug: tara
 group_name: "T-ARA"
 era: "2 代"

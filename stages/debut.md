@@ -1,7 +1,7 @@
 ---
 name: stage-debut
 description: 场景模板 · 出道舞台 Debut Stage · 预设议会构成 + 检查清单
-layer: stage_template
+layer: award_category
 stage_slug: debut
 sample_brief: "帮 [TEAM] 设计出道 hero · 概念 [CONCEPT]"
 ---

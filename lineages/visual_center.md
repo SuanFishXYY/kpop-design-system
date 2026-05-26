@@ -1,7 +1,7 @@
 ---
 name: lineage-visual_center
 description: 谱系 · Visual Center 师承 · 2代→5代传承链
-layer: lineage
+layer: legacy_lineage
 lineage_slug: visual_center
 soul: "非典型五官 + 镜头叙事力 + 行走 album cover"
 ---

@@ -1,7 +1,7 @@
 ---
 name: judge-teddy
 description: "评委 · Teddy Park (Teddy) · THEBLACKLABEL (YG sub) · 创立 2016 · 当 brief 涉及旗下团时拥有最高投票权 (weight=5) 与组合限定 veto。"
-layer: judge
+layer: panel
 judge_slug: teddy
 judge_name: "Teddy Park"
 judge_ko: "Teddy"

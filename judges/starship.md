@@ -1,7 +1,7 @@
 ---
 name: judge-starship
 description: "评委 · 홍승성 (Hong Seung-sung) · Starship Entertainment · 创立 2008 · 当 brief 涉及旗下团时拥有最高投票权 (weight=5) 与组合限定 veto。"
-layer: judge
+layer: panel
 judge_slug: starship
 judge_name: "홍승성"
 judge_ko: "Hong Seung-sung"

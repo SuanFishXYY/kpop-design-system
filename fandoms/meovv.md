@@ -1,7 +1,7 @@
 ---
 name: fandom-meovv
 description: 粉丝团 · MEOVVERS · MEOVV 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: meovv-fandom
 fandom_name: "MEOVVERS"
 group_slug: meovv

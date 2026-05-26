@@ -1,7 +1,7 @@
 ---
 name: fandom-bp
 description: 粉丝团 · BLINK · BLACKPINK 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: bp-fandom
 fandom_name: "BLINK"
 group_slug: bp

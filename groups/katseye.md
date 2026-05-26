@@ -1,7 +1,7 @@
 ---
 name: group-soul-katseye
 description: 团魂 · KATSEYE 集体灵魂 · era 5 代 · '跨文化全球女团'。当 brief 提到 KATSEYE 团名时优先激活——召集本团 idol 之前先宣读团魂宣言，确保设计方案承载该团的集体 DNA。
-layer: group_soul
+layer: group_anchor
 group_slug: katseye
 group_name: "KATSEYE"
 era: "5 代"

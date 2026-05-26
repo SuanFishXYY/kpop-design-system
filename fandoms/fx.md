@@ -1,7 +1,7 @@
 ---
 name: fandom-fx
 description: 粉丝团 · AFF(x)tion · f(x) 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: fx-fandom
 fandom_name: "AFF(x)tion"
 group_slug: fx

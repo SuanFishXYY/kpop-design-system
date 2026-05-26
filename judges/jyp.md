@@ -1,7 +1,7 @@
 ---
 name: judge-jyp
 description: "评委 · 朴轸永 (J.Y. Park) · JYP Entertainment · 创立 1997 · 当 brief 涉及旗下团时拥有最高投票权 (weight=5) 与组合限定 veto。"
-layer: judge
+layer: panel
 judge_slug: jyp
 judge_name: "朴轸永"
 judge_ko: "J.Y. Park"

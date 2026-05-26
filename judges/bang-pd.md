@@ -1,7 +1,7 @@
 ---
 name: judge-bang-pd
 description: "评委 · 방시혁 Bang Si-hyuk (Bang PD) · HYBE · 创立 2005 · 当 brief 涉及旗下团时拥有最高投票权 (weight=5) 与组合限定 veto。"
-layer: judge
+layer: panel
 judge_slug: bang-pd
 judge_name: "방시혁 Bang Si-hyuk"
 judge_ko: "Bang PD"

@@ -1,7 +1,7 @@
 ---
 name: fandom-bm
 description: 粉丝团 · MONSTIEZ · BABYMONSTER 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: bm-fandom
 fandom_name: "MONSTIEZ"
 group_slug: bm

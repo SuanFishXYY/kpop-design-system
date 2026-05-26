@@ -1,7 +1,7 @@
 ---
 name: group-soul-snsd
 description: 团魂 · Girls' Generation 集体灵魂 · era 2 代 · '9 人国民妹妹团'。当 brief 提到 Girls' Generation 团名时优先激活——召集本团 idol 之前先宣读团魂宣言，确保设计方案承载该团的集体 DNA。
-layer: group_soul
+layer: group_anchor
 group_slug: snsd
 group_name: "Girls' Generation"
 era: "2 代"

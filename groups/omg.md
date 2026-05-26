@@ -1,7 +1,7 @@
 ---
 name: group-soul-omg
 description: 团魂 · Oh My Girl 集体灵魂 · era 3 代 · '"closer" 童话治愈'。当 brief 提到 Oh My Girl 团名时优先激活——召集本团 idol 之前先宣读团魂宣言，确保设计方案承载该团的集体 DNA。
-layer: group_soul
+layer: group_anchor
 group_slug: omg
 group_name: "Oh My Girl"
 era: "3 代"

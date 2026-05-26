@@ -1,7 +1,7 @@
 ---
 name: fandom-twice
 description: 粉丝团 · ONCE · TWICE 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: twice-fandom
 fandom_name: "ONCE"
 group_slug: twice

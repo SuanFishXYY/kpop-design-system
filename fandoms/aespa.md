@@ -1,7 +1,7 @@
 ---
 name: fandom-aespa
 description: 粉丝团 · MY · aespa 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: aespa-fandom
 fandom_name: "MY"
 group_slug: aespa

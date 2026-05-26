@@ -1,7 +1,7 @@
 ---
 name: fandom-kiii
 description: 粉丝团 · KIIIRUSH · KiiiKiii 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: kiii-fandom
 fandom_name: "KIIIRUSH"
 group_slug: kiii

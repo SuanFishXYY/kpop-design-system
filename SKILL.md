@@ -1,7 +1,7 @@
 ---
 name: kpop-design-system
-description: "KPOP Music Awards · 年度歌谣大赏设计系统 v1.6 · 116 舞台担当 + 45 团代表 + 7 评审团 + 45 现场投票 + 5 奖项类目 + 5 传承大奖 · weighted scoring + 评委不署名 veto + 跨社合作 gate + 年度对决 RIVALRY · 颁奖典礼叙事 (Awards Show Narrative) · 真打分引擎 (voting.mjs + dispatch.mjs · 25+7 PASS) · Activate on '/kpop', '/女团', '/idol-congress', '/kpop-awards', '/kpop-design'. Trigger phrases: '女团', 'kpop', 'idol', 'TWICE', 'BLACKPINK', 'IVE', '颁奖', 'awards', '歌谣大赏', 'comeback', 'debut'."
-version: 1.6.0
+description: "KPOP Music Awards · 年度歌谣大赏设计系统 v2.0 · 116 舞台担当 + 45 团代表 + 7 评审团 + 45 现场投票 + 5 奖项类目 + 5 传承大奖 · weighted scoring + 评委不署名 veto + 跨社合作 gate + 年度对决 RIVALRY · 颁奖典礼叙事 (Awards Show Narrative) · 真打分引擎 (voting.mjs + dispatch.mjs · 25+7 PASS) · Activate on '/kpop', '/女团', '/idol-congress', '/kpop-awards', '/kpop-design'. Trigger phrases: '女团', 'kpop', 'idol', 'TWICE', 'BLACKPINK', 'IVE', '颁奖', 'awards', '歌谣大赏', 'comeback', 'debut'."
+version: 2.0.0
 author: 算鱼工作�?license: MIT
 language: zh-CN
 flavor: kpop
@@ -9,7 +9,7 @@ philosophy: enabled
 tags: [design-system, multi-agent, kpop, idol, philosophy, onboarding, ui, modal, wizard, hero, animation, copywriting, brand-voice, ai-native, korean, chinese]
 ---
 
-# 🏆 KPOP 设计系统 · 年度歌谣大赏 · v1.6
+# 🏆 KPOP 设计系统 · 年度歌谣大赏 · v2.0
 
 > 🎯 **快速召唤**: 在 Copilot / Claude / Codex / Gemini / Antigravity 任一 CLI 输入 /kpop 或 /女团 即可强制激活本 skill 进入**颁奖典礼模式**。
 >

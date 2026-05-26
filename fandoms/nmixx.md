@@ -1,7 +1,7 @@
 ---
 name: fandom-nmixx
 description: 粉丝团 · NSWER · NMIXX 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: nmixx-fandom
 fandom_name: "NSWER"
 group_slug: nmixx

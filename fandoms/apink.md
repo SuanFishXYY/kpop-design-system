@@ -1,7 +1,7 @@
 ---
 name: fandom-apink
 description: 粉丝团 · PANDA · Apink 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: apink-fandom
 fandom_name: "PANDA"
 group_slug: apink

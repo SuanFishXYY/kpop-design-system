@@ -1,7 +1,7 @@
 ---
 name: group-soul-aespa
 description: 团魂 · aespa 集体灵魂 · era 4 代 · 'sci-fi B 面宇宙'。当 brief 提到 aespa 团名时优先激活——召集本团 idol 之前先宣读团魂宣言，确保设计方案承载该团的集体 DNA。
-layer: group_soul
+layer: group_anchor
 group_slug: aespa
 group_name: "aespa"
 era: "4 代"

@@ -26,25 +26,25 @@ export function tallyCouncilVotes(votes) {
     return { passed: false, reason: "empty council", tally: {} };
   }
 
-  // 1a. 评委否决 (layer=judge + vote=no + is_veto=true) — 最高级一票否决
-  // 评委 veto_scope=portfolio_only：仅在 brief 涉及其旗下团时才能否决
+  // 1a. 评委不署名 / Awards Panel No-Award (layer=panel|judge + vote=no + is_veto=true) — 最高级一票否决
+  // 评委 veto_scope=portfolio_only: 仅在 brief 涉及其旗下团时才能否决
   // (调用方 dispatch.mjs 负责只把 in-portfolio 的评委传进来)
-  const judgeVetoes = votes.filter(v => v.layer === "judge" && v.is_veto && v.vote === "no");
+  const judgeVetoes = votes.filter(v => (v.layer === "panel" || v.layer === "judge") && v.is_veto && v.vote === "no");
   if (judgeVetoes.length > 0) {
     return {
       passed: false,
-      reason: `评委否决 (judge veto): ${judgeVetoes.map(v => v.slug).join(", ")}`,
-      vetoed_by: judgeVetoes.map(v => ({ slug: v.slug, reason: v.reason, layer: "judge" })),
+      reason: `评审不署名 (panel veto): ${judgeVetoes.map(v => v.slug).join(", ")}`,
+      vetoed_by: judgeVetoes.map(v => ({ slug: v.slug, reason: v.reason, layer: v.layer })),
       tally: { judge_veto: judgeVetoes.length }
     };
   }
 
-  // 1b. 团魂否决检查 (vote=no + is_veto=true) — 一票否决
-  const vetoes = votes.filter(v => v.layer === "group_soul" && v.is_veto && v.vote === "no");
+  // 1b. 团代表不署名 / Group Anchor No-Award — 一票否决
+  const vetoes = votes.filter(v => (v.layer === "group_anchor" || v.layer === "group_soul") && v.is_veto && v.vote === "no");
   if (vetoes.length > 0) {
     return {
       passed: false,
-      reason: `团魂否决 (group_soul veto): ${vetoes.map(v => v.slug).join(", ")}`,
+      reason: `团代表不署名 (group_anchor veto): ${vetoes.map(v => v.slug).join(", ")}`,
       vetoed_by: vetoes.map(v => ({ slug: v.slug, reason: v.reason })),
       tally: { veto: vetoes.length }
     };
@@ -92,7 +92,7 @@ export function tallyCouncilVotes(votes) {
  */
 export function isEligibleVoter(agent) {
   if (!agent || !agent.layer) return false;
-  if (!["judge", "group_soul", "tier_0", "tier_1", "fandom"].includes(agent.layer)) return false;
+  if (!["judge", "group_soul", "tier_0", "tier_1", "fandom", "panel", "group_anchor", "performer_t0", "performer_t1", "audience"].includes(agent.layer)) return false;
   if (typeof agent.weight !== "number" || agent.weight <= 0) return false;
   return true;
 }

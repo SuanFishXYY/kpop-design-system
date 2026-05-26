@@ -1,7 +1,7 @@
 ---
 name: fandom-momoland
 description: 粉丝团 · MERRY · MOMOLAND 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: momoland-fandom
 fandom_name: "MERRY"
 group_slug: momoland

@@ -1,3 +1,42 @@
+## v2.0.0 (2026-05-26) — 🏆 BREAKING: 代码层完整 rename (Plan B 下)
+
+**主版本升级原因**: 把"年度歌谣大赏"叙事从 v1.6 的文档层下沉到代码层 + 数据层. 旧字段名通过双 reader 保留兼容.
+
+**Frontmatter layer 字段重命名 (107 文件)**
+- groups/* (45): `layer: group_soul` → `layer: group_anchor`
+- fandoms/* (45): `layer: fandom` → `layer: audience`
+- judges/* (7): `layer: judge` → `layer: panel`
+- stages/* (5): `layer: stage_template` → `layer: award_category`
+- lineages/* (5): `layer: lineage` → `layer: legacy_lineage`
+
+**Engine 输出 layer 重命名 (dispatch.mjs)**
+- summonCouncil 返回的 souls/judges/fandoms 内 `layer` 字段值改为新名
+- dispatchBrief votes 数组中 `layer` 字段改为新名 (panel/group_anchor/audience/performer_t0/performer_t1)
+
+**Voting 决议文案重命名 (voting.mjs)**
+- "评委否决 (judge veto)" → **"评审不署名 (panel veto)"**
+- "团魂否决 (group_soul veto)" → **"团代表不署名 (group_anchor veto)"**
+
+**双 reader 兼容 (Backward Compat)**
+- `voting.mjs::tallyCouncilVotes` 同时认 `panel` + `judge` 触发 veto
+- `voting.mjs::tallyCouncilVotes` 同时认 `group_anchor` + `group_soul` 触发 veto
+- `voting.mjs::isEligibleVoter` 接受旧+新所有 layer 名
+- 外部代码若仍传入旧 layer 名, 引擎照常工作
+
+**测试 rename**
+- dispatch.test.mjs 测试名称从"团魂否决/JYP 评委对/评委 weight"重命名为"团代表不署名/JYP 评审对/评审 weight"
+- voting.test.mjs 数据仍用旧 layer 名 (`layer: "group_soul"`) 测试双 reader 兼容
+- **32/32 PASS** (voting 7/7 + dispatch 25/25)
+
+**API alias 提升为 primary (v1.6 引入)**
+- `setLineup` / `judgeProposal` / `buildAwardsStage` / `scoreAwardsStage` 现为推荐 API
+- `summonCouncil` / `dispatchBrief` 保留 (alias, deprecated 但完全可用)
+
+**docs**
+- SKILL.md / package.json 同步到 v2.0.0
+- 5 层评分结构 + 12 项词汇映射表完整呈现
+
+---
 ## v1.6.0 (2026-05-26) — 🏆 概念 rebrand: 议会 → 年度歌谣大赏 (Awards Show)
 
 **核心叙事重定位**

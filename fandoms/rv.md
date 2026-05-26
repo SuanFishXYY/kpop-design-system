@@ -1,7 +1,7 @@
 ---
 name: fandom-rv
 description: 粉丝团 · ReVeluv · Red Velvet 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: rv-fandom
 fandom_name: "ReVeluv"
 group_slug: rv

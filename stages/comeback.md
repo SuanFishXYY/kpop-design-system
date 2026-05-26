@@ -1,7 +1,7 @@
 ---
 name: stage-comeback
 description: 场景模板 · 回归舞台 Comeback Stage · 预设议会构成 + 检查清单
-layer: stage_template
+layer: award_category
 stage_slug: comeback
 sample_brief: "[TEAM] 第 N 张专辑回归 hero · 主题 [CONCEPT]"
 ---

@@ -1,7 +1,7 @@
 ---
 name: judge-mhj
 description: "评委 · 민희진 Min Hee-jin (Min Hee-jin) · ADOR (HYBE sub) · 创立 2022 · 当 brief 涉及旗下团时拥有最高投票权 (weight=5) 与组合限定 veto。"
-layer: judge
+layer: panel
 judge_slug: mhj
 judge_name: "민희진 Min Hee-jin"
 judge_ko: "Min Hee-jin"

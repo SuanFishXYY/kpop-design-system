@@ -1,7 +1,7 @@
 ---
 name: group-soul-bm
 description: 团魂 · BABYMONSTER 集体灵魂 · era 5 代 · '7 国混血新势力'。当 brief 提到 BABYMONSTER 团名时优先激活——召集本团 idol 之前先宣读团魂宣言，确保设计方案承载该团的集体 DNA。
-layer: group_soul
+layer: group_anchor
 group_slug: bm
 group_name: "BABYMONSTER"
 era: "5 代"

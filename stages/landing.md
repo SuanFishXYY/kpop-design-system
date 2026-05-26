@@ -1,7 +1,7 @@
 ---
 name: stage-landing
 description: 场景模板 · 官网首屏 Hero Landing · 预设议会构成 + 检查清单
-layer: stage_template
+layer: award_category
 stage_slug: landing
 sample_brief: "[TEAM] 官网首屏 · 主推 [CURRENT_RELEASE]"
 ---

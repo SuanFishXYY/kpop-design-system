@@ -1,7 +1,7 @@
 ---
 name: fandom-gd
 description: 粉丝团 · Daisy · Girl's Day 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: gd-fandom
 fandom_name: "Daisy"
 group_slug: gd

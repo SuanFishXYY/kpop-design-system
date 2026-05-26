@@ -1,7 +1,7 @@
 ---
 name: lineage-rap_line
 description: 谱系 · Rapper 师承 Rap Line Lineage · 2代→5代传承链
-layer: lineage
+layer: legacy_lineage
 lineage_slug: rap_line
 soul: "Female Swagger · 不甜美的硬度 · 押韵密度"
 ---

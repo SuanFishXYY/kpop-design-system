@@ -55,7 +55,8 @@ function loadAgents(dir, layer, defaultWeight) {
 let _cache = null;
 export function loadAllAgents() {
   if (_cache) return _cache;
-  const souls = loadAgents("groups", "group_soul", 3);
+  // 团代表 (group_anchor, formerly group_soul)
+  const souls = loadAgents("groups", "group_anchor", 3);
   const idols = readdirSync(join(ROOT, "agents")).filter(f => f.endsWith(".md")).map(f => {
     const raw = readFileSync(join(ROOT, "agents", f), "utf-8");
     const fm = parseFrontmatter(raw);
@@ -65,7 +66,7 @@ export function loadAllAgents() {
       name: fm.stage_name || f,
       group: fm.group || "",
       era: fm.era || "",
-      layer: tier === 0 ? "tier_0" : "tier_1",
+      layer: tier === 0 ? "performer_t0" : "performer_t1",
       weight: tier === 0 ? 2 : 1.5,
       tier,
       attitude: fm.attitude || "",
@@ -83,7 +84,7 @@ export function loadAllAgents() {
         judge_slug: fm.judge_slug || f.replace(/\.md$/, ""),
         name: fm.judge_name || fm.name || f,
         label: fm.label || "",
-        layer: "judge",
+        layer: "panel",
         weight: Number(fm.vote_weight) || 5,
         portfolio: fm.portfolio || [],
         judging_style: fm.judging_style || "",
@@ -105,7 +106,7 @@ export function loadAllAgents() {
         fandom_name: fm.fandom_name || "",
         group_slug: fm.group_slug || f.replace(/\.md$/, ""),
         group_name: fm.group_name || "",
-        layer: "fandom",
+        layer: "audience",
         weight: Number(fm.vote_weight) || 1,
         catchphrase: fm.catchphrase || "",
         perspective: fm.perspective || "user_proxy",
@@ -297,14 +298,14 @@ export function dispatchBrief(brief, voteSimulator) {
   for (const judge of (council.judges || [])) {
     const v = voteSimulator ? voteSimulator(judge, brief) : { vote: "yes", reason: "default approve" };
     votes.push({
-      slug: judge.slug, layer: "judge", weight: judge.weight || 5,
+      slug: judge.slug, layer: "panel", weight: judge.weight || 5,
       vote: v.vote, reason: v.reason, is_veto: v.is_veto || false
     });
   }
   for (const soul of council.souls) {
     const v = voteSimulator ? voteSimulator(soul, brief) : { vote: "yes", reason: "default approve" };
     votes.push({
-      slug: soul.slug, layer: "group_soul", weight: 3,
+      slug: soul.slug, layer: "group_anchor", weight: 3,
       vote: v.vote, reason: v.reason, is_veto: v.is_veto || false
     });
   }
@@ -318,7 +319,7 @@ export function dispatchBrief(brief, voteSimulator) {
   for (const fandom of (council.fandoms || [])) {
     const v = voteSimulator ? voteSimulator(fandom, brief) : { vote: "yes", reason: "fandom approval" };
     votes.push({
-      slug: fandom.slug, layer: "fandom", weight: fandom.weight || 1,
+      slug: fandom.slug, layer: "audience", weight: fandom.weight || 1,
       vote: v.vote, reason: v.reason, perspective: "user_proxy"
     });
   }

@@ -1,7 +1,7 @@
 ---
 name: group-soul-missa
 description: 团魂 · miss A 集体灵魂 · era 2 代 · '强女权+china line 跨国'。当 brief 提到 miss A 团名时优先激活——召集本团 idol 之前先宣读团魂宣言，确保设计方案承载该团的集体 DNA。
-layer: group_soul
+layer: group_anchor
 group_slug: missa
 group_name: "miss A"
 era: "2 代"

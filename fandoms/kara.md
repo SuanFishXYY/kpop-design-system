@@ -1,7 +1,7 @@
 ---
 name: fandom-kara
 description: 粉丝团 · KAMILIA · KARA 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: kara-fandom
 fandom_name: "KAMILIA"
 group_slug: kara

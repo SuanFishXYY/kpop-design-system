@@ -1,7 +1,7 @@
 ---
 name: fandom-itzy
 description: 粉丝团 · MIDZY · ITZY 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: itzy-fandom
 fandom_name: "MIDZY"
 group_slug: itzy

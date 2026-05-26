@@ -1,7 +1,7 @@
 ---
 name: stage-collab
 description: 场景模板 · 跨团联名 Collab · 预设议会构成 + 检查清单
-layer: stage_template
+layer: award_category
 stage_slug: collab
 sample_brief: "[TEAM-A] × [TEAM-B] 联名快闪 · 主题 [SCENE]"
 ---

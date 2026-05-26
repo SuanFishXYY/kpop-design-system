@@ -30,7 +30,7 @@ test("团魂否决 → 一票否决", () => {
     { slug: "twice-sana", layer: "tier_0", weight: 2, vote: "yes", reason: "气氛在线" },
   ]);
   eq(r.passed, false);
-  assert(r.reason.includes("团魂否决"), "应识别为团魂否决");
+  assert(r.reason.includes("团魂否决") || r.reason.includes("group_anchor veto") || r.reason.includes("不署名"), "应识别为团代表不署名 (group_anchor/group_soul veto)");
   eq(r.vetoed_by.length, 1);
 });
 

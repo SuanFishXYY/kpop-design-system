@@ -46,18 +46,18 @@ test("dispatch 全员 yes → passed", () => {
   assert(r.decision.passed, "全员 yes 应通过");
 });
 
-test("dispatch 团魂否决 → 一票否决", () => {
+test("dispatch 团代表不署名 → 一票否决", () => {
   const r = dispatchBrief("TWICE 风格 hero", (agent) => {
-    if (agent.layer === "group_soul") return { vote: "no", is_veto: true, reason: "违反 9 色花束 DNA" };
+    if (agent.layer === "group_anchor" || agent.layer === "group_soul") return { vote: "no", is_veto: true, reason: "违反 9 色花束 DNA" };
     return { vote: "yes", reason: "ok" };
   });
   console.log(`     passed=${r.decision.passed}  reason=${r.decision.reason}`);
-  assert(!r.decision.passed, "团魂否决应让议会失败");
+  assert(!r.decision.passed, "团代表不署名应让议会失败");
 });
 
 test("dispatch 多数反对 → 未达 2/3", () => {
   const r = dispatchBrief("TWICE 风格 hero", (agent) => ({
-    vote: agent.layer === "group_soul" || agent.layer === "judge" ? "yes" : "no",
+    vote: (agent.layer === "group_anchor" || agent.layer === "group_soul" || agent.layer === "panel" || agent.layer === "judge") ? "yes" : "no",
     reason: "细节不行"
   }));
   console.log(`     ratio=${r.decision.yes_ratio} passed=${r.decision.passed}`);
@@ -81,25 +81,25 @@ test("brief 提 BLACKPINK + TWICE → JYP + YG 双评委到场 (跨 label)", () 
   assert(c.cross_label_check.gate_passed, `gate 应通过, missing=${c.cross_label_check.missing}`);
 });
 
-test("JYP 评委对 TWICE brief 一票否决 → 决议失败 (高于团魂)", () => {
+test("JYP 评审对 TWICE brief 一票否决 → 决议失败 (高于团代表)", () => {
   const r = dispatchBrief("TWICE 风格 hero", (agent) => {
-    if (agent.layer === "judge" && agent.judge_slug === "jyp") {
+    if ((agent.layer === "panel" || agent.layer === "judge") && agent.judge_slug === "jyp") {
       return { vote: "no", is_veto: true, reason: "noise level 不够" };
     }
     return { vote: "yes", reason: "ok" };
   });
   console.log(`     passed=${r.decision.passed}  reason=${r.decision.reason}`);
   assert(!r.decision.passed, "JYP 否决应让议会失败");
-  assert(r.decision.reason.includes("评委否决") || r.decision.reason.includes("judge"), 
-    `应标注评委否决, got: ${r.decision.reason}`);
+  assert(r.decision.reason.includes("评委否决") || r.decision.reason.includes("评审不署名") || r.decision.reason.includes("panel veto") || r.decision.reason.includes("judge"), 
+    `应标注评审不署名, got: ${r.decision.reason}`);
 });
 
-test("评委 weight=5 高于团魂 weight=3 (vote 权重检查)", () => {
+test("评审 weight=5 高于团代表 weight=3 (vote 权重检查)", () => {
   const r = dispatchBrief("TWICE 风格 hero", () => ({ vote: "yes", reason: "ok" }));
-  const judgeVote = r.votes.find(v => v.layer === "judge");
-  console.log(`     judge weight=${judgeVote?.weight}`);
-  assert(judgeVote, "应有评委投票");
-  assert(judgeVote.weight === 5, `评委 weight 应=5, got ${judgeVote.weight}`);
+  const judgeVote = r.votes.find(v => v.layer === "panel" || v.layer === "judge");
+  console.log(`     panel weight=${judgeVote?.weight}`);
+  assert(judgeVote, "应有评审投票");
+  assert(judgeVote.weight === 5, `评审 weight 应=5, got ${judgeVote.weight}`);
 });
 
 test("NMIXX 补齐: ≥6 个 NMIXX idol (Lily+5)", () => {
@@ -149,12 +149,12 @@ test("brief 提到 TWICE → 召集 ONCE 粉丝团", () => {
   if (!once) throw new Error("TWICE brief 应召集 ONCE 粉丝团");
 });
 
-test("dispatchBrief 含 fandom 投票 user_proxy", () => {
+test("dispatchBrief 含 audience 投票 user_proxy", () => {
   const r = dispatchBrief("BLACKPINK 限定快闪");
-  const fandomVotes = r.votes.filter(v => v.layer === "fandom");
-  console.log(`     fandom votes=${fandomVotes.length}`);
-  if (fandomVotes.length < 1) throw new Error("应至少 1 个 fandom 投票");
-  if (!fandomVotes.every(v => v.perspective === "user_proxy")) throw new Error("fandom 必须 user_proxy");
+  const fandomVotes = r.votes.filter(v => v.layer === "audience" || v.layer === "fandom");
+  console.log(`     audience votes=${fandomVotes.length}`);
+  if (fandomVotes.length < 1) throw new Error("应至少 1 个 audience 投票");
+  if (!fandomVotes.every(v => v.perspective === "user_proxy")) throw new Error("audience 必须 user_proxy");
 });
 
 import { loadStage, listStages, loadLineage, listLineages } from "./dispatch.mjs";

@@ -1,7 +1,7 @@
 ---
 name: group-soul-twice
 description: 团魂 · TWICE 集体灵魂 · era 3 代 · '9 色花束式正能量'。当 brief 提到 TWICE 团名时优先激活——召集本团 idol 之前先宣读团魂宣言，确保设计方案承载该团的集体 DNA。
-layer: group_soul
+layer: group_anchor
 group_slug: twice
 group_name: "TWICE"
 era: "3 代"

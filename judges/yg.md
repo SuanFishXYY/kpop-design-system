@@ -1,7 +1,7 @@
 ---
 name: judge-yg
 description: "评委 · 杨贤硕 (Yang Hyun-suk) · YG Entertainment · 创立 1996 · 当 brief 涉及旗下团时拥有最高投票权 (weight=5) 与组合限定 veto。"
-layer: judge
+layer: panel
 judge_slug: yg
 judge_name: "杨贤硕"
 judge_ko: "Yang Hyun-suk"

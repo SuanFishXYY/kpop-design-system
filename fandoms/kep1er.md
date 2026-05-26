@@ -1,7 +1,7 @@
 ---
 name: fandom-kep1er
 description: 粉丝团 · Kep1ian · Kep1er 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: kep1er-fandom
 fandom_name: "Kep1ian"
 group_slug: kep1er

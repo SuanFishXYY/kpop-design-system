@@ -1,7 +1,7 @@
 ---
 name: judge-sm
 description: "评委 · 李秀满 (Lee Soo-man) · SM Entertainment · 创立 1995 · 当 brief 涉及旗下团时拥有最高投票权 (weight=5) 与组合限定 veto。"
-layer: judge
+layer: panel
 judge_slug: sm
 judge_name: "李秀满"
 judge_ko: "Lee Soo-man"

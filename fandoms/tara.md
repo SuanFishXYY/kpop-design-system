@@ -1,7 +1,7 @@
 ---
 name: fandom-tara
 description: 粉丝团 · QUEENS · T-ARA 的官方 fandom · 用户视角代理 · brief 决议后做"粉丝买单率"模拟。
-layer: fandom
+layer: audience
 fandom_slug: tara-fandom
 fandom_name: "QUEENS"
 group_slug: tara

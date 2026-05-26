@@ -1,7 +1,7 @@
 ---
 name: group-soul-rv
 description: 团魂 · Red Velvet 集体灵魂 · era 3 代 · 'red(强势)+velvet(典雅)二元'。当 brief 提到 Red Velvet 团名时优先激活——召集本团 idol 之前先宣读团魂宣言，确保设计方案承载该团的集体 DNA。
-layer: group_soul
+layer: group_anchor
 group_slug: rv
 group_name: "Red Velvet"
 era: "3 代"

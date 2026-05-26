@@ -1,7 +1,7 @@
 ---
 name: group-soul-kol
 description: 团魂 · KISS OF LIFE 集体灵魂 · era 4 代 · 'R&B 实力新人'。当 brief 提到 KISS OF LIFE 团名时优先激活——召集本团 idol 之前先宣读团魂宣言，确保设计方案承载该团的集体 DNA。
-layer: group_soul
+layer: group_anchor
 group_slug: kol
 group_name: "KISS OF LIFE"
 era: "4 代"
