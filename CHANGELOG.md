@@ -1,3 +1,94 @@
+## v3.0.0 (2026-05-31) — 🏛️ K-pop 工业级视觉策略系统 (4 大支柱全开)
+
+**v3.0 集齐 ❶Era Universe + ❷Comeback Cycle + ❸Multi-touchpoint + ❹Generation Lint**
+
+第一个把 K-pop 工业视觉策略代码化的开源系统。从 "186 idol × 1 套 palette" 升维为 "186 idol × N era × 5 媒介 × 4 代审美"。
+
+### ❶ Era Universe (Phase 1 · 见 beta.1)
+同一团不同专辑独立视觉宇宙。52 团 + 35 curated era。`engine/eras.mjs`。
+
+### ❷ Comeback Cycle · 30 天 7 节点 brief 日历 (新)
+- `engine/cycle.mjs` — 7 stage const (D-30 Logo Teaser → D+7 打歌)
+- `dispatchComebackCycle(group, era)` 一次返回完整 era × 7 stage briefs
+- `getStageBrief(group, era, stage_slug)` 单点查询
+- 每 stage 自动绑定: ui_specialty 优先级 / palette (D-21 起释出) / motion / mv_grammar (MV 期注入) / era_forbidden + stage_forbidden 合并
+- 配套 `workflows/comeback-cycle.md` 协议文档
+
+### ❸ Multi-touchpoint Coherence · 5 媒介一致性引擎 (新)
+- `engine/coherence.mjs` — MV / SNS / Photocard / Lightstick / Stage 5 媒介
+- 每媒介内置物理补偿系数 (photocard CMYK 损失 / lightstick LED 偏白 / stage 灯光过饱和)
+- `auditTouchpointCoherence(group, era, observations)` → 0-100 一致性 score + PASS/WARN/FAIL verdict + per-medium 偏差分析 + 校正建议
+- HSL 色彩空间 + 色相 tolerance + 亮度/饱和度 deviation 计算
+
+### ❹ Generation Aesthetic Lint · 4 代审美错位禁止 (新)
+- `engine/generation.mjs` — 2/3/4/5 代审美卡片 (代表团 / 视觉签名 / 典型 keywords / 禁忌)
+- `checkGenerationAesthetic(brief, group)` → 检测 brief 是否触犯团 generation 禁忌, 返回 violations + 建议正确 generation + 该团应走的审美方向
+- 配套 `lineages/generation.md` 4 代审美时间线
+- e.g. "5 代团 ILLIT 用 Y2K 复古" → 警告: Y2K 是 3 代语法; 5 代应走 暗黑科技/AI 后人类/neo-dystopia
+
+### 测试
+- **74/74 PASS** (dispatch 25 + voting 7 + routing 14 + eras 10 + cycle 5 + coherence 6 + generation 7)
+- 较 v2.8 (46) 净增 28 tests · 较 beta.1 (56) 净增 18 tests
+
+### 新文件清单
+- `engine/cycle.mjs` + `engine/cycle.test.mjs` + `workflows/comeback-cycle.md`
+- `engine/coherence.mjs` + `engine/coherence.test.mjs`
+- `engine/generation.mjs` + `engine/generation.test.mjs` + `lineages/generation.md`
+
+### Breaking changes
+无。v2.x API 全部向后兼容。
+
+### 不做的事
+- ❌ 联邦/federated council (用户明确否决)
+- ❌ 男团 (留 v3.5)
+
+---
+
+
+
+**v3.0 K-pop 工业级视觉策略系统 · Phase 1: Era Universe**
+
+把 group palette 从 "1 套" 升维到 "N 个 era × N 套"。同一团不同专辑视觉宇宙独立。
+
+**新数据 (groups/*.md)**
+- 52 团全部新增 `eras:` frontmatter 字段
+- 12 顶级团 (twice/bp/ive/aespa/nj/itzy/rv/lsf/idle/mmm/illit/meovv) 各 1-4 个 curated era · 共 35 era
+- 40 其他团各 1 个 default era 兜底 (待人工补充)
+- 每 era 含: palette / mood / typography_keywords / mv_grammar / photocard_style / generation / motion_hint / forbidden
+
+**新引擎 (engine/eras.mjs)**
+- `parseEras(raw)` — 从 group .md frontmatter 解析 eras 块
+- `loadAllEras()` — 一次性索引所有 group → era map
+- `listGroupEras(group_slug)` — 列某团所有 era
+- `getEraDNA(group_slug, era_slug)` — 拿单 era 完整 DNA
+- `detectEra(brief)` — brief → 命中 era (era_name / album / slug 三种匹配)
+- `getEraLockedDNA(brief)` — 命中后返回 primary era + summary
+- `checkEraForbidden(brief, era)` — 违规检测 (e.g. Fancy era 不准用 Y2K)
+
+**新测试 (engine/eras.test.mjs)**
+- 10 tests · 全 PASS (load/list/getDNA/detect/lock/forbidden)
+
+**总测试数**: 56/56 PASS (dispatch 25 + voting 7 + routing 14 + eras 10)
+
+**新示例 (examples/era-demo.mjs)**
+- 跑 5 个 brief 看 era 命中、DNA 输出、forbidden 警告
+
+**演示场景**
+```
+"TWICE Fancy era 风格的电商 landing"
+  → 🔒 锁定 twice/fancy
+    palette: #2E2E3E 工业灰 + #B8A0C9 雾紫 + #D4AF7A 香槟金
+    typography: Didot · Bodoni · 衬线 · 大留白
+    forbidden: Y2K 贴纸 · 高饱和粉 · 校园元素 · 可爱字体
+```
+
+**Phase 路线图 (v3.0 全套)**
+- ✅ Phase 1: Era Universe (本次)
+- ⏳ Phase 2: Comeback Cycle (30 天 7 节点 brief 日历)
+- ⏳ Phase 3: Multi-touchpoint (MV/SNS/Photocard/Lightstick/Stage 一致性)
+- ⏳ Phase 4: Generation Lint (2/3/4/5 代审美错位禁止)
+
+---
 ## v2.4.0 (2026-05-30) — 🎯 Activate The 116 (idol 不再是投票傀儡)
 
 **用户问到的盲点**: "我那么多 idol 有什么作用?"
