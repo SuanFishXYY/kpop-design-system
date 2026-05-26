@@ -11,10 +11,10 @@ function assert(cond, msg) { if (!cond) throw new Error(msg || "assertion failed
 
 console.log("\n=== dispatch.mjs integration tests ===\n");
 
-test("loadAllAgents 加载 44 souls + 116 idols + 7 judges", () => {
+test("loadAllAgents 加载 45 souls + 116 idols + 7 judges", () => {
   const { souls, idols, judges } = loadAllAgents();
   console.log(`     souls=${souls.length}  idols=${idols.length}  judges=${(judges||[]).length}`);
-  assert(souls.length >= 40, `expected ~44 souls, got ${souls.length}`);
+  assert(souls.length >= 45, `expected ≥45 souls, got ${souls.length}`);
   assert(idols.length === 116, `expected 116 idols, got ${idols.length}`);
   assert((judges||[]).length >= 7, `expected ≥7 judges, got ${(judges||[]).length}`);
 });

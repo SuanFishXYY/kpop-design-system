@@ -1,5 +1,34 @@
 ﻿# Changelog
 
+## v1.3.1 · 2025 · 体检修复 (data integrity)
+
+体检发现 5 处 slug↔group_name 错乱 + 文档过时:
+
+### 🔧 修复
+
+**团魂 slug 重新归位**:
+- `h2h` 原标 "H1-KEY" → 改为 **Hearts2Hearts** (5代 HYBE, 2025, 6人接班团)
+- `kiii` 原标 "KISS OF LIFE" → 改为 **KiiiKiii** (5代, Y2K girl crush)
+- `kol` 原标 "Kep1er & 选秀传承" (错乱) → 改为 **KISS OF LIFE** (4代 R&B)
+- ✨ 新增 `groups/smn.md` → **SAY MY NAME** (5代 HYBE/SOURCE, 2025)
+
+**idol agent 字段标准化**:
+- snsd-taeyeon: `group: "Girls' Generation (SNSD)"` → `"Girls' Generation"`
+- wjsn-exy: `group: "WJSN/Cosmic Girls"` → `"WJSN"`
+
+### 📝 文档更新
+
+- SKILL.md description / 议会构成表 (v1.0→v1.3 · 97→116 idol · 4 层架构)
+- package.json description (116 idols · 45 group souls · 7 judges)
+- README.md badges + 议会构成全章节重写
+- 议会层级现在显示: judges 7 / souls 45 / tier_0 71 / tier_1 45
+
+### ✅ 测试
+
+- voting.test.mjs: 7/7 PASS
+- dispatch.test.mjs: 15/15 PASS
+- 总计 **22/22 PASS** (souls 期望从 ≥40 收紧到 ≥45)
+
 ## v1.3.0 · 2025 · 热门团满员 (MEOVV / KATSEYE / Kep1er)
 
 ### 🎵 idol 补齐 (102 → 116)

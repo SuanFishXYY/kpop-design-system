@@ -1,11 +1,13 @@
 ﻿# 🎤 KPOP Design System · The Idol Congress
 
-> KPOP 女团圣人议会 · 97 idol agent · 4 代际 36 团 · 哲学驱动多智能体 UI 设计语言体系
+> KPOP 女团圣人议会 · 116 idol · 45 团魂 · 7 评委 · 4 层议会架构 · 真投票引擎 · 哲学驱动多智能体 UI 设计语言体系
 
-[![version](https://img.shields.io/badge/version-1.0.0-pink.svg)](./CHANGELOG.md)
+[![version](https://img.shields.io/badge/version-1.3.0-pink.svg)](./CHANGELOG.md)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
-[![idols](https://img.shields.io/badge/idols-97-purple.svg)](#)
-[![groups](https://img.shields.io/badge/groups-36-orange.svg)](#)
+[![idols](https://img.shields.io/badge/idols-116-purple.svg)](#)
+[![group_souls](https://img.shields.io/badge/group_souls-45-magenta.svg)](#)
+[![judges](https://img.shields.io/badge/judges-7-gold.svg)](#)
+[![tests](https://img.shields.io/badge/tests-22%2F22%20PASS-green.svg)](#)
 
 ## ⚡ 一键安装
 
@@ -20,16 +22,30 @@ npx --yes github:SuanFishXYY/kpop-design-system
 
 装完即用, **无需手动 /skill add**。
 
-## 🎙 议会构成 (97 人)
+## 🎙 议会构成 · 4 层架构 (116 idol)
 
-### Tier 0 · 全员议会 (52, vote weight = 2)
-8 大热门 + Red Velvet + MAMAMOO + ILLIT + BABYMONSTER 全员
+| Layer | 数量 | weight | veto |
+|-------|------|--------|------|
+| 🏛 评委 (judges/) | 7 | **5** | portfolio_only |
+| 👯 团魂 (groups/) | 45 | 3 | yes |
+| 🌟 Tier 0 (主力) | 71 | 2 | no |
+| 💎 Tier 1 (辅助) | 45 | 1.5 | no |
 
-### Tier 1 · 代际 leader (45, vote weight = 1.5)
-- 2-2.5代 16 团 leader: SNSD/2NE1/KARA/f(x)/Apink/SISTAR/EXID/miss A 等
-- 3代其他 6 leader: GFRIEND/OH MY GIRL/Lovelyz/WJSN/MOMOLAND/Dreamcatcher
-- 4代其他 3 leader: NMIXX/STAYC/Kep1er
-- 5代其他 8 leader: KISS OF LIFE/MEOVV/izna/tripleS/KiiiKiii/Hearts2Hearts/KATSEYE/SAY MY NAME
+### Tier 0 · 主力 idol (71)
+8 大热门全员 + RV / MAMAMOO / ILLIT / BABYMONSTER / NMIXX / KATSEYE / MEOVV / Kep1er 等热门团主力
+
+### Tier 1 · 辅助 idol (45)
+- 2-2.5代 16 团 leader (SNSD/2NE1/KARA/f(x)/Apink/SISTAR/EXID/miss A 等)
+- 3代/4代/5代 其他团 leader 与跨团助攻
+
+### 🏛 评委层 (7)
+- 🟢 **jyp** 朴轸永 — TWICE / ITZY / NMIXX
+- 🖤 **yg** 杨贤硕 — BLACKPINK / 2NE1 / MEOVV
+- 💎 **sm** 李秀满 — SNSD / RV / aespa
+- 🌐 **bang-pd** 방시혁 (HYBE) — LE SSERAFIM / ILLIT / KATSEYE
+- 🐰 **mhj** 민희진 (ADOR) — NewJeans
+- 👑 **starship** 홍승성 — IVE / WJSN / Kep1er
+- 🎛️ **teddy** Teddy Park — MEOVV / BP producer
 
 ## 🌐 触发方式
 

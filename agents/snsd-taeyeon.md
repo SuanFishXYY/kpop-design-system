@@ -3,7 +3,7 @@ name: snsd-taeyeon
 description: "Kim Tae-yeon (김태연) · Girls' Generation (SNSD) · Leader / Main Vocal · 个性: 2代国民妹妹·主唱女皇·音色 · UI: 国民主唱 · 长内容 voice"
 stage_name: "Taeyeon"
 real_name: "Kim Tae-yeon (김태연)"
-group: "Girls' Generation (SNSD)"
+group: "Girls' Generation"
 era: "2 代"
 role: "Leader / Main Vocal"
 tier: 1

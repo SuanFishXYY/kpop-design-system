@@ -3,7 +3,7 @@ name: wjsn-exy
 description: "Chu Soo-jin (추수진) · WJSN/Cosmic Girls · Leader / Main Rapper · 个性: 3代队长·rapper·长腿 · UI: 宇宙少女 · cosmic theme"
 stage_name: "Exy"
 real_name: "Chu Soo-jin (추수진)"
-group: "WJSN/Cosmic Girls"
+group: "WJSN"
 era: "3 代"
 role: "Leader / Main Rapper"
 tier: 1
