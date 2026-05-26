@@ -1,3 +1,39 @@
+## v1.6.0 (2026-05-26) — 🏆 概念 rebrand: 议会 → 年度歌谣大赏 (Awards Show)
+
+**核心叙事重定位**
+- 旧叙事「Idol Congress 议会」过于学究, 与系统真实机制不匹配
+- 新叙事「KPOP Music Awards · 年度歌谣大赏」更贴近现实映射 (KBS 가요대축제 / MAMA / Golden Disc 颁奖典礼)
+
+**词汇映射表 (向后兼容 · 不破坏代码)**
+- 议会 (council) → **舞台阵容 (Stage Lineup)**
+- 召集 (summon) → **编排上台 (setLineup)**
+- 评委 (judges) → **评审团 (Awards Panel)**
+- 团魂 (group_soul) → **团代表 (Group Anchor)**
+- idol → **舞台担当 (Performer)**
+- 粉丝团 (fandom) → **现场投票 (Audience Vote)**
+- 投票 (vote) → **评审打分 (Score)**
+- veto → **评委不署名 (No Award)**
+- fusion → **合作舞台 (Collab Stage)**
+- rivalry → **年度对决 (Awards Showdown)**
+- stage 模板 → **奖项类目 (Award Category)**
+- lineage → **传承大奖 (Legacy Lineage)**
+
+**新 API 别名 (engine/dispatch.mjs)**
+- `setLineup` = `summonCouncil` (alias)
+- `judgeProposal` = `dispatchBrief` (alias)
+- `buildAwardsStage` / `scoreAwardsStage` (alias)
+- 旧函数保留, 完全向后兼容
+
+**Docs**
+- SKILL.md 全部叙事 rebrand
+- package.json description 升级颁奖典礼叙事
+- README rebrand 待 v1.6.x
+
+**Tests**: 32/32 PASS (无回归)
+
+**为什么这一步**: 在 v1.5 把生态打通后, 用户洞察到机制本质是"年度歌谣大赏 + 评委投票" 而非"圣人议会"。叙事换皮一步到位, 为 v2.0 代码层重命名铺路。
+
+---
 ## v1.5.0 (2026-05-26) — ⚔️🎬🧬 D+E+F 三连闭环 (LINEAGE + Stage + RIVALRY)
 
 **F · RIVALRY 宿敌机制**

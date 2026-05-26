@@ -1,7 +1,7 @@
 ---
 name: kpop-design-system
-description: "KPOP Design System v1.5 · KPOP女团圣人议会 · 116 idol + 45 团魂 + 7 评委 + 45 粉丝团 + 5 场景 + 5 谱系 · 5 层议会架构 · 团色 HEX + signature_tracks + RIVALRY 宿敌张力 + Stage 场景模板 + LINEAGE 师承谱系 · 哲学驱动多智能体 UI 设计语言体系 · 真投票引擎 (voting.mjs + dispatch.mjs · 25+7 测试 PASS) · 跨团 fusion + 跨 label gate · Activate on '/kpop', '/女团', '/idol-congress', '/kpop-design'. Trigger phrases: '女团', 'kpop', 'idol', 'TWICE', 'BLACKPINK', 'IVE', 'NewJeans', 'aespa', '议会', 'congress', 'comeback', 'debut'."
-version: 1.5.0
+description: "KPOP Music Awards · 年度歌谣大赏设计系统 v1.6 · 116 舞台担当 + 45 团代表 + 7 评审团 + 45 现场投票 + 5 奖项类目 + 5 传承大奖 · weighted scoring + 评委不署名 veto + 跨社合作 gate + 年度对决 RIVALRY · 颁奖典礼叙事 (Awards Show Narrative) · 真打分引擎 (voting.mjs + dispatch.mjs · 25+7 PASS) · Activate on '/kpop', '/女团', '/idol-congress', '/kpop-awards', '/kpop-design'. Trigger phrases: '女团', 'kpop', 'idol', 'TWICE', 'BLACKPINK', 'IVE', '颁奖', 'awards', '歌谣大赏', 'comeback', 'debut'."
+version: 1.6.0
 author: 算鱼工作�?license: MIT
 language: zh-CN
 flavor: kpop
@@ -9,44 +9,91 @@ philosophy: enabled
 tags: [design-system, multi-agent, kpop, idol, philosophy, onboarding, ui, modal, wizard, hero, animation, copywriting, brand-voice, ai-native, korean, chinese]
 ---
 
-# 🎤 KPOP 设计系统 · The Idol Congress · v1.5
+# 🏆 KPOP 设计系统 · 年度歌谣大赏 · v1.6
 
-> 🎯 **快速召唤**: 在 Copilot / Claude / Codex / Gemini / Antigravity 任一 CLI 输入 /kpop 或 /女团 即可强制激活本 skill 进入议会模式。
-> *一个舞台, 116 个 idol + 45 团魂 + 7 评委 + 45 粉丝团 + 5 场景模板 + 5 师承谱系。从用户登录的前 3 秒, 到第 3000 次点击, 每一寸像素都是一场 comeback stage。*
+> 🎯 **快速召唤**: 在 Copilot / Claude / Codex / Gemini / Antigravity 任一 CLI 输入 /kpop 或 /女团 即可强制激活本 skill 进入**颁奖典礼模式**。
+>
+> *一座颁奖典礼舞台。116 舞台担当 + 45 团代表 + 7 评审团 + 45 现场投票席。从用户登录的前 3 秒, 到第 3000 次点击, 每一寸像素都在角逐年度大赏。*
 
-## 🎙 议会构成 · 5 层架构
+## 🎙 不是议会, 是 **年度歌谣大赏** (Music Awards Show)
 
-| Layer | 数量 | vote weight | veto | 构成 |
-|-------|------|-------------|------|------|
-| 🏛 **评委 (judges/)** | 7 | **5** | portfolio_only | JYP / YG / SM / HYBE / ADOR / Starship / THEBLACKLABEL |
-| 👯 **团魂 (groups/)** | 45 | 3 | yes | palette(HEX) + signature_tracks + rivals |
-| 🌟 Tier 0 (主力 idol) | 71 | 2 | no | 热门团主力 |
-| 💎 Tier 1 (辅助 idol) | 45 | 1.5 | no | 跨团 helpers |
-| 💗 **粉丝团 (fandoms/)** | 45 | 1 | no | ONCE/BLINK/DIVE... user_proxy |
+| 旧叙事 (议会) | 新叙事 (歌谣大赏) | 现实映射 |
+|------|------|------|
+| 议会 (council) | **舞台阵容 / Stage Lineup** | KBS 가요대축제 节目单 |
+| 召集 (summon) | **编排上台 / setLineup** | 节目组定 lineup |
+| 评委 (judges) | **评审团 / Awards Panel** | 经纪公司代表 |
+| 团魂 (group_soul) | **团代表 / Group Anchor** | 队长上台发言 |
+| idol | **舞台担当 / Performer** | 现场表演 |
+| 粉丝团 (fandom) | **现场投票 / Audience Vote** | 场内+线上观众投票 |
+| 投票 (vote) | **评审打分 / Score** | 评审打分 + 观众投票综合 |
+| veto | **评委不署名 / No Award** | 评委拒绝背书 |
+| pass | **奖项归属 / Award Granted** | 大奖颁出 |
+| reject | **空奖位 / No Award** | "本奖项空缺" |
+| fusion | **合作舞台 / Collab Stage** | MAMA 合作舞台 |
+| rivalry | **年度对决 / Awards Showdown** | "三代两强同台对决" |
+| stage 模板 | **奖项类目 / Award Category** | 最佳新人/年度专辑 |
+| lineage | **传承大奖 / Legacy Lineage** | 传承奖提名链 |
 
-## 🎨 v1.4 三连 · A · 团色 / C · 主打歌
+## 🏆 5 层评分结构 (Awards Scoring)
 
-每团魂含: `palette: {primary,secondary,accent}` (HEX) + `mood_keywords` + `signature_tracks[3]` (title/year/mood/bpm)
+| Layer | 数量 | weight | veto | 角色 |
+|-------|------|--------|------|------|
+| 🎙️ **评审团 (judges/)** | 7 | **5** | portfolio_only | JYP/YG/SM/HYBE/ADOR/Starship/THEBLACKLABEL |
+| 🎤 **团代表 (groups/)** | 45 | 3 | yes | 每团出场代表 · 含 palette + tracks + rivals |
+| ✨ **舞台担当 (Tier 0)** | 71 | 2 | no | 主推 idol · 真上台 |
+| 💫 **舞台助攻 (Tier 1)** | 45 | 1.5 | no | 跨团助攻 |
+| 📣 **现场投票 (fandoms/)** | 45 | 1 | no | ONCE/BLINK/DIVE... 观众视角 |
 
-## ⚔️ v1.5 新增 · F · RIVALRY 宿敌机制
+总计: **218 角色** · 真打分引擎 · 32/32 PASS
 
-每团魂含 `rivals: [...]` + `rivalry_narrative` — 当 brief 涉及互为宿敌的两团时，引擎自动检测并输出 `rivalry_check.pairs`，议会必须保留张力差异化，禁止强行调和。
-- BLACKPINK ↔ TWICE (3代两强) · aespa ↔ IVE (4代两强) · NewJeans ↔ ILLIT (HYBE 内战) · ...
+## 🎬 5 大奖项类目 (Award Categories · v1.5 stages 重命名)
 
-## 🎬 v1.5 新增 · E · Stage 场景模板 (5)
+`stages/` 5 个常见 brief 场景化预设, 对应 5 大奖项类目:
 
-`stages/` 5 个常见 brief 预设：`debut` / `comeback` / `concert` / `collab` / `landing`，每个含默认议会构成 + 决议前 checklist + sample_brief。
+| Slug | 奖项类目 | 现实映射 |
+|------|------|------|
+| 🎬 debut | **最佳新人** Best New Artist | "今年出道哪个团最强" |
+| 🔄 comeback | **年度回归** Best Comeback | 三专四专级别回归 |
+| 🎤 concert | **年度演唱会** Best Concert KV | 演唱会主视觉大奖 |
+| 🤝 collab | **最佳合作舞台** Best Collab | MAMA 合作舞台奖 |
+| 🌐 landing | **最佳官方品牌** Best Brand KV | 官网/品牌主视觉 |
 
-## 🧬 v1.5 新增 · D · LINEAGE 师承谱系 (5)
+## 🧬 5 大传承大奖 (Legacy Lineage · v1.5 lineages)
 
-`lineages/` 5 条 2代→5代传承链：`main_vocal` / `rap_line` / `visual_center` / `leader_dna` / `dance_machine`
-- 主唱: SNSD-Taeyeon → TWICE-Jihyo → IVE-Wonyoung → ILLIT-Iroha
-- Rapper: 2NE1-CL → BLACKPINK-Jennie → aespa-Karina → BABYMONSTER-Asa
+| Slug | 类目 | 谱系 (2代→5代) |
+|------|------|------|
+| 🎤 main_vocal | **主唱传承奖** | SNSD-Taeyeon → TWICE-Jihyo → IVE-Wonyoung → ILLIT-Iroha |
+| 🔥 rap_line | **Rap 传承奖** | 2NE1-CL → BLACKPINK-Jennie → aespa-Karina → BABYMONSTER-Asa |
+| 💎 visual_center | **Visual 传承奖** | SNSD-Yoona → TWICE-Tzuyu → IVE-Wonyoung → NewJeans-Hanni |
+| 👑 leader_dna | **Leader 传承奖** | SNSD-Taeyeon → TWICE-Jihyo → IVE-Yujin → BABYMONSTER-Ruka |
+| 💃 dance_machine | **Dance 传承奖** | TWICE-Momo → ITZY-Yeji → aespa-Karina → BABYMONSTER-Rora |
 
-## ⚙️ 真投票引擎 (engine/)
+## ⚔️ 年度对决 (Awards Showdown · v1.5 rivalry)
 
-- `engine/voting.mjs` — 加权陪审团 (≥2/3 通过)
-- `engine/dispatch.mjs` — brief → 召集 → fusion → cross-label → rivalry → 投票
+颁奖典礼最大看点: **同台对决**。16 个团代表互列 rival, 触发 `rivalry_check.pairs`:
+- 三代两强: BLACKPINK ↔ TWICE
+- 四代两强: aespa ↔ IVE
+- HYBE 内战: NewJeans ↔ ILLIT
+- (G)I-DLE ↔ ITZY (Self-Made vs JYP-Made)
+
+**评分 guidance**: "颁奖典礼须保留对决张力, 禁止强行调和"
+
+## 🎨 团代表数据资产 (Group Anchor Assets)
+
+每个 anchor frontmatter 含:
+- `palette: {primary, secondary, accent}` — 团代表色 HEX (上台舞美色)
+- `signature_tracks: [3 首]` — 出场打歌主打 (title/year/mood/bpm)
+- `mood_keywords` — 气质标签
+- `rivals` + `rivalry_narrative` — 同台对决名单
+
+## ⚙️ 真打分引擎 (engine/)
+
+- `engine/voting.mjs` — 加权评分 (≥2/3 通过 / 评委不署名 > 团代表不署名)
+- `engine/dispatch.mjs` — 提案 → 编排 lineup → 合作 check → 跨社 check → 对决 check → 评分 → 奖项归属
+- **新别名 API** (v1.6 颁奖典礼叙事):
+  - `setLineup(brief)` = `summonCouncil(brief)`
+  - `judgeProposal(brief)` = `dispatchBrief(brief)`
+  - `buildAwardsStage(brief)` / `scoreAwardsStage(brief)`
 - 测试: voting 7/7 + dispatch 25/25 = **32/32 PASS**
 
 ## 🔀 跨团融合 + �?label gate

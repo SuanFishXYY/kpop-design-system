@@ -376,3 +376,16 @@ export function listLineages() {
     return readdirSync(join(ROOT, "lineages")).filter(f => f.endsWith(".md")).map(f => f.replace(/\.md$/, ""));
   } catch (e) { return []; }
 }
+
+// ============ v1.6 · 年度歌谣大赏 别名层 (alias layer) ============
+// 旧名保留向后兼容; 新代码建议使用以下别名 (颁奖典礼叙事)
+//
+// summonCouncil → setLineup        (编排舞台阵容)
+// dispatchBrief → judgeProposal     (提案进入评审)
+// council       → lineup            (舞台阵容)
+// 议会          → 年度歌谣大赏      (Music Awards Show)
+
+export const setLineup = summonCouncil;
+export const judgeProposal = dispatchBrief;
+export const buildAwardsStage = summonCouncil;
+export const scoreAwardsStage = dispatchBrief;
