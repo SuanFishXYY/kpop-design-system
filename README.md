@@ -22,6 +22,10 @@ npx --yes github:SuanFishXYY/kpop-design-system
 
 装完即用, **无需手动 /skill add**。
 
+## 📋 完整名单
+
+**👉 [116 Idol 大一览表 →](./docs/IDOL-ROSTER.md)** — 每个 idol 的 stage_name / role / ui_specialty / personality / quote 全表（v2.5.0 起按 group 分组）
+
 ## 🎙 议会构成 · 4 层架构 (116 idol)
 
 | Layer | 数量 | weight | veto |
