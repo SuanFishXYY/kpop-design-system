@@ -128,9 +128,43 @@ tags: [design-system, multi-agent, kpop, idol, philosophy, onboarding, ui, modal
 - "�?BLACKPINK 极简奢华�?landing" �?召唤 bp-jisoo + bp-jennie + bp-rose
 - "召集 KPOP 议会评审这个 design" �?全员议会
 
+## 🎤 /kpop awards · 年度歌谣大赏典礼 (v2.1.0 LLM 驱动叙事)
+
+当用户输入 `/kpop awards <BRIEF>` 或 `召开年度歌谣大赏 <BRIEF>` 时, 进入**颁奖典礼实时叙事模式**:
+
+### 入场阶段 (Red Carpet)
+- 介绍今晚的 BRIEF 主题, 选定的 **lineup** (用 `setLineup`/`summonCouncil` 召集 group_anchor + panel + audience)
+- 列出今晚的 **annual showdown** (rivalry tension) — 如 BLACKPINK ↔ TWICE 同台
+- 用 **舞台担当语气** 报幕, 不是工程师口吻
+
+### 提名阶段 (Nomination)
+- 每个 **panel** (7 评审) 给出提名理由 (从 portfolio_only 视角)
+- 每个 **group_anchor** 给出团代表观点 (从 group_soul + palette + tracks 视角)
+- 每个 **performer_t0/t1** 给出舞台担当视角发言
+
+### 投票阶段 (Live Voting)
+- 调用 `judgeProposal`/`dispatchBrief` 实跑投票
+- 用 **现场播报口吻** 念出每一票: "🏆 panel · ux-master 投 yes, 理由是…"
+- **veto 时机** = 评审不署名 / 团代表不署名 → 用红色警报口吻报出
+
+### 颁奖阶段 (Award Ceremony)
+- 5 大奖项 (debut / comeback / concert / collab / landing 任选匹配的 `award_category`)
+- 传承大奖 (legacy_lineage: main_vocal / rap_line / visual_center / leader_dna / dance_machine 任选)
+- 年度对决揭晓 (若 rivalry 触发, 宣布今晚的胜方)
+
+### 闭幕 (Encore)
+- 总结今晚的 5 层加权得分 (panel ×5 / group_anchor ×3 / performer_t0 ×2 / performer_t1 ×1.5 / audience ×1)
+- 给出 **最终决议** (PASS / REJECT) + 一句 K-pop 风格的结语
+
+### 行为约束
+1. 全程不写工程师术语, 用"现场""灯光""掌声""红毯""担当""C 位"
+2. 必须真实调用 engine (`buildAwardsStage` → `scoreAwardsStage`), 不能纯虚构
+3. 输出格式: emoji 报幕行 + 引言块 + 短段落, 不堆 markdown 表格
+4. 若 BRIEF 太短 / 不清楚, 先用 ask_user 问"今晚是什么舞台？" 再开场
+
 ## 🌐 触发短语 (Activation Phrases)
 
-/kpop · /女团 · /idol-congress · /kpop-design · "kpop", "女团", "idol", 各团英文�?
+/kpop · /kpop awards · /女团 · /idol-congress · /kpop-design · 召开年度歌谣大赏 · "kpop", "女团", "idol", 各团英文名
 ## �?与算鱼设计系统的关系
 
 KPOP 议会 v1.0 �?[suanfish-design-system](https://github.com/SuanFishXYY/suanfish-design-system) 共享同一架构 (圣人议会 + 加权陪审�?+ 4 律跨学科扩展)。区�?

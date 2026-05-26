@@ -1,3 +1,21 @@
+## v2.1.0 (2026-05-27) — 🎤 /kpop awards · 年度歌谣大赏典礼 (Plan C 闭环)
+
+**Plan C 上线**: LLM 驱动的颁奖典礼实时叙事模式. 触发 /kpop awards <BRIEF> 进入红毯→提名→投票→颁奖→闭幕的完整典礼流程.
+
+**新增 SKILL.md 章节**: ## 🎤 /kpop awards · 年度歌谣大赏典礼
+- 5 阶段叙事协议 (Red Carpet / Nomination / Live Voting / Award Ceremony / Encore)
+- 行为约束 4 条 (典礼口吻 / 必须真调引擎 / emoji 报幕格式 / BRIEF 不清先 ask_user)
+
+**触发短语扩展**: 新增 /kpop awards, 召开年度歌谣大赏
+
+**机制层不动**: 引擎 / 投票 / frontmatter 全部沿用 v2.0.0, Plan C 仅是表现层叙事协议. 32/32 tests 仍 PASS.
+
+**渐进式三连闭环完成** (v1.6 → v2.0 → v2.1):
+- v1.6.0 文档+别名 (zero risk)
+- v2.0.0 代码+数据 rename (双 reader 兼容)
+- v2.1.0 LLM 颁奖典礼叙事层 (zero engine change)
+
+---
 ## v2.0.0 (2026-05-26) — 🏆 BREAKING: 代码层完整 rename (Plan B 下)
 
 **主版本升级原因**: 把"年度歌谣大赏"叙事从 v1.6 的文档层下沉到代码层 + 数据层. 旧字段名通过双 reader 保留兼容.
