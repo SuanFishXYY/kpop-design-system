@@ -1,4 +1,4 @@
-﻿MIT License
+MIT License
 
 Copyright (c) 2025 算鱼工作室 (SuanFishXYY)
 
@@ -12,4 +12,29 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Attribution / 致谢
+
+kpop-design-system 的安装器架构、检测算法、防误装机制衍生自姊妹项目
+**suanfish-design-system** (https://github.com/SuanFishXYY/suanfish-design-system).
+
+The installer architecture, CLI detection algorithm, and anti-mis-install guard
+of kpop-design-system are derived from sister project
+**suanfish-design-system** (https://github.com/SuanFishXYY/suanfish-design-system).
+
+两个项目共享治理体系：Bug #1-#9 治理史、虚拟环境沙箱验证、虚拟机器装机规约。
+Both projects share governance lineage: Bug #1-#9 remediation history,
+virtual sandbox verification, virgin-machine install conventions.
+
+KPOP idol personality data is curated original work by 算鱼工作室.
+The 97 idol agent profiles, vote weights, attitude→UI mappings are original
+creative contributions and licensed under MIT alongside the codebase.
