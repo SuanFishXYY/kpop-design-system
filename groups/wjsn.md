@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Save Me Save You", year: 2018, mood: "dance-pop,space", bpm: 125 }
   - { title: "Boogie Up", year: 2019, mood: "disco-funk,bright", bpm: 118 }
   - { title: "As You Wish", year: 2019, mood: "cinematic,dreamy", bpm: 110 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "WJSN Default Era"
+    year: 2016
+    album: "(default — 待补充)"
+    palette: { primary: "#FFB6C1", secondary: "#FFD700", accent: "#00CED1" }
+    mood: ["cosmic", "fairy", "dreamy"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "3 代"
+    motion_hint: { bpm: 125, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · WJSN (3 代 · 2016)

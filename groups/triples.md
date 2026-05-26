@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Rising", year: 2023, mood: "sweet-pop,bright", bpm: 118 }
   - { title: "Girls Capitalism", year: 2023, mood: "sweet,manifesto", bpm: 122 }
   - { title: "Hit The Floor", year: 2024, mood: "teen-pop,energetic", bpm: 125 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "tripleS Default Era"
+    year: 2023
+    album: "(default — 待补充)"
+    palette: { primary: "#FFB6C1", secondary: "#FFD700", accent: "#FFFFFF" }
+    mood: ["cosmic", "teen", "fairy"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "24 人编队最多女团"
+    photocard_style: "default 拍立得"
+    generation: "4 代"
+    motion_hint: { bpm: 118, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · tripleS (4 代 · 2023)

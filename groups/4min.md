@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Hot Issue", year: 2009, mood: "electropop,confident", bpm: 125 }
   - { title: "Hate", year: 2016, mood: "trap,sass", bpm: 95 }
   - { title: "Crazy", year: 2015, mood: "moombahton,fierce", bpm: 108 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "4MINUTE Default Era"
+    year: 2009
+    album: "(default — 待补充)"
+    palette: { primary: "#FF1493", secondary: "#000000", accent: "#FFD700" }
+    mood: ["hot-issue", "sexy", "sharp"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "短暂高密度爆款"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 125, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · 4MINUTE (2 代 · 2009)

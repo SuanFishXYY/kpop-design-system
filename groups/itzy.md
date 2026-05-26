@@ -25,6 +25,43 @@ signature_tracks:
   - { title: "Wannabe", year: 2020, mood: "trap,aggressive", bpm: 105 }
   - { title: "Dalla Dalla", year: 2019, mood: "pop-house,confident", bpm: 115 }
   - { title: "Cheshire", year: 2022, mood: "alt-pop,witchy", bpm: 112 }
+eras:
+  - era_slug: "dalla_dalla"
+    era_name: "DALLA DALLA Era"
+    year: 2019
+    album: "IT'z Different"
+    palette: { primary: "#FF1493", secondary: "#FFE600", accent: "#00FFE5" }
+    mood: ["自我", "宣告", "rainbow", "Z 世代"]
+    typography_keywords: ["rainbow gradient", "手写大字", "贴纸"]
+    mv_grammar: "高饱和街头 + 涂鸦 + Z 世代"
+    photocard_style: "涂鸦卡"
+    generation: "4代"
+    motion_hint: { bpm: 122, easing: "snap pop", duration: "short" }
+    forbidden: ["奢华", "极简"]
+  - era_slug: "wannabe"
+    era_name: "WANNABE Era"
+    year: 2020
+    album: "IT'z ME"
+    palette: { primary: "#000000", secondary: "#FF0080", accent: "#FFFFFF" }
+    mood: ["叛逆", "I do what I wanna do", "黑白粉"]
+    typography_keywords: ["all caps 紧凑", "黑白对比", "粉色断点"]
+    mv_grammar: "时装秀 + 镜头切换 + I do what I wanna do"
+    photocard_style: "时装大片"
+    generation: "4代"
+    motion_hint: { bpm: 140, easing: "rebel", duration: "intense" }
+    forbidden: ["甜美", "粉嫩"]
+  - era_slug: "born_to_be"
+    era_name: "BORN TO BE Era"
+    year: 2024
+    album: "BORN TO BE"
+    palette: { primary: "#1A0033", secondary: "#FF003C", accent: "#FFFFFF" }
+    mood: ["蓄力宣战", "暗黑", "5 代过渡"]
+    typography_keywords: ["serif 暗黑", "血红", "罗马数字"]
+    mv_grammar: "暗黑战场 + 血红 + 战士盔甲"
+    photocard_style: "暗黑战士卡"
+    generation: "4代末/5代初"
+    motion_hint: { bpm: 134, easing: "war drum", duration: "long" }
+    forbidden: ["可爱", "彩虹"]
 ---
 
 # 👯 团魂 · ITZY (4 代 · 2019)

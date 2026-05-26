@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Roly-Poly", year: 2011, mood: "disco,viral", bpm: 125 }
   - { title: "Bo Peep Bo Peep", year: 2009, mood: "disco,cute", bpm: 120 }
   - { title: "Sexy Love", year: 2012, mood: "electro-pop,robot", bpm: 118 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "T-ARA Default Era"
+    year: 2009
+    album: "(default — 待补充)"
+    palette: { primary: "#FFB6C1", secondary: "#FFD700", accent: "#000000" }
+    mood: ["disco", "charm", "cute"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 125, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · T-ARA (2 代 · 2009)

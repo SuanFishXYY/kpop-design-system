@@ -25,6 +25,19 @@ signature_tracks:
   - { title: "Sheesh", year: 2024, mood: "hyperpop,aggression", bpm: 130 }
   - { title: "Stuck In The Middle", year: 2024, mood: "alt-rnb,assertive", bpm: 95 }
   - { title: "Drip", year: 2024, mood: "hip-hop,swag", bpm: 105 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "BABYMONSTER Default Era"
+    year: 2024
+    album: "(default — 待补充)"
+    palette: { primary: "#FF0000", secondary: "#000000", accent: "#FFD700" }
+    mood: ["hardcore", "monster", "powerful"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "7 国混血新势力"
+    photocard_style: "default 拍立得"
+    generation: "5 代"
+    motion_hint: { bpm: 130, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · BABYMONSTER (5 代 · 2024)

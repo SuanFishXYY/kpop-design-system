@@ -25,6 +25,19 @@ signature_tracks:
   - { title: "Make You Happy", year: 2020, mood: "sunny,uplifting", bpm: 116 }
   - { title: "Take a picture", year: 2021, mood: "cute,j-pop", bpm: 118 }
   - { title: "HEARTRIS", year: 2024, mood: "mature,pop", bpm: 120 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "NiziU Default Era"
+    year: 2020
+    album: "(default — 待补充)"
+    palette: { primary: "#FF6F61", secondary: "#FFD54F", accent: "#4FC3F7" }
+    mood: ["rainbow", "healing", "j-pop"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "J-pop 治愈 + K-pop 训练 · nizi project"
+    photocard_style: "default 拍立得"
+    generation: "4 代"
+    motion_hint: { bpm: 116, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · NiziU (4 代 · 2020)

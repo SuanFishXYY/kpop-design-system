@@ -25,6 +25,55 @@ signature_tracks:
   - { title: "I AM", year: 2023, mood: "self-declare,majestic", bpm: 118 }
   - { title: "Eleven", year: 2021, mood: "fairy-tale,marching", bpm: 122 }
   - { title: "Love Dive", year: 2022, mood: "princess,electric", bpm: 118 }
+eras:
+  - era_slug: "eleven"
+    era_name: "ELEVEN Era"
+    year: 2021
+    album: "ELEVEN"
+    palette: { primary: "#E8B7C9", secondary: "#FFFFFF", accent: "#C9A87C" }
+    mood: ["出道公主", "数字宣告", "梦幻"]
+    typography_keywords: ["serif elegant", "数字大字符", "象牙白底"]
+    mv_grammar: "宫殿 + 镜子 + 数字 11 反复 + 公主登场"
+    photocard_style: "公主肖像油画"
+    generation: "4代"
+    motion_hint: { bpm: 116, easing: "regal", duration: "medium" }
+    forbidden: ["街头", "暗黑", "重口味"]
+  - era_slug: "after_like"
+    era_name: "After Like Era"
+    year: 2022
+    album: "After Like"
+    palette: { primary: "#F5B5C5", secondary: "#9B7BB8", accent: "#FFF2CC" }
+    mood: ["disco 复古", "I Will Survive", "甜炸"]
+    typography_keywords: ["复古 disco", "rounded sans", "彩虹色"]
+    mv_grammar: "夜总会 + 旋转球 + 高饱和复古"
+    photocard_style: "复古唱片封套"
+    generation: "4代"
+    motion_hint: { bpm: 130, easing: "disco bounce", duration: "loop" }
+    forbidden: ["极简", "冷调"]
+  - era_slug: "i_am"
+    era_name: "I AM Era"
+    year: 2023
+    album: "I've IVE"
+    palette: { primary: "#C9F5E8", secondary: "#FFFFFF", accent: "#7CB9E8" }
+    mood: ["自我宣言", "薄荷糖", "清新"]
+    typography_keywords: ["大写 I AM", "几何无衬线", "薄荷色字"]
+    mv_grammar: "森林 + 薄荷糖 + 自然清新 + 镜面反射"
+    photocard_style: "薄荷糖盒包装"
+    generation: "4代"
+    motion_hint: { bpm: 116, easing: "fresh breeze", duration: "medium" }
+    forbidden: ["暗黑", "工业"]
+  - era_slug: "i_have"
+    era_name: "I HAVE Era"
+    year: 2024
+    album: "I've MINE / IVE EMPATHY"
+    palette: { primary: "#1A1A2E", secondary: "#E8D9C0", accent: "#D946EF" }
+    mood: ["成熟蜕变", "暗夜公主", "magnetic"]
+    typography_keywords: ["serif 现代", "金属紫", "夜色"]
+    mv_grammar: "豪宅夜景 + 紫色霓虹 + 强 visual"
+    photocard_style: "夜色金箔"
+    generation: "4代末"
+    motion_hint: { bpm: 100, easing: "magnetic pull", duration: "long sustain" }
+    forbidden: ["校园清新", "公主梦幻"]
 ---
 
 # 👯 团魂 · IVE (4 代 · 2021)

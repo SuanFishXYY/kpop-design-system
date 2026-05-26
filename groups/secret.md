@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Madonna", year: 2010, mood: "brass-funk,sexy", bpm: 115 }
   - { title: "Shy Boy", year: 2011, mood: "swing,cute", bpm: 120 }
   - { title: "Magic", year: 2010, mood: "electropop,sweet", bpm: 125 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "Secret Default Era"
+    year: 2009
+    album: "(default — 待补充)"
+    palette: { primary: "#FFB6C1", secondary: "#FFD700", accent: "#000000" }
+    mood: ["sexy", "swing", "charm"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 115, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · Secret (2 代 · 2009)

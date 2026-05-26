@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Up & Down", year: 2014, mood: "electro-pop,sexy", bpm: 125 }
   - { title: "Hot Pink", year: 2015, mood: "electropop,witchy", bpm: 128 }
   - { title: "L.I.E", year: 2016, mood: "hip-hop,assertive", bpm: 105 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "EXID Default Era"
+    year: 2012
+    album: "(default — 待补充)"
+    palette: { primary: "#FFA500", secondary: "#FF1493", accent: "#000000" }
+    mood: ["comeback-queen", "sexy", "sass"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 125, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · EXID (2 代 · 2012)

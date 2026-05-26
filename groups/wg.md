@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Nobody", year: 2008, mood: "retro-disco,iconic", bpm: 110 }
   - { title: "Tell Me", year: 2007, mood: "retro-pop,viral", bpm: 130 }
   - { title: "I Feel You", year: 2015, mood: "80s-retro,sass", bpm: 118 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "Wonder Girls Default Era"
+    year: 2007
+    album: "(default — 待补充)"
+    palette: { primary: "#FFB6C1", secondary: "#FFD700", accent: "#000000" }
+    mood: ["retro", "nobody", "classic"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "complex band 复古"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 110, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · Wonder Girls (2 代 · 2007)

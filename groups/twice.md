@@ -25,6 +25,55 @@ signature_tracks:
   - { title: "Cheer Up", year: 2016, mood: "bright,shooting star", bpm: 132 }
   - { title: "TT", year: 2016, mood: "playful,heartbreak", bpm: 118 }
   - { title: "Feel Special", year: 2019, mood: "intimate,string", bpm: 105 }
+eras:
+  - era_slug: "cheer_up"
+    era_name: "Cheer Up Era"
+    year: 2016
+    album: "Page Two"
+    palette: { primary: "#FFB6E1", secondary: "#FFEFA0", accent: "#FF80AB" }
+    mood: ["甜美", "校园", "高饱和", "shooting star"]
+    typography_keywords: ["圆润", "贴纸感", "Y2K", "marker"]
+    mv_grammar: "校园 + 操场 + 粉色滤镜 + cheerleader"
+    photocard_style: "polaroid + sticker"
+    generation: "3代初"
+    motion_hint: { bpm: 132, easing: "snappy bouncy", duration: "short loop" }
+    forbidden: ["工业灰", "冷调", "杂志大片", "极简留白"]
+  - era_slug: "fancy"
+    era_name: "Fancy Era"
+    year: 2019
+    album: "Fancy You"
+    palette: { primary: "#2E2E3E", secondary: "#B8A0C9", accent: "#D4AF7A" }
+    mood: ["冷感", "高级", "杂志", "都市孤独"]
+    typography_keywords: ["Didot", "Bodoni", "衬线", "大留白"]
+    mv_grammar: "工业空间 + 冷光 + 定格凝视 + 高对比"
+    photocard_style: "杂志大片 + 哑光"
+    generation: "3代末"
+    motion_hint: { bpm: 122, easing: "slow burn", duration: "long sustain" }
+    forbidden: ["Y2K 贴纸", "高饱和粉", "校园元素", "可爱字体"]
+  - era_slug: "formula_of_love"
+    era_name: "Formula of Love Era"
+    year: 2021
+    album: "Formula of Love: O+T=<3"
+    palette: { primary: "#E8C5E5", secondary: "#A4D4F4", accent: "#F4D26B" }
+    mood: ["甜糖", "实验室", "科学少女", "粉彩"]
+    typography_keywords: ["手写体 + 等宽 mono", "化学公式排版", "试管 ascii"]
+    mv_grammar: "实验室 + 试管 + 化学公式 + 糖果"
+    photocard_style: "化学卡片 + 试纸贴"
+    generation: "4代初"
+    motion_hint: { bpm: 110, easing: "bubble pop", duration: "medium" }
+    forbidden: ["工业冷调", "monochrome"]
+  - era_slug: "ready_to_be"
+    era_name: "Ready to Be Era"
+    year: 2023
+    album: "Ready to Be"
+    palette: { primary: "#FFFFFF", secondary: "#F0E6D2", accent: "#000000" }
+    mood: ["极简", "蓄势", "成熟", "白色力量"]
+    typography_keywords: ["sans serif 紧凑", "极简 hero", "数字 1 切"]
+    mv_grammar: "极简白空间 + 大字母 + 静态构图"
+    photocard_style: "极简白底 + 一字标题"
+    generation: "4代中"
+    motion_hint: { bpm: 102, easing: "calm precise", duration: "long sustain" }
+    forbidden: ["糖果色", "贴纸", "校园", "繁复"]
 ---
 
 # 👯 团魂 · TWICE (3 代 · 2015)

@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Wa Da Da", year: 2022, mood: "euphoric,debut", bpm: 120 }
   - { title: "Up!", year: 2022, mood: "pop,confident", bpm: 118 }
   - { title: "Galileo", year: 2022, mood: "space,cinematic", bpm: 115 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "Kep1er Default Era"
+    year: 2022
+    album: "(default — 待补充)"
+    palette: { primary: "#FF69B4", secondary: "#FFD700", accent: "#FFFFFF" }
+    mood: ["wadada", "princess", "debut"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "girls planet 9 国联合"
+    photocard_style: "default 拍立得"
+    generation: "4 代"
+    motion_hint: { bpm: 120, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · Kep1er (4 代 · 2022)

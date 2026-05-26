@@ -25,6 +25,19 @@ signature_tracks:
   - { title: "Mascara", year: 2023, mood: "r&b,attitude", bpm: 92 }
   - { title: "Woke Up", year: 2024, mood: "trap,sharp", bpm: 95 }
   - { title: "Tippy Toes", year: 2023, mood: "minimal,confident", bpm: 100 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "XG Default Era"
+    year: 2022
+    album: "(default — 待补充)"
+    palette: { primary: "#000000", secondary: "#C0C0C0", accent: "#FF1744" }
+    mood: ["hip-hop", "sharp", "global"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "全英 K-pop · 日本制造 hip-hop"
+    photocard_style: "default 拍立得"
+    generation: "5 代"
+    motion_hint: { bpm: 92, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · XG (5 代 · 2022)

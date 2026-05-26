@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Mago", year: 2020, mood: "disco-pop,confident", bpm: 125 }
   - { title: "Rough", year: 2016, mood: "orchestra-pop,cinematic", bpm: 115 }
   - { title: "Time For The Moon Night", year: 2018, mood: "emotional,strings", bpm: 110 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "GFriend Default Era"
+    year: 2015
+    album: "(default — 待补充)"
+    palette: { primary: "#FFB6C1", secondary: "#FFD700", accent: "#FFFFFF" }
+    mood: ["power-vocal", "cinematic", "narrative"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "2.5 代"
+    motion_hint: { bpm: 125, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · GFriend (2.5 代 · 2015)

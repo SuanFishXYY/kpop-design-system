@@ -25,6 +25,19 @@ signature_tracks:
   - { title: "HIT YA!", year: 2022, mood: "latin,bouncy", bpm: 128 }
   - { title: "GRATATA", year: 2023, mood: "latin,sharp", bpm: 130 }
   - { title: "BEWITCHED", year: 2023, mood: "mystic,latin", bpm: 124 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "Lapillus Default Era"
+    year: 2022
+    album: "(default — 待补充)"
+    palette: { primary: "#7B1FA2", secondary: "#FFB300", accent: "#00ACC1" }
+    mood: ["latin", "global", "sparkle"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "多国籍 latin pop · MLD 万花筒"
+    photocard_style: "default 拍立得"
+    generation: "4 代"
+    motion_hint: { bpm: 128, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · Lapillus (4 代 · 2022)

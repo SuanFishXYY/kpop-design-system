@@ -25,6 +25,43 @@ signature_tracks:
   - { title: "Attention", year: 2022, mood: "y2k,jangle pop", bpm: 110 }
   - { title: "Hype Boy", year: 2022, mood: "y2k,bedroom pop", bpm: 112 }
   - { title: "OMG", year: 2023, mood: "sample-pop,carefree", bpm: 125 }少即多"反宣传感不可丢"
+eras:
+  - era_slug: "new_jeans_debut"
+    era_name: "New Jeans Debut Era"
+    year: 2022
+    album: "New Jeans"
+    palette: { primary: "#FFFFFF", secondary: "#7BB1E8", accent: "#FFB6C1" }
+    mood: ["Y2K 邻家", "校园", "牛仔", "纯真"]
+    typography_keywords: ["手写体", "海报 collage", "丹宁蓝"]
+    mv_grammar: "校园 + 老式录像带颗粒 + 自然光"
+    photocard_style: "拍立得 + 手写注释"
+    generation: "4代末"
+    motion_hint: { bpm: 100, easing: "casual stroll", duration: "medium" }
+    forbidden: ["奢华", "重金属", "巴洛克"]
+  - era_slug: "omg"
+    era_name: "OMG Era"
+    year: 2023
+    album: "OMG"
+    palette: { primary: "#A4D4F4", secondary: "#FFE8C7", accent: "#FFB6C1" }
+    mood: ["清新邻家", "卡通", "贴纸"]
+    typography_keywords: ["卡通 sticker", "粉笔字", "彩色 mark"]
+    mv_grammar: "教室 + 涂鸦 + 卡通滤镜"
+    photocard_style: "卡通贴纸卡"
+    generation: "4代末"
+    motion_hint: { bpm: 96, easing: "playful", duration: "loop" }
+    forbidden: ["奢华", "性感"]
+  - era_slug: "supershy"
+    era_name: "Super Shy Era"
+    year: 2023
+    album: "Get Up"
+    palette: { primary: "#FFD9E0", secondary: "#A4E8C7", accent: "#FFE066" }
+    mood: ["UK garage", "夏日", "害羞"]
+    typography_keywords: ["手写慢字", "粉嫩 marker", "拍立得边框"]
+    mv_grammar: "海边 + 跑动 + 自然光 + 拍立得"
+    photocard_style: "拍立得 polaroid"
+    generation: "4代末"
+    motion_hint: { bpm: 130, easing: "shy bounce", duration: "short loop" }
+    forbidden: ["暗黑", "正式衬线"]
 ---
 
 # 👯 团魂 · NewJeans (4 代 · 2022)

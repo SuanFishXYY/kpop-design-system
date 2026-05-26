@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Expectation", year: 2013, mood: "disco-pop,sweet", bpm: 118 }
   - { title: "Twinkle Twinkle", year: 2011, mood: "sweet-pop,confession", bpm: 125 }
   - { title: "Something", year: 2014, mood: "swing,sweet", bpm: 120 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "Girl's Day Default Era"
+    year: 2010
+    album: "(default — 待补充)"
+    palette: { primary: "#FFB6C1", secondary: "#FFFFFF", accent: "#FFD700" }
+    mood: ["sweet", "expectation", "simple"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 118, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · Girl's Day (2 代 · 2010)

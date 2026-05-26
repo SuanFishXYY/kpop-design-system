@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Bboom Bboom", year: 2018, mood: "brass-funk,viral", bpm: 110 }
   - { title: "Baam", year: 2018, mood: "trap-pop,carefree", bpm: 105 }
   - { title: "Wonderful Love", year: 2017, mood: "disco,fun", bpm: 125 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "MOMOLAND Default Era"
+    year: 2016
+    album: "(default — 待补充)"
+    palette: { primary: "#FF1493", secondary: "#FFD700", accent: "#FF0000" }
+    mood: ["fun", "disco", "carefree"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "3 代"
+    motion_hint: { bpm: 110, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · MOMOLAND (3 代 · 2016)

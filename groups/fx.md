@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "4 Walls", year: 2015, mood: "deep-house,art", bpm: 125 }
   - { title: "Electric Shock", year: 2012, mood: "electropop,addictive", bpm: 130 }
   - { title: "Hot Summer", year: 2011, mood: "electro,summer", bpm: 125 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "f(x) Default Era"
+    year: 2009
+    album: "(default — 待补充)"
+    palette: { primary: "#00CED1", secondary: "#FF00FF", accent: "#FFD700" }
+    mood: ["experimental", "electronic", "art"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "实验电子前卫"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 125, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · f(x) (2 代 · 2009)

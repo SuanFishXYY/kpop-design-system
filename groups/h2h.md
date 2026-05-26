@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "The Chase", year: 2025, mood: "y2k-natural,fresh", bpm: 118 }
   - { title: "Style", year: 2025, mood: "sweet,natural", bpm: 120 }
   - { title: "Pretty Dead", year: 2025, mood: "natural-pop,real", bpm: 115 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "Hearts2Hearts Default Era"
+    year: 2025
+    album: "(default — 待补充)"
+    palette: { primary: "#FFFAF0", secondary: "#FFD700", accent: "#FFB6C1" }
+    mood: ["natural", "innocent", "pure"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "纯净接班 girl group"
+    photocard_style: "default 拍立得"
+    generation: "5 代"
+    motion_hint: { bpm: 118, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · Hearts2Hearts (5 代 · 2025)

@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Dolphin", year: 2020, mood: "tropical-house,carefree", bpm: 118 }
   - { title: "Closer", year: 2015, mood: "sweet,bus-stop", bpm: 122 }
   - { title: "Nonstop", year: 2020, mood: "sweet-pop,playful", bpm: 125 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "Oh My Girl Default Era"
+    year: 2015
+    album: "(default — 待补充)"
+    palette: { primary: "#FFB6C1", secondary: "#FFD700", accent: "#FFFFFF" }
+    mood: ["fairy", "innocent", "wholesome"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "3 代"
+    motion_hint: { bpm: 118, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · Oh My Girl (3 代 · 2015)

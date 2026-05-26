@@ -25,6 +25,19 @@ signature_tracks:
   - { title: "DM", year: 2022, mood: "y2k,sunny", bpm: 130 }
   - { title: "Stay This Way", year: 2022, mood: "summer,fresh", bpm: 126 }
   - { title: "#menow", year: 2019, mood: "cute,bubbly", bpm: 122 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "fromis_9 Default Era"
+    year: 2018
+    album: "(default — 待补充)"
+    palette: { primary: "#FFC4C4", secondary: "#FFE5B4", accent: "#67D5FF" }
+    mood: ["fresh", "sweet", "sunny"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "邻家青春 · 9 人晴天"
+    photocard_style: "default 拍立得"
+    generation: "4 代"
+    motion_hint: { bpm: 130, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · fromis_9 (4 代 · 2018)

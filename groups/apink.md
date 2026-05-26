@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Mr. Chu", year: 2014, mood: "sweet,confession", bpm: 120 }
   - { title: "LUV", year: 2014, mood: "sweet,confession", bpm: 122 }
   - { title: "NoNoNo", year: 2013, mood: "sweet-pop,encouragement", bpm: 118 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "Apink Default Era"
+    year: 2011
+    album: "(default — 待补充)"
+    palette: { primary: "#FFB6C1", secondary: "#FFFFFF", accent: "#FFD700" }
+    mood: ["pure", "girl-next-door", "cinema"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "纯爱+童话治愈"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 120, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · Apink (2 代 · 2011)

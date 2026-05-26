@@ -25,6 +25,31 @@ signature_tracks:
   - { title: "Magnetic", year: 2024, mood: "y2k-bedroom-pop,crush", bpm: 130 }
   - { title: "Cherish", year: 2024, mood: "sweet,confession", bpm: 118 }
   - { title: "Tick-Tack", year: 2024, mood: "bright,playful", bpm: 125 }
+eras:
+  - era_slug: "magnetic"
+    era_name: "Magnetic Era"
+    year: 2024
+    album: "SUPER REAL ME"
+    palette: { primary: "#FFE3F0", secondary: "#FFFFFF", accent: "#A8C5E8" }
+    mood: ["少女 magnetic", "Y2K 复兴", "粉嫩"]
+    typography_keywords: ["Y2K 手写", "粉色描边", "贴纸"]
+    mv_grammar: "校园 + Y2K 滤镜 + 卧室"
+    photocard_style: "Y2K 拍立得 + 粉色边"
+    generation: "5代初"
+    motion_hint: { bpm: 120, easing: "magnetic pull", duration: "loop" }
+    forbidden: ["暗黑", "重口"]
+  - era_slug: "cherish"
+    era_name: "Cherish Era"
+    year: 2024
+    album: "I'LL LIKE YOU"
+    palette: { primary: "#FFD9E0", secondary: "#C8E6C9", accent: "#FFE066" }
+    mood: ["温柔珍惜", "夏日", "拍立得"]
+    typography_keywords: ["手写温柔", "薄荷糖色", "圆润"]
+    mv_grammar: "夏日海边 + 拍立得 + 温柔特写"
+    photocard_style: "夏日拍立得"
+    generation: "5代"
+    motion_hint: { bpm: 110, easing: "gentle", duration: "medium" }
+    forbidden: ["暗黑", "锐利"]
 ---
 
 # 👯 团魂 · ILLIT (5 代 · 2024)

@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Izna", year: 2024, mood: "pop,debut", bpm: 120 }
   - { title: "N/Y", year: 2024, mood: "teen-pop,bright", bpm: 118 }
   - { title: "Beep", year: 2024, mood: "sweet-pop,playful", bpm: 125 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "izna Default Era"
+    year: 2024
+    album: "(default — 待补充)"
+    palette: { primary: "#FF1493", secondary: "#FFD700", accent: "#FFFFFF" }
+    mood: ["debut", "fresh", "teen"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "i-LAND2 选秀新团"
+    photocard_style: "default 拍立得"
+    generation: "5 代"
+    motion_hint: { bpm: 120, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · izna (5 代 · 2024)

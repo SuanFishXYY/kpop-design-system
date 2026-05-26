@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Abracadabra", year: 2009, mood: "electronic,iconic", bpm: 125 }
   - { title: "Sixth Sense", year: 2011, mood: "electro-pop,fierce", bpm: 130 }
   - { title: "Sign", year: 2010, mood: "electro-pop,confident", bpm: 125 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "Brown Eyed Girls Default Era"
+    year: 2006
+    album: "(default — 待补充)"
+    palette: { primary: "#000000", secondary: "#FF1493", accent: "#FFD700" }
+    mood: ["abracadabra", "sexy", "witchy"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 125, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · Brown Eyed Girls (2 代 · 2006)

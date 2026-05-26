@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Ah-Choo", year: 2014, mood: "sweet,confession", bpm: 125 }
   - { title: "Destiny", year: 2016, mood: "magical,fairy", bpm: 120 }
   - { title: "Now We", year: 2017, mood: "sweet,bright", bpm: 122 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "Lovelyz Default Era"
+    year: 2014
+    album: "(default — 待补充)"
+    palette: { primary: "#FFB6C1", secondary: "#FFFFFF", accent: "#FFD700" }
+    mood: ["fairy", "pure", "theme-park"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "2.5 代"
+    motion_hint: { bpm: 125, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · Lovelyz (2.5 代 · 2014)

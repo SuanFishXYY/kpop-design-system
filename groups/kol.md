@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Shhh", year: 2023, mood: "alt-rnb,sensual", bpm: 95 }
   - { title: "Bad News", year: 2023, mood: "alt-rnb,confident", bpm: 92 }
   - { title: "Midas Touch", year: 2024, mood: "funk-rnb,golden", bpm: 105 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "KISS OF LIFE Default Era"
+    year: 2023
+    album: "(default — 待补充)"
+    palette: { primary: "#FFA500", secondary: "#FFD700", accent: "#FFB6C1" }
+    mood: ["r&b", "sensual", "warm"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "R&B 实力新人"
+    photocard_style: "default 拍立得"
+    generation: "4 代"
+    motion_hint: { bpm: 95, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · KISS OF LIFE (4 代 · 2023)

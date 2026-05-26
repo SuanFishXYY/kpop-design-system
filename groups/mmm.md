@@ -25,6 +25,31 @@ signature_tracks:
   - { title: "Hip", year: 2019, mood: "sass,brass", bpm: 110 }
   - { title: "Egotistic", year: 2018, mood: "moombahton,exotic", bpm: 100 }
   - { title: "Decalcomanie", year: 2016, mood: "disco-funk,confident", bpm: 112 }
+eras:
+  - era_slug: "decalcomanie"
+    era_name: "Decalcomanie Era"
+    year: 2016
+    album: "Memory"
+    palette: { primary: "#0F0F2E", secondary: "#C9A87C", accent: "#FFFFFF" }
+    mood: ["双面", "性感", "成熟"]
+    typography_keywords: ["serif 性感", "金箔", "黑色"]
+    mv_grammar: "双面镜 + 黑白对比 + 性感成熟"
+    photocard_style: "双面卡"
+    generation: "3代"
+    motion_hint: { bpm: 95, easing: "seductive", duration: "long" }
+    forbidden: ["可爱", "甜美"]
+  - era_slug: "hip"
+    era_name: "HIP Era"
+    year: 2019
+    album: "reality in BLACK"
+    palette: { primary: "#FF003C", secondary: "#000000", accent: "#FFD700" }
+    mood: ["自由自夸", "I'm a hip mama", "无所谓"]
+    typography_keywords: ["手写大字 hip", "红黑撞色", "rebel"]
+    mv_grammar: "街头 + 时装 + 自夸 hip"
+    photocard_style: "hip-hop 拼贴"
+    generation: "3代末"
+    motion_hint: { bpm: 124, easing: "swag", duration: "loop" }
+    forbidden: ["柔弱"]
 ---
 
 # 👯 团魂 · MAMAMOO (3 代 · 2014)

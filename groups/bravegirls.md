@@ -25,6 +25,19 @@ signature_tracks:
   - { title: "Rollin'", year: 2017, mood: "summer,nostalgia", bpm: 128 }
   - { title: "Chi Mat Ba Ram", year: 2021, mood: "summer,breezy", bpm: 122 }
   - { title: "After We Ride", year: 2021, mood: "sunset,fresh", bpm: 124 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "Brave Girls Default Era"
+    year: 2011
+    album: "(default — 待补充)"
+    palette: { primary: "#FF6B35", secondary: "#FFE066", accent: "#1976D2" }
+    mood: ["summer", "anthem", "comeback"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "夏日翻红 · 军营 anthem"
+    photocard_style: "default 拍立得"
+    generation: "2.5 代"
+    motion_hint: { bpm: 128, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · Brave Girls (2.5 代 · 2011)

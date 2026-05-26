@@ -25,6 +25,19 @@ signature_tracks:
   - { title: "Gee", year: 2009, mood: "disco-pop,iconic", bpm: 125 }
   - { title: "I Got A Boy", year: 2013, mood: "experimental-mashup", bpm: 135 }
   - { title: "Lion Heart", year: 2015, mood: "brass-funk,confident", bpm: 115 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "Girls' Generation Default Era"
+    year: 2007
+    album: "(default — 待补充)"
+    palette: { primary: "#FFB6C1", secondary: "#FFD700", accent: "#FFFFFF" }
+    mood: ["legend", "sweet", "bright"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "9 人国民妹妹团"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 125, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · Girls' Generation (2 代 · 2007)

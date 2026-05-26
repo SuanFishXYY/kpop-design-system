@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Chase Me", year: 2017, mood: "rock-metal,nightmare", bpm: 115 }
   - { title: "YOU and I", year: 2018, mood: "alt-rock,intense", bpm: 125 }
   - { title: "Scream", year: 2020, mood: "melodic-metal,emotional", bpm: 130 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "Dreamcatcher Default Era"
+    year: 2017
+    album: "(default — 待补充)"
+    palette: { primary: "#000000", secondary: "#FF0000", accent: "#C0C0C0" }
+    mood: ["metal", "nightmare", "dark"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "metal+ballet 黑暗童话"
+    photocard_style: "default 拍立得"
+    generation: "3 代"
+    motion_hint: { bpm: 115, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · Dreamcatcher (3 代 · 2017)

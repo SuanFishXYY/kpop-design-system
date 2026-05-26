@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Miniskirt", year: 2014, mood: "swing,sexy", bpm: 115 }
   - { title: "Like A Cat", year: 2014, mood: "jazz-pop,playful", bpm: 118 }
   - { title: "Heart Attack", year: 2015, mood: "disco-pop,cute", bpm: 125 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "AOA Default Era"
+    year: 2012
+    album: "(default — 待补充)"
+    palette: { primary: "#FFB6C1", secondary: "#000000", accent: "#FFD700" }
+    mood: ["sexy", "swing", "dance"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "2.5 代"
+    motion_hint: { bpm: 115, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · AOA (2.5 代 · 2012)

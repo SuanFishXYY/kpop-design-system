@@ -25,6 +25,43 @@ signature_tracks:
   - { title: "Kill This Love", year: 2019, mood: "aggressive,brass", bpm: 132 }
   - { title: "How You Like That", year: 2020, mood: "baroque,brutal", bpm: 130 }
   - { title: "Pink Venom", year: 2022, mood: "opulent,trap", bpm: 90 }
+eras:
+  - era_slug: "square_one"
+    era_name: "Square One Era"
+    year: 2016
+    album: "Square One"
+    palette: { primary: "#FF1493", secondary: "#000000", accent: "#FFD700" }
+    mood: ["出道宣战", "炸街", "硬核"]
+    typography_keywords: ["sans serif bold", "标点炸裂", "all caps"]
+    mv_grammar: "都市街头 + 高对比 + 4 人对决站位"
+    photocard_style: "纯黑底 + 单一 hot pink 描边"
+    generation: "3代"
+    motion_hint: { bpm: 130, easing: "punch", duration: "short hit" }
+    forbidden: ["治愈系", "可爱字体", "粉嫩"]
+  - era_slug: "kill_this_love"
+    era_name: "Kill This Love Era"
+    year: 2019
+    album: "Kill This Love"
+    palette: { primary: "#000000", secondary: "#FF0066", accent: "#B8860B" }
+    mood: ["军队", "宣战", "brass", "巴洛克"]
+    typography_keywords: ["serif + sans 撞色", "金属箔感", "对称镜像"]
+    mv_grammar: "战车 + 大军 + 铜管军号 + 黑白巴洛克"
+    photocard_style: "封面式金箔"
+    generation: "3代中"
+    motion_hint: { bpm: 132, easing: "march", duration: "long sustain" }
+    forbidden: ["治愈", "甜美", "粉嫩"]
+  - era_slug: "born_pink"
+    era_name: "Born Pink Era"
+    year: 2022
+    album: "Born Pink"
+    palette: { primary: "#FF1493", secondary: "#0A0A0A", accent: "#FFFFFF" }
+    mood: ["奢华黑粉", "Pink Venom", "毒"]
+    typography_keywords: ["奢侈品 wordmark", "极简全大写", "黑底粉描"]
+    mv_grammar: "蛇 + 蓝染水墨 + 极致对比 + 奢侈品空间"
+    photocard_style: "奢侈品包装片"
+    generation: "3代末"
+    motion_hint: { bpm: 90, easing: "trap slow", duration: "long sustain" }
+    forbidden: ["校园", "贴纸", "可爱"]
 ---
 
 # 👯 团魂 · BLACKPINK (3 代 · 2016)

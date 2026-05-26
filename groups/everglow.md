@@ -25,6 +25,19 @@ signature_tracks:
   - { title: "DUN DUN", year: 2020, mood: "sharp,brass", bpm: 128 }
   - { title: "LA DI DA", year: 2020, mood: "fierce,dance", bpm: 132 }
   - { title: "FIRST", year: 2021, mood: "march,intense", bpm: 130 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "EVERGLOW Default Era"
+    year: 2019
+    album: "(default — 待补充)"
+    palette: { primary: "#1A1A1A", secondary: "#FFD700", accent: "#FF3366" }
+    mood: ["sharp", "dance", "fierce"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "冷艳 dance 军团 · sharp killing"
+    photocard_style: "default 拍立得"
+    generation: "4 代"
+    motion_hint: { bpm: 128, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · EVERGLOW (4 代 · 2019)

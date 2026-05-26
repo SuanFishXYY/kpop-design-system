@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Bad Girl Good Girl", year: 2010, mood: "hip-hop,manifesto", bpm: 105 }
   - { title: "Hush", year: 2013, mood: "deep-house,seductive", bpm: 115 }
   - { title: "Only You", year: 2015, mood: "disco-funk,confident", bpm: 118 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "miss A Default Era"
+    year: 2010
+    album: "(default — 待补充)"
+    palette: { primary: "#FF1493", secondary: "#000000", accent: "#FFD700" }
+    mood: ["bad-girl", "R&B", "sharp"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "强女权+china line 跨国"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 105, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · miss A (2 代 · 2010)

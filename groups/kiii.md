@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "I Do Me", year: 2025, mood: "y2k,manifesto", bpm: 125 }
   - { title: "Drift", year: 2025, mood: "y2k-pop,attitude", bpm: 118 }
   - { title: "Untitled", year: 2025, mood: "fresh", bpm: 120 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "KiiiKiii Default Era"
+    year: 2025
+    album: "(default — 待补充)"
+    palette: { primary: "#FFA500", secondary: "#FF1493", accent: "#000000" }
+    mood: ["y2k", "girl-crush", "sharp"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "Y2K 复古 girl crush"
+    photocard_style: "default 拍立得"
+    generation: "5 代"
+    motion_hint: { bpm: 125, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · KiiiKiii (5 代 · 2025)

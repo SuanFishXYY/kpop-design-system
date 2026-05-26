@@ -25,6 +25,43 @@ signature_tracks:
   - { title: "Fearless", year: 2022, mood: "trap-pop,sharp", bpm: 114 }
   - { title: "Antifragile", year: 2022, mood: "reggaeton,attitude", bpm: 100 }
   - { title: "Easy", year: 2024, mood: "alt-rnb,sensual", bpm: 95 }
+eras:
+  - era_slug: "fearless"
+    era_name: "FEARLESS Era"
+    year: 2022
+    album: "FEARLESS"
+    palette: { primary: "#FFFFFF", secondary: "#1A1A1A", accent: "#A8E6E1" }
+    mood: ["无畏宣言", "现代极简", "白色出击"]
+    typography_keywords: ["geometric sans", "极简全大写", "黑白对比"]
+    mv_grammar: "现代空间 + 白色着装 + 锐利构图"
+    photocard_style: "白底黑字极简"
+    generation: "4代"
+    motion_hint: { bpm: 122, easing: "sharp confident", duration: "medium" }
+    forbidden: ["可爱", "复古"]
+  - era_slug: "antifragile"
+    era_name: "ANTIFRAGILE Era"
+    year: 2022
+    album: "ANTIFRAGILE"
+    palette: { primary: "#FF6B35", secondary: "#1A0033", accent: "#FFE066" }
+    mood: ["反脆弱", "燃烧", "拉美热度"]
+    typography_keywords: ["反斜 italic", "橙红炸裂", "all caps"]
+    mv_grammar: "拉美街头 + 火焰橘 + 力量舞蹈"
+    photocard_style: "热度橘印刷"
+    generation: "4代"
+    motion_hint: { bpm: 128, easing: "fierce", duration: "intense" }
+    forbidden: ["柔美", "粉嫩"]
+  - era_slug: "easy"
+    era_name: "EASY Era"
+    year: 2024
+    album: "EASY"
+    palette: { primary: "#E8C5A0", secondary: "#000000", accent: "#FFFFFF" }
+    mood: ["轻盈成熟", "easy 不费力", "高级 nude"]
+    typography_keywords: ["sans serif 轻盈", "nude 色字", "极简留白"]
+    mv_grammar: "白色空间 + nude 调 + 优雅动作"
+    photocard_style: "nude 色高级哑光"
+    generation: "4代末"
+    motion_hint: { bpm: 100, easing: "effortless", duration: "long" }
+    forbidden: ["重口味", "高饱和"]
 ---
 
 # 👯 团魂 · LE SSERAFIM (4 代 · 2022)

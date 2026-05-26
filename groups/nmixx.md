@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "O.O", year: 2022, mood: "mixxpop,multi-bpm", bpm: 140 }
   - { title: "Dice", year: 2022, mood: "pop,roll", bpm: 118 }
   - { title: "Love Me Like This", year: 2023, mood: "funky-pop,confident", bpm: 118 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "NMIXX Default Era"
+    year: 2022
+    album: "(default — 待补充)"
+    palette: { primary: "#9370DB", secondary: "#FFD700", accent: "#00CED1" }
+    mood: ["mixxpop", "switch", "multi"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "MIXX POP 多曲风混搭"
+    photocard_style: "default 拍立得"
+    generation: "4 代"
+    motion_hint: { bpm: 140, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · NMIXX (4 代 · 2022)

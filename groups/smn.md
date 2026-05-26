@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Say My Name", year: 2025, mood: "narrative,brand", bpm: 118 }
   - { title: "Debut", year: 2025, mood: "narrative-pop", bpm: 120 }
   - { title: "Untitled", year: 2025, mood: "fresh", bpm: 120 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "SAY MY NAME Default Era"
+    year: 2025
+    album: "(default — 待补充)"
+    palette: { primary: "#000080", secondary: "#FFD700", accent: "#FFFFFF" }
+    mood: ["name-brand", "global", "hybe"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "name-as-brand 自我宣告"
+    photocard_style: "default 拍立得"
+    generation: "5 代"
+    motion_hint: { bpm: 118, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · SAY MY NAME (5 代 · 2025)

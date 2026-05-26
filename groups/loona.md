@@ -25,6 +25,19 @@ signature_tracks:
   - { title: "Hi High", year: 2018, mood: "fresh,ethereal", bpm: 105 }
   - { title: "Why Not?", year: 2020, mood: "edm,maximal", bpm: 128 }
   - { title: "PTT (Paint The Town)", year: 2021, mood: "baroque,intense", bpm: 120 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "LOONA Default Era"
+    year: 2018
+    album: "(default — 待补充)"
+    palette: { primary: "#9D6FCF", secondary: "#F5E6FF", accent: "#FFB7C5" }
+    mood: ["ethereal", "concept", "cinematic"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "月之少女 · 世界观 12 章"
+    photocard_style: "default 拍立得"
+    generation: "4 代"
+    motion_hint: { bpm: 105, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · LOONA (4 代 · 2018)

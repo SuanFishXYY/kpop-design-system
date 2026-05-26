@@ -25,6 +25,43 @@ signature_tracks:
   - { title: "Tomboy", year: 2022, mood: "punk-pop,middle finger", bpm: 125 }
   - { title: "Nxde", year: 2022, mood: "cabaret,satire", bpm: 105 }
   - { title: "Queencard", year: 2023, mood: "pop-punk,confidence", bpm: 92 }反工业流水线"标识不可丢"
+eras:
+  - era_slug: "latata"
+    era_name: "LATATA Era"
+    year: 2018
+    album: "I am"
+    palette: { primary: "#D946EF", secondary: "#000000", accent: "#FFC75F" }
+    mood: ["异域", "自制", "中东风"]
+    typography_keywords: ["serif 异域", "金色细线", "对称"]
+    mv_grammar: "中东装饰 + 自创音乐 + 神秘"
+    photocard_style: "异域纹样"
+    generation: "3-4 代交接"
+    motion_hint: { bpm: 110, easing: "mystic", duration: "medium" }
+    forbidden: ["甜美 Y2K"]
+  - era_slug: "tomboy"
+    era_name: "TOMBOY Era"
+    year: 2022
+    album: "I NEVER DIE"
+    palette: { primary: "#1A1A1A", secondary: "#FF0040", accent: "#FFFFFF" }
+    mood: ["反叛", "rock punk", "I'm a freaking TOMBOY"]
+    typography_keywords: ["rock 字体", "划痕", "all caps red"]
+    mv_grammar: "酒吧 + 摇滚 + 痞气 + 全员素颜"
+    photocard_style: "punk 拼贴"
+    generation: "4代中"
+    motion_hint: { bpm: 130, easing: "punk", duration: "intense" }
+    forbidden: ["公主", "甜美"]
+  - era_slug: "queencard"
+    era_name: "Queencard Era"
+    year: 2023
+    album: "I feel"
+    palette: { primary: "#FF80AB", secondary: "#FFE066", accent: "#FFFFFF" }
+    mood: ["女王自夸", "Y2K 回归", "甜炸"]
+    typography_keywords: ["Y2K marker", "彩色描边", "贴纸"]
+    mv_grammar: "Y2K 彩色 + 自拍 + 玫瑰"
+    photocard_style: "Y2K 彩色贴纸"
+    generation: "4代末"
+    motion_hint: { bpm: 122, easing: "Y2K bounce", duration: "short loop" }
+    forbidden: ["暗黑", "punk"]
 ---
 
 # 👯 团魂 · (G)I-DLE (4 代 · 2018)

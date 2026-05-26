@@ -25,6 +25,43 @@ signature_tracks:
   - { title: "Psycho", year: 2019, mood: "r&b,obsession", bpm: 115 }
   - { title: "Bad Boy", year: 2018, mood: "hip-hop,confident", bpm: 105 }
   - { title: "Feel My Rhythm", year: 2022, mood: "baroque,bach", bpm: 118 }
+eras:
+  - era_slug: "red"
+    era_name: "Red Era"
+    year: 2014
+    album: "Happiness"
+    palette: { primary: "#FF0033", secondary: "#FFD700", accent: "#FFFFFF" }
+    mood: ["甜美 Red", "happiness", "卡通"]
+    typography_keywords: ["圆润大字", "高饱和红黄", "卡通"]
+    mv_grammar: "彩色卡通 + 跳跃 + 高饱和"
+    photocard_style: "卡通糖果"
+    generation: "3代初"
+    motion_hint: { bpm: 124, easing: "happy jump", duration: "loop" }
+    forbidden: ["暗黑", "冷调"]
+  - era_slug: "velvet"
+    era_name: "Velvet Era"
+    year: 2017
+    album: "Perfect Velvet"
+    palette: { primary: "#3C0033", secondary: "#C9A87C", accent: "#000000" }
+    mood: ["暗黑高级", "Peek-a-boo", "悬疑"]
+    typography_keywords: ["serif 黑暗", "金色细描", "哥特"]
+    mv_grammar: "豪宅 + 悬疑 + 黑暗 + 金箔"
+    photocard_style: "古典油画 + 金边"
+    generation: "3代中"
+    motion_hint: { bpm: 100, easing: "velvet glide", duration: "long sustain" }
+    forbidden: ["甜美", "卡通"]
+  - era_slug: "psycho"
+    era_name: "Psycho Era"
+    year: 2019
+    album: "The ReVe Festival: Finale"
+    palette: { primary: "#7A2E50", secondary: "#F5C5C5", accent: "#2A2A3E" }
+    mood: ["心理戏剧", "脆弱", "复杂"]
+    typography_keywords: ["serif emotional", "玫瑰金", "破碎构图"]
+    mv_grammar: "心理剧 + 玫瑰 + 玻璃碎裂 + 双面"
+    photocard_style: "玫瑰干花卡"
+    generation: "3代末"
+    motion_hint: { bpm: 110, easing: "psychological", duration: "intense" }
+    forbidden: ["快乐", "高饱和"]
 ---
 
 # 👯 团魂 · Red Velvet (3 代 · 2014)

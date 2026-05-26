@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Touch My Body", year: 2014, mood: "summer-disco,sexy", bpm: 125 }
   - { title: "Loving U", year: 2012, mood: "summer-pop,sweet", bpm: 120 }
   - { title: "I Like That", year: 2016, mood: "tropical-house,deep", bpm: 115 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "SISTAR Default Era"
+    year: 2010
+    album: "(default — 待补充)"
+    palette: { primary: "#FF1493", secondary: "#FFD700", accent: "#000000" }
+    mood: ["sexy", "summer", "confident"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 125, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · SISTAR (2 代 · 2010)

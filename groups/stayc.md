@@ -25,6 +25,19 @@ signature_tracks:
   - { title: "ASAP", year: 2021, mood: "teen-fresh,sweet", bpm: 118 }
   - { title: "Run2u", year: 2022, mood: "2010s-pop,nostalgic", bpm: 115 }
   - { title: "Bubble", year: 2023, mood: "y2k-pop,bubblegum", bpm: 125 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "STAYC Default Era"
+    year: 2020
+    album: "(default — 待补充)"
+    palette: { primary: "#FFB6C1", secondary: "#87CEEB", accent: "#FFFFFF" }
+    mood: ["teen-fresh", "crush", "innocent"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "teen fresh"
+    photocard_style: "default 拍立得"
+    generation: "4 代"
+    motion_hint: { bpm: 118, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · STAYC (4 代 · 2020)

@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Because Of You", year: 2009, mood: "electropop,sexy", bpm: 115 }
   - { title: "Bang!", year: 2010, mood: "marching,energetic", bpm: 130 }
   - { title: "Shampoo", year: 2010, mood: "cute,playful", bpm: 125 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "After School Default Era"
+    year: 2009
+    album: "(default — 待补充)"
+    palette: { primary: "#000080", secondary: "#FFD700", accent: "#FFFFFF" }
+    mood: ["sexy", "vocal", "prep"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 115, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · After School (2 代 · 2009)

@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Mister", year: 2009, mood: "disco,butt-dance", bpm: 118 }
   - { title: "Step", year: 2011, mood: "electro-disco,trendy", bpm: 125 }
   - { title: "Pretty Girl", year: 2008, mood: "girly-pop,sweet", bpm: 110 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "KARA Default Era"
+    year: 2007
+    album: "(default — 待补充)"
+    palette: { primary: "#FFC0CB", secondary: "#FFD700", accent: "#000000" }
+    mood: ["charm", "disco", "sweet"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "default 出道 MV"
+    photocard_style: "default 拍立得"
+    generation: "2 代"
+    motion_hint: { bpm: 118, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · KARA (2 代 · 2007)

@@ -25,6 +25,19 @@ signature_tracks:
   - { title: "Touch", year: 2024, mood: "alt-pop,global", bpm: 115 }
   - { title: "Debut", year: 2024, mood: "narrative-pop,intro", bpm: 120 }
   - { title: "Gnarly", year: 2024, mood: "hyperpop,quirky", bpm: 140 }
+eras:
+  - era_slug: "debut_default"
+    era_name: "KATSEYE Default Era"
+    year: 2024
+    album: "(default — 待补充)"
+    palette: { primary: "#FF1493", secondary: "#FFD700", accent: "#000080" }
+    mood: ["global", "multi-culture", "narrative"]
+    typography_keywords: ["sans serif 默认"]
+    mv_grammar: "跨文化全球女团"
+    photocard_style: "default 拍立得"
+    generation: "5 代"
+    motion_hint: { bpm: 115, easing: "default", duration: "medium" }
+    note: "兜底 default era · 待人工补充具体 era 数据"
 ---
 
 # 👯 团魂 · KATSEYE (5 代 · 2024)

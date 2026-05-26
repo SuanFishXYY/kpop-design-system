@@ -23,6 +23,19 @@ signature_tracks:
   - { title: "Meow", year: 2024, mood: "trap-pop,sharp", bpm: 105 }
   - { title: "Toxic", year: 2024, mood: "edm,dark", bpm: 125 }
   - { title: "Hands Up", year: 2025, mood: "hip-hop,attitude", bpm: 110 }
+eras:
+  - era_slug: "meow"
+    era_name: "MEOW Era"
+    year: 2024
+    album: "Debut Single"
+    palette: { primary: "#FF1493", secondary: "#000000", accent: "#FFC0CB" }
+    mood: ["猫系出道", "酷甜", "YG 第二春"]
+    typography_keywords: ["猫爪 logo", "黑粉撞色", "all caps"]
+    mv_grammar: "暗夜街头 + 猫眼 + 黑粉对比"
+    photocard_style: "黑底粉描猫卡"
+    generation: "5代初"
+    motion_hint: { bpm: 125, easing: "cat pounce", duration: "short" }
+    forbidden: ["治愈", "可爱过头"]
 ---
 
 # 👯 团魂 · MEOVV (5 代 · 2024)
