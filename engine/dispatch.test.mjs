@@ -11,11 +11,11 @@ function assert(cond, msg) { if (!cond) throw new Error(msg || "assertion failed
 
 console.log("\n=== dispatch.mjs integration tests ===\n");
 
-test("loadAllAgents 加载 44 souls + 102 idols + 7 judges", () => {
+test("loadAllAgents 加载 44 souls + 116 idols + 7 judges", () => {
   const { souls, idols, judges } = loadAllAgents();
   console.log(`     souls=${souls.length}  idols=${idols.length}  judges=${(judges||[]).length}`);
   assert(souls.length >= 40, `expected ~44 souls, got ${souls.length}`);
-  assert(idols.length === 102, `expected 102 idols, got ${idols.length}`);
+  assert(idols.length === 116, `expected 116 idols, got ${idols.length}`);
   assert((judges||[]).length >= 7, `expected ≥7 judges, got ${(judges||[]).length}`);
 });
 
@@ -106,6 +106,33 @@ test("NMIXX 补齐: ≥6 个 NMIXX idol (Lily+5)", () => {
   const c = summonCouncil("NMIXX 风格新案翻译");
   console.log(`     NMIXX idols=${c.invited.length}`);
   assert(c.invited.length >= 6, `应至少 6 个 NMIXX idol, got ${c.invited.length}`);
+});
+
+// === v1.3.0 热门团补齐 ===
+
+test("MEOVV 补齐 5 人", () => {
+  const c = summonCouncil("MEOVV 风格 hero");
+  const meovvIdols = c.invited.filter(i => i.group === "MEOVV");
+  console.log(`     MEOVV idols=${meovvIdols.length}`);
+  assert(meovvIdols.length >= 5, `应至少 5 个 MEOVV idol, got ${meovvIdols.length}`);
+});
+
+test("KATSEYE 补齐 6 人 + 全球女团 cross-label 触发 HYBE", () => {
+  const c = summonCouncil("KATSEYE 风格全球 brand");
+  const katseyeIdols = c.invited.filter(i => i.group === "KATSEYE");
+  const hybeJudge = c.judges.find(j => j.judge_slug === "bang-pd");
+  console.log(`     KATSEYE idols=${katseyeIdols.length}  HYBE judge=${!!hybeJudge}`);
+  assert(katseyeIdols.length >= 6, `应至少 6 个 KATSEYE idol, got ${katseyeIdols.length}`);
+  assert(hybeJudge, "KATSEYE → 应自动召唤 HYBE/bang-pd 评委");
+});
+
+test("Kep1er 补齐 6 人 (选秀团) + Starship 评委到场", () => {
+  const c = summonCouncil("Kep1er 风格出道即顶流");
+  const kep1erIdols = c.invited.filter(i => i.group === "Kep1er");
+  const starshipJudge = c.judges.find(j => j.judge_slug === "starship");
+  console.log(`     Kep1er idols=${kep1erIdols.length}  Starship judge=${!!starshipJudge}`);
+  assert(kep1erIdols.length >= 6, `应至少 6 个 Kep1er idol, got ${kep1erIdols.length}`);
+  assert(starshipJudge, "Kep1er → 应自动召唤 Starship 评委");
 });
 
 console.log(`\n=== ${pass} passed · ${fail} failed ===\n`);

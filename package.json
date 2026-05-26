@@ -1,6 +1,6 @@
 {
     "name":  "kpop-design-system",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description":  "KPOP idol congress design system · 97 agents · 4 era · 36 groups",
     "bin":  {
                 "kpop-install":  "installer/install.mjs"

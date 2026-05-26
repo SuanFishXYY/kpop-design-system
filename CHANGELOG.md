@@ -1,5 +1,51 @@
 ﻿# Changelog
 
+## v1.3.0 · 2025 · 热门团满员 (MEOVV / KATSEYE / Kep1er)
+
+### 🎵 idol 补齐 (102 → 116)
+
+之前热门团有几个"只挂着团魂没有成员"的尴尬,这版全员到位:
+
+**MEOVV (5 代 · YG/THEBLACKLABEL) 1→5**:
+- + **anna** (Lead Vocal / Visual, tier 0)
+- + **ella** (Lead Dancer / 9 头身, tier 1)
+- + **narin** (Main Dancer / power, tier 1)
+- + **gawon** (Leader / Main Vocal, tier 0)
+- sooin (原有)
+
+**KATSEYE (5 代 · HYBE × Geffen 全球女团) 1→6**:
+- + **daniela** (Main Dancer · 拉丁裔, tier 0)
+- + **sophia** (Lead Vocal · 菲律宾裔, tier 1)
+- + **yoonchae** (Sub Vocal · K-pop DNA, tier 1)
+- + **megan** (Lead Rapper · 多语种, tier 1)
+- + **manon** (Lead Dancer · 瑞士非洲, tier 1)
+- lara (原有)
+
+**Kep1er (4 代 · Starship/WAKEONE 选秀团) 1→6**:
+- + **chaehyun** (Main Vocal · 选秀冠军, tier 0)
+- + **xiaoting** (Lead Dancer · 中国 visual, tier 0)
+- + **mashiro** (Lead Dancer · 日 J-line, tier 1)
+- + **yeseo** (Sub Vocal · 全能, tier 1)
+- + **hikaru** (Lead Vocal · 日韩混血, tier 1)
+- yujin (原有)
+
+### 📊 议会统计
+
+- idol 总数: 97 → 102 → **116**
+- tier_0: 64 → 71
+- tier_1: 38 → 45
+
+### ✅ 测试 15/15 PASS
+
+新增覆盖:
+- MEOVV 5 人召集
+- KATSEYE 6 人 + 自动召唤 HYBE/bang-pd 评委
+- Kep1er 6 人 + 自动召唤 Starship 评委
+
+### 🎯 含义
+
+擦火花的底层逻辑 (v1.2) + 真实可用的团 (v1.3) = **真能跑跨团 brief 的多 agent 系统**
+
 ## v1.2.0 · 2025 · 评委层 + 跨 label gate (从家族到联盟)
 
 ### 🏛️ 新增评委层 (judges/)
