@@ -1,16 +1,26 @@
-﻿{
-  "name": "kpop-design-system",
-  "version": "1.0.0",
-  "description": "KPOP idol congress design system · 97 agents · 4 era · 36 groups",
-  "bin": {
-    "kpop-install": "installer/install.mjs"
-  },
-  "type": "module",
-  "license": "MIT",
-  "author": "算鱼工作室 (SuanFishXYY)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/SuanFishXYY/kpop-design-system.git"
-  },
-  "keywords": ["kpop","design-system","multi-agent","skill","cli","copilot","claude","gemini","idol"]
+{
+    "name":  "kpop-design-system",
+    "version":  "1.0.1",
+    "description":  "KPOP idol congress design system · 97 agents · 4 era · 36 groups",
+    "bin":  {
+                "kpop-install":  "installer/install.mjs"
+            },
+    "type":  "module",
+    "license":  "MIT",
+    "author":  "算鱼工作室 (SuanFishXYY)",
+    "repository":  {
+                       "type":  "git",
+                       "url":  "https://github.com/SuanFishXYY/kpop-design-system.git"
+                   },
+    "keywords":  [
+                     "kpop",
+                     "design-system",
+                     "multi-agent",
+                     "skill",
+                     "cli",
+                     "copilot",
+                     "claude",
+                     "gemini",
+                     "idol"
+                 ]
 }

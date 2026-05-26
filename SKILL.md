@@ -1,7 +1,7 @@
-﻿---
+---
 name: kpop-design-system
 description: "KPOP Design System v1.0 — KPOP女团圣人议会 · 97 idol agent · 4代际 36 团 · 哲学驱动多智能体UI设计语言体系 · Tier 0 全员 64 (8大热门+RV+MMM+ILLIT+BABYMON) · Tier 1 代际 leader 33 · 加权陪审团 2/3 表决 · Activate on '/kpop', '/女团', '/idol-congress', '/kpop-design'. Trigger phrases: '女团', 'kpop', 'idol', 'TWICE', 'BLACKPINK', 'IVE', 'NewJeans', 'aespa', '议会', 'congress'. Auto-loads on UI design/audit/refactor: hero/landing/dashboard/modal/animation/copywriting. bench-matcher 5 步召集 → 候选 → cap 15 邀请 → 议会 → 2/3 加权表决。"
-version: 1.0.0
+version: 1.0.1
 author: 算鱼工作室
 license: MIT
 language: zh-CN
