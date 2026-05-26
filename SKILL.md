@@ -1,7 +1,7 @@
 ---
 name: kpop-design-system
 description: "KPOP Design System v1.0 — KPOP女团圣人议会 · 97 idol agent · 4代际 36 团 · 哲学驱动多智能体UI设计语言体系 · Tier 0 全员 64 (8大热门+RV+MMM+ILLIT+BABYMON) · Tier 1 代际 leader 33 · 加权陪审团 2/3 表决 · Activate on '/kpop', '/女团', '/idol-congress', '/kpop-design'. Trigger phrases: '女团', 'kpop', 'idol', 'TWICE', 'BLACKPINK', 'IVE', 'NewJeans', 'aespa', '议会', 'congress'. Auto-loads on UI design/audit/refactor: hero/landing/dashboard/modal/animation/copywriting. bench-matcher 5 步召集 → 候选 → cap 15 邀请 → 议会 → 2/3 加权表决。"
-version: 1.0.1
+version: 1.0.2
 author: 算鱼工作室
 license: MIT
 language: zh-CN
@@ -18,12 +18,24 @@ tags: [design-system, multi-agent, kpop, idol, philosophy, onboarding, ui, modal
 
 ## 🎙 议会构成
 
-| Tier | 数量 | vote weight | 构成 |
-|------|------|-------------|------|
+| Layer | 数量 | vote weight | 构成 |
+|-------|------|-------------|------|
+| **👯 团魂层 (Group Soul)** | 44 | 3 票 | 每个 K-pop 团一份"集体灵魂"——团名/团体 brief 提及时**优先激活** |
 | Tier 0 (全员议会) | 64 | 2 票 | 8 大热门团 全员 + RV/MAMAMOO/ILLIT/BABYMONSTER 全员 |
 | Tier 1 (代际 leader) | 33 | 1.5 票 | 2-2.5代 16 团 + 3代其他 6 团 + 4代其他 3 团 + 5代其他 8 团 |
 
-总计: **97 人 · 36 团 · 4 代际**
+总计: **44 团魂 + 97 idol · 4 代际**
+
+### 团魂层是什么？
+
+每个团有一份"集体灵魂"档案（`groups/<slug>.md`），承载该团的：
+- **集体宣言**: e.g. TWICE = "我们是 9 个不同的女孩组成的一束花"
+- **美学基因**: e.g. BLACKPINK = "奢华黑粉对撞"
+- **UI 设计宣言**: 集体层面的视觉规范（防止个体 idol 风格分裂）
+
+**激活时机**：用户 brief 提及团名（如 "用 TWICE 风格"）→ 团魂先宣读 → 再召集本团 idol。
+**否决权**：团魂可以否决"违反集体 DNA"的 idol 个性主张。
+**vote weight = 3**：高于个体 idol，确保团体一致性。
 
 ## 🎤 8 大全员议会团
 - **TWICE**: Nayeon, Jeongyeon, Momo, Sana, Jihyo, Mina, Dahyun, Chaeyoung, Tzuyu
