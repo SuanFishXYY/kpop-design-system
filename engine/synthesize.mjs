@@ -123,6 +123,83 @@ function deriveCopyTone(constraints, anchors) {
   return tones;
 }
 
+// ============ v2.4.0 · Performer DNA 聚合 ============
+
+const SPECIALTY_KEYWORDS = {
+  typography: /typo|font|衬线|字|serif|sans|letter|kerning|leading/i,
+  motion:     /motion|animation|动效|easing|spring|节奏|tempo|transition/i,
+  palette:    /palette|color|配色|hex|swatch|hue|tone|gradient/i,
+  layout:     /layout|grid|ia|architect|架构|栏|布局|composition/i,
+  brand:      /brand|品牌|logo|identity|mark|象征|signature/i,
+  hero:       /hero|kv|key.?visual|首屏|landing|banner/i,
+  interaction:/micro|interaction|hover|交互|tap|gesture|haptic/i,
+  illustration:/illust|绘|graphic|icon|插画|sticker/i,
+  photography:/photo|拍|镜头|frame|视觉|cinematic|filmic/i,
+  copy:       /copy|文案|tone|voice|tagline|claim|wording/i,
+};
+
+function classifyIdolSpecialty(idol) {
+  const blob = `${idol.ui_specialty || ""} ${idol.personality || ""} ${idol.vibe || ""} ${idol.attitude || ""}`;
+  const hits = [];
+  for (const [tag, re] of Object.entries(SPECIALTY_KEYWORDS)) {
+    if (re.test(blob)) hits.push(tag);
+  }
+  return hits.length ? hits : ["general"];
+}
+
+/**
+ * 把 council 召唤的所有 performer (invited) 按 ui_specialty 关键词聚类.
+ * 让 116 idols 真正参与设计 brief 产出, 不再只是投票傀儡.
+ */
+export function aggregatePerformerDNA(council) {
+  const invited = (council && council.invited) || [];
+  const bySpecialty = {};
+  const allTags = new Set();
+  const dnaList = invited.map(p => {
+    const tags = classifyIdolSpecialty(p);
+    tags.forEach(t => allTags.add(t));
+    for (const t of tags) {
+      bySpecialty[t] = bySpecialty[t] || [];
+      bySpecialty[t].push({
+        slug: p.slug,
+        name: p.name,
+        group: p.group,
+        role: p.role || "",
+        ui_specialty: p.ui_specialty || "",
+        personality: p.personality || "",
+        vibe: p.vibe || "",
+        layer: p.layer,
+        weight: p.weight,
+      });
+    }
+    return {
+      slug: p.slug,
+      name: p.name,
+      group: p.group,
+      ui_specialty: p.ui_specialty || "",
+      personality: p.personality || "",
+      tags,
+    };
+  });
+
+  return {
+    total: invited.length,
+    specialty_coverage: [...allTags],
+    by_specialty: bySpecialty,
+    dna_list: dnaList,
+  };
+}
+
+/**
+ * 给一个设计维度关键词 (e.g. "typography"), 返回最匹配的 performers.
+ * 用于 LLM 在写 brief 时, "我现在写 typography 段落, 谁来 own?"
+ */
+export function getPerformersBySpecialty(council, dimension, limit = 5) {
+  const agg = aggregatePerformerDNA(council);
+  const list = agg.by_specialty[dimension] || [];
+  return list.slice(0, limit);
+}
+
 export function synthesizeDesignBrief(brief) {
   const council = summonCouncil(brief);
 
@@ -217,5 +294,6 @@ export function synthesizeDesignBrief(brief) {
       fusion: council.fusion_check,
     },
     anchor_dna: anchorDNA,
+    performer_dna: aggregatePerformerDNA(council),
   };
 }

@@ -128,6 +128,49 @@ tags: [design-system, multi-agent, kpop, idol, philosophy, onboarding, ui, modal
 - "�?BLACKPINK 极简奢华�?landing" �?召唤 bp-jisoo + bp-jennie + bp-rose
 - "召集 KPOP 议会评审这个 design" �?全员议会
 
+## 🎯 116 Performer 真激活 (v2.4.0 · 不是投票傀儡, 是 116 个专业视角)
+
+v2.3 之前的盲点: **116 idols 都有 `ui_specialty` + `personality` + `vibe`, 引擎却只读 stage_name + attitude**——他们等于"投票计数器".
+
+v2.4.0 全部激活. 每个 idol 是一个**设计维度的担当**.
+
+### 新 API
+
+```js
+import { aggregatePerformerDNA, getPerformersBySpecialty } from "kpop-design-system/engine/synthesize.mjs";
+
+// 把召唤的 performer 按 ui_specialty 关键词聚类
+const perf = aggregatePerformerDNA(council);
+// perf.by_specialty = { typography: [...], motion: [...], hero: [...], copy: [...], ... }
+
+// LLM 写 brief 时: "我现在写 typography 段, 谁 own?"
+const typoOwners = getPerformersBySpecialty(council, "typography", 3);
+// [{ name: "Jennie", group: "BLACKPINK", ui_specialty: "Human Chanel · 极简奢华 typography", ... }]
+```
+
+### 10 个设计维度 (自动分类)
+
+`typography` · `motion` · `palette` · `layout` · `brand` · `hero` · `interaction` · `illustration` · `photography` · `copy`
+
+### 实跑示例 (BLACKPINK × TWICE landing)
+
+| 维度 | 担当 (按 ui_specialty 关键词命中) |
+|------|-----|
+| typography | Jennie (Human Chanel · 极简奢华) |
+| motion | Lisa (爆发力 hook) + Rosé (旋律 spacing) + Momo (微交互节拍) |
+| hero | Jisoo (花路高级感) + Nayeon (兔牙 hero CTA) + Tzuyu (冷静 visual 锚) |
+| copy | Chaeyoung (野性 tagline) + Jihyo (brand voice) + Sana (撒娇 microcopy) |
+| layout | Jeongyeon (中性侠气 form layout · clean grid) |
+| brand | Jihyo (议会主持 · brand voice 锚) |
+
+### synthesizeDesignBrief 新增字段
+
+`dna.performer_dna = { total, specialty_coverage, by_specialty, dna_list }`
+
+LLM 写 brief 时可以按维度"派工"——typography 段交给 Jennie 的视角, motion 段交给 Lisa+Momo, hero 双 hero 用 Jisoo+Nayeon. **设计稿不再是 LLM 一个人的猜测**, 是 116 个专业视角的协同.
+
+详见 [`examples/performer-demo.mjs`](examples/performer-demo.mjs).
+
 ## 💰 Cost-Aware Model Routing (v2.3.0 · 多任务别一锅烩用最贵的)
 
 100+ agent 投票全用 Opus = 烧钱+慢; 全用 Haiku = panel veto 质量崩。**分层路由才是颗粒度**。

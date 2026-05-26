@@ -1,3 +1,36 @@
+## v2.4.0 (2026-05-30) — 🎯 Activate The 116 (idol 不再是投票傀儡)
+
+**用户问到的盲点**: "我那么多 idol 有什么作用?"
+**答案 (诚实)**: v2.3 之前, 116 idols 都有 ui_specialty + personality + vibe 完整 DNA, 但引擎只提取 stage_name + attitude — 等于沦为投票计数器.
+
+**v2.4.0 全部激活**:
+
+**dispatch.mjs `loadAllAgents`**
+- idols 现在提取: ui_specialty, personality, vibe, role (新增 4 字段)
+- 向后兼容: 旧消费者照常工作
+
+**synthesize.mjs 新增 API**
+- `aggregatePerformerDNA(council)` — 按 ui_specialty 关键词聚类 116 idols
+- `getPerformersBySpecialty(council, dimension, limit)` — 按设计维度查担当
+- `SPECIALTY_KEYWORDS` — 10 个设计维度自动分类: typography / motion / palette / layout / brand / hero / interaction / illustration / photography / copy
+
+**synthesizeDesignBrief 返回新增 `performer_dna`** — 让 LLM 在写 brief 时按维度派工.
+
+**实跑 (BLACKPINK × TWICE landing) 担当分配**:
+- typography → Jennie (Human Chanel · 极简奢华)
+- motion → Lisa + Rosé + Momo
+- hero → Jisoo + Nayeon + Tzuyu
+- copy → Chaeyoung + Jihyo + Sana
+- layout → Jeongyeon (中性侠气 form layout)
+- brand → Jihyo (brand voice 锚)
+
+**SKILL.md 新章节**: `## 🎯 116 Performer 真激活 (v2.4.0)`
+
+**新示例**: `examples/performer-demo.mjs`
+
+**机制层**: dispatch.mjs 是 additive 字段扩展, voting/routing 0 改动, 32+14 = 46/46 tests 仍 PASS.
+
+---
 ## v2.3.0 (2026-05-29) — 💰 Cost-Aware Model Routing (多任务别一锅烩用最贵的)
 
 **底层逻辑**: 100+ agent 投票, 全用 Opus = 烧钱+慢, 全用 Haiku = panel veto 质量崩. **分层路由**才是颗粒度.

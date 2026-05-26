@@ -71,6 +71,11 @@ export function loadAllAgents() {
       tier,
       attitude: fm.attitude || "",
       helpers: fm.invited_helpers || [],
+      // v2.4.0 — 激活 116 idol 的设计 DNA
+      ui_specialty: fm.ui_specialty || "",
+      personality: fm.personality || "",
+      vibe: fm.vibe || "",
+      role: fm.role || "",
     };
   });
   // 评委层 (judge): weight=5, veto_scope=portfolio_only
