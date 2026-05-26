@@ -128,6 +128,58 @@ tags: [design-system, multi-agent, kpop, idol, philosophy, onboarding, ui, modal
 - "�?BLACKPINK 极简奢华�?landing" �?召唤 bp-jisoo + bp-jennie + bp-rose
 - "召集 KPOP 议会评审这个 design" �?全员议会
 
+## 💰 Cost-Aware Model Routing (v2.3.0 · 多任务别一锅烩用最贵的)
+
+100+ agent 投票全用 Opus = 烧钱+慢; 全用 Haiku = panel veto 质量崩。**分层路由才是颗粒度**。
+
+### 三档定义 (engine/routing.mjs)
+
+| 档位 | 相对成本 | 推荐模型 | 用于 |
+|------|---------|---------|------|
+| **premium** | 10x | claude-opus-4.7 / gpt-5.5 / gemini-2.5-pro | **panel** (7 评审 · veto 权 · manifesto 复杂推理) |
+| **standard** | 3x | claude-sonnet-4.6 / gpt-5.4 / gemini-2.5-flash | **group_anchor** (45 团代表 · DNA 包推理) |
+| **fast** | 1x | claude-haiku-4.5 / gpt-5-mini / gemini-2.0-flash | **performer + audience** (116+45 · 一句话视角) |
+
+### API
+
+```js
+import { getModelTier, getRecommendedModel, getRoutingPlan } from "kpop-design-system/engine/routing.mjs";
+
+// 单个 agent
+getModelTier({ layer: "panel" });              // → "premium"
+getRecommendedModel({ layer: "audience" }, "claude"); // → "claude-haiku-4.5"
+
+// 整个 council 出路由计划
+const { plan, summary } = getRoutingPlan(council, "claude");
+// plan = { premium: [...], standard: [...], fast: [...] }
+// summary = { total_agents, cost_units, savings_pct }
+```
+
+### 实跑省钱效果
+
+| BRIEF | total agents | smart cost | naive all-premium | 💰 savings |
+|-------|------|------|------|------|
+| BLACKPINK × TWICE landing | 20 | 51 | 200 | **75%** |
+| IVE B 端 dashboard | 12 | 25 | 120 | **79%** |
+
+### Frontmatter override
+
+任何 agent 可以在 frontmatter 加 `model_tier: premium` 强制升档 (e.g. 某 t1 担当因有特殊话语权要给 premium).
+
+### 在 Task tool / sub-agent harness 里用
+
+```js
+// Spawn 投票 sub-agents 时按 plan 分档
+for (const a of plan.premium) {
+  await Task({ agent_type: "general-purpose", model: a.model, prompt: votePrompt(a) });
+}
+for (const a of plan.fast) {
+  await Task({ agent_type: "explore", model: a.model, prompt: votePrompt(a) });
+}
+```
+
+详见 [`examples/routing-demo.mjs`](examples/routing-demo.mjs) (跑 3 个 BRIEF 看真实分桶).
+
 ## 🛠 Design Brief Discovery (v2.2.0 · 真设计工具)
 
 `/kpop awards` 是叙事秀, **`/kpop design`** 是真工具——拿到可落地的 palette/typography/IA/motion/copy tone.

@@ -1,3 +1,28 @@
+## v2.3.0 (2026-05-29) — 💰 Cost-Aware Model Routing (多任务别一锅烩用最贵的)
+
+**底层逻辑**: 100+ agent 投票, 全用 Opus = 烧钱+慢, 全用 Haiku = panel veto 质量崩. **分层路由**才是颗粒度.
+
+**新增 engine · routing.mjs**
+- 3 档模型路由: premium (panel) / standard (group_anchor) / fast (performer + audience)
+- API: getModelTier(agent) / getRecommendedModel(agent, family) / getRoutingPlan(council, family) / estimateCost(council)
+- 支持 claude / gpt / gemini 三大 family
+- 支持 frontmatter `model_tier` override
+
+**实测省钱**
+- BLACKPINK × TWICE landing (20 agents): smart=51 vs naive=200, **75% savings**
+- IVE B 端 dashboard (12 agents): smart=25 vs naive=120, **79% savings**
+
+**新增 routing.test.mjs**: 14 unit tests, 全部 PASS (含新旧 layer 名兼容测试).
+
+**机制层稳定**: dispatch / voting / synthesize 0 改动. routing.mjs 是纯 additive 模块.
+
+**总测试数**: 7 (voting) + 25 (dispatch) + 14 (routing) = **46/46 PASS**.
+
+**SKILL.md 新章节**: `## 💰 Cost-Aware Model Routing (v2.3.0)` 含 API + 实跑省钱表 + Task tool 集成示例.
+
+**新示例**: `examples/routing-demo.mjs` 跑 3 个 BRIEF 看真实分桶 + 省钱比.
+
+---
 ## v2.2.0 (2026-05-28) — 🛠 /kpop design · Design Brief Discovery (真设计工具)
 
 **重大补全**: 把"年度歌谣大赏"机制从"叙事秀"升级为"真能用的设计工具".
