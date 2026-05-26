@@ -196,7 +196,7 @@ test("E · loadStage(comeback) 返回 sample_brief", () => {
 test("D · lineages 列表 5 条", () => {
   const ls = listLineages();
   console.log(`     lineages=${ls.join(",")}`);
-  if (ls.length !== 5) throw new Error(`expected 5 lineages, got ${ls.length}`);
+  if (ls.length !== 6) throw new Error(`expected 6 lineages, got ${ls.length}`);
 });
 
 test("D · loadLineage(main_vocal) 返回 soul", () => {

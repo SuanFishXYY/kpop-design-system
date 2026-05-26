@@ -1,4 +1,42 @@
-## v3.0.0 (2026-05-31) — 🏛️ K-pop 工业级视觉策略系统 (4 大支柱全开)
+## v3.1.0 (2026-05-31) — 🧑‍⚖️ User-as-Judge (用户成为评委)
+
+**v3.1: 用户从单向被服务者升级为 council 中的并肩评委, 拥有 veto / override / 偏好学习权**
+
+### ❶ 用户票席 (User Seat) — `engine/user-jury.mjs`
+- `castUserVote(verdict, weight, reason)` — 用户投票 (权重 1-3)
+- `tallyWithUser(council_votes, user_vote)` — 圣人 + 用户合并 tally
+- 新 verdict: `user_veto` (council pass 但用户 reject), `user_override` (council reject 但用户 pass)
+- `audit_trail` 完整留痕
+
+### ❷ 偏好学习 (Preference Memory) — `engine/user-prefs.mjs`
+- 本地 JSON `~/.kpop-design/user-prefs.json` · 不上传
+- `overrides` (最近 50 条)
+- `favorites` (group/era, 最多 30, 按 count 排序)
+- `rejected_specialties` (反复拒绝的 specialty 频次)
+- API: loadUserPrefs / saveUserPrefs / recordOverride / recordFavorite / recordRejectedSpecialty / topFavorites / shouldSkipSpecialty
+
+### ❸ 评审会议室 CLI — `bin/review.mjs`
+- `node bin/review.mjs --brief="..."`
+- 交互式: 圣人轮流发言 → 用户 +1/-1/?/Enter → final verdict + weight + reason → 决议书
+- 自动写入 prefs (if veto/override) + 可选标记 favorite
+
+### ❹ Docs + Demo
+- `docs/USER-AS-JUDGE.md` — 完整协议文档
+- `examples/user-jury-demo.mjs` — 3 个 demo (veto/override/concur)
+
+### 测试
+- **86/86 PASS** (dispatch 25 + voting 7 + routing 14 + eras 10 + cycle 5 + coherence 6 + generation 7 + user-jury 6 + user-prefs 6)
+- 较 v3.0 (74) 净增 12 tests
+- 修复: dispatch lineages count 测试 5→6 (新增 generation lineage)
+
+### 隐私
+- 本地 only · 永不上传
+- 路径可自定义: `loadUserPrefs("/custom/path")`
+- 删档: `rm ~/.kpop-design/user-prefs.json`
+
+---
+
+
 
 **v3.0 集齐 ❶Era Universe + ❷Comeback Cycle + ❸Multi-touchpoint + ❹Generation Lint**
 
