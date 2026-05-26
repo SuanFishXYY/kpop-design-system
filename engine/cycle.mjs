@@ -145,5 +145,5 @@ export function getStageBrief(group_slug, era_slug, stage_slug) {
 }
 
 export function listCycleStages() {
-  return CYCLE_STAGES.map(s => ({ stage_slug: s.stage_slug, label: s.label, day_offset: s.day_offset }));
+  return CYCLE_STAGES.map(s => ({ stage_slug: s.stage_slug, label: s.label, day_offset: s.day_offset, primary_specialty: s.primary_specialty, output_kind: s.output_kind }));
 }
