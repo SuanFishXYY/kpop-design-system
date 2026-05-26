@@ -128,6 +128,53 @@ tags: [design-system, multi-agent, kpop, idol, philosophy, onboarding, ui, modal
 - "�?BLACKPINK 极简奢华�?landing" �?召唤 bp-jisoo + bp-jennie + bp-rose
 - "召集 KPOP 议会评审这个 design" �?全员议会
 
+## 🛠 Design Brief Discovery (v2.2.0 · 真设计工具)
+
+`/kpop awards` 是叙事秀, **`/kpop design`** 是真工具——拿到可落地的 palette/typography/IA/motion/copy tone.
+
+### 引擎层 · `synthesizeDesignBrief(brief)` (engine/synthesize.mjs)
+
+```js
+import { synthesizeDesignBrief } from "kpop-design-system/engine/synthesize.mjs";
+const dna = synthesizeDesignBrief("BLACKPINK × TWICE comeback landing");
+```
+
+输出**「设计 DNA 包」**:
+- `palette.all_hex` — 召唤 anchor 的 hex 汇总
+- `mood.intersection / union / distribution` — 多 anchor 共有/全集/分布
+- `motion.hint` — 基于 BPM 区间的 tempo/easing/duration 推荐
+- `typography.suggested_stack` — 基于 mood 关键词的字体栈
+- `copy_tone` — panel + anchor manifesto 提炼的口吻线索
+- `constraints` — 评审 style + manifesto + veto_scope
+- `signals` — rivalry/cross_label/fusion 三大触发
+
+### LLM 设计层 (我 · 在 loop 里收敛 DNA → 出 brief)
+
+LLM 读 DNA 包后产出:
+1. **Palette token 表** (从 all_hex 选 3-5 色, 标注用途)
+2. **Typography stack 收敛** (从 suggested_stack 选最终)
+3. **Motion 方案** (沿用 hint 或微调)
+4. **IA / 组件清单** (匹配 BRIEF 场景 + signals 约束)
+5. **Copy tone + headline 示范**
+6. **风险与权衡** (rivalry/cross_label 显式处理)
+
+### 议会决议层 · `dispatchBrief(brief, voteSimulator)` (engine/dispatch.mjs)
+
+LLM 替每个 agent 投票 (针对 Phase 2 设计稿) → 加权决议 → PASS / VETO.
+
+### 完整工作流
+
+详见 [`workflows/design-brief.md`](workflows/design-brief.md) (5 阶段协议 + 8 条 LLM 行为约束).  
+真实跑通案例: [`examples/worked-example-bp-twice.md`](examples/worked-example-bp-twice.md).
+
+### 何时该用 `/kpop design` vs `/kpop awards`
+
+| 目的 | 选 |
+|------|------|
+| 真落地的设计 brief / 需求挖掘 | **`/kpop design`** |
+| 戏剧性叙事秀 / 演示给客户 | `/kpop awards` |
+| 跨流派碰撞挖需求 (rivalry/cross_label 信号) | **`/kpop design`** |
+
 ## 🎤 /kpop awards · 年度歌谣大赏典礼 (v2.1.0 LLM 驱动叙事)
 
 当用户输入 `/kpop awards <BRIEF>` 或 `召开年度歌谣大赏 <BRIEF>` 时, 进入**颁奖典礼实时叙事模式**:
@@ -164,7 +211,7 @@ tags: [design-system, multi-agent, kpop, idol, philosophy, onboarding, ui, modal
 
 ## 🌐 触发短语 (Activation Phrases)
 
-/kpop · /kpop awards · /女团 · /idol-congress · /kpop-design · 召开年度歌谣大赏 · "kpop", "女团", "idol", 各团英文名
+/kpop · /kpop design · /kpop awards · /女团 · /idol-congress · /kpop-design · 召开年度歌谣大赏 · 设计 brief 挖掘 · "kpop", "女团", "idol", 各团英文名
 ## �?与算鱼设计系统的关系
 
 KPOP 议会 v1.0 �?[suanfish-design-system](https://github.com/SuanFishXYY/suanfish-design-system) 共享同一架构 (圣人议会 + 加权陪审�?+ 4 律跨学科扩展)。区�?

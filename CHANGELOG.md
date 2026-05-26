@@ -1,3 +1,31 @@
+## v2.2.0 (2026-05-28) — 🛠 /kpop design · Design Brief Discovery (真设计工具)
+
+**重大补全**: 把"年度歌谣大赏"机制从"叙事秀"升级为"真能用的设计工具".
+
+**新增 engine · synthesizeDesignBrief()**
+- engine/synthesize.mjs · 聚合召唤 anchor 的 palette / mood_keywords / signature_tracks
+- 输出「设计 DNA 包」: palette.all_hex / mood.intersection-union / motion.hint (BPM→tempo) / typography.suggested_stack / copy_tone / constraints / signals
+- Rich frontmatter parser (parseRichFrontmatter) — 处理 dispatch.mjs 简单 parser 不支持的嵌套 YAML (palette block + signature_tracks list)
+
+**新增工作流文档**
+- workflows/design-brief.md · 5 阶段协议 (BRIEF → 引擎调用 → LLM 设计输出 → 议会投票 → 决议+沉淀) + 8 条 LLM 行为约束 + 4 条边界声明
+- examples/worked-example-bp-twice.md · 真实跑通的 BLACKPINK × TWICE 跨厂牌 comeback landing 设计 brief (palette token 表 / IA 框架 / copy tone / 议会决议)
+- examples/design-demo.mjs · 3 BRIEF demo 跑通脚本
+
+**SKILL.md 新章节**: ## 🛠 Design Brief Discovery (v2.2.0)
+
+**新触发短语**: `/kpop design`, `设计 brief 挖掘`
+
+**核心补全**: 之前 voteSimulator 只能 yes/no, 现在 LLM 在 loop 里基于 DNA 包给出**具体设计建议** (palette token / typography stack / motion 方案 / IA 模块 / copy tone). 引擎 (确定性) + LLM (创意收敛) 真正闭环.
+
+**三层分工**:
+1. ① 引擎层 — synthesizeDesignBrief 出结构化 DNA
+2. ② LLM 设计层 — 读 DNA, 收敛成 brief
+3. ③ 议会层 — dispatchBrief 走加权投票
+
+**机制层稳定**: dispatch.mjs / voting.mjs 0 修改, 32/32 tests 仍 PASS.
+
+---
 ## v2.1.0 (2026-05-27) — 🎤 /kpop awards · 年度歌谣大赏典礼 (Plan C 闭环)
 
 **Plan C 上线**: LLM 驱动的颁奖典礼实时叙事模式. 触发 /kpop awards <BRIEF> 进入红毯→提名→投票→颁奖→闭幕的完整典礼流程.
