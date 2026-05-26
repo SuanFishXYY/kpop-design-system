@@ -7,7 +7,7 @@ judge_name: "방시혁 Bang Si-hyuk"
 judge_ko: "Bang PD"
 label: "HYBE"
 founded_year: 2005
-portfolio: ["lsf","illit","katseye","kep1er"]
+portfolio: ["lsf","illit","katseye","kep1er","fromis"]
 judging_style: "narrative storytelling + 全球化 + 多元宇宙 IP"
 manifesto: ""Music & Artist for Healing"——artist 是 IP,IP 要能扩展到 webtoon/game/movie,全球化是默认设置"
 inter_label_tension: ["sm","jyp","mhj"]

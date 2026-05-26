@@ -1,6 +1,6 @@
 # 🎤 K-pop 议会 · 名单大全 (v2.7.0)
 
-> 算鱼设计系统 · **7 评委 + 45 团魂 + 139 idol** 三层完整名单
+> 算鱼设计系统 · **7 评委 + 52 团魂 + 186 idol** 三层完整名单
 
 唯一权威名单. 之前的 `IDOL-ROSTER.md` 和 `SPECIALTY-INDEX.md` 已合并到本表.
 
@@ -11,8 +11,8 @@
 | 层 | 数量 | 权重 | 角色 |
 |---|---|---|---|
 | 🏛 评委 (judges) | 7 | 5 | 厂牌级 veto · portfolio_only |
-| 👯 团魂 (group souls) | 45 | 3 | 集体 DNA 守护 · 高于个体 idol |
-| 🌟 idol (Tier 0+1) | 139 | 1.5-2 | 设计维度专业担当 |
+| 👯 团魂 (group souls) | 52 | 3 | 集体 DNA 守护 · 高于个体 idol |
+| 🌟 idol (Tier 0+1) | 186 | 1.5-2 | 设计维度专业担当 |
 
 ---
 
@@ -23,14 +23,14 @@
 - **创立**: 2005
 - **评审风格**: narrative storytelling + 全球化 + 多元宇宙 IP
 - **宣言**: > _Music & Artist for Healing"——artist 是 IP,IP 要能扩展到 webtoon/game/movie,全球化是默认设置_
-- **旗下团 (portfolio)**: `lsf` · `illit` · `katseye` · `kep1er`
+- **旗下团 (portfolio)**: `lsf` · `illit` · `katseye` · `kep1er` · `fromis`
 
 ### 🟢 朴轸永 · JYP Entertainment
 
 - **创立**: 1997
 - **评审风格**: noise level + 真诚共鸣 + Half Korean swagger
 - **宣言**: > _Half Korean Half Asian"——一首歌要有 noise level (引发讨论度) + 真诚 (打到心)_
-- **旗下团 (portfolio)**: `twice` · `itzy` · `nmixx` · `missa` · `wg` · `2pm` · `day6`
+- **旗下团 (portfolio)**: `twice` · `itzy` · `nmixx` · `missa` · `wg` · `2pm` · `day6` · `niziu`
 
 ### 🎙 민희진 Min Hee-jin · ADOR (HYBE sub)
 
@@ -69,7 +69,7 @@
 
 ---
 
-## 👯 团魂 + Idol 全员 (45 团)
+## 👯 团魂 + Idol 全员 (52 团)
 
 每个团展示: **代际 / 美学基因 / 集体宣言 / fandom** + 全员 idol 表
 
@@ -217,6 +217,25 @@ _(无团魂条目)_
 
 ---
 
+### Brave Girls
+
+**代际**: 2.5 代 · **出道**: 2011 · **fandom**: Fearless
+
+**美学基因**: 夏日翻红 · 军营 anthem
+
+> 🌟 **团魂宣言**: _rollin"——再被遗忘也不放弃, 第 10 年逆袭神话_
+
+**成员 (4)**:
+
+| Stage | Role | UI Specialty | Personality | Quote |
+|---|---|---|---|---|
+| **Eunji** | Main Dancer / Lead Rapper | dance + rapper hook · 军舞 motion | 2.5代dancer·rapper·sharp | _"we ride"_ |
+| **Minyoung** | Leader / Main Vocal | main vocal · 翻红 anthem brand voice | 2.5代队长·主唱·翻红 | _"rollin"_ |
+| **Yujeong** | Lead Vocal / Visual | visual sub vocal · summer hero | 2.5代visual·夏日·甜美 | _"chi mat ba ram"_ |
+| **Yuna** | Maknae / Vocal | maknae sub vocal · soft microcopy | 2.5代maknae·甜美·清纯 | _"high heels"_ |
+
+---
+
 ### Brown Eyed Girls
 
 **代际**: 2 代 · **出道**: 2006 · **fandom**: Everlasting
@@ -246,6 +265,27 @@ _(无团魂条目)_
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
 | **JiU** | Leader / Sub Vocal | rock 系 · dark theme | 3代队长·梦女·消失 | _"chase me"_ |
+
+---
+
+### EVERGLOW
+
+**代际**: 4 代 · **出道**: 2019 · **fandom**: FOREVER
+
+**美学基因**: 冷艳 dance 军团 · sharp killing
+
+> 🌟 **团魂宣言**: _forever"——6 个人就是一个 dance machine, 永远不会失误_
+
+**成员 (6)**:
+
+| Stage | Role | UI Specialty | Personality | Quote |
+|---|---|---|---|---|
+| **Aisha** | Lead Vocal / Lead Rapper | cross-lingual copy · 中英韩 tagline | 4代多语·rapper·全能 | _"adios"_ |
+| **E:U** | Leader / Main Rapper | leader rapper · sharp killing tagline | 4代队长·rapper·sharp | _"dun dun"_ |
+| **Mia** | Main Dancer / Lead Vocal | dance motion · 力量 hook 节拍 | 4代dancer·力量·sharp | _"first"_ |
+| **Onda** | Sub Vocal / Lead Dancer | soft sub vocal · 反差柔美 copy | 4代反差·柔美·dance | _"pirate"_ |
+| **Sihyeon** | Main Vocal / Visual | main vocal hero · sharp visual KV | 4代主唱·visual·sharp | _"la di da"_ |
+| **Yiren** | Visual / Maknae | maknae visual hero · 中国担当 KV | 4代maknae·visual·中国 | _"last melody"_ |
 
 ---
 
@@ -506,6 +546,48 @@ _(无团魂条目)_
 
 ---
 
+### LOONA
+
+**代际**: 4 代 · **出道**: 2018 · **fandom**: Orbit
+
+**美学基因**: 月之少女 · 世界观 12 章
+
+> 🌟 **团魂宣言**: _orbit"——12 个月亮, 每个独立颜色独立宇宙, 拼成完整月相_
+
+**成员 (6)**:
+
+| Stage | Role | UI Specialty | Personality | Quote |
+|---|---|---|---|---|
+| **Chuu** | Sub Vocal / 出圈担当 | sunny sticker · heart 装饰 graphic | 4代阳光·爱心·治愈 | _"heart attack"_ |
+| **Haseul** | Leader / Vocal | leader brand voice · 12 人统筹 | 4代队长·温柔·担当 | _"let me in"_ |
+| **Heejin** | Center / Sub Vocal | concept center · world building visual | 4代中心·世界观·清纯 | _"why not?"_ |
+| **Hyunjin** | Main Vocal | main vocal · ethereal harmony | 4代主唱·氛围·治愈 | _"around you"_ |
+| **Kim Lip** | Sub Vocal / Visual | eclipse aesthetic · 红色 sharp KV | 4代sharp·氛围·性感 | _"eclipse"_ |
+| **Yves** | Sub Vocal | mature concept · 复古 photography | 4代成熟·氛围·禁果 | _"new"_ |
+
+---
+
+### Lapillus
+
+**代际**: 4 代 · **出道**: 2022 · **fandom**: Lapis
+
+**美学基因**: 多国籍 latin pop · MLD 万花筒
+
+> 🌟 **团魂宣言**: _lapis"——多国籍少女拼成的宝石, 拉丁节奏 + 韩流舞台_
+
+**成员 (6)**:
+
+| Stage | Role | UI Specialty | Personality | Quote |
+|---|---|---|---|---|
+| **Bessie** | Main Dancer / Vocal | dance + latin pulse motion | 4代dancer·拉丁·活力 | _"gratata"_ |
+| **Chanty** | Leader / Main Vocal | leader main vocal · 拉丁 brand voice | 4代队长·主唱·拉丁混血 | _"hit ya"_ |
+| **Haeun** | Sub Vocal / Visual | sub visual · soft sparkle KV | 4代柔美·visual·甜美 | _"gratata"_ |
+| **Seowon** | Maknae / Vocal | maknae brightness · sticker 装饰 | 4代maknae·活泼·甜美 | _"hit ya"_ |
+| **Shana** | Main Rapper / Sub Vocal | main rapper · sharp 拉丁 hook | 4代rapper·sharp·日本 | _"hit ya"_ |
+| **Yue** | Lead Vocal / Lead Rapper | cross-lingual copy · 中英 tagline | 4代多语·rapper·清亮 | _"bewitched"_ |
+
+---
+
 ### Lovelyz
 
 **代际**: 2.5 代 · **出道**: 2014 · **fandom**: LOVELINUS
@@ -615,6 +697,30 @@ _(无团魂条目)_
 | **Hanni** | Lead Vocal | bunny tag · 萌系 microcopy | 越南·小鹿·甜美 | _"hanni"_ |
 | **Hyein** | Maknae / Vocal | 06年最年轻 · 新生代锚 | maknae·光感·清澈 | _"OMG"_ |
 | **Minji** | Leader / Vocal | Y2K复古议会 · 清冷主持 | 队长·氛围·新时尚 | _"super shy"_ |
+
+---
+
+### NiziU  🟢 JYP Entertainment
+
+**代际**: 4 代 · **出道**: 2020 · **fandom**: WithU
+
+**美学基因**: J-pop 治愈 + K-pop 训练 · nizi project
+
+> 🌟 **团魂宣言**: _make you happy"——9 个彩虹色 (niji), 把日本治愈系融进 K-pop 训练_
+
+**成员 (9)**:
+
+| Stage | Role | UI Specialty | Personality | Quote |
+|---|---|---|---|---|
+| **Ayaka** | Vocal / Visual | soft visual · pastel palette KV | 4代柔美·visual·治愈 | _"paradise"_ |
+| **Mako** | Leader / Main Dancer | leader brand voice · J-K hybrid layout | 4代队长·dance·稳重 | _"make you happy"_ |
+| **Maya** | Lead Rapper / Vocal | rapper hook · J-pop sweet tagline | 4代rapper·甜美·反差 | _"asobo"_ |
+| **Mayuka** | Vocal / Visual | sub visual sparkle · cute graphic icon | 4代甜美·治愈·撒娇 | _"make you happy"_ |
+| **Miihi** | Lead Vocal / Visual | lead vocal · visual sparkle harmony | 4代副主唱·visual·甜美 | _"make you happy"_ |
+| **Nina** | Maknae / Main Vocal | maknae main vocal · clean high note | 4代maknae·main vocal·清亮 | _"take a picture"_ |
+| **Riku** | Main Vocal | main vocal · clean tone hero | 4代主唱·清亮·稳定 | _"super summer"_ |
+| **Rima** | Main Rapper / Lead Dancer | rapper + dance · 全英短句 hook | 4代rapper·attitude·dance | _"chopstick"_ |
+| **Rio** | Lead Vocal / Lead Dancer | visual + vocal + dance triple anchor | 4代全能·visual·dance | _"step and a step"_ |
 
 ---
 
@@ -805,6 +911,28 @@ _(无团魂条目)_
 
 ---
 
+### XG
+
+**代际**: 5 代 · **出道**: 2022 · **fandom**: ALPHAZ
+
+**美学基因**: 全英 K-pop · 日本制造 hip-hop
+
+> 🌟 **团魂宣言**: _x-gene"——extraordinary girls, 不是 K-pop 也不是 J-pop, 是 X_
+
+**成员 (7)**:
+
+| Stage | Role | UI Specialty | Personality | Quote |
+|---|---|---|---|---|
+| **Chisa** | Main Vocal / Lead Rapper | main vocal · 全英 r&b copy | 5代全能·r&b·成熟 | _"tippy toes"_ |
+| **Cocona** | Maknae / Sub Vocal / Rapper | maknae rapper · fresh hip-hop hook | 5代maknae·rapper·fresh | _"in the rain"_ |
+| **Harvey** | Main Rapper | main rapper · 全英 hip-hop hook | 5代rapper·全英·attitude | _"shooting star"_ |
+| **Hinata** | Main Dancer / Sub Vocal | dance motion · sharp killing part | 5代dancer·sharp·力量 | _"left right"_ |
+| **Juria** | Lead Rapper / Lead Dancer | sub rapper + dance · 短句 hook | 5代双rapper·dance·sharp | _"undefeated"_ |
+| **Jurin** | Leader / Main Vocal | leader r&b vocal · sharp brand voice | 5代队长·r&b·sharp | _"mascara"_ |
+| **Maya** | Lead Vocal / Sub Rapper | sub vocal · velvet r&b texture | 5代sub vocal·velvet·成熟 | _"something ain't right"_ |
+
+---
+
 ### aespa  💎 SM Entertainment
 
 **代际**: 4 代 · **出道**: 2020 · **fandom**: MY
@@ -837,6 +965,30 @@ _(无团魂条目)_
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
 | **Victoria** | Leader / Lead Dancer | 中国 leader · 跨文化锚 | 2代中国·队长·御姐 | _"electric shock"_ |
+
+---
+
+### fromis_9  🌐 HYBE
+
+**代际**: 4 代 · **出道**: 2018 · **fandom**: flover
+
+**美学基因**: 邻家青春 · 9 人晴天
+
+> 🌟 **团魂宣言**: _to heart"——9 个最亲近的姐妹, 把青春写成 demo_
+
+**成员 (9)**:
+
+| Stage | Role | UI Specialty | Personality | Quote |
+|---|---|---|---|---|
+| **Chaeyoung** | Vocal / Rapper | rapper hook · sharp tagline | 4代rapper·sharp·attitude | _"unlock my world"_ |
+| **Gyuri** | Visual / Vocal | visual hero KV · 仙气 photography | 4代门面·氛围·清纯 | _"feel good"_ |
+| **Hayoung** | Main Vocal | main vocal · clean high note hero | 4代主唱·清亮·稳定 | _"dm"_ |
+| **Jiheon** | Maknae / Vocal | maknae brightness · sticker 装饰 | 4代maknae·活泼·开朗 | _"we go!"_ |
+| **Jisun** | Vocal / Visual | sub visual sparkle · soft KV | 4代副门面·甜美·温柔 | _"fun!"_ |
+| **Jiwon** | Main Vocal | duo main vocal harmony · 二重唱 | 4代双主唱·稳重·真挚 | _"love bomb"_ |
+| **Nagyung** | Vocal / Visual | soft sub visual · soft palette | 4代柔美·甜美·温柔 | _"glass shoes"_ |
+| **Saerom** | Leader / Lead Dancer | leader brand voice · 9 人统筹 layout | 4代队长·成熟·稳重 | _"to heart"_ |
+| **Seoyeon** | Vocal / Lead Dancer | dance lead motion · group choreo | 4代dancer·活泼·可爱 | _"love bomb"_ |
 
 ---
 
