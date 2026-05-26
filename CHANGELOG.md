@@ -1,5 +1,69 @@
 ﻿# Changelog
 
+## v1.2.0 · 2025 · 评委层 + 跨 label gate (从家族到联盟)
+
+### 🏛️ 新增评委层 (judges/)
+
+层级架构升级到 4 层:
+
+| Layer | Count | Weight | Veto | 说明 |
+|-------|-------|--------|------|------|
+| **judge** | 7 | **5** | portfolio_only | 经纪人/制作人评委 |
+| group_soul | 44 | 3 | yes | 团魂 |
+| tier_0 | 64 | 2 | no | 主力 idol |
+| tier_1 | 38 | 1.5 | no | 辅助 idol |
+
+7 评委（label CEO / 制作人）:
+- 🟢 **jyp** 朴轸永 J.Y. Park (JYP) — TWICE / ITZY / NMIXX / WG / missA
+- 🖤 **yg** 杨贤硕 Yang Hyun-suk (YG) — BLACKPINK / 2NE1 / MEOVV / BM / GD
+- 💎 **sm** 李秀满 Lee Soo-man (SM) — SNSD / f(x) / RV / aespa / KARA
+- 🌐 **bang-pd** 방시혁 Bang PD (HYBE) — LE SSERAFIM / ILLIT / KATSEYE / Kep1er
+- 🐰 **mhj** 민희진 Min Hee-jin (ADOR) — NewJeans
+- 👑 **starship** 홍승성 (Starship) — IVE / WJSN / Kep1er / MONSTA X
+- 🎛️ **teddy** Teddy Park (THEBLACKLABEL) — MEOVV / BP producer
+
+### ⚔️ 跨 label gate (擦火花深化)
+
+跨团 brief 自动启动 cross-label gate:
+- 同 label (e.g. TWICE × ITZY 都属 JYP) → 1 评委即可
+- **跨 label** (e.g. TWICE × BLACKPINK) → **必须 JYP + YG 双方到场**
+- 缺席任一 label → gate_passed=false, 决议自动 block
+- `inter_label_tension` 字段标注真实业界恩怨 (YG vs SM / JYP vs HYBE)
+
+### 🎵 NMIXX 补齐
+
+之前只有 Lily 1 人 → 现在 6 人完整阵容:
+- ✨ haewon (Leader / Main Vocal, tier 0)
+- ✨ sullyoon (Main Vocal / Visual, tier 0)
+- ✨ bae (Lead Vocal / Lead Dancer, tier 1)
+- ✨ jiwoo (Sub Vocal / Sub Dancer, tier 1)
+- ✨ kyujin (Main Dancer / Maknae, tier 1)
+- lily (Main Vocal / Center, tier 1) — 原有
+
+### 🗳️ 引擎升级
+
+**voting.mjs**:
+- 新增 layer="judge" 支持
+- 评委否决优先级 > 团魂否决 (judgeVetoes 先于 vetoes 检查)
+- isEligibleVoter 接受 judge layer
+
+**dispatch.mjs**:
+- loadAllAgents 返回 {souls, idols, judges}
+- summonCouncil 自动召唤 in-portfolio 评委
+- checkCrossLabelGate: distinct_labels / missing / gate_passed
+- dispatchBrief 投票顺序: judges → souls → idols
+
+### ✅ 测试覆盖
+
+- voting.test.mjs: 7/7 PASS (无回归)
+- dispatch.test.mjs: **12/12 PASS** (新增 5 条 v1.2.0 测试)
+
+### 🎯 含义
+
+v1.0.x = 营销概念  
+v1.1.0 = 真投票引擎 (家族内部)  
+**v1.2.0 = 经纪公司联盟 (跨 label 协作)**
+
 ## v1.1.0 · 2025 · 真投票引擎 (从声明到代码)
 
 ### ⚙️ 引擎层 (engine/)

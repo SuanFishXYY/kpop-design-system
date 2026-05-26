@@ -70,7 +70,29 @@ export function loadAllAgents() {
       helpers: fm.invited_helpers || [],
     };
   });
-  _cache = { souls, idols };
+  // 评委层 (judge): weight=5, veto_scope=portfolio_only
+  let judges = [];
+  try {
+    judges = readdirSync(join(ROOT, "judges")).filter(f => f.endsWith(".md")).map(f => {
+      const raw = readFileSync(join(ROOT, "judges", f), "utf-8");
+      const fm = parseFrontmatter(raw);
+      return {
+        slug: f.replace(/\.md$/, ""),
+        judge_slug: fm.judge_slug || f.replace(/\.md$/, ""),
+        name: fm.judge_name || fm.name || f,
+        label: fm.label || "",
+        layer: "judge",
+        weight: Number(fm.vote_weight) || 5,
+        portfolio: fm.portfolio || [],
+        judging_style: fm.judging_style || "",
+        manifesto: fm.manifesto || "",
+        inter_label_tension: fm.inter_label_tension || [],
+        can_veto: fm.can_veto === "true" || fm.can_veto === true,
+        veto_scope: fm.veto_scope || "portfolio_only",
+      };
+    });
+  } catch (e) { /* judges/ optional */ }
+  _cache = { souls, idols, judges };
   return _cache;
 }
 
@@ -97,12 +119,18 @@ export function parseBrief(brief) {
 }
 
 /**
- * 召集议会: brief → 团魂 + 相关 idol
+ * 召集议会: brief → 评委 + 团魂 + 相关 idol
  */
 export function summonCouncil(brief, opts = {}) {
   const maxIdols = opts.maxIdols || 15;
   const { mentioned_groups, mentioned_idols } = parseBrief(brief);
-  const { idols } = loadAllAgents();
+  const { idols, judges } = loadAllAgents();
+  
+  // 0. 评委层: 旗下含被提到团的评委自动召唤
+  const mentionedSlugs = new Set(mentioned_groups.map(g => g.group_slug.toLowerCase()));
+  const summonedJudges = (judges || []).filter(j =>
+    (j.portfolio || []).some(p => mentionedSlugs.has((p || "").toLowerCase()))
+  );
   
   // 1. 团魂层: 所有被提及的团
   const souls = mentioned_groups;
@@ -134,12 +162,45 @@ export function summonCouncil(brief, opts = {}) {
   // 3. 跨团融合校验
   const fusion_check = checkFusionCompat(souls);
   
+  // 4. 跨 label gate: 若 fusion 且涉及多个不同 label 评委 → 必须每方至少 1 评委
+  const cross_label_check = checkCrossLabelGate(summonedJudges, souls);
+  
   return {
     brief,
+    judges: summonedJudges,
     souls,
     invited,
-    council_size: souls.length + invited.length,
+    council_size: summonedJudges.length + souls.length + invited.length,
     fusion_check,
+    cross_label_check,
+  };
+}
+
+/**
+ * 跨 label gate: fusion brief 中, 每个涉及到的 label 至少需要 1 个评委到场
+ * 返回 missing labels (期望: 空数组)
+ */
+function checkCrossLabelGate(judges, souls) {
+  if (souls.length < 2) return { is_cross_label: false, missing: [] };
+  
+  // 每个 soul 对应的 label (从 judges.portfolio 反查)
+  const soulLabel = {};
+  for (const soul of souls) {
+    const judge = judges.find(j => (j.portfolio || []).map(p => p.toLowerCase()).includes(soul.group_slug.toLowerCase()));
+    soulLabel[soul.group_slug] = judge ? judge.label : "unknown";
+  }
+  
+  const distinctLabels = [...new Set(Object.values(soulLabel))].filter(l => l !== "unknown");
+  const presentLabels = new Set(judges.map(j => j.label));
+  const missing = distinctLabels.filter(l => !presentLabels.has(l));
+  
+  return {
+    is_cross_label: distinctLabels.length > 1,
+    soul_to_label: soulLabel,
+    distinct_labels: distinctLabels,
+    judges_present: [...presentLabels],
+    missing,
+    gate_passed: missing.length === 0,
   };
 }
 
@@ -179,6 +240,13 @@ export function dispatchBrief(brief, voteSimulator) {
   
   // 收集投票 (voteSimulator 是外部注入的函数，每个 agent 一票)
   const votes = [];
+  for (const judge of (council.judges || [])) {
+    const v = voteSimulator ? voteSimulator(judge, brief) : { vote: "yes", reason: "default approve" };
+    votes.push({
+      slug: judge.slug, layer: "judge", weight: judge.weight || 5,
+      vote: v.vote, reason: v.reason, is_veto: v.is_veto || false
+    });
+  }
   for (const soul of council.souls) {
     const v = voteSimulator ? voteSimulator(soul, brief) : { vote: "yes", reason: "default approve" };
     votes.push({
@@ -198,11 +266,15 @@ export function dispatchBrief(brief, voteSimulator) {
   
   return {
     council_summary: {
+      judges: (council.judges || []).map(j => j.judge_slug),
       souls: council.souls.map(s => s.group_slug),
       idol_count: council.invited.length,
       fusion: council.fusion_check.is_fusion,
+      cross_label: council.cross_label_check.is_cross_label,
+      cross_label_gate_passed: council.cross_label_check.gate_passed,
     },
     fusion_check: council.fusion_check,
+    cross_label_check: council.cross_label_check,
     votes,
     decision: result,
   };
