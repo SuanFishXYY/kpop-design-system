@@ -1,6 +1,6 @@
 {
     "name":  "kpop-design-system",
-    "version": "2.6.0",
+    "version": "2.7.0",
     "description": "KPOP Music Awards · 年度歌谣大赏设计系统 · 116 performers · 45 group anchors · 7 awards panel · 45 audience proxies · 5 award categories · 5 legacy lineages · weighted scoring engine",
     "bin":  {
                 "kpop-install":  "installer/install.mjs"

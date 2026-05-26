@@ -1,10 +1,10 @@
 ﻿# 🎤 KPOP Design System · The Idol Congress
 
-> KPOP 女团圣人议会 · 116 idol · 45 团魂 · 7 评委 · 4 层议会架构 · 真投票引擎 · 哲学驱动多智能体 UI 设计语言体系
+> KPOP 女团圣人议会 · 139 idol · 45 团魂 · 7 评委 · 4 层议会架构 · 真投票引擎 · 哲学驱动多智能体 UI 设计语言体系
 
 [![version](https://img.shields.io/badge/version-1.3.0-pink.svg)](./CHANGELOG.md)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
-[![idols](https://img.shields.io/badge/idols-116-purple.svg)](#)
+[![idols](https://img.shields.io/badge/idols-139-purple.svg)](#)
 [![group_souls](https://img.shields.io/badge/group_souls-45-magenta.svg)](#)
 [![judges](https://img.shields.io/badge/judges-7-gold.svg)](#)
 [![tests](https://img.shields.io/badge/tests-22%2F22%20PASS-green.svg)](#)
@@ -22,12 +22,11 @@ npx --yes github:SuanFishXYY/kpop-design-system
 
 装完即用, **无需手动 /skill add**。
 
-## 📋 完整名单
+## 📋 名单大全
 
-- **👉 [116 Idol 大一览表 →](./docs/IDOL-ROSTER.md)** — 按 group 分组 · 完整 idol DNA 表
-- **🔍 [按维度反查索引 →](./docs/SPECIALTY-INDEX.md)** — 10 设计维度 → 谁管 typography? 谁管 motion?
+**👉 [K-pop 议会 · 名单大全 (评委 + 团魂 + idol) →](./docs/MASTER-ROSTER.md)** — **7 评委 + 45 团魂 + 139 idol** 一份权威名单, 每个团展示集体宣言+全员
 
-## 🎙 议会构成 · 4 层架构 (116 idol)
+## 🎙 议会构成 · 4 层架构 (139 idol)
 
 | Layer | 数量 | weight | veto |
 |-------|------|--------|------|
