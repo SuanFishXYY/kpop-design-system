@@ -13,6 +13,8 @@ priority: above_tier_0
 fusion_compatible: ["bm", "kep1er", "triples"]
 fusion_synergy: "跨文化全球"
 fusion_rules: "RTL/LTR 双向适配不可丢"
+rivals: ["bm", "illit"]
+rivalry_narrative: "全球化 vs HYBE 5代"
 fandom_name: "EYEKONS"
 palette:
   primary: "#FF1493"

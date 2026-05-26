@@ -13,6 +13,8 @@ priority: above_tier_0
 fusion_compatible: ["kara", "wg", "2ne1"]
 fusion_synergy: "2 代国民"
 fusion_rules: "9 人编队对称不可丢"
+rivals: ["kara"]
+rivalry_narrative: "2代两强:9 人花园 vs 5 人完美主义"
 fandom_name: "SONE"
 palette:
   primary: "#FFB6C1"

@@ -13,6 +13,8 @@ priority: above_tier_0
 fusion_compatible: ["ive", "illit", "stayc", "apink"]
 fusion_synergy: "Y2K 治愈系姐妹"
 fusion_rules: ""
+rivals: ["illit"]
+rivalry_narrative: "HYBE 内战:新民艺 vs Y2K"
 fandom_name: "BUNNIES"
 palette:
   primary: "#F5DEB3"

@@ -46,6 +46,8 @@ function loadAgents(dir, layer, defaultWeight) {
       fusion_compatible: fm.fusion_compatible || [],
       fusion_rules: fm.fusion_rules || "",
       helpers: fm.invited_helpers || [],
+      rivals: fm.rivals || [],
+      rivalry_narrative: fm.rivalry_narrative || "",
     };
   });
 }
@@ -188,6 +190,9 @@ export function summonCouncil(brief, opts = {}) {
   // 4. 跨 label gate: 若 fusion 且涉及多个不同 label 评委 → 必须每方至少 1 评委
   const cross_label_check = checkCrossLabelGate(summonedJudges, souls);
   
+  // 5. RIVALRY 张力检测: 任意两团互为 rival 即触发
+  const rivalry_check = checkRivalry(souls);
+  
   return {
     brief,
     judges: summonedJudges,
@@ -197,7 +202,32 @@ export function summonCouncil(brief, opts = {}) {
     council_size: summonedJudges.length + souls.length + invited.length + summonedFandoms.length,
     fusion_check,
     cross_label_check,
+    rivalry_check,
   };
+}
+
+/**
+ * RIVALRY 宿敌张力检测: 任两团互列 rival → 议会张力警报
+ */
+function checkRivalry(souls) {
+  if (souls.length < 2) return { has_rivalry: false, pairs: [] };
+  const pairs = [];
+  for (let i = 0; i < souls.length; i++) {
+    for (let j = i + 1; j < souls.length; j++) {
+      const a = souls[i], b = souls[j];
+      const aRivals = (a.rivals || []).map(r => (r || "").toLowerCase());
+      const bRivals = (b.rivals || []).map(r => (r || "").toLowerCase());
+      if (aRivals.includes((b.group_slug || "").toLowerCase()) ||
+          bRivals.includes((a.group_slug || "").toLowerCase())) {
+        pairs.push({
+          a: a.group_slug, b: b.group_slug,
+          narrative: a.rivalry_narrative || b.rivalry_narrative || "",
+          guidance: "议会须保留张力差异化, 禁止强行调和",
+        });
+      }
+    }
+  }
+  return { has_rivalry: pairs.length > 0, pairs };
 }
 
 /**
@@ -304,10 +334,45 @@ export function dispatchBrief(brief, voteSimulator) {
       fusion: council.fusion_check.is_fusion,
       cross_label: council.cross_label_check.is_cross_label,
       cross_label_gate_passed: council.cross_label_check.gate_passed,
+      rivalry: (council.rivalry_check || {}).has_rivalry || false,
+      rivalry_pairs: (council.rivalry_check || {}).pairs || [],
     },
     fusion_check: council.fusion_check,
     cross_label_check: council.cross_label_check,
+    rivalry_check: council.rivalry_check,
     votes,
     decision: result,
   };
+}
+
+// ============ E · Stage 模板加载 ============
+export function loadStage(slug) {
+  try {
+    const raw = readFileSync(join(ROOT, "stages", `${slug}.md`), "utf-8");
+    const fm = parseFrontmatter(raw);
+    const body = raw.replace(/^---[\s\S]+?---\n?/, "");
+    return { stage_slug: fm.stage_slug || slug, sample_brief: fm.sample_brief || "", body };
+  } catch (e) { return null; }
+}
+
+export function listStages() {
+  try {
+    return readdirSync(join(ROOT, "stages")).filter(f => f.endsWith(".md")).map(f => f.replace(/\.md$/, ""));
+  } catch (e) { return []; }
+}
+
+// ============ D · Lineage 谱系加载 ============
+export function loadLineage(slug) {
+  try {
+    const raw = readFileSync(join(ROOT, "lineages", `${slug}.md`), "utf-8");
+    const fm = parseFrontmatter(raw);
+    const body = raw.replace(/^---[\s\S]+?---\n?/, "");
+    return { lineage_slug: fm.lineage_slug || slug, soul: fm.soul || "", body };
+  } catch (e) { return null; }
+}
+
+export function listLineages() {
+  try {
+    return readdirSync(join(ROOT, "lineages")).filter(f => f.endsWith(".md")).map(f => f.replace(/\.md$/, ""));
+  } catch (e) { return []; }
 }

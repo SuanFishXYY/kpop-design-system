@@ -156,5 +156,53 @@ test("dispatchBrief 含 fandom 投票 user_proxy", () => {
   if (fandomVotes.length < 1) throw new Error("应至少 1 个 fandom 投票");
   if (!fandomVotes.every(v => v.perspective === "user_proxy")) throw new Error("fandom 必须 user_proxy");
 });
+
+import { loadStage, listStages, loadLineage, listLineages } from "./dispatch.mjs";
+
+test("F · BLACKPINK + TWICE → rivalry 触发", () => {
+  const c = summonCouncil("BLACKPINK 和 TWICE 联名快闪");
+  console.log(`     rivalry pairs=${(c.rivalry_check.pairs||[]).length}`);
+  if (!c.rivalry_check.has_rivalry) throw new Error("BLACKPINK + TWICE 应触发 rivalry");
+  const pair = c.rivalry_check.pairs[0];
+  if (!pair.narrative) throw new Error("rivalry pair 应含 narrative");
+});
+
+test("F · 单团 brief 不触发 rivalry", () => {
+  const c = summonCouncil("TWICE 风格 hero");
+  if (c.rivalry_check.has_rivalry) throw new Error("单团不应触发 rivalry");
+});
+
+test("F · dispatchBrief 含 rivalry_check 输出", () => {
+  const r = dispatchBrief("aespa × IVE 联名");
+  console.log(`     rivalry in summary=${r.council_summary.rivalry}`);
+  if (!r.council_summary.rivalry) throw new Error("aespa+IVE 应在 summary 标 rivalry=true");
+});
+
+test("E · stages 列表 5 个", () => {
+  const stages = listStages();
+  console.log(`     stages=${stages.join(",")}`);
+  if (stages.length !== 5) throw new Error(`expected 5 stages, got ${stages.length}`);
+  for (const s of ["debut", "comeback", "concert", "collab", "landing"]) {
+    if (!stages.includes(s)) throw new Error(`missing stage: ${s}`);
+  }
+});
+
+test("E · loadStage(comeback) 返回 sample_brief", () => {
+  const s = loadStage("comeback");
+  if (!s) throw new Error("comeback stage not found");
+  if (!s.sample_brief) throw new Error("comeback stage missing sample_brief");
+});
+
+test("D · lineages 列表 5 条", () => {
+  const ls = listLineages();
+  console.log(`     lineages=${ls.join(",")}`);
+  if (ls.length !== 5) throw new Error(`expected 5 lineages, got ${ls.length}`);
+});
+
+test("D · loadLineage(main_vocal) 返回 soul", () => {
+  const l = loadLineage("main_vocal");
+  if (!l) throw new Error("main_vocal lineage not found");
+  if (!l.soul) throw new Error("lineage missing soul");
+});
 console.log(`\n=== ${pass} passed · ${fail} failed ===\n`);
 if (fail > 0) process.exit(1);

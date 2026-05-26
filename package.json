@@ -1,7 +1,7 @@
 {
     "name":  "kpop-design-system",
-    "version": "1.4.0",
-    "description": "KPOP idol congress design system · 116 idols · 45 group souls · 7 judges · 45 fandoms · 5-layer council · palette+tracks · real voting engine",
+    "version": "1.5.0",
+    "description": "KPOP idol congress design system · 116 idols · 45 group souls · 7 judges · 45 fandoms · 5 stages · 5 lineages · 5-layer council · palette+tracks+rivalry · real voting engine",
     "bin":  {
                 "kpop-install":  "installer/install.mjs"
             },

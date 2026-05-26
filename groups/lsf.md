@@ -13,6 +13,8 @@ priority: above_tier_0
 fusion_compatible: ["itzy", "bp", "2ne1"]
 fusion_synergy: "fearless 自由女性"
 fusion_rules: "不需要被认可的宣言不可丢"
+rivals: ["nj"]
+rivalry_narrative: "HYBE 内战:Hot Girl Anthem vs 新民艺"
 fandom_name: "FEARNOT"
 palette:
   primary: "#000080"

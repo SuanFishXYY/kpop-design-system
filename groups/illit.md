@@ -13,6 +13,8 @@ priority: above_tier_0
 fusion_compatible: ["nj", "ive", "stayc"]
 fusion_synergy: "Y2K 治愈系"
 fusion_rules: "奶油色系不可丢"
+rivals: ["nj"]
+rivalry_narrative: "HYBE 内战:Y2K vs 新民艺"
 fandom_name: "GLLIT"
 palette:
   primary: "#FFB6C1"

@@ -13,6 +13,8 @@ priority: above_tier_0
 fusion_compatible: ["illit", "katseye", "kep1er"]
 fusion_synergy: "5 代新势力"
 fusion_rules: "Z 世代节奏不可丢"
+rivals: ["illit", "nj"]
+rivalry_narrative: "5代统治力 vs HYBE 双子星"
 fandom_name: "MONSTIEZ"
 palette:
   primary: "#FF0000"

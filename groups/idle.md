@@ -13,6 +13,8 @@ priority: above_tier_0
 fusion_compatible: ["2ne1", "mmm", "aespa"]
 fusion_synergy: "tomboy 自制"
 fusion_rules: ""
+rivals: ["itzy"]
+rivalry_narrative: "3代两强:Self-Made vs JYP-Made"
 fandom_name: "NEVERLAND"
 palette:
   primary: "#FF4500"

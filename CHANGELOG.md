@@ -1,3 +1,35 @@
+## v1.5.0 (2026-05-26) — ⚔️🎬🧬 D+E+F 三连闭环 (LINEAGE + Stage + RIVALRY)
+
+**F · RIVALRY 宿敌机制**
+- 16 个核心团魂 frontmatter 注入 `rivals: [slugs]` + `rivalry_narrative`
+- BLACKPINK ↔ TWICE / aespa ↔ IVE / NewJeans ↔ ILLIT (HYBE 内战) / LE SSERAFIM ↔ NewJeans / (G)I-DLE ↔ ITZY / SNSD ↔ KARA / 2NE1 ↔ SNSD / BABYMONSTER ↔ ILLIT/NewJeans / KATSEYE ↔ BABYMONSTER/ILLIT / STAYC ↔ NewJeans / MAMAMOO ↔ 2NE1
+- 引擎: `checkRivalry()` 检测互列 rival 的团对, 输出 `rivalry_check.pairs` (a/b/narrative/guidance)
+- `dispatchBrief` summary 含 `rivalry` + `rivalry_pairs`
+- guidance: "议会须保留张力差异化, 禁止强行调和"
+
+**E · Stage 场景模板 (5 个)**
+- 新目录 `stages/` 含 5 个常见 brief 场景化预设:
+  - 🎬 `debut` 出道舞台 · 🔄 `comeback` 回归 · 🎤 `concert` 演唱会 · 🤝 `collab` 联名 · 🌐 `landing` 官网首屏
+- 每个含 sample_brief + 默认议会构成 + 决议前 checklist
+- 引擎: `loadStage(slug)` + `listStages()`
+
+**D · LINEAGE 师承谱系 (5 条)**
+- 新目录 `lineages/` 含 5 条 2代→5代传承链:
+  - 🎤 `main_vocal` SNSD-Taeyeon → TWICE-Jihyo → IVE-Wonyoung → ILLIT-Iroha
+  - 🔥 `rap_line` 2NE1-CL → BLACKPINK-Jennie → aespa-Karina → BABYMONSTER-Asa
+  - 💎 `visual_center` SNSD-Yoona → TWICE-Tzuyu → IVE-Wonyoung → NewJeans-Hanni / ILLIT-Wonhee
+  - 👑 `leader_dna` SNSD-Taeyeon → TWICE-Jihyo → IVE-Yujin → BABYMONSTER-Ruka
+  - 💃 `dance_machine` SNSD-Hyoyeon/2NE1-Minzy → TWICE-Momo → ITZY-Yeji/aespa-Karina → BABYMONSTER-Rora
+- 引擎: `loadLineage(slug)` + `listLineages()`
+
+**Tests**
+- voting 7/7 + dispatch 25/25 = **32/32 PASS** (新增 7 个 D/E/F 测试)
+
+**Docs**
+- SKILL.md 5 层架构 + v1.5 三连说明
+- package.json description 升级 v1.5.0
+
+---
 ## v1.4.0 (2026-05-26) — 🎨 A+B+C 三连闭环 (palette + fandom + tracks)
 
 **A · 团色 HEX palette (45 souls)**

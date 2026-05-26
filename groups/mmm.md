@@ -13,6 +13,8 @@ priority: above_tier_0
 fusion_compatible: ["bp", "2ne1", "idle"]
 fusion_synergy: "vocal monster 宣言派"
 fusion_rules: "大字加粗走人风格不可丢"
+rivals: ["2ne1"]
+rivalry_narrative: "气质对照:Female Empowerment vs Baddest"
 fandom_name: "MOOMOO"
 palette:
   primary: "#FF6347"

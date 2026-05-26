@@ -1,7 +1,7 @@
 ---
 name: kpop-design-system
-description: "KPOP Design System v1.4 · KPOP女团圣人议会 · 116 idol + 45 团魂 + 7 评委 + 45 粉丝团 · 5 层议会架构 · 团色 HEX palette + signature_tracks 主打歌 · 哲学驱动多智能体 UI 设计语言体系 · Layer 5 评委(weight=5 portfolio veto) > 团魂(3 全 veto · 含 palette/tracks) > Tier 0(2) > Tier 1(1.5) > 粉丝团(1 user_proxy) · 加权陪审团 2/3 表决 · 真投票引擎 (voting.mjs + dispatch.mjs · 18+7 测试 PASS) · 跨团 fusion + 跨 label gate · Activate on '/kpop', '/女团', '/idol-congress', '/kpop-design'. Trigger phrases: '女团', 'kpop', 'idol', 'TWICE', 'BLACKPINK', 'IVE', 'NewJeans', 'aespa', '议会', 'congress'."
-version: 1.4.0
+description: "KPOP Design System v1.5 · KPOP女团圣人议会 · 116 idol + 45 团魂 + 7 评委 + 45 粉丝团 + 5 场景 + 5 谱系 · 5 层议会架构 · 团色 HEX + signature_tracks + RIVALRY 宿敌张力 + Stage 场景模板 + LINEAGE 师承谱系 · 哲学驱动多智能体 UI 设计语言体系 · 真投票引擎 (voting.mjs + dispatch.mjs · 25+7 测试 PASS) · 跨团 fusion + 跨 label gate · Activate on '/kpop', '/女团', '/idol-congress', '/kpop-design'. Trigger phrases: '女团', 'kpop', 'idol', 'TWICE', 'BLACKPINK', 'IVE', 'NewJeans', 'aespa', '议会', 'congress', 'comeback', 'debut'."
+version: 1.5.0
 author: 算鱼工作�?license: MIT
 language: zh-CN
 flavor: kpop
@@ -9,37 +9,45 @@ philosophy: enabled
 tags: [design-system, multi-agent, kpop, idol, philosophy, onboarding, ui, modal, wizard, hero, animation, copywriting, brand-voice, ai-native, korean, chinese]
 ---
 
-# 🎤 KPOP 设计系统 · The Idol Congress · v1.4
+# 🎤 KPOP 设计系统 · The Idol Congress · v1.5
 
 > 🎯 **快速召唤**: 在 Copilot / Claude / Codex / Gemini / Antigravity 任一 CLI 输入 /kpop 或 /女团 即可强制激活本 skill 进入议会模式。
-> *一个舞台, 116 个 idol + 45 团魂 + 7 评委 + 45 粉丝团。从用户登录的前 3 秒, 到第 3000 次点击, 每一寸像素都是一场 comeback stage。*
+> *一个舞台, 116 个 idol + 45 团魂 + 7 评委 + 45 粉丝团 + 5 场景模板 + 5 师承谱系。从用户登录的前 3 秒, 到第 3000 次点击, 每一寸像素都是一场 comeback stage。*
 
 ## 🎙 议会构成 · 5 层架构
 
 | Layer | 数量 | vote weight | veto | 构成 |
 |-------|------|-------------|------|------|
-| 🏛 **评委 (judges/)** | 7 | **5** | portfolio_only | JYP / YG / SM / HYBE / ADOR / Starship / THEBLACKLABEL 经纪人 |
-| 👯 **团魂 (groups/)** | 45 | 3 | yes | 每个 K-pop 团的"集体灵魂" · 含 palette(HEX) + signature_tracks |
-| 🌟 Tier 0 (主力 idol) | 71 | 2 | no | 8 大热门全员 + 热门团主力 |
-| 💎 Tier 1 (辅助 idol) | 45 | 1.5 | no | 各代 leader + 跨团 helpers |
-| 💗 **粉丝团 (fandoms/)** ✨v1.4 | 45 | 1 | no | ONCE/BLINK/DIVE/BUNNIES/MY... · user_proxy 视角 |
+| 🏛 **评委 (judges/)** | 7 | **5** | portfolio_only | JYP / YG / SM / HYBE / ADOR / Starship / THEBLACKLABEL |
+| 👯 **团魂 (groups/)** | 45 | 3 | yes | palette(HEX) + signature_tracks + rivals |
+| 🌟 Tier 0 (主力 idol) | 71 | 2 | no | 热门团主力 |
+| 💎 Tier 1 (辅助 idol) | 45 | 1.5 | no | 跨团 helpers |
+| 💗 **粉丝团 (fandoms/)** | 45 | 1 | no | ONCE/BLINK/DIVE... user_proxy |
 
-总计: **7 评委 + 45 团魂 + 116 idol + 45 粉丝团** · 5 层议会
+## 🎨 v1.4 三连 · A · 团色 / C · 主打歌
 
-## 🎨 v1.4 新增 · A · 团色 HEX + C · 主打歌
+每团魂含: `palette: {primary,secondary,accent}` (HEX) + `mood_keywords` + `signature_tracks[3]` (title/year/mood/bpm)
 
-每个团魂 frontmatter 现含:
-- `palette: { primary, secondary, accent }` — 团代表色 HEX
-- `mood_keywords: [...]` — 3 个气质词
-- `signature_tracks: [3 首]` — 主打歌 (title/year/mood/bpm)
+## ⚔️ v1.5 新增 · F · RIVALRY 宿敌机制
 
-LLM 在 brief 决议时可直接消费这些字段输出视觉方案。
+每团魂含 `rivals: [...]` + `rivalry_narrative` — 当 brief 涉及互为宿敌的两团时，引擎自动检测并输出 `rivalry_check.pairs`，议会必须保留张力差异化，禁止强行调和。
+- BLACKPINK ↔ TWICE (3代两强) · aespa ↔ IVE (4代两强) · NewJeans ↔ ILLIT (HYBE 内战) · ...
+
+## 🎬 v1.5 新增 · E · Stage 场景模板 (5)
+
+`stages/` 5 个常见 brief 预设：`debut` / `comeback` / `concert` / `collab` / `landing`，每个含默认议会构成 + 决议前 checklist + sample_brief。
+
+## 🧬 v1.5 新增 · D · LINEAGE 师承谱系 (5)
+
+`lineages/` 5 条 2代→5代传承链：`main_vocal` / `rap_line` / `visual_center` / `leader_dna` / `dance_machine`
+- 主唱: SNSD-Taeyeon → TWICE-Jihyo → IVE-Wonyoung → ILLIT-Iroha
+- Rapper: 2NE1-CL → BLACKPINK-Jennie → aespa-Karina → BABYMONSTER-Asa
 
 ## ⚙️ 真投票引擎 (engine/)
 
-- `engine/voting.mjs` — 加权陪审团 (≥2/3 通过 / 评委一票否决 > 团魂一票否决)
-- `engine/dispatch.mjs` — brief → 召集 → fusion 校验 → 跨 label gate → 投票 (含 fandom)
-- 测试: voting 7/7 + dispatch 18/18 = **25/25 PASS**
+- `engine/voting.mjs` — 加权陪审团 (≥2/3 通过)
+- `engine/dispatch.mjs` — brief → 召集 → fusion → cross-label → rivalry → 投票
+- 测试: voting 7/7 + dispatch 25/25 = **32/32 PASS**
 
 ## 🔀 跨团融合 + �?label gate
 

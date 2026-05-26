@@ -13,6 +13,8 @@ priority: above_tier_0
 fusion_compatible: ["lsf", "2ne1", "idle"]
 fusion_synergy: "自我热爱"
 fusion_rules: "命令式 CTA 不可丢"
+rivals: ["aespa", "ive"]
+rivalry_narrative: "4代起步同期 · 风格分流"
 fandom_name: "MIDZY"
 palette:
   primary: "#FF6600"

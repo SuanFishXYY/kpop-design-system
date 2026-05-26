@@ -13,6 +13,8 @@ priority: above_tier_0
 fusion_compatible: ["bp", "nj", "illit", "stayc"]
 fusion_synergy: "9色花束 vs 极致对比 / 治愈青春 / 接班 / 清新"
 fusion_rules: "多元色彩,群像感不可丢"
+rivals: ["bp", "snsd"]
+rivalry_narrative: "3代两强:9色花束 vs 极致对比 · 与 SNSD 同社双女王"
 fandom_name: "ONCE"
 palette:
   primary: "#FFCDD2"

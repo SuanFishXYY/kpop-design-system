@@ -13,6 +13,8 @@ priority: above_tier_0
 fusion_compatible: ["illit", "nj", "ive"]
 fusion_synergy: "teen fresh"
 fusion_rules: "薄荷珊瑚色不可丢"
+rivals: ["nj"]
+rivalry_narrative: "清新两强:Y2K Pop vs 新民艺"
 fandom_name: "SWITH"
 palette:
   primary: "#FFB6C1"

@@ -13,6 +13,8 @@ priority: above_tier_0
 fusion_compatible: ["nj", "illit", "wonyoung-line", "stayc"]
 fusion_synergy: "公主感 + 极简治愈"
 fusion_rules: "主语前置宣言不可丢"
+rivals: ["aespa"]
+rivalry_narrative: "4代两强:公主美学 vs 未来主义"
 fandom_name: "DIVE"
 palette:
   primary: "#7B68EE"

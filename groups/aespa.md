@@ -13,6 +13,8 @@ priority: above_tier_0
 fusion_compatible: ["dc", "fx", "nmixx", "illit"]
 fusion_synergy: "sci-fi vs 黑暗童话 / 实验前卫 / 多曲风"
 fusion_rules: "alter ego B 面不可丢"
+rivals: ["ive"]
+rivalry_narrative: "4代两强:未来主义 vs 公主美学"
 fandom_name: "MY"
 palette:
   primary: "#000000"
