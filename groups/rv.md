@@ -10,6 +10,9 @@ core_aesthetic: "red(强势)+velvet(典雅)二元"
 soul_manifesto: "双概念切换——一团两面，今天 dumb dumb 明天 psycho"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["aespa", "wjsn", "dc"]
+fusion_synergy: "双概念"
+fusion_rules: "red/velvet 切换组件不可丢"
 ---
 
 # 👯 团魂 · Red Velvet (3 代 · 2014)
@@ -43,6 +46,16 @@ UI 必须有"模式切换"组件 (gallery vs psycho 双主题)。色彩双色板
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `aespa`, `wjsn`, `dc`
+**协同效应**: 双概念
+**融合规则**: red/velvet 切换组件不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

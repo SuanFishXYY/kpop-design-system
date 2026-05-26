@@ -10,6 +10,9 @@ core_aesthetic: ""tomboy" 自我制作人"
 soul_manifesto: ""i'm not your dolly"——成员自己写歌自己制作，反对工业流水线"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["2ne1", "mmm", "aespa"]
+fusion_synergy: "tomboy 自制"
+fusion_rules: ""反工业流水线"标识不可丢"
 ---
 
 # 👯 团魂 · (G)I-DLE (4 代 · 2018)
@@ -43,6 +46,16 @@ UI 要有"自制感"——保留笔触、手绘箭头、白噪音背景。色彩
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `2ne1`, `mmm`, `aespa`
+**协同效应**: tomboy 自制
+**融合规则**: "反工业流水线"标识不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

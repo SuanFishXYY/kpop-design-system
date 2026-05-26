@@ -10,6 +10,9 @@ core_aesthetic: "24 人编队最多女团"
 soul_manifesto: "24 子单元矩阵"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["katseye", "bm", "kep1er"]
+fusion_synergy: "矩阵编队"
+fusion_rules: "grid 反单中心不可丢"
 ---
 
 # 👯 团魂 · tripleS (4 代 · 2023)
@@ -43,6 +46,16 @@ UI 用 grid 矩阵布局，反对单中心。
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `katseye`, `bm`, `kep1er`
+**协同效应**: 矩阵编队
+**融合规则**: grid 反单中心不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

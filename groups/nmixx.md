@@ -10,6 +10,9 @@ core_aesthetic: "MIXX POP 多曲风混搭"
 soul_manifesto: ""o.o"——一首歌多个 BPM 切换"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["aespa", "fx", "kep1er"]
+fusion_synergy: "多曲风混搭"
+fusion_rules: "风格切换动效不可丢"
 ---
 
 # 👯 团魂 · NMIXX (4 代 · 2022)
@@ -43,6 +46,16 @@ UI 必须有"风格切换"动效，反对单一统一感。
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `aespa`, `fx`, `kep1er`
+**协同效应**: 多曲风混搭
+**融合规则**: 风格切换动效不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

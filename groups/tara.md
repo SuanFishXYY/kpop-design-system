@@ -10,6 +10,9 @@ core_aesthetic: ""roly poly" 复古迪斯科"
 soul_manifesto: ""sexy love"——电子+复古，是 80s 不是 K-pop"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["aoa", "sistar", "beg"]
+fusion_synergy: "复古迪斯科"
+fusion_rules: "70s 暖色不可丢"
 ---
 
 # 👯 团魂 · T-ARA (2 代 · 2009)
@@ -43,6 +46,16 @@ UI 用复古霓虹色 + 旋转视差。
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `aoa`, `sistar`, `beg`
+**协同效应**: 复古迪斯科
+**融合规则**: 70s 暖色不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

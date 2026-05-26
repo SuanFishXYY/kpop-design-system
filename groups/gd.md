@@ -10,6 +10,9 @@ core_aesthetic: ""expect" 撒娇+成熟"
 soul_manifesto: "双面"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["exid", "apink", "gfriend"]
+fusion_synergy: "双面"
+fusion_rules: "双 mode 切换不可丢"
 ---
 
 # 👯 团魂 · Girl's Day (2 代 · 2010)
@@ -43,6 +46,16 @@ UI 双 mode 切换。
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `exid`, `apink`, `gfriend`
+**协同效应**: 双面
+**融合规则**: 双 mode 切换不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

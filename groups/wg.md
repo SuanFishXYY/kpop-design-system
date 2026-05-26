@@ -10,6 +10,9 @@ core_aesthetic: "complex band 复古"
 soul_manifesto: ""nobody"——一个 hook 横扫世界"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["snsd", "kara", "beg"]
+fusion_synergy: "complex band"
+fusion_rules: "复古 8-bit 不可丢"
 ---
 
 # 👯 团魂 · Wonder Girls (2 代 · 2007)
@@ -43,6 +46,16 @@ UI 用复古 8-bit pixel + 现代极简混搭。配色 70s 暖色。
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `snsd`, `kara`, `beg`
+**协同效应**: complex band
+**融合规则**: 复古 8-bit 不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

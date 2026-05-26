@@ -10,6 +10,9 @@ core_aesthetic: ""mister" 性感成熟可爱并存"
 soul_manifesto: ""pretty girl"——可爱不等于幼稚，性感不等于露骨"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["snsd", "wg", "apink"]
+fusion_synergy: "sweet+chic 平衡"
+fusion_rules: "留呼吸感不可丢"
 ---
 
 # 👯 团魂 · KARA (2 代 · 2007)
@@ -43,6 +46,16 @@ UI 平衡 sweet+chic，配色奶白 + 玫瑰金。版式留呼吸感。
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `snsd`, `wg`, `apink`
+**协同效应**: sweet+chic 平衡
+**融合规则**: 留呼吸感不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

@@ -10,6 +10,9 @@ core_aesthetic: "y2k 治愈接班"
 soul_manifesto: ""magnetic"——不是吸引你，是磁场把你拉过来"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["nj", "ive", "stayc"]
+fusion_synergy: "Y2K 治愈系"
+fusion_rules: "奶油色系不可丢"
 ---
 
 # 👯 团魂 · ILLIT (5 代 · 2024)
@@ -43,6 +46,16 @@ y2k 治愈接班
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `nj`, `ive`, `stayc`
+**协同效应**: Y2K 治愈系
+**融合规则**: 奶油色系不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

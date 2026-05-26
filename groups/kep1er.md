@@ -10,6 +10,9 @@ core_aesthetic: "girls planet 9 国联合"
 soul_manifesto: ""wa da da"——多元融合"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["katseye", "triples", "bm"]
+fusion_synergy: "国际联合"
+fusion_rules: "多元国旗色拼接不可丢"
 ---
 
 # 👯 团魂 · Kep1er (4 代 · 2022)
@@ -43,6 +46,16 @@ UI 用国旗色彩多元拼接。
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `katseye`, `triples`, `bm`
+**协同效应**: 国际联合
+**融合规则**: 多元国旗色拼接不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

@@ -10,6 +10,9 @@ core_aesthetic: "出道即顶"
 soul_manifesto: "顶"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["kep1er", "katseye"]
+fusion_synergy: "顶级出道"
+fusion_rules: "cinematic 大片感不可丢"
 ---
 
 # 👯 团魂 · Kep1er & 选秀传承 (4 代 · 2022)
@@ -43,6 +46,16 @@ priority: above_tier_0
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `kep1er`, `katseye`
+**协同效应**: 顶级出道
+**融合规则**: cinematic 大片感不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

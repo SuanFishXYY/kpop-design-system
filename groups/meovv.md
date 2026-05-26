@@ -10,6 +10,9 @@ core_aesthetic: "THE BLACK LABEL 新女团"
 soul_manifesto: ""meow"——猫系神秘"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["bp", "2ne1", "dc"]
+fusion_synergy: "暗夜神秘"
+fusion_rules: "月光银紫不可丢"
 ---
 
 # 👯 团魂 · MEOVV (5 代 · 2024)
@@ -43,6 +46,16 @@ UI 暗夜紫+月光银，禁止暖色。
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `bp`, `2ne1`, `dc`
+**协同效应**: 暗夜神秘
+**融合规则**: 月光银紫不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

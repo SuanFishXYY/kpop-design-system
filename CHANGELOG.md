@@ -1,5 +1,53 @@
 ﻿# Changelog
 
+## v1.1.0 · 2025 · 真投票引擎 (从声明到代码)
+
+### ⚙️ 引擎层 (engine/)
+
+从 v1.0.x 的「frontmatter 声明式 vote_weight」**质变**到可运行投票引擎:
+
+- ✨ `engine/voting.mjs` — 加权陪审团核心
+  - `tallyCouncilVotes()`: ≥ 2/3 加权通过 / 团魂一票否决 / abstain 不计入分母
+  - `isEligibleVoter()`: 校验合法投票权
+  - `quorumThreshold()`: 计算通过基准线
+- ✨ `engine/dispatch.mjs` — 议会调度器
+  - `parseBrief()`: 识别 brief 中提到的团 + idol
+  - `summonCouncil()`: brief → 团魂 + 同团 idol + helpers 跨团传染
+  - `dispatchBrief()`: 完整 dispatch (含 voteSimulator 注入)
+  - `checkFusionCompat()`: 跨团 fusion_compatible 双向白名单校验
+- ✅ `engine/voting.test.mjs` — 7/7 PASS (空议会/否决/通过/未达/abstain/by_layer/eligibility)
+- ✅ `engine/dispatch.test.mjs` — 7/7 PASS (load/同团召集/fusion 识别/兼容校验/全 yes/否决/未达)
+
+### 🔀 团魂跨团融合
+
+44 团魂 frontmatter 新增字段:
+
+```yaml
+fusion_compatible: ["bp", "nj", "illit", "stayc"]
+fusion_synergy: "9 色花束 vs 极致对比 / 治愈青春 / 接班 / 清新"
+fusion_rules: "多元色彩,群像感不可丢"
+```
+
+- ✨ 跨团 brief 自动触发"团魂联席会议"
+- ✨ 双向 fusion_compatible 校验（A 含 B 且 B 含 A 才算兼容）
+- ✨ fusion_rules 标注每团"不可丢的 DNA 底线"
+
+### 📚 文档
+
+- ✨ `docs/group-soul-in-action.md` — 5 个真实 brief 对比 (有/无团魂层)
+  1. TWICE 风格化妆品 hero
+  2. BLACKPINK 风格奢侈品 landing
+  3. BLACKPINK × TWICE 联名快闪 (fusion)
+  4. NewJeans 风格 SaaS dashboard
+  5. aespa × Dreamcatcher 联动 (fusion)
+
+### 🎯 含义
+
+v1.0.x = 营销概念 demo
+v1.1.0 = 真能跑的多 agent 框架
+
+下一步 (v2.0): 跨学科议会 (kpop × suanfish 哲学家互联)
+
 ## v1.0.2 · 2025
 
 ### 👯 团魂层 (Group Soul) 引入

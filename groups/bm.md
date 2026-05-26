@@ -10,6 +10,9 @@ core_aesthetic: "7 国混血新势力"
 soul_manifesto: ""sheesh"——年轻是底牌，刷新就是赢"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["illit", "katseye", "kep1er"]
+fusion_synergy: "5 代新势力"
+fusion_rules: "Z 世代节奏不可丢"
 ---
 
 # 👯 团魂 · BABYMONSTER (5 代 · 2024)
@@ -43,6 +46,16 @@ priority: above_tier_0
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `illit`, `katseye`, `kep1er`
+**协同效应**: 5 代新势力
+**融合规则**: Z 世代节奏不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

@@ -10,6 +10,9 @@ core_aesthetic: ""candy jelly love" 纯爱"
 soul_manifesto: "童话"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["apink", "gfriend", "omg"]
+fusion_synergy: "纯爱童话"
+fusion_rules: "柔和色卡不可丢"
 ---
 
 # 👯 团魂 · Lovelyz (2.5 代 · 2014)
@@ -43,6 +46,16 @@ UI 童话感，柔和色卡。
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `apink`, `gfriend`, `omg`
+**协同效应**: 纯爱童话
+**融合规则**: 柔和色卡不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

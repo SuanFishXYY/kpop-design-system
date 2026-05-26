@@ -10,6 +10,9 @@ core_aesthetic: ""bang!" 鼓队制服"
 soul_manifesto: "集体编队"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["secret", "sistar", "exid"]
+fusion_synergy: "集体编队"
+fusion_rules: "对称制服不可丢"
 ---
 
 # 👯 团魂 · After School (2 代 · 2009)
@@ -43,6 +46,16 @@ UI 重制服感+对称编队。
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `secret`, `sistar`, `exid`
+**协同效应**: 集体编队
+**融合规则**: 对称制服不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

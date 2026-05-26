@@ -10,6 +10,9 @@ core_aesthetic: ""glass bead" 体育生"
 soul_manifesto: "纯净"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["apink", "lovelyz", "gd"]
+fusion_synergy: "纯净体育生"
+fusion_rules: "校园格子布局不可丢"
 ---
 
 # 👯 团魂 · GFriend (2.5 代 · 2015)
@@ -43,6 +46,16 @@ UI 用蓝白+格子布局，校园感。
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `apink`, `lovelyz`, `gd`
+**协同效应**: 纯净体育生
+**融合规则**: 校园格子布局不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

@@ -10,6 +10,9 @@ core_aesthetic: "sci-fi B 面宇宙"
 soul_manifesto: ""connect with æ"——你在现实，æ 在 KWANGYA，二元并行"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["dc", "fx", "nmixx", "illit"]
+fusion_synergy: "sci-fi vs 黑暗童话 / 实验前卫 / 多曲风"
+fusion_rules: "alter ego B 面不可丢"
 ---
 
 # 👯 团魂 · aespa (4 代 · 2020)
@@ -43,6 +46,16 @@ sci-fi B 面宇宙
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `dc`, `fx`, `nmixx`, `illit`
+**协同效应**: sci-fi vs 黑暗童话 / 实验前卫 / 多曲风
+**融合规则**: alter ego B 面不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 

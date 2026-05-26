@@ -10,6 +10,9 @@ core_aesthetic: "9 人国民妹妹团"
 soul_manifesto: ""into the new world"——开启 K-pop 全球化的 1 号舰队"
 vote_weight: 3
 priority: above_tier_0
+fusion_compatible: ["kara", "wg", "2ne1"]
+fusion_synergy: "2 代国民"
+fusion_rules: "9 人编队对称不可丢"
 ---
 
 # 👯 团魂 · Girls' Generation (2 代 · 2007)
@@ -43,6 +46,16 @@ UI 用经典对称布局，致敬"9 人编队"。色彩粉+白+水钻闪点。
 - idol 提供细节执行（动效/配色/字体/微交互）
 - 团魂保证整体一致性（不会出现"风格分裂"）
 - 类比: idol 是工程师，团魂是 PM + 品牌总监
+
+---
+
+## 🔀 跨团融合
+
+**兼容团**: `kara`, `wg`, `2ne1`
+**协同效应**: 2 代国民
+**融合规则**: 9 人编队对称不可丢
+
+当 brief 触发多团融合时，本团魂参加"团魂联席会议"——保留 fusion_rules 中标注的不可丢底线，其余 DNA 可以让步。
 
 ---
 
