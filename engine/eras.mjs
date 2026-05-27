@@ -24,7 +24,7 @@ export function parseEras(raw) {
   const fm = fmMatch[1];
   
   // 走行解析: 找到 "eras:" 行后, 收集所有缩进 ≥2 空格的后续行作为 block
-  const fmLines = fm.split("\n");
+  const fmLines = fm.replace(/\r\n/g, "\n").replace(/\r/g, "\n").split("\n");
   let erasIdx = -1;
   for (let i = 0; i < fmLines.length; i++) {
     if (/^eras:\s*$/.test(fmLines[i])) { erasIdx = i; break; }

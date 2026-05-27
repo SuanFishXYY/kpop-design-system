@@ -12,7 +12,8 @@ const ROOT = join(__dirname, "..");
 // ============ Agent 加载 ============
 
 function parseFrontmatter(raw) {
-  const m = raw.match(/^---\s*\n([\s\S]+?)\n---/);
+  const norm = raw.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+  const m = norm.match(/^---\s*\n([\s\S]+?)\n---/);
   if (!m) return {};
   const fm = {};
   for (const line of m[1].split("\n")) {
