@@ -5,6 +5,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { tallyCouncilVotes, isEligibleVoter } from "./voting.mjs";
+import { checkPersonalConflict, deriveFromAgentFields, checkLabelDisputeAwareness } from "./conflicts.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -77,6 +78,7 @@ export function loadAllAgents() {
       personality: fm.personality || "",
       vibe: fm.vibe || "",
       role: fm.role || "",
+      personal_conflict: fm.personal_conflict || [],
     };
   });
   // 评委层 (judge): weight=5, veto_scope=portfolio_only
@@ -199,7 +201,26 @@ export function summonCouncil(brief, opts = {}) {
   
   // 5. RIVALRY 张力检测: 任意两团互为 rival 即触发
   const rivalry_check = checkRivalry(souls);
-  
+
+  // 6. PERSONAL CONFLICT 检测 (R-Personal):
+  //    合并 registry + per-agent personal_conflict 声明, 检测 council 内是否同时在场
+  const councilSlugs = [
+    ...summonedJudges.map(j => j.slug),
+    ...souls.map(s => s.slug),
+    ...invited.map(i => i.slug),
+    ...summonedFandoms.map(f => f.slug),
+  ];
+  const derivedFromAgents = deriveFromAgentFields(invited);
+  const personal_conflict_check = checkPersonalConflict(councilSlugs, [
+    ...(typeof globalThis.PERSONAL_CONFLICTS_REGISTRY !== "undefined"
+      ? globalThis.PERSONAL_CONFLICTS_REGISTRY
+      : []),
+    ...derivedFromAgents,
+  ]);
+
+  // 7. LABEL DISPUTE AWARENESS · 团 ↔ label 公开纠纷语境信号
+  const label_dispute_check = checkLabelDisputeAwareness(souls);
+
   return {
     brief,
     judges: summonedJudges,
@@ -210,6 +231,8 @@ export function summonCouncil(brief, opts = {}) {
     fusion_check,
     cross_label_check,
     rivalry_check,
+    personal_conflict_check,
+    label_dispute_check,
   };
 }
 
