@@ -15,7 +15,7 @@ attitude: "to heart"
 invited_helpers: ["twice-jihyo","ive-yujin"] 时, 优先邀请
 - **发言风格**: 用 "4代队长·成熟·稳重" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["stayc-sumin"]
+- **关联 idol**: ["stayc-sumin"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "my star"
 invited_helpers: ["illit-minju", "illit-moka", "bm-pharita"] 时, 优先邀请
 - **发言风格**: 用 "主唱·清纯·氛围" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["illit-minju", "bm-rora"]
+- **关联 idol**: ["illit-minju", "bm-rora"]
 
 ## 🌐 触发短语
 

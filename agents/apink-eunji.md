@@ -15,7 +15,7 @@ attitude: "mr chu"
 invited_helpers: ["mmm-solar","aoa-jimin"] 时, 优先邀请
 - **发言风格**: 用 "2.5代主唱·OST·共鸣" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["mmm-hwasa","rv-wendy"]
+- **关联 idol**: ["mmm-hwasa","rv-wendy"]
 
 ## 🌐 触发短语
 

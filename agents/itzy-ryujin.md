@@ -15,7 +15,7 @@ attitude: "want it like that"
 invited_helpers: ["itzy-yuna", "itzy-chaeryeong", "lsf-kazuha"] 时, 优先邀请
 - **发言风格**: 用 "男友力·rapper·帅" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["itzy-lia", "nj-minji"]
+- **关联 idol**: ["itzy-lia", "nj-minji"]
 
 ## 🌐 触发短语
 

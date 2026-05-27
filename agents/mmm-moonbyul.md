@@ -15,7 +15,7 @@ attitude: "hip"
 invited_helpers: ["mmm-hwasa", "mmm-solar", "twice-chaeyoung"] 时, 优先邀请
 - **发言风格**: 用 "rapper·男友力·队魂" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["rv-joy", "twice-jihyo"]
+- **关联 idol**: ["rv-joy", "twice-jihyo"]
 
 ## 🌐 触发短语
 

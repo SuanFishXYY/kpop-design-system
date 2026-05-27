@@ -15,7 +15,7 @@ attitude: "automatic"
 invited_helpers: ["rv-wendy", "rv-joy", "mmm-hwasa"] 时, 优先邀请
 - **发言风格**: 用 "歌舞·熊·全能" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["rv-joy", "bp-rose"]
+- **关联 idol**: ["rv-joy", "bp-rose"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "sheesh"
 invited_helpers: ["bm-ahyeon", "bm-rora", "triples-saem"] 时, 优先邀请
 - **发言风格**: 用 "队长·日本·dance" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["bm-rora", "meovv-sooin"]
+- **关联 idol**: ["bm-rora", "meovv-sooin"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "midnight fiction"
 invited_helpers: ["illit-wonhee", "illit-minju", "bm-pharita"] 时, 优先邀请
 - **发言风格**: 用 "日本·韵律·甜辣" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["illit-yunah", "bm-rora"]
+- **关联 idol**: ["illit-yunah", "bm-rora"]
 
 ## 🌐 触发短语
 

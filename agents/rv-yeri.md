@@ -15,7 +15,7 @@ attitude: "feel my rhythm"
 invited_helpers: ["rv-seulgi", "rv-joy", "ive-leeseo"] 时, 优先邀请
 - **发言风格**: 用 "maknae·gen-z·氛围" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["twice-dahyun", "twice-sana"]
+- **关联 idol**: ["twice-dahyun", "twice-sana"]
 
 ## 🌐 触发短语
 

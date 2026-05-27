@@ -15,7 +15,7 @@ attitude: "on the ground"
 invited_helpers: ["bp-lisa", "bp-jennie", "twice-mina"] 时, 优先邀请
 - **发言风格**: 用 "玫瑰·吉他·复古" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["rv-irene", "twice-jihyo"]
+- **关联 idol**: ["rv-irene", "twice-jihyo"]
 
 ## 🌐 触发短语
 

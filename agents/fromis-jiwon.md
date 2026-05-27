@@ -15,7 +15,7 @@ attitude: "love bomb"
 invited_helpers: ["sistar-soyou","snsd-tiffany"] 时, 优先邀请
 - **发言风格**: 用 "4代双主唱·稳重·真挚" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["mmm-solar"]
+- **关联 idol**: ["mmm-solar"]
 
 ## 🌐 触发短语
 

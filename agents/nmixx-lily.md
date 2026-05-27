@@ -15,7 +15,7 @@ attitude: "o.o"
 invited_helpers: ["idle-miyeon", "idle-yuqi", "lsf-yunjin"] 时, 优先邀请
 - **发言风格**: 用 "4代主唱·混血·实力" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["nj-danielle", "itzy-chaeryeong"]
+- **关联 idol**: ["nj-danielle", "itzy-chaeryeong"]
 
 ## 🌐 触发短语
 

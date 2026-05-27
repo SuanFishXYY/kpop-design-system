@@ -15,7 +15,7 @@ attitude: "red flavor"
 invited_helpers: ["rv-wendy", "rv-irene", "mmm-wheein"] 时, 优先邀请
 - **发言风格**: 用 "阳光·门面·活力" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["bp-lisa", "mmm-solar"]
+- **关联 idol**: ["bp-lisa", "mmm-solar"]
 
 ## 🌐 触发短语
 

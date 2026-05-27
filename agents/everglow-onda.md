@@ -15,7 +15,7 @@ attitude: "pirate"
 invited_helpers: ["mmm-wheein","idle-minnie"] 时, 优先邀请
 - **发言风格**: 用 "4代反差·柔美·dance" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["stayc-isa"]
+- **关联 idol**: ["stayc-isa"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "miniskirt"
 invited_helpers: ["missa-fei", "exid-solji", "secret-hyoseong"] 时, 优先邀请
 - **发言风格**: 用 "2.5代队长·rapper·腿" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["sistar-hyolyn", "secret-hyoseong"]
+- **关联 idol**: ["sistar-hyolyn", "secret-hyoseong"]
 
 ## 🌐 触发短语
 

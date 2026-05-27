@@ -15,7 +15,7 @@ attitude: "drama"
 invited_helpers: ["aespa-ningning", "aespa-karina", "itzy-ryujin"] 时, 优先邀请
 - **发言风格**: 用 "主唱·门面·清冷" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["lsf-yunjin", "aespa-giselle"]
+- **关联 idol**: ["lsf-yunjin", "aespa-giselle"]
 
 ## 🌐 触发短语
 

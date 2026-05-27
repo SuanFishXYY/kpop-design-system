@@ -15,7 +15,7 @@ attitude: "closer"
 invited_helpers: ["gfriend-sowon", "bp-jisoo", "momoland-hyebin"] 时, 优先邀请
 - **发言风格**: 用 "3代队长·守护·活力" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["mmm-moonbyul", "mmm-solar"]
+- **关联 idol**: ["mmm-moonbyul", "mmm-solar"]
 
 ## 🌐 触发短语
 

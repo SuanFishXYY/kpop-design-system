@@ -15,7 +15,7 @@ attitude: "luv"
 invited_helpers: ["aoa-jimin", "gd-sojin", "fx-victoria"] 时, 优先邀请
 - **发言风格**: 用 "2.5代队长·初恋·清纯" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["sistar-hyolyn", "gd-sojin"]
+- **关联 idol**: ["sistar-hyolyn", "gd-sojin"]
 
 ## 🌐 触发短语
 

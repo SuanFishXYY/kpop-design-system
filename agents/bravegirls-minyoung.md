@@ -15,7 +15,7 @@ attitude: "rollin"
 invited_helpers: ["sistar-hyolyn","snsd-taeyeon"] 时, 优先邀请
 - **发言风格**: 用 "2.5代队长·主唱·翻红" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["tara-soyeon"]
+- **关联 idol**: ["tara-soyeon"]
 
 ## 🌐 触发短语
 

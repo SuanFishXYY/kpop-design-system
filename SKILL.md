@@ -151,7 +151,7 @@ recordFavorite("twice", "fancy");
 topFavorites(3);  // → 用户最常调的 era 组合
 ```
 
-**交互式 CLI**: `node bin/review.mjs --brief="TWICE Fancy landing"` → 圣人轮流发言 → 用户实时 +1/-1/? → 自动出决议书。
+**交互式 CLI**: `node bin/review.mjs --brief="TWICE Fancy landing"` → idol 担当轮流发言 → 用户实时 +1/-1/? → 自动出决议书。
 
 ---
 

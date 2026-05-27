@@ -15,7 +15,7 @@ attitude: "asap"
 invited_helpers: ["aespa-karina", "nj-minji", "kep1er-yujin"] 时, 优先邀请
 - **发言风格**: 用 "4代队长·清纯·御姐" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["nj-hyein", "aespa-winter"]
+- **关联 idol**: ["nj-hyein", "aespa-winter"]
 
 ## 🌐 触发短语
 

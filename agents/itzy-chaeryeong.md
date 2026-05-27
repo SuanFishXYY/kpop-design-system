@@ -15,7 +15,7 @@ attitude: "sneakers"
 invited_helpers: ["itzy-yuna", "itzy-ryujin", "nj-haerin"] 时, 优先邀请
 - **发言风格**: 用 "长腿·dance·氛围" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["lsf-sakura", "stayc-sumin"]
+- **关联 idol**: ["lsf-sakura", "stayc-sumin"]
 
 ## 🌐 触发短语
 

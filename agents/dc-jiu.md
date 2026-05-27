@@ -15,7 +15,7 @@ attitude: "chase me"
 invited_helpers: ["bp-jisoo", "rv-irene", "momoland-hyebin"] 时, 优先邀请
 - **发言风格**: 用 "3代队长·梦女·消失" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["twice-tzuyu", "wjsn-exy"]
+- **关联 idol**: ["twice-tzuyu", "wjsn-exy"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "cheshire"
 invited_helpers: ["itzy-chaeryeong", "itzy-ryujin", "aespa-winter"] 时, 优先邀请
 - **发言风格**: 用 "maknae·门面·公主" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["nj-danielle", "ive-gaeul"]
+- **关联 idol**: ["nj-danielle", "ive-gaeul"]
 
 ## 🌐 触发短语
 

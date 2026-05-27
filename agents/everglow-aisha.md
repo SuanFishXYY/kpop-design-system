@@ -15,7 +15,7 @@ attitude: "adios"
 invited_helpers: ["twice-sana","katseye-lara"] 时, 优先邀请
 - **发言风格**: 用 "4代多语·rapper·全能" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["nmixx-bae"]
+- **关联 idol**: ["nmixx-bae"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "heart attack"
 invited_helpers: ["twice-nayeon","mmm-wheein"] 时, 优先邀请
 - **发言风格**: 用 "4代阳光·爱心·治愈" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["nj-danielle"]
+- **关联 idol**: ["nj-danielle"]
 
 ## 🌐 触发短语
 

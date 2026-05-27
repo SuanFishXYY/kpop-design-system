@@ -15,7 +15,7 @@ attitude: "bad news"
 invited_helpers: ["idle-soyeon","itzy-chaeryeong"] 时, 优先邀请
 - **发言风格**: 用 "4代rapper·制作人·sharp" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["tara-hyomin"]
+- **关联 idol**: ["tara-hyomin"]
 
 ## 🌐 触发短语
 

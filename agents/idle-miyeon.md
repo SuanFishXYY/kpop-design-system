@@ -15,7 +15,7 @@ attitude: "hwaa"
 invited_helpers: ["idle-yuqi", "idle-minnie", "aespa-ningning"] 时, 优先邀请
 - **发言风格**: 用 "门面·主唱·氛围" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["ive-rei", "kep1er-yujin"]
+- **关联 idol**: ["ive-rei", "kep1er-yujin"]
 
 ## 🌐 触发短语
 

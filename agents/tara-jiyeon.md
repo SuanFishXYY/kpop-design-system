@@ -15,7 +15,7 @@ attitude: "numuna"
 invited_helpers: ["snsd-yoona","aoa-seolhyun"] 时, 优先邀请
 - **发言风格**: 用 "2.5代center·性感·氛围" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["twice-tzuyu"]
+- **关联 idol**: ["twice-tzuyu"]
 
 ## 🌐 触发短语
 

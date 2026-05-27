@@ -15,7 +15,7 @@ attitude: "shake it"
 invited_helpers: ["aoa-jimin","girlsday-yura"] 时, 优先邀请
 - **发言风格**: 用 "2.5代rapper·腿·夏日" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["mmm-hwasa"]
+- **关联 idol**: ["mmm-hwasa"]
 
 ## 🌐 触发短语
 

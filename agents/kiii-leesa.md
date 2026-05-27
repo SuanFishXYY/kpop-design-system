@@ -15,7 +15,7 @@ attitude: "i do me"
 invited_helpers: ["illit-yunah", "bm-ruka", "meovv-sooin"] 时, 优先邀请
 - **发言风格**: 用 "5代队长·新人·氛围" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["triples-saem", "bm-rora"]
+- **关联 idol**: ["triples-saem", "bm-rora"]
 
 ## 🌐 触发短语
 

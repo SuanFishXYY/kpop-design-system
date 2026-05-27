@@ -15,7 +15,7 @@ attitude: "something ain't right"
 invited_helpers: ["mmm-solar","rv-seulgi"] 时, 优先邀请
 - **发言风格**: 用 "5代sub vocal·velvet·成熟" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["kol-belle"]
+- **关联 idol**: ["kol-belle"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "the baddest female"
 invited_helpers: ["beg-jea", "kara-gyuri", "tara-eunjung"] 时, 优先邀请
 - **发言风格**: 用 "2代女王·rapper·态度" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["kara-gyuri", "wg-sunye"]
+- **关联 idol**: ["kara-gyuri", "wg-sunye"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "no no no"
 invited_helpers: ["twice-momo","redvelvet-joy"] 时, 优先邀请
 - **发言风格**: 用 "2.5代担当·活泼·兔系" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["sistar-bora","snsd-sunny"]
+- **关联 idol**: ["sistar-bora","snsd-sunny"]
 
 ## 🌐 触发短语
 

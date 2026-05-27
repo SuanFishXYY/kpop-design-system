@@ -15,7 +15,7 @@ attitude: "hush"
 invited_helpers: ["secret-hyoseong", "aoa-jimin", "fx-victoria"] 时, 优先邀请
 - **发言风格**: 用 "2代中国·rapper·性感" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["sistar-hyolyn", "exid-solji"]
+- **关联 idol**: ["sistar-hyolyn", "exid-solji"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "dumhdurum"
 invited_helpers: ["twice-chaeyoung","itzy-yeji"] 时, 优先邀请
 - **发言风格**: 用 "2.5代maknae·阳光·撒娇" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["mmm-moonbyul"]
+- **关联 idol**: ["mmm-moonbyul"]
 
 ## 🌐 触发短语
 

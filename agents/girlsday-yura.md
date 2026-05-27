@@ -15,7 +15,7 @@ attitude: "something"
 invited_helpers: ["aoa-jimin","sistar-bora"] 时, 优先邀请
 - **发言风格**: 用 "2.5代dancer·性感·腿" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["fx-victoria"]
+- **关联 idol**: ["fx-victoria"]
 
 ## 🌐 触发短语
 

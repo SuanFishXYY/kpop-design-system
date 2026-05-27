@@ -5,7 +5,7 @@ const MAX_USER_WEIGHT = 3;
 
 /**
  * 模拟一次 council 投票 + 用户投票合并 tally
- * @param {Array<{voter, verdict}>} council_votes  圣人 verdicts: "pass" | "reject" | "abstain"
+ * @param {Array<{voter, verdict}>} council_votes  idol council verdicts: "pass" | "reject" | "abstain"
  * @param {{verdict, weight, reason}|null} user_vote 用户投票 (可选)
  * @returns {final_verdict, tally, user_effect, audit_trail}
  */

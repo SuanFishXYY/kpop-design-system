@@ -15,7 +15,7 @@ attitude: "as you wish"
 invited_helpers: ["dc-jiu", "rv-irene", "gfriend-sowon"] 时, 优先邀请
 - **发言风格**: 用 "3代队长·rapper·长腿" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["mmm-hwasa", "twice-chaeyoung"]
+- **关联 idol**: ["mmm-hwasa", "twice-chaeyoung"]
 
 ## 🌐 触发短语
 

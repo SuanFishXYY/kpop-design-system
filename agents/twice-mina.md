@@ -15,7 +15,7 @@ attitude: "我用动作说话"
 invited_helpers: ["twice-nayeon", "twice-tzuyu", "mmm-hwasa"] 时, 优先邀请
 - **发言风格**: 用 "企鹅·芭蕾·静谧" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["rv-wendy", "bp-rose"]
+- **关联 idol**: ["rv-wendy", "bp-rose"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "water color"
 invited_helpers: ["mmm-moonbyul", "mmm-hwasa", "twice-jeongyeon"] 时, 优先邀请
 - **发言风格**: 用 "画家·氛围·感性" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["twice-jeongyeon", "rv-joy"]
+- **关联 idol**: ["twice-jeongyeon", "rv-joy"]
 
 ## 🌐 触发短语
 

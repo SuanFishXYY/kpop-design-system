@@ -15,7 +15,7 @@ attitude: "let me in"
 invited_helpers: ["twice-jihyo","rv-irene"] 时, 优先邀请
 - **发言风格**: 用 "4代队长·温柔·担当" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["gfriend-sowon"]
+- **关联 idol**: ["gfriend-sowon"]
 
 ## 🌐 触发短语
 

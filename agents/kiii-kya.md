@@ -15,7 +15,7 @@ attitude: "i do me"
 invited_helpers: ["nmixx-bae","itzy-ryujin"] 时, 优先邀请
 - **发言风格**: 用 "5代rapper·sharp·attitude" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["idle-soyeon"]
+- **关联 idol**: ["idle-soyeon"]
 
 ## 🌐 触发短语
 

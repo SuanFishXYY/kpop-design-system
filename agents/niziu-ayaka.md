@@ -15,7 +15,7 @@ attitude: "paradise"
 invited_helpers: ["twice-tzuyu","apink-naeun"] 时, 优先邀请
 - **发言风格**: 用 "4代柔美·visual·治愈" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["ive-rei"]
+- **关联 idol**: ["ive-rei"]
 
 ## 🌐 触发短语
 

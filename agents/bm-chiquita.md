@@ -15,7 +15,7 @@ attitude: "monster"
 invited_helpers: ["bm-asa", "bm-ahyeon", "aespa-giselle"] 时, 优先邀请
 - **发言风格**: 用 "阿根廷·maknae·混血" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["triples-saem", "meovv-sooin"]
+- **关联 idol**: ["triples-saem", "meovv-sooin"]
 
 ## 🌐 触发短语
 

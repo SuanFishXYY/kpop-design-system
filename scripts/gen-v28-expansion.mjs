@@ -253,7 +253,7 @@ attitude: "${i.attitude}"
 invited_helpers: ${JSON.stringify(i.helpers)} 时, 优先邀请
 - **发言风格**: 用 "${i.personality}" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ${JSON.stringify(i.related)}
+- **关联 idol**: ${JSON.stringify(i.related)}
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "electric shock"
 invited_helpers: ["missa-fei", "exid-solji", "secret-hyoseong"] 时, 优先邀请
 - **发言风格**: 用 "2代中国·队长·御姐" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["missa-fei", "gd-sojin"]
+- **关联 idol**: ["missa-fei", "gd-sojin"]
 
 ## 🌐 触发短语
 

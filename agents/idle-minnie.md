@@ -15,7 +15,7 @@ attitude: "tomboy"
 invited_helpers: ["idle-yuqi", "idle-miyeon", "nj-hanni"] 时, 优先邀请
 - **发言风格**: 用 "泰国·主唱·语言天才" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["lsf-yunjin", "lsf-eunchae"]
+- **关联 idol**: ["lsf-yunjin", "lsf-eunchae"]
 
 ## 🌐 触发短语
 

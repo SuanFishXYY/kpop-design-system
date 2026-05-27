@@ -15,7 +15,7 @@ attitude: "perfect night"
 invited_helpers: ["lsf-yunjin", "lsf-chaewon", "nj-haerin"] 时, 优先邀请
 - **发言风格**: 用 "日本·芭蕾·御姐" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["lsf-sakura", "itzy-yuna"]
+- **关联 idol**: ["lsf-sakura", "itzy-yuna"]
 
 ## 🌐 触发短语
 

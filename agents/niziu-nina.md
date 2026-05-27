@@ -15,7 +15,7 @@ attitude: "take a picture"
 invited_helpers: ["twice-tzuyu","nj-hyein"] 时, 优先邀请
 - **发言风格**: 用 "4代maknae·main vocal·清亮" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["fromis-jiheon"]
+- **关联 idol**: ["fromis-jiheon"]
 
 ## 🌐 触发短语
 

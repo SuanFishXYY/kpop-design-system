@@ -15,7 +15,7 @@ attitude: "happiness"
 invited_helpers: ["rv-joy", "rv-irene", "bp-jennie"] 时, 优先邀请
 - **发言风格**: 用 "加拿大·主唱·OST" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["bp-jennie", "rv-seulgi"]
+- **关联 idol**: ["bp-jennie", "rv-seulgi"]
 
 ## 🌐 触发短语
 

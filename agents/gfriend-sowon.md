@@ -15,7 +15,7 @@ attitude: "navillera"
 invited_helpers: ["bp-jisoo", "rv-irene", "momoland-hyebin"] 时, 优先邀请
 - **发言风格**: 用 "3代队长·长腿·氛围" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["lovelyz-babysoul", "mmm-moonbyul"]
+- **关联 idol**: ["lovelyz-babysoul", "mmm-moonbyul"]
 
 ## 🌐 触发短语
 

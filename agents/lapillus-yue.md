@@ -15,7 +15,7 @@ attitude: "bewitched"
 invited_helpers: ["idle-yuqi","everglow-yiren"] 时, 优先邀请
 - **发言风格**: 用 "4代多语·rapper·清亮" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["kep1er-xiaoting"]
+- **关联 idol**: ["kep1er-xiaoting"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "glass shoes"
 invited_helpers: ["ive-leeseo","apink-namjoo"] 时, 优先邀请
 - **发言风格**: 用 "4代柔美·甜美·温柔" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["stayc-seeun"]
+- **关联 idol**: ["stayc-seeun"]
 
 ## 🌐 触发短语
 

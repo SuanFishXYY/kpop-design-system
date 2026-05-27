@@ -15,7 +15,7 @@ attitude: "lalisa"
 invited_helpers: ["bp-rose", "bp-jisoo", "twice-nayeon"] 时, 优先邀请
 - **发言风格**: 用 "泰国·全能·money" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["twice-mina", "twice-jeongyeon"]
+- **关联 idol**: ["twice-mina", "twice-jeongyeon"]
 
 ## 🌐 触发短语
 

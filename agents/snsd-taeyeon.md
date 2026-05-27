@@ -15,7 +15,7 @@ attitude: "i"
 invited_helpers: ["kara-gyuri", "2ne1-cl", "tara-eunjung"] 时, 优先邀请
 - **发言风格**: 用 "2代国民妹妹·主唱女皇·音色" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["beg-jea", "wg-sunye"]
+- **关联 idol**: ["beg-jea", "wg-sunye"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "chi mat ba ram"
 invited_helpers: ["sistar-dasom","apink-naeun"] 时, 优先邀请
 - **发言风格**: 用 "2.5代visual·夏日·甜美" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["girlsday-minah"]
+- **关联 idol**: ["girlsday-minah"]
 
 ## 🌐 触发短语
 

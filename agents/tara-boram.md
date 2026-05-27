@@ -15,7 +15,7 @@ attitude: "roly poly"
 invited_helpers: ["mmm-moonbyul","snsd-tiffany"] 时, 优先邀请
 - **发言风格**: 用 "2.5代姐姐·反差萌·星二代" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["girlsday-sojin"]
+- **关联 idol**: ["girlsday-sojin"]
 
 ## 🌐 触发短语
 

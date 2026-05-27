@@ -15,7 +15,7 @@ attitude: "something"
 invited_helpers: ["aoa-jimin", "exid-solji", "apink-chorong"] 时, 优先邀请
 - **发言风格**: 用 "2.5代队长·御姐·甜美" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["4min-jihyun", "aoa-jimin"]
+- **关联 idol**: ["4min-jihyun", "aoa-jimin"]
 
 ## 🌐 触发短语
 

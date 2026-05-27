@@ -15,7 +15,7 @@ attitude: "队长不是头衔，是责任"
 invited_helpers: ["twice-chaeyoung", "twice-tzuyu", "gfriend-sowon"] 时, 优先邀请
 - **发言风格**: 用 "队长·主唱·god jihyo" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["gfriend-sowon", "twice-jeongyeon"]
+- **关联 idol**: ["gfriend-sowon", "twice-jeongyeon"]
 
 ## 🌐 触发短语
 

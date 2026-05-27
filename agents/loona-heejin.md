@@ -15,7 +15,7 @@ attitude: "why not?"
 invited_helpers: ["nj-haerin","idle-miyeon"] 时, 优先邀请
 - **发言风格**: 用 "4代中心·世界观·清纯" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["aespa-karina"]
+- **关联 idol**: ["aespa-karina"]
 
 ## 🌐 触发短语
 

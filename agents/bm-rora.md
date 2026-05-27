@@ -15,7 +15,7 @@ attitude: "clik clak"
 invited_helpers: ["bm-asa", "bm-ruka", "twice-nayeon"] 时, 优先邀请
 - **发言风格**: 用 "韩国·main dancer·活力" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["smn-yeoeum", "meovv-sooin"]
+- **关联 idol**: ["smn-yeoeum", "meovv-sooin"]
 
 ## 🌐 触发短语
 

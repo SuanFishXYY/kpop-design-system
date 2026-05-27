@@ -15,7 +15,7 @@ attitude: "touch my body"
 invited_helpers: ["secret-hyoseong", "aoa-jimin", "fx-victoria"] 时, 优先邀请
 - **发言风格**: 用 "2.5代主唱女王·R&B·sexy" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["apink-chorong", "fx-victoria"]
+- **关联 idol**: ["apink-chorong", "fx-victoria"]
 
 ## 🌐 触发短语
 

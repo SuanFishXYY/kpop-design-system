@@ -15,7 +15,7 @@ attitude: "left right"
 invited_helpers: ["twice-momo","nmixx-jiwoo"] 时, 优先邀请
 - **发言风格**: 用 "5代dancer·sharp·力量" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["katseye-yoonchae"]
+- **关联 idol**: ["katseye-yoonchae"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "sakura aura"
 invited_helpers: ["lsf-kazuha", "lsf-chaewon", "nj-danielle"] 时, 优先邀请
 - **发言风格**: 用 "日本·门面·小公主" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["idle-shuhua", "nj-minji"]
+- **关联 idol**: ["idle-shuhua", "nj-minji"]
 
 ## 🌐 触发短语
 

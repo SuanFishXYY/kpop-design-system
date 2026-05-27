@@ -15,7 +15,7 @@ attitude: "antifragile"
 invited_helpers: ["lsf-eunchae", "lsf-sakura", "nj-minji"] 时, 优先邀请
 - **发言风格**: 用 "队长·野猫·氛围" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["idle-soyeon", "itzy-yeji"]
+- **关联 idol**: ["idle-soyeon", "itzy-yeji"]
 
 ## 🌐 触发短语
 

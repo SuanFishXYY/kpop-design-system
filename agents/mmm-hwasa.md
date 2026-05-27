@@ -15,7 +15,7 @@ attitude: "i'm gone"
 invited_helpers: ["mmm-solar", "mmm-wheein", "bp-rose"] 时, 优先邀请
 - **发言风格**: 用 "solo 女王·性感·态度" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["rv-yeri", "rv-irene"]
+- **关联 idol**: ["rv-yeri", "rv-irene"]
 
 ## 🌐 触发短语
 

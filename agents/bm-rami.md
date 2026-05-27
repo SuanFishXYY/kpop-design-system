@@ -15,7 +15,7 @@ attitude: "like that"
 invited_helpers: ["bm-pharita", "bm-rora", "illit-minju"] 时, 优先邀请
 - **发言风格**: 用 "韩国·rapper·甜美" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["illit-moka", "meovv-sooin"]
+- **关联 idol**: ["illit-moka", "meovv-sooin"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "我用涂鸦表达"
 invited_helpers: ["twice-dahyun", "twice-sana", "mmm-moonbyul"] 时, 优先邀请
 - **发言风格**: 用 "tiny·rapper·艺术家" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["mmm-moonbyul", "wjsn-exy"]
+- **关联 idol**: ["mmm-moonbyul", "wjsn-exy"]
 
 ## 🌐 触发短语
 

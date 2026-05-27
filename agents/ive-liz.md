@@ -15,7 +15,7 @@ attitude: "first love"
 invited_helpers: ["ive-gaeul", "ive-wonyoung", "idle-miyeon"] 时, 优先邀请
 - **发言风格**: 用 "主唱·樱花·初恋" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["aespa-ningning", "itzy-ryujin"]
+- **关联 idol**: ["aespa-ningning", "itzy-ryujin"]
 
 ## 🌐 触发短语
 

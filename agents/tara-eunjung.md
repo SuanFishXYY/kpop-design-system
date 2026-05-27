@@ -15,7 +15,7 @@ attitude: "roly poly"
 invited_helpers: ["beg-jea", "as-kahi", "2ne1-cl"] 时, 优先邀请
 - **发言风格**: 用 "2代队长·演员·跨界" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["kara-gyuri", "as-kahi"]
+- **关联 idol**: ["kara-gyuri", "as-kahi"]
 
 ## 🌐 触发短语
 

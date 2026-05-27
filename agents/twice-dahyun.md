@@ -15,7 +15,7 @@ attitude: "鹰鹰鹰——别紧张"
 invited_helpers: ["twice-chaeyoung", "twice-jeongyeon", "mmm-moonbyul"] 时, 优先邀请
 - **发言风格**: 用 "tofu·搞怪·钢琴" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["twice-chaeyoung", "twice-sana"]
+- **关联 idol**: ["twice-chaeyoung", "twice-sana"]
 
 ## 🌐 触发短语
 

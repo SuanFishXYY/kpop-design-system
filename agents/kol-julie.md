@@ -15,7 +15,7 @@ attitude: "midas touch"
 invited_helpers: ["meovv-sooin", "triples-saem", "bm-ruka"] 时, 优先邀请
 - **发言风格**: 用 "5代队长·性感·氛围" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["katseye-lara", "triples-saem"]
+- **关联 idol**: ["katseye-lara", "triples-saem"]
 
 ## 🌐 触发短语
 

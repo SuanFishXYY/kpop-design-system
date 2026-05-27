@@ -15,7 +15,7 @@ attitude: "my style"
 invited_helpers: ["idle-minnie", "idle-shuhua", "kep1er-yujin"] 时, 优先邀请
 - **发言风格**: 用 "队长·rapper·制作人" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["idle-shuhua", "ive-liz"]
+- **关联 idol**: ["idle-shuhua", "ive-liz"]
 
 ## 🌐 触发短语
 

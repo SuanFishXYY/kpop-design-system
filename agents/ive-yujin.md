@@ -15,7 +15,7 @@ attitude: "i AM"
 invited_helpers: ["ive-leeseo", "ive-rei", "kep1er-yujin"] 时, 优先邀请
 - **发言风格**: 用 "队长·安宥真·眼神王" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["lsf-eunchae", "nmixx-lily"]
+- **关联 idol**: ["lsf-eunchae", "nmixx-lily"]
 
 ## 🌐 触发短语
 

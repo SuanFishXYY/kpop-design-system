@@ -15,7 +15,7 @@ attitude: "i do me"
 invited_helpers: ["ive-rei","illit-iroha"] 时, 优先邀请
 - **发言风格**: 用 "5代dancer·清新·活力" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["nmixx-jiwoo"]
+- **关联 idol**: ["nmixx-jiwoo"]
 
 ## 🌐 触发短语
 

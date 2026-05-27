@@ -15,7 +15,7 @@ attitude: "baddie"
 invited_helpers: ["ive-gaeul", "ive-leeseo", "aespa-giselle"] 时, 优先邀请
 - **发言风格**: 用 "日本·rapper·甜辣" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["lsf-chaewon", "idle-yuqi"]
+- **关联 idol**: ["lsf-chaewon", "idle-yuqi"]
 
 ## 🌐 触发短语
 

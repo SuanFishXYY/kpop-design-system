@@ -15,7 +15,7 @@ attitude: "spicy"
 invited_helpers: ["aespa-karina", "aespa-winter", "idle-minnie"] 时, 优先邀请
 - **发言风格**: 用 "中国·main vocal·爆发力" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["idle-minnie", "aespa-giselle"]
+- **关联 idol**: ["idle-minnie", "aespa-giselle"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "icy"
 invited_helpers: ["itzy-chaeryeong", "itzy-ryujin", "lsf-chaewon"] 时, 优先邀请
 - **发言风格**: 用 "队长·眼神·虎齿" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["idle-minnie", "idle-shuhua"]
+- **关联 idol**: ["idle-minnie", "idle-shuhua"]
 
 ## 🌐 触发短语
 

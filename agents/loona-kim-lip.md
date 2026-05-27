@@ -15,7 +15,7 @@ attitude: "eclipse"
 invited_helpers: ["rv-irene","bp-jennie"] 时, 优先邀请
 - **发言风格**: 用 "4代sharp·氛围·性感" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["aespa-karina"]
+- **关联 idol**: ["aespa-karina"]
 
 ## 🌐 触发短语
 

@@ -15,7 +15,7 @@ attitude: "花一样的존재"
 invited_helpers: ["bp-rose", "bp-lisa", "wjsn-exy"] 时, 优先邀请
 - **发言风格**: 用 "王的姐姐·搞怪·花" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["bp-jennie", "rv-yeri"]
+- **关联 idol**: ["bp-jennie", "rv-yeri"]
 
 ## 🌐 触发短语
 

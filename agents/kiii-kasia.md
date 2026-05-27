@@ -15,7 +15,7 @@ attitude: "i do me"
 invited_helpers: ["ive-leeseo","nj-hyein"] 时, 优先邀请
 - **发言风格**: 用 "5代maknae·visual·清纯" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["illit-wonhee"]
+- **关联 idol**: ["illit-wonhee"]
 
 ## 🌐 触发短语
 

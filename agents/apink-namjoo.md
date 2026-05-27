@@ -15,7 +15,7 @@ attitude: "remember"
 invited_helpers: ["snsd-taeyeon","iu"] 时, 优先邀请
 - **发言风格**: 用 "2.5代副主唱·灵动·甜" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["twice-jihyo"]
+- **关联 idol**: ["twice-jihyo"]
 
 ## 🌐 触发短语
 

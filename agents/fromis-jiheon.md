@@ -15,7 +15,7 @@ attitude: "we go!"
 invited_helpers: ["nj-hyein","illit-iroha"] 时, 优先邀请
 - **发言风格**: 用 "4代maknae·活泼·开朗" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["ive-leeseo"]
+- **关联 idol**: ["ive-leeseo"]
 
 ## 🌐 触发短语
 

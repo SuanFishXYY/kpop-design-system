@@ -15,7 +15,7 @@ attitude: "touch"
 invited_helpers: ["kiii-leesa", "bm-ruka", "smn-yeoeum"] 时, 优先邀请
 - **发言风格**: 用 "5代队长·全球·混血" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["h2h-stella", "illit-iroha"]
+- **关联 idol**: ["h2h-stella", "illit-iroha"]
 
 ## 🌐 触发短语
 

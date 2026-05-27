@@ -15,7 +15,7 @@ attitude: "make you happy"
 invited_helpers: ["twice-sana","apink-namjoo"] 时, 优先邀请
 - **发言风格**: 用 "4代甜美·治愈·撒娇" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["fromis-jisun"]
+- **关联 idol**: ["fromis-jisun"]
 
 ## 🌐 触发短语
 

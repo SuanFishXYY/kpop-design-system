@@ -15,7 +15,7 @@ attitude: "chopstick"
 invited_helpers: ["idle-soyeon","itzy-ryujin"] 时, 优先邀请
 - **发言风格**: 用 "4代rapper·attitude·dance" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["nmixx-bae"]
+- **关联 idol**: ["nmixx-bae"]
 
 ## 🌐 触发短语
 

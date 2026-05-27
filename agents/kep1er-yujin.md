@@ -15,7 +15,7 @@ attitude: "wa da da"
 invited_helpers: ["idle-soyeon", "ive-yujin", "aespa-karina"] 时, 优先邀请
 - **发言风格**: 用 "4代队长·选秀·活力" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["itzy-ryujin", "lsf-chaewon"]
+- **关联 idol**: ["itzy-ryujin", "lsf-chaewon"]
 
 ## 🌐 触发短语
 

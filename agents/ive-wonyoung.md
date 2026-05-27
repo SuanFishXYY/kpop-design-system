@@ -15,7 +15,7 @@ attitude: "럭키비키 마인드"
 invited_helpers: ["ive-gaeul", "ive-leeseo", "nj-danielle"] 时, 优先邀请
 - **发言风格**: 用 "公主·门面·럭키비키" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["ive-liz", "itzy-yuna"]
+- **关联 idol**: ["ive-liz", "itzy-yuna"]
 
 ## 🌐 触发短语
 

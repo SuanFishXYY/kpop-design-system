@@ -1,12 +1,12 @@
 # 🧑‍⚖️ User-as-Judge · v3.1 协议
 
 ## 一句话
-v3.0 圣人 council 单向输出 → v3.1 用户与圣人并肩评议, 拥有 veto / override / 偏好学习权。
+v3.0 idol council 单向输出 → v3.1 用户与 idol 评审团并肩评议, 拥有 veto / override / 偏好学习权。
 
 ## 4 件套
 
 ### ❶ 用户票席 (User Seat)
-council 投票时, 用户自动占 1 席, 与圣人同权。可在 brief 通过 `user_weight: 3` 自抬权重 (上限 3 票)。
+council 投票时, 用户自动占 1 席, 与 idol 同权。可在 brief 通过 `user_weight: 3` 自抬权重 (上限 3 票)。
 
 ```js
 import { tallyWithUser, castUserVote } from "./engine/user-jury.mjs";
@@ -38,7 +38,7 @@ node bin/review.mjs --brief="..."
 ```
 
 交互流程:
-1. 圣人轮流发言 (每位 wait 用户输入: +1/-1/?/Enter)
+1. idol 担当轮流发言 (每位 wait 用户输入: +1/-1/?/Enter)
 2. 用户最终投票 (verdict + weight + reason)
 3. 输出决议书 + 自动写入 prefs (if veto/override)
 4. 可选标记 favorite
@@ -51,4 +51,4 @@ node bin/review.mjs --brief="..."
 ## 不做
 - ❌ 云端档案
 - ❌ 用户 vs 用户对抗
-- ❌ 圣人反驳用户 (用户最终权)
+- ❌ idol 反驳用户 (用户最终权)

@@ -15,7 +15,7 @@ attitude: "我练习了一千次"
 invited_helpers: ["twice-mina", "twice-nayeon", "mmm-hwasa"] 时, 优先邀请
 - **发言风格**: 用 "反差萌·实力派·治愈系" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["twice-dahyun", "rv-irene"]
+- **关联 idol**: ["twice-dahyun", "rv-irene"]
 
 ## 🌐 触发短语
 

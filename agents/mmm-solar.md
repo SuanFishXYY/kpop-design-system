@@ -15,7 +15,7 @@ attitude: "egotistic"
 invited_helpers: ["mmm-moonbyul", "mmm-hwasa", "momoland-hyebin"] 时, 优先邀请
 - **发言风格**: 用 "队长·眼神·宇宙" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["twice-chaeyoung", "twice-sana"]
+- **关联 idol**: ["twice-chaeyoung", "twice-sana"]
 
 ## 🌐 触发短语
 

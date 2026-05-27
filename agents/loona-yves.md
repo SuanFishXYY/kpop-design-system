@@ -15,7 +15,7 @@ attitude: "new"
 invited_helpers: ["rv-seulgi","idle-minnie"] 时, 优先邀请
 - **发言风格**: 用 "4代成熟·氛围·禁果" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["gfriend-sinb"]
+- **关联 idol**: ["gfriend-sinb"]
 
 ## 🌐 触发短语
 

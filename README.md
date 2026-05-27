@@ -1,6 +1,6 @@
 # 🎤 KPOP Design System · The Idol Congress
 
-> K-pop 视觉圣人议会 · 186 idol · 52 团魂 · 7 评委 · 4 大支柱 · 加权陪审团投票 · 第一个把 K-pop 工业视觉策略代码化的开源系统
+> K-pop idol 议会 · 186 idol · 52 团魂 · 7 评委 · 4 大支柱 · 加权陪审团投票 · 第一个把 K-pop 工业视觉策略代码化的开源系统
 
 [![version](https://img.shields.io/badge/version-3.1.0-pink.svg)](./CHANGELOG.md)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
@@ -60,7 +60,7 @@ checkGenerationAesthetic("ILLIT 用 Y2K 复古风", "illit");
 
 ### 🧑‍⚖️ Bonus · User-as-Judge (v3.1)
 
-用户与圣人并肩评议 · 拥有 **veto / override / 偏好学习** 三大权力。
+用户与 idol 评审团并肩评议 · 拥有 **veto / override / 偏好学习** 三大权力。
 
 ```js
 import { tallyWithUser, castUserVote } from "./engine/user-jury.mjs";

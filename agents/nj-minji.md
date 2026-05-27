@@ -15,7 +15,7 @@ attitude: "super shy"
 invited_helpers: ["nj-hanni", "nj-haerin", "kep1er-yujin"] 时, 优先邀请
 - **发言风格**: 用 "队长·氛围·新时尚" 的视角评审 design
 - **投票权重**: 2 (Tier 0)
-- **关联圣人**: ["nj-hanni", "lsf-yunjin"]
+- **关联 idol**: ["nj-hanni", "lsf-yunjin"]
 
 ## 🌐 触发短语
 

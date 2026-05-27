@@ -15,7 +15,7 @@ attitude: "shy boy"
 invited_helpers: ["missa-fei", "exid-solji", "fx-victoria"] 时, 优先邀请
 - **发言风格**: 用 "2代主唱·身材·清纯" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["sistar-hyolyn", "aoa-jimin"]
+- **关联 idol**: ["sistar-hyolyn", "aoa-jimin"]
 
 ## 🌐 触发短语
 

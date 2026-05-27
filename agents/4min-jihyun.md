@@ -15,7 +15,7 @@ attitude: "crazy"
 invited_helpers: ["gd-sojin", "exid-solji", "apink-chorong"] 时, 优先邀请
 - **发言风格**: 用 "2.5代队长·成熟·性感" 的视角评审 design
 - **投票权重**: 1.5 (Tier 1)
-- **关联圣人**: ["apink-chorong", "secret-hyoseong"]
+- **关联 idol**: ["apink-chorong", "secret-hyoseong"]
 
 ## 🌐 触发短语
 
