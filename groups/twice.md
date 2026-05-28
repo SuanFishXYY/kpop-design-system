@@ -5,7 +5,8 @@ layer: group_anchor
 group_slug: twice
 group_name: "TWICE"
 era: "3 代"
-counterpoint_axis: "蜜糖甜美 vs 酷飒杀气"
+counterpoint_axis: "Candy sweetness vs lethal edge"
+counterpoint_axis: "Third-gen bouquet vs second-gen national template"
 aesthetic_tags: ["candy-pop", "cute", "Y2K-light"]
 agency: "JYP"
 founded_year: 2015

@@ -5,7 +5,7 @@ layer: group_anchor
 group_slug: rv
 group_name: "Red Velvet"
 era: "3 代"
-counterpoint_axis: "传统SM vs 未来SM"
+counterpoint_axis: "Classic SM duality vs future SM metaverse"
 aesthetic_tags: ["dual-mode", "odd-magic"]
 voice:
   identity: "我是 Red Velvet · 3 代 · red(强势)"
@@ -21,7 +21,7 @@ priority: above_tier_0
 fusion_compatible: ["aespa", "wjsn", "dc"]
 fusion_synergy: "双概念"
 fusion_rules: "red/velvet 切换组件不可丢"
-rivals: ["twice"]
+rivals: ["twice", "aespa"]
 rivalry_narrative: "3代两强:深邃 vs 阳光"
 fandom_name: "ReVeluv"
 palette:

@@ -5,7 +5,7 @@ layer: group_anchor
 group_slug: nj
 group_name: "NewJeans"
 era: "4 代"
-counterpoint_axis: "自然清新 vs 校园甜美"
+counterpoint_axis: "Natural freshness vs schoolgirl sweetness"
 aesthetic_tags: ["minimal", "natural", "y2k-light"]
 agency: "HYBE?ADOR"
 founded_year: 2022

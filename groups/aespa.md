@@ -5,7 +5,8 @@ layer: group_anchor
 group_slug: aespa
 group_name: "aespa"
 era: "4 代"
-counterpoint_axis: "公主美学 vs 未来主义"
+counterpoint_axis: "Princess prestige vs futurism"
+counterpoint_axis: "Classic SM duality vs future SM metaverse"
 aesthetic_tags: ["cyber", "Y2K", "metaverse"]
 agency: "SM"
 founded_year: 2020
@@ -16,7 +17,7 @@ priority: above_tier_0
 fusion_compatible: ["dc", "fx", "nmixx", "illit"]
 fusion_synergy: "sci-fi vs 黑暗童话 / 实验前卫 / 多曲风"
 fusion_rules: "alter ego B 面不可丢"
-rivals: ["ive"]
+rivals: ["ive", "rv"]
 rivalry_narrative: "4代两强:未来主义 vs 公主美学"
 fandom_name: "MY"
 palette:

@@ -51,3 +51,14 @@ Your vote: [y] for / [n] against / [a] abstain / [v] veto / [o] override: y
 Result: pass · for 6 / against 0 / abstain 1
 Saved: verdict-mixed-abc123.md
 ```
+
+
+## Review mode
+
+The old lightweight review flow is now folded into the canonical v3.4 CLI:
+
+```bash
+node bin/council.mjs --review --brief="TWICE Fancy era landing"
+```
+
+Use it when you want the shorter v3.1 user-vote walkthrough instead of the full R1/R2/R3 room.

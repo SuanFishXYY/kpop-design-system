@@ -1,7 +1,7 @@
 ---
 name: kpop-design-system
 description: "K-pop industrial visual strategy system v3.4 - Quickstart + LLM bridge + interactive council, mixed council, routing, strict verdicts, 96/96 node tests PASS. Activate on /kpop, /idol-congress, /kpop-design, /kpop-era."
-version: 3.4.1
+version: 3.4.2
 author: 算鱼工作室
 license: MIT
 language: zh-CN
@@ -161,7 +161,7 @@ recordFavorite("twice", "fancy");
 topFavorites(3);  // → 用户最常调的 era 组合
 ```
 
-**交互式 CLI**: `node bin/review.mjs --brief="TWICE Fancy landing"` → idol 担当轮流发言 → 用户实时 +1/-1/? → 自动出决议书。
+**交互式 CLI**: `node bin/council.mjs --brief="TWICE Fancy landing"`（轻量复盘用 `--review`） → idol 担当轮流发言 → 用户实时 +1/-1/? → 自动出决议书。
 
 ---
 

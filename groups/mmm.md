@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: mmm
 group_name: "MAMAMOO"
 era: "3 代"
+counterpoint_axis: "Vocal confidence vs visual dominance"
 aesthetic_tags: ["vocal", "retro-soul", "confident"]
 voice:
   identity: "我是 MAMAMOO · 3 代 · vocal monster"
@@ -20,7 +21,7 @@ priority: above_tier_0
 fusion_compatible: ["bp", "2ne1", "idle"]
 fusion_synergy: "vocal monster 宣言派"
 fusion_rules: "大字加粗走人风格不可丢"
-rivals: ["2ne1"]
+rivals: ["2ne1", "bp"]
 rivalry_narrative: "气质对照:Female Empowerment vs Baddest"
 fandom_name: "MOOMOO"
 palette:

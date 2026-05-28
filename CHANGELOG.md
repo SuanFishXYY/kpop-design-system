@@ -1,3 +1,15 @@
+## v3.4.2 (2026-05-31) - Cleanup pack
+
+- Counterpoint backfill: all 10 documented aesthetic counterpoint pairs now have both-sided `counterpoint_axis` frontmatter and reciprocal rivals.
+- README restructure: v3.4-first positioning, v3.1 moved into compact version history, docs index refreshed.
+- `engine/conflicts.mjs`: adds `examples/conflicts-demo.mjs` to exercise label-dispute and agent-declared conflict advisories.
+- `bin/council.mjs --review`: merged into `bin/council.mjs --review`; legacy file removed and docs retargeted.
+- Encoding sweep: garbled CJK comment residue removed from runtime `.mjs` files.
+- Adds `docs/ARCHITECTURE.md` with 16-engine map, data flow, and contributor guides.
+- Adds `scripts/README.md` with per-script lifecycle, run policy, and touched files.
+- Bumps package version to 3.4.2 and re-verifies the full 96-test suite.
+
+---
 ## v3.4.1 (2026-05-31) - Critical fixes for v3.4 baseline
 
 - Fixes `examples/awards-demo.mjs` final verdict display by reading `yes_ratio` / `decision_reason` from the engine decision shape.
@@ -76,8 +88,8 @@
 - `rejected_specialties` (反复拒绝的 specialty 频次)
 - API: loadUserPrefs / saveUserPrefs / recordOverride / recordFavorite / recordRejectedSpecialty / topFavorites / shouldSkipSpecialty
 
-### ❸ 评审会议室 CLI — `bin/review.mjs`
-- `node bin/review.mjs --brief="..."`
+### ❸ 评审会议室 CLI — `bin/council.mjs --review`
+- `node bin/council.mjs --review --brief="..."`
 - 交互式: idol 担当轮流发言 → 用户 +1/-1/?/Enter → final verdict + weight + reason → 决议书
 - 自动写入 prefs (if veto/override) + 可选标记 favorite
 

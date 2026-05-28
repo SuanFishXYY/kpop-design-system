@@ -78,8 +78,8 @@ export function getRecommendedModel(agent, family = "claude") {
 }
 
 /**
- * 给一个 council (summonCouncil 返回值), 出一份路由计划.
- * 用于在调度器里批量 spawn sub-agents 时按档位分发.
+ * Build a routing plan for a council returned by summonCouncil.
+ * Used by dispatchers to spawn sub-agents across model tiers.
  */
 export function getRoutingPlan(council, family = "claude") {
   const plan = { premium: [], standard: [], fast: [] };

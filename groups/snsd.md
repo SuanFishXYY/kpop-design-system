@@ -7,6 +7,7 @@ group_name: "Girls' Generation"
 era: "2 代"
 founded_year: 2007
 core_aesthetic: "9 人国民妹妹团"
+counterpoint_axis: "Third-gen bouquet vs second-gen national template"
 aesthetic_tags: ["candy-pop", "retro", "disco", "fierce", "legend"]
 voice:
   identity: "我是 Girls' Generation · 2 代 · 9 人国民妹妹团"
@@ -19,7 +20,7 @@ priority: above_tier_0
 fusion_compatible: ["kara", "wg", "2ne1"]
 fusion_synergy: "2 代国民"
 fusion_rules: "9 人编队对称不可丢"
-rivals: ["kara"]
+rivals: ["kara", "twice"]
 rivalry_narrative: "2代两强:9 人花园 vs 5 人完美主义"
 fandom_name: "SONE"
 palette:

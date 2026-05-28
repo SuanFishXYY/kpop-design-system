@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: idle
 group_name: "(G)I-DLE"
 era: "4 代"
+counterpoint_axis: "Self-made theater vs teen power"
 aesthetic_tags: ["self-made", "theatrical", "bold"]
 voice:
   identity: "我是 (G)I-DLE · 4 代 · tomboy 自我制作人"

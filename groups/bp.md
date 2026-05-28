@@ -5,7 +5,11 @@ layer: group_anchor
 group_slug: bp
 group_name: "BLACKPINK"
 era: "3 代"
-counterpoint_axis: "蜜糖甜美 vs 酷飒杀气"
+counterpoint_axis: "Candy sweetness vs lethal edge"
+counterpoint_axis: "Luxury polish vs rebel origin"
+counterpoint_axis: "Cinematic fearlessness vs luxury combat"
+counterpoint_axis: "Raw successor energy vs established luxe edge"
+counterpoint_axis: "Vocal confidence vs visual dominance"
 aesthetic_tags: ["Y2K", "luxe-edge", "dark-glam"]
 agency: "YG"
 founded_year: 2016
@@ -16,7 +20,7 @@ priority: above_tier_0
 fusion_compatible: ["twice", "2ne1", "mmm", "lsf"]
 fusion_synergy: "奢华军队 vs 花束 / 反抗鼻祖 / 宣言派 / fearless 接班"
 fusion_rules: "对决式语言不可丢"
-rivals: ["twice", "2ne1"]
+rivals: ["twice", "2ne1", "lsf", "bm", "mmm"]
 rivalry_narrative: "3代两强 · 与师姐 2NE1 同社传承张力"
 fandom_name: "BLINK"
 palette:

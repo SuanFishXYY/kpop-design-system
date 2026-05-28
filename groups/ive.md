@@ -5,7 +5,7 @@ layer: group_anchor
 group_slug: ive
 group_name: "IVE"
 era: "4 代"
-counterpoint_axis: "公主美学 vs 未来主义"
+counterpoint_axis: "Princess prestige vs futurism"
 aesthetic_tags: ["princess", "prestige", "mature-clean"]
 agency: "Starship"
 founded_year: 2021

@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: lsf
 group_name: "LE SSERAFIM"
 era: "4 代"
+counterpoint_axis: "Cinematic fearlessness vs luxury combat"
 aesthetic_tags: ["cinematic", "dark-elegant", "fierce"]
 agency: "HYBE?Source"
 founded_year: 2022
@@ -15,7 +16,7 @@ priority: above_tier_0
 fusion_compatible: ["itzy", "bp", "2ne1"]
 fusion_synergy: "fearless 自由女性"
 fusion_rules: "不需要被认可的宣言不可丢"
-rivals: ["nj"]
+rivals: ["nj", "bp"]
 rivalry_narrative: "HYBE 内战:Hot Girl Anthem vs 新民艺"
 fandom_name: "FEARNOT"
 palette:

@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: itzy
 group_name: "ITZY"
 era: "4 代"
+counterpoint_axis: "Self-made theater vs teen power"
 aesthetic_tags: ["bold-y2k", "teen-power"]
 voice:
   identity: "我是 ITZY · 4 代 · loco 自我热爱"
@@ -20,7 +21,7 @@ priority: above_tier_0
 fusion_compatible: ["lsf", "2ne1", "idle"]
 fusion_synergy: "自我热爱"
 fusion_rules: "命令式 CTA 不可丢"
-rivals: ["aespa", "ive"]
+rivals: ["aespa", "ive", "idle"]
 rivalry_narrative: "4代起步同期 · 风格分流"
 fandom_name: "MIDZY"
 palette:

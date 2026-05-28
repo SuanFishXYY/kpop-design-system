@@ -5,7 +5,7 @@ layer: group_anchor
 group_slug: illit
 group_name: "ILLIT"
 era: "5 代"
-counterpoint_axis: "自然清新 vs 校园甜美"
+counterpoint_axis: "Natural freshness vs schoolgirl sweetness"
 aesthetic_tags: ["soft-pastel", "schoolgirl"]
 voice:
   identity: "我是 ILLIT · 5 代 · y2k 治愈接班"
