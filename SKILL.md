@@ -1,7 +1,7 @@
 ---
 name: kpop-design-system
 description: "K-pop industrial visual strategy system v3.4 - Quickstart + LLM bridge + interactive council, mixed council, routing, strict verdicts, 96/96 node tests PASS. Activate on /kpop, /idol-congress, /kpop-design, /kpop-era."
-version: 3.4.0
+version: 3.4.1
 author: 算鱼工作室
 license: MIT
 language: zh-CN
