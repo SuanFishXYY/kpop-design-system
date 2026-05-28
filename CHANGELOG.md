@@ -1,3 +1,28 @@
+## v3.4.0 (2026-05-31) - Quickstart + LLM + Interactive CLI
+
+**v3.4 ships the onboarding and runtime bridge: users get a 5-minute path, deliberation can call real LLM providers, and `kpop-council` opens an interactive room.**
+
+### Feature A · Quickstart docs
+- Adds `docs/QUICKSTART.md` for the 5-minute path.
+- Adds `docs/COUNCIL-FLOW-DIAGRAM.md` with brief → relations → assembly → voice → deliberation → verdict → output.
+- Updates README with Quick Start and v3.4.0 highlights.
+
+### Feature B · LLM abstraction
+- Adds `engine/llm/{index,deepseek,claude,gemini,stub}.mjs`.
+- Supports `KPOP_LLM_PROVIDER`, provider-specific API keys, and `KPOP_LLM_API_KEY` fallback.
+- Keeps deterministic stub mode as default; `orchestrateDeliberation(..., { useLLM: true })` tracks `mode`.
+
+### Feature C · Interactive council room
+- Adds `bin/council.mjs` and `kpop-council` package bin.
+- Adds `docs/CLI-INTERACTIVE-COUNCIL.md` and `examples/cli-transcript-example.md`.
+- Saves verdicts as `verdict-{council_id}.md`.
+
+### Tests
+- Adds 5 LLM provider tests.
+- Expected full suite: 96+ PASS / 0 FAIL.
+
+---
+
 ## v3.3.0 (2026-05-31) - Mixed Council System
 
 **v3.3 ships the mixed council: idol specialists + group representatives + user, each with one vote.**

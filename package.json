@@ -1,16 +1,17 @@
 {
   "name": "kpop-design-system",
-  "version": "3.3.1",
-  "description": "KPOP Music Awards 路 骞村害姝岃埃澶ц祻璁捐绯荤粺 路 116 performers 路 45 group anchors 路 7 awards panel 路 45 audience proxies 路 5 award categories 路 5 legacy lineages 路 weighted scoring engine",
+  "version": "3.4.0",
+  "description": "K-pop industrial visual strategy system · 52 groups × multi-era × mixed council · 95+ tests",
   "bin": {
-    "kpop-install": "installer/install.mjs"
+    "kpop-install": "installer/install.mjs",
+    "kpop-council": "bin/council.mjs"
   },
   "type": "module",
   "scripts": {
     "test": "node scripts/run-all-tests.mjs"
   },
   "license": "MIT",
-  "author": "绠楅奔宸ヤ綔锟?(SuanFishXYY)",
+  "author": "SuanFishXYY (算鱼工作室)",
   "repository": {
     "type": "git",
     "url": "https://github.com/SuanFishXYY/kpop-design-system.git"

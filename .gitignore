@@ -1,6 +1,7 @@
 ﻿node_modules/
 .commit-msg.txt
 *.log
+.env
 .DS_Store
 .idols-*.xml
 .idols-persona.xml

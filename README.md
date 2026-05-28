@@ -2,12 +2,24 @@
 
 > **"设计不是一个人拍板。是 218 个灵魂的议会合议。"**
 
-[![version](https://img.shields.io/badge/version-3.3.0-pink.svg)](./CHANGELOG.md)
-[![tests](https://img.shields.io/badge/tests-91%2F91%20PASS-green.svg)](#)
+[![version](https://img.shields.io/badge/version-3.4.0-pink.svg)](./CHANGELOG.md)
+[![tests](https://img.shields.io/badge/tests-96%2F96%20PASS-green.svg)](#)
 [![idols](https://img.shields.io/badge/idols-186-purple.svg)](#)
 [![groups](https://img.shields.io/badge/groups-52-magenta.svg)](#)
 [![eras](https://img.shields.io/badge/eras-35-violet.svg)](#)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+
+## 🚀 Quick Start
+
+- 5-minute onboarding: [`docs/QUICKSTART.md`](./docs/QUICKSTART.md)
+- Demo result: `npm test` → 91 PASS / 0 FAIL (v3.3.1 baseline)
+- First council demo: `node examples/council-ive-comeback.mjs`
+
+## v3.4.0 Highlights
+
+- User docs: quickstart plus A→Z council flow diagram.
+- LLM abstraction: DeepSeek, Claude, Gemini, and deterministic stub fallback.
+- Interactive CLI: `node bin/council.mjs --brief="aespa next era visualization"`.
 
 ---
 
