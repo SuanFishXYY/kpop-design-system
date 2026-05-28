@@ -1,7 +1,7 @@
 ---
 name: kpop-design-system
-description: "K-pop 工业级视觉策略系统 v3.1 · 186 idol + 52 团魂 + 7 评审团 + 35 era + 4 大支柱 (Era Universe · Comeback Cycle · Multi-touchpoint Coherence · Generation Lint) + 用户成为评委 (User-as-Judge) · 加权投票 + veto + override · 真打分引擎 (86/86 PASS) · Activate on '/kpop', '/女团', '/idol-congress', '/kpop-design', '/kpop-era'. Trigger phrases: '女团', 'kpop', 'idol', 'TWICE', 'BLACKPINK', 'IVE', 'aespa', 'NewJeans', 'ITZY', 'BABYMONSTER', 'ILLIT', 'comeback', 'era', '回归', '专辑', '歌谣大赏', 'awards', 'debut', '舞台'."
-version: 3.1.0
+description: "K-pop industrial visual strategy system v3.3 - Mixed Council: idols + groups + user, sister relations, aesthetic counterpoint, voice veto triggers, R1/R2/R3 deliberation, strict >2/3 verdict, 91/91 node tests PASS. Activate on /kpop, /idol-congress, /kpop-design, /kpop-era."
+version: 3.3.0
 author: 算鱼工作室
 license: MIT
 language: zh-CN
@@ -10,13 +10,23 @@ philosophy: enabled
 tags: [design-system, multi-agent, kpop, idol, era, comeback-cycle, touchpoint, generation-lint, user-as-judge, ui, brand, ai-native]
 ---
 
-# 🎤 KPOP Design System · The Idol Congress · v3.1
+# KPOP Design System - The Idol Congress - v3.3
 
 > 🎯 **快速召唤**: 在 Copilot / Claude / Codex / Gemini / Antigravity 任一 CLI 输入 `/kpop` 或 `/女团` 即可强制激活。
 >
 > *第一个把 K-pop 工业级视觉策略代码化的开源系统。186 idol × 52 团魂 × 35 era × 5 媒介 × 4 代审美。*
 
 ---
+
+## v3.3 - Mixed Council System
+
+- Mixed council: idol specialists + group representatives + user, one vote each.
+- Sister group invitation: same generation, same agency, same aesthetic, aesthetic counterpoint.
+- Deterministic assembly: 3-layer BFS, 5/7 cap, >=2 idols + >=2 groups when council has 4+ members.
+- Voice templates with hard veto triggers; R1/R2/R3 deliberation; strict `> 2/3` verdict with user veto/override.
+
+---
+
 
 ## ✨ v3.1 · 4 大支柱 + 用户成为评委
 

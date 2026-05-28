@@ -5,6 +5,9 @@ layer: group_anchor
 group_slug: aespa
 group_name: "aespa"
 era: "4 代"
+counterpoint_axis: "公主美学 vs 未来主义"
+aesthetic_tags: ["cyber", "Y2K", "metaverse"]
+agency: "SM"
 founded_year: 2020
 core_aesthetic: "sci-fi B 面宇宙"
 soul_manifesto: ""connect with æ"——你在现实，æ 在 KWANGYA，二元并行"
@@ -74,6 +77,11 @@ eras:
     generation: "5代初"
     motion_hint: { bpm: 130, easing: "explosion", duration: "burst" }
     forbidden: ["巴洛克", "复古"]
+voice:
+  identity: "我是 aespa · 4代 · 元宇宙未来感"
+  position_statement: "锚点: cyber/AI/双生 · 反对: 过度甜美/无科技感"
+  veto_triggers: ["纯甜美校园", "无元宇宙语法"]
+  question_template: "这个方案还有 {trait} 的未来切面吗?"
 ---
 
 # 👯 团魂 · aespa (4 代 · 2020)

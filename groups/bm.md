@@ -5,6 +5,8 @@ layer: group_anchor
 group_slug: bm
 group_name: "BABYMONSTER"
 era: "5 代"
+aesthetic_tags: ["fierce-raw", "dystopian"]
+agency: "YG"
 founded_year: 2024
 core_aesthetic: "7 国混血新势力"
 soul_manifesto: ""sheesh"——年轻是底牌，刷新就是赢"

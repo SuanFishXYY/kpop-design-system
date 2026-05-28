@@ -5,6 +5,8 @@ layer: group_anchor
 group_slug: lsf
 group_name: "LE SSERAFIM"
 era: "4 代"
+aesthetic_tags: ["cinematic", "dark-elegant", "fierce"]
+agency: "HYBE?Source"
 founded_year: 2022
 core_aesthetic: ""fearless" 自由女王"
 soul_manifesto: ""i'm fearless"——不需要被认可，我自己定义自己"
@@ -62,6 +64,11 @@ eras:
     generation: "4代末"
     motion_hint: { bpm: 100, easing: "effortless", duration: "long" }
     forbidden: ["重口味", "高饱和"]
+voice:
+  identity: "我是 LE SSERAFIM · 4代 · fearless 电影感"
+  position_statement: "锚点: 冷静/电影/力量 · 反对: 过度甜宠"
+  veto_triggers: ["过度甜宠", "无力量感粉彩"]
+  question_template: "这个方案能支撑 {trait} 的勇气吗?"
 ---
 
 # 👯 团魂 · LE SSERAFIM (4 代 · 2022)

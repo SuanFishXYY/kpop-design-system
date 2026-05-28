@@ -5,6 +5,9 @@ layer: group_anchor
 group_slug: nj
 group_name: "NewJeans"
 era: "4 代"
+counterpoint_axis: "自然清新 vs 校园甜美"
+aesthetic_tags: ["minimal", "natural", "y2k-light"]
+agency: "HYBE?ADOR"
 founded_year: 2022
 core_aesthetic: "Y2K 治愈青春"
 soul_manifesto: ""OMG bunnies"——把广告做成生活片段，反对宣传感"
@@ -62,6 +65,11 @@ eras:
     generation: "4代末"
     motion_hint: { bpm: 130, easing: "shy bounce", duration: "short loop" }
     forbidden: ["暗黑", "正式衬线"]
+voice:
+  identity: "我是 NewJeans · 4代 · 自然极简青春"
+  position_statement: "锚点: 自然/极简/呼吸感 · 反对: 过度舞台化炫技"
+  veto_triggers: ["过度暗黑监控", "重度奇观化"]
+  question_template: "这个方案还自然到像 {trait} 吗?"
 ---
 
 # 👯 团魂 · NewJeans (4 代 · 2022)

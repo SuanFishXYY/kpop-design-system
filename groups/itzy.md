@@ -5,6 +5,8 @@ layer: group_anchor
 group_slug: itzy
 group_name: "ITZY"
 era: "4 代"
+aesthetic_tags: ["bold-y2k", "teen-power"]
+agency: "JYP"
 founded_year: 2019
 core_aesthetic: ""loco" 自我热爱"
 soul_manifesto: ""i love myself"——女子力宣言，反对乖巧叙事"

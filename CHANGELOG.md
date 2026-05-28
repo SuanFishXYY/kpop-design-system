@@ -1,3 +1,30 @@
+## v3.3.0 (2026-05-31) - Mixed Council System
+
+**v3.3 ships the mixed council: idol specialists + group representatives + user, each with one vote.**
+
+### Engines
+- `engine/relations.mjs` - 4 sister-group relation types.
+- `engine/council-assembly.mjs` - 3-layer BFS invitation, 5/7 cap, mix requirement, same-agency cap.
+- `engine/voice-synthesis.mjs` - group voice templates and hard veto trigger checks.
+- `engine/deliberation.mjs` - R1/R2/R3 mock deliberation with token tracking and conflict flags.
+- `engine/verdict.mjs` - consensus/compromise/dissent clauses, strict `> 2/3` pass threshold, user veto/override.
+
+### Data
+- Top 12 groups now include agency and aesthetic tags.
+- Top counterpoint rivals include explicit axes.
+- Top 6 groups include voice templates.
+
+### Docs and demo
+- `docs/MIXED-COUNCIL-PROTOCOL.md`
+- `docs/AESTHETIC-COUNTERPOINT-PAIRS.md`
+- `examples/council-ive-comeback.mjs`
+
+### Tests
+- Adds 23 new tests for v3.3 engines.
+- Observed full Node test suite: 91/91 PASS (`node --test engine\*.test.mjs`).
+
+---
+
 ## v3.1.0 (2026-05-31) — 🧑‍⚖️ User-as-Judge (用户成为评委)
 
 **v3.1: 用户从单向被服务者升级为 council 中的并肩评委, 拥有 veto / override / 偏好学习权**

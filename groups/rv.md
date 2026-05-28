@@ -5,6 +5,9 @@ layer: group_anchor
 group_slug: rv
 group_name: "Red Velvet"
 era: "3 代"
+counterpoint_axis: "传统SM vs 未来SM"
+aesthetic_tags: ["dual-mode", "odd-magic"]
+agency: "SM"
 founded_year: 2014
 core_aesthetic: "red(强势)+velvet(典雅)二元"
 soul_manifesto: "双概念切换——一团两面，今天 dumb dumb 明天 psycho"

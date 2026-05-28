@@ -5,6 +5,8 @@ layer: group_anchor
 group_slug: idle
 group_name: "(G)I-DLE"
 era: "4 代"
+aesthetic_tags: ["self-made", "theatrical", "bold"]
+agency: "Cube"
 founded_year: 2018
 core_aesthetic: ""tomboy" 自我制作人"
 soul_manifesto: ""i'm not your dolly"——成员自己写歌自己制作，反对工业流水线"

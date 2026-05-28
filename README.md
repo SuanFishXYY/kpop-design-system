@@ -2,12 +2,26 @@
 
 > **"设计不是一个人拍板。是 218 个灵魂的议会合议。"**
 
-[![version](https://img.shields.io/badge/version-3.1.0-pink.svg)](./CHANGELOG.md)
-[![tests](https://img.shields.io/badge/tests-86%2F86%20PASS-green.svg)](#)
+[![version](https://img.shields.io/badge/version-3.3.0-pink.svg)](./CHANGELOG.md)
+[![tests](https://img.shields.io/badge/tests-91%2F91%20PASS-green.svg)](#)
 [![idols](https://img.shields.io/badge/idols-186-purple.svg)](#)
 [![groups](https://img.shields.io/badge/groups-52-magenta.svg)](#)
 [![eras](https://img.shields.io/badge/eras-35-violet.svg)](#)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+
+---
+
+## v3.3.0 Mixed Council System
+
+New in v3.3.0: a compact council where idol specialists, group representatives, and the user each hold one vote.
+
+- `engine/relations.mjs`: sister groups via same generation, agency, aesthetic tags, and aesthetic counterpoint.
+- `engine/council-assembly.mjs`: 3-layer BFS invitation with 5/7 member cap, mix ratio, and agency cap.
+- `engine/voice-synthesis.mjs`: group voice templates plus deterministic veto triggers.
+- `engine/deliberation.mjs`: R1/R2/R3 mock deliberation with token tracking.
+- `engine/verdict.mjs`: consensus/compromise/dissent clauses and strict `> 2/3` voting.
+
+Docs: [`MIXED-COUNCIL-PROTOCOL`](./docs/MIXED-COUNCIL-PROTOCOL.md) and [`AESTHETIC-COUNTERPOINT-PAIRS`](./docs/AESTHETIC-COUNTERPOINT-PAIRS.md). Demo: `node examples/council-ive-comeback.mjs`.
 
 ---
 

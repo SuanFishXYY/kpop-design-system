@@ -5,6 +5,9 @@ layer: group_anchor
 group_slug: ive
 group_name: "IVE"
 era: "4 代"
+counterpoint_axis: "公主美学 vs 未来主义"
+aesthetic_tags: ["princess", "prestige", "mature-clean"]
+agency: "Starship"
 founded_year: 2021
 core_aesthetic: "世界级公主门面"
 soul_manifesto: ""i AM"——不解释，自我宣告就是答案"
@@ -74,6 +77,11 @@ eras:
     generation: "4代末"
     motion_hint: { bpm: 100, easing: "magnetic pull", duration: "long sustain" }
     forbidden: ["校园清新", "公主梦幻"]
+voice:
+  identity: "我是 IVE · 4代 · 高级感少女"
+  position_statement: "锚点: 克制少女 · 反对: 过度甜美/Y2K浓妆/5代暗黑"
+  veto_triggers: ["Y2K 重度复古", "5代监控感"]
+  question_template: "这个方案符合 4代 {trait} 吗?"
 ---
 
 # 👯 团魂 · IVE (4 代 · 2021)

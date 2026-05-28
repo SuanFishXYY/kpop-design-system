@@ -5,6 +5,9 @@ layer: group_anchor
 group_slug: twice
 group_name: "TWICE"
 era: "3 代"
+counterpoint_axis: "蜜糖甜美 vs 酷飒杀气"
+aesthetic_tags: ["candy-pop", "cute", "Y2K-light"]
+agency: "JYP"
 founded_year: 2015
 core_aesthetic: "9 色花束式正能量"
 soul_manifesto: ""不要给我们打标签——我们是 9 个不同的女孩组成的一束花""
@@ -74,6 +77,11 @@ eras:
     generation: "4代中"
     motion_hint: { bpm: 102, easing: "calm precise", duration: "long sustain" }
     forbidden: ["糖果色", "贴纸", "校园", "繁复"]
+voice:
+  identity: "我是 TWICE · 3代 · 9色花束正能量"
+  position_statement: "锚点: 群像/甜美/温暖 · 反对: 冷硬单人神话"
+  veto_triggers: ["过度冷硬工业", "去群像化"]
+  question_template: "这个方案保留 TWICE 的 {trait} 吗?"
 ---
 
 # 👯 团魂 · TWICE (3 代 · 2015)

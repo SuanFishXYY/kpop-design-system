@@ -5,6 +5,9 @@ layer: group_anchor
 group_slug: bp
 group_name: "BLACKPINK"
 era: "3 代"
+counterpoint_axis: "蜜糖甜美 vs 酷飒杀气"
+aesthetic_tags: ["Y2K", "luxe-edge", "dark-glam"]
+agency: "YG"
 founded_year: 2016
 core_aesthetic: "奢华黑粉对撞"
 soul_manifesto: ""in your area"——4 个人就是一支军队，每出场必征服"
@@ -62,6 +65,11 @@ eras:
     generation: "3代末"
     motion_hint: { bpm: 90, easing: "trap slow", duration: "long sustain" }
     forbidden: ["校园", "贴纸", "可爱"]
+voice:
+  identity: "我是 BLACKPINK · 3代 · 奢华黑粉对撞"
+  position_statement: "锚点: 对决/奢华/杀气 · 反对: 软萌治愈"
+  veto_triggers: ["软萌治愈", "低对比糖果色"]
+  question_template: "这个方案有 BLACKPINK 的 {trait} 吗?"
 ---
 
 # 👯 团魂 · BLACKPINK (3 代 · 2016)

@@ -5,6 +5,8 @@ layer: group_anchor
 group_slug: mmm
 group_name: "MAMAMOO"
 era: "3 代"
+aesthetic_tags: ["vocal", "retro-soul", "confident"]
+agency: "RBW"
 founded_year: 2014
 core_aesthetic: "vocal monster + female empowerment"
 soul_manifesto: ""i'm gone"——大字加粗走人，不解释"

@@ -5,6 +5,9 @@ layer: group_anchor
 group_slug: illit
 group_name: "ILLIT"
 era: "5 代"
+counterpoint_axis: "自然清新 vs 校园甜美"
+aesthetic_tags: ["soft-pastel", "schoolgirl"]
+agency: "HYBE?Belift"
 founded_year: 2024
 core_aesthetic: "y2k 治愈接班"
 soul_manifesto: ""magnetic"——不是吸引你，是磁场把你拉过来"
