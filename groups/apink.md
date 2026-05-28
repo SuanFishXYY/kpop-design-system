@@ -7,6 +7,12 @@ group_name: "Apink"
 era: "2 代"
 founded_year: 2011
 core_aesthetic: "纯爱+童话治愈"
+aesthetic_tags: ["pure", "candy-pop", "sweet", "schoolgirl"]
+voice:
+  identity: "我是 Apink · 2 代 · 纯爱"
+  position_statement: "锚点: pure / girl-next-door · 反对: 5代监控感 / 过度赛博"
+  veto_triggers: ["5代监控感", "过度赛博"]
+  question_template: "这个方案符合 2 代 pure 吗?"
 soul_manifesto: ""NoNoNo"——治愈系上限，粉色不是廉价是高级"
 vote_weight: 3
 priority: above_tier_0

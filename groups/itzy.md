@@ -6,6 +6,11 @@ group_slug: itzy
 group_name: "ITZY"
 era: "4 代"
 aesthetic_tags: ["bold-y2k", "teen-power"]
+voice:
+  identity: "我是 ITZY · 4 代 · loco 自我热爱"
+  position_statement: "锚点: girl-crush / swag · 反对: 奢华 / 极简"
+  veto_triggers: ["奢华", "极简", "甜美"]
+  question_template: "这个方案符合 4 代 girl-crush 吗?"
 agency: "JYP"
 founded_year: 2019
 core_aesthetic: ""loco" 自我热爱"

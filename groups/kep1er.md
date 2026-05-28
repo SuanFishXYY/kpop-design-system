@@ -7,6 +7,12 @@ group_name: "Kep1er"
 era: "4 代"
 founded_year: 2022
 core_aesthetic: "girls planet 9 国联合"
+aesthetic_tags: ["princess", "fierce", "cinematic", "wadada", "debut"]
+voice:
+  identity: "我是 Kep1er · 4 代 · girls planet 9 国联合"
+  position_statement: "锚点: wadada / princess · 反对: 2代浓妆 / 过度怀旧"
+  veto_triggers: ["2代浓妆", "过度怀旧"]
+  question_template: "这个方案符合 4 代 wadada 吗?"
 soul_manifesto: ""wa da da"——多元融合"
 vote_weight: 3
 priority: above_tier_0

@@ -7,6 +7,12 @@ group_name: "Hearts2Hearts"
 era: "5 代"
 founded_year: 2025
 core_aesthetic: "纯净接班 girl group"
+aesthetic_tags: ["candy-pop", "pure", "y2k", "school", "natural"]
+voice:
+  identity: "我是 Hearts2Hearts · 5 代 · 纯净接班 girl group"
+  position_statement: "锚点: natural / innocent · 反对: 2代浓妆 / 复古 Y2K 滥用"
+  veto_triggers: ["2代浓妆", "复古 Y2K 滥用"]
+  question_template: "这个方案符合 5 代 natural 吗?"
 soul_manifesto: ""The Chase"——重启 NewJeans 真实感的接班团"
 vote_weight: 3
 priority: above_tier_0

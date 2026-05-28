@@ -7,6 +7,12 @@ group_name: "f(x)"
 era: "2 代"
 founded_year: 2009
 core_aesthetic: "实验电子前卫"
+aesthetic_tags: ["cyber", "summer", "experimental", "electronic", "art"]
+voice:
+  identity: "我是 f(x) · 2 代 · 实验电子前卫"
+  position_statement: "锚点: experimental / electronic · 反对: 5代监控感 / 过度赛博"
+  veto_triggers: ["5代监控感", "过度赛博"]
+  question_template: "这个方案符合 2 代 experimental 吗?"
 soul_manifesto: ""4 walls"——SM 的实验室，反对主流K-pop 公式"
 vote_weight: 3
 priority: above_tier_0

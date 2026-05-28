@@ -7,6 +7,12 @@ group_name: "Dreamcatcher"
 era: "3 代"
 founded_year: 2017
 core_aesthetic: "metal+ballet 黑暗童话"
+aesthetic_tags: ["dark-glam", "metal", "nightmare", "dark", "rock-metal"]
+voice:
+  identity: "我是 Dreamcatcher · 3 代 · metal"
+  position_statement: "锚点: metal / nightmare · 反对: 5代监控感 / 后人类冷感"
+  veto_triggers: ["5代监控感", "后人类冷感"]
+  question_template: "这个方案符合 3 代 metal 吗?"
 soul_manifesto: ""chase me"——K-pop 里少见的金属暗黑"
 vote_weight: 3
 priority: above_tier_0

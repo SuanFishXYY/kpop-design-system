@@ -7,6 +7,12 @@ group_name: "MOMOLAND"
 era: "3 代"
 founded_year: 2016
 core_aesthetic: ""BBoom BBoom" 复古洗脑"
+aesthetic_tags: ["retro", "disco", "hip-hop", "fun", "carefree"]
+voice:
+  identity: "我是 MOMOLAND · 3 代 · BBoom BBoom 复古洗脑"
+  position_statement: "锚点: fun / disco · 反对: 5代监控感 / 后人类冷感"
+  veto_triggers: ["5代监控感", "后人类冷感"]
+  question_template: "这个方案符合 3 代 fun 吗?"
 soul_manifesto: "魔性"
 vote_weight: 3
 priority: above_tier_0

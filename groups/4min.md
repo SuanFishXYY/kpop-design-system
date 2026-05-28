@@ -7,6 +7,12 @@ group_name: "4MINUTE"
 era: "2 代"
 founded_year: 2009
 core_aesthetic: "短暂高密度爆款"
+aesthetic_tags: ["fierce", "mature", "hip-hop", "hot-issue", "sexy"]
+voice:
+  identity: "我是 4MINUTE · 2 代 · 短暂高密度爆款"
+  position_statement: "锚点: hot-issue / sexy · 反对: 5代监控感 / 过度赛博"
+  veto_triggers: ["5代监控感", "过度赛博"]
+  question_template: "这个方案符合 2 代 hot-issue 吗?"
 soul_manifesto: ""crazy"——4 分钟出一个 stage，不拖泥带水"
 vote_weight: 3
 priority: above_tier_0

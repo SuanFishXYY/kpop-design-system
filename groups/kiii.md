@@ -7,6 +7,12 @@ group_name: "KiiiKiii"
 era: "5 代"
 founded_year: 2025
 core_aesthetic: "Y2K 复古 girl crush"
+aesthetic_tags: ["retro", "y2k", "school", "fierce", "girl-crush"]
+voice:
+  identity: "我是 KiiiKiii · 5 代 · Y2K 复古 girl crush"
+  position_statement: "锚点: y2k / girl-crush · 反对: 2代浓妆 / 复古 Y2K 滥用"
+  veto_triggers: ["2代浓妆", "复古 Y2K 滥用"]
+  question_template: "这个方案符合 5 代 y2k 吗?"
 soul_manifesto: ""I DO ME"——Y2K 复古调色 + 自我宣告"
 vote_weight: 3
 priority: above_tier_0

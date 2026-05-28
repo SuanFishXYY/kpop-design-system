@@ -7,6 +7,12 @@ group_name: "tripleS"
 era: "4 代"
 founded_year: 2023
 core_aesthetic: "24 人编队最多女团"
+aesthetic_tags: ["candy-pop", "pure", "cyber", "school", "cosmic"]
+voice:
+  identity: "我是 tripleS · 4 代 · 24 人编队最多女团"
+  position_statement: "锚点: cosmic / teen · 反对: 2代浓妆 / 过度怀旧"
+  veto_triggers: ["2代浓妆", "过度怀旧"]
+  question_template: "这个方案符合 4 代 cosmic 吗?"
 soul_manifesto: "24 子单元矩阵"
 vote_weight: 3
 priority: above_tier_0

@@ -7,6 +7,12 @@ group_name: "SISTAR"
 era: "2 代"
 founded_year: 2010
 core_aesthetic: ""shake it" 海边夏日"
+aesthetic_tags: ["candy-pop", "retro", "disco", "fierce", "mature"]
+voice:
+  identity: "我是 SISTAR · 2 代 · shake it 海边夏日"
+  position_statement: "锚点: sexy / summer · 反对: 5代监控感 / 过度赛博"
+  veto_triggers: ["5代监控感", "过度赛博"]
+  question_template: "这个方案符合 2 代 sexy 吗?"
 soul_manifesto: "阳光+性感"
 vote_weight: 3
 priority: above_tier_0

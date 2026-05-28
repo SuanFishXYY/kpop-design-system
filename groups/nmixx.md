@@ -7,6 +7,12 @@ group_name: "NMIXX"
 era: "4 代"
 founded_year: 2022
 core_aesthetic: "MIXX POP 多曲风混搭"
+aesthetic_tags: ["dark-glam", "fierce", "global", "mixxpop", "switch"]
+voice:
+  identity: "我是 NMIXX · 4 代 · MIXX POP 多曲风混搭"
+  position_statement: "锚点: mixxpop / switch · 反对: 2代浓妆 / 过度怀旧"
+  veto_triggers: ["2代浓妆", "过度怀旧"]
+  question_template: "这个方案符合 4 代 mixxpop 吗?"
 soul_manifesto: ""o.o"——一首歌多个 BPM 切换"
 vote_weight: 3
 priority: above_tier_0

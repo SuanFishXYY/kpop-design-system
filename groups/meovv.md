@@ -7,6 +7,12 @@ group_name: "MEOVV"
 era: "5 代"
 founded_year: 2024
 core_aesthetic: "THE BLACK LABEL 新女团"
+aesthetic_tags: ["dark-glam", "cyber", "school", "fierce", "hip-hop"]
+voice:
+  identity: "我是 MEOVV · 5 代 · THE BLACK LABEL 新女"
+  position_statement: "锚点: girl-crush / fresh · 反对: 治愈 / 可爱过头"
+  veto_triggers: ["治愈", "可爱过头", "2代浓妆"]
+  question_template: "这个方案符合 5 代 girl-crush 吗?"
 soul_manifesto: ""meow"——猫系神秘"
 vote_weight: 3
 priority: above_tier_0

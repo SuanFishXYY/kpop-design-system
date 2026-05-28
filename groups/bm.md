@@ -6,6 +6,11 @@ group_slug: bm
 group_name: "BABYMONSTER"
 era: "5 代"
 aesthetic_tags: ["fierce-raw", "dystopian"]
+voice:
+  identity: "我是 BABYMONSTER · 5 代 · 7 国混血新势力"
+  position_statement: "锚点: hardcore / monster · 反对: 低信息自然风 / 2代浓妆"
+  veto_triggers: ["低信息自然风", "2代浓妆", "复古 Y2K 滥用"]
+  question_template: "这个方案符合 5 代 hardcore 吗?"
 agency: "YG"
 founded_year: 2024
 core_aesthetic: "7 国混血新势力"

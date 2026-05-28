@@ -7,6 +7,11 @@ group_name: "Red Velvet"
 era: "3 代"
 counterpoint_axis: "传统SM vs 未来SM"
 aesthetic_tags: ["dual-mode", "odd-magic"]
+voice:
+  identity: "我是 Red Velvet · 3 代 · red(强势)"
+  position_statement: "锚点: dual-concept / psyche · 反对: 暗黑 / 冷调"
+  veto_triggers: ["暗黑", "冷调", "甜美"]
+  question_template: "这个方案符合 3 代 dual-concept 吗?"
 agency: "SM"
 founded_year: 2014
 core_aesthetic: "red(强势)+velvet(典雅)二元"

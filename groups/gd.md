@@ -7,6 +7,12 @@ group_name: "Girl's Day"
 era: "2 代"
 founded_year: 2010
 core_aesthetic: ""expect" 撒娇+成熟"
+aesthetic_tags: ["candy-pop", "retro", "disco", "sweet", "expectation"]
+voice:
+  identity: "我是 Girl's Day · 2 代 · expect 撒娇"
+  position_statement: "锚点: sweet / expectation · 反对: 5代监控感 / 过度赛博"
+  veto_triggers: ["5代监控感", "过度赛博"]
+  question_template: "这个方案符合 2 代 sweet 吗?"
 soul_manifesto: "双面"
 vote_weight: 3
 priority: above_tier_0

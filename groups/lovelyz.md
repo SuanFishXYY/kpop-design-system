@@ -7,6 +7,12 @@ group_name: "Lovelyz"
 era: "2.5 代"
 founded_year: 2014
 core_aesthetic: ""candy jelly love" 纯爱"
+aesthetic_tags: ["candy-pop", "pure", "cyber", "fairy", "theme-park"]
+voice:
+  identity: "我是 Lovelyz · 2.5 代 · candy jelly love 纯"
+  position_statement: "锚点: fairy / pure · 反对: 2代浓妆 / 复古 Y2K 滥用"
+  veto_triggers: ["2代浓妆", "复古 Y2K 滥用"]
+  question_template: "这个方案符合 2.5 代 fairy 吗?"
 soul_manifesto: "童话"
 vote_weight: 3
 priority: above_tier_0

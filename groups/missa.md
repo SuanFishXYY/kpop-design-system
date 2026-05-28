@@ -7,6 +7,12 @@ group_name: "miss A"
 era: "2 代"
 founded_year: 2010
 core_aesthetic: "强女权+china line 跨国"
+aesthetic_tags: ["retro", "disco", "fierce", "r-and-b", "hip-hop"]
+voice:
+  identity: "我是 miss A · 2 代 · 强女权"
+  position_statement: "锚点: bad-girl / R&B · 反对: 5代监控感 / 过度赛博"
+  veto_triggers: ["5代监控感", "过度赛博"]
+  question_template: "这个方案符合 2 代 bad-girl 吗?"
 soul_manifesto: ""i don't need a man"——独立宣言"
 vote_weight: 3
 priority: above_tier_0

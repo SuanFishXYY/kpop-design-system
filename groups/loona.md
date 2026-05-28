@@ -7,6 +7,12 @@ group_name: "LOONA"
 era: "4 代"
 founded_year: 2018
 core_aesthetic: "月之少女 · 世界观 12 章"
+aesthetic_tags: ["cyber", "school", "cinematic", "cosmic", "ethereal"]
+voice:
+  identity: "我是 LOONA · 4 代 · 月之少女"
+  position_statement: "锚点: ethereal / concept · 反对: 过度赛博 / 2代浓妆"
+  veto_triggers: ["过度赛博", "2代浓妆", "过度怀旧"]
+  question_template: "这个方案符合 4 代 ethereal 吗?"
 soul_manifesto: ""orbit"——12 个月亮, 每个独立颜色独立宇宙, 拼成完整月相"
 vote_weight: 3
 priority: above_tier_0

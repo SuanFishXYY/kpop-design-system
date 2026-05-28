@@ -7,6 +7,12 @@ group_name: "izna"
 era: "5 代"
 founded_year: 2024
 core_aesthetic: "i-LAND2 选秀新团"
+aesthetic_tags: ["candy-pop", "school", "debut", "fresh", "teen"]
+voice:
+  identity: "我是 izna · 5 代 · i-LAND2 选秀新团"
+  position_statement: "锚点: debut / fresh · 反对: 2代浓妆 / 复古 Y2K 滥用"
+  veto_triggers: ["2代浓妆", "复古 Y2K 滥用"]
+  question_template: "这个方案符合 5 代 debut 吗?"
 soul_manifesto: "新生"
 vote_weight: 3
 priority: above_tier_0

@@ -7,6 +7,12 @@ group_name: "Secret"
 era: "2 代"
 founded_year: 2009
 core_aesthetic: ""madonna" 性感舞曲"
+aesthetic_tags: ["candy-pop", "retro", "mature", "sexy", "swing"]
+voice:
+  identity: "我是 Secret · 2 代 · madonna 性感舞曲"
+  position_statement: "锚点: sexy / swing · 反对: 5代监控感 / 过度赛博"
+  veto_triggers: ["5代监控感", "过度赛博"]
+  question_template: "这个方案符合 2 代 sexy 吗?"
 soul_manifesto: "短而精致"
 vote_weight: 3
 priority: above_tier_0

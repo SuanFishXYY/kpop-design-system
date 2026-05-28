@@ -7,6 +7,12 @@ group_name: "Oh My Girl"
 era: "3 代"
 founded_year: 2015
 core_aesthetic: ""closer" 童话治愈"
+aesthetic_tags: ["candy-pop", "pure", "cyber", "fairy", "innocent"]
+voice:
+  identity: "我是 Oh My Girl · 3 代 · closer 童话治愈"
+  position_statement: "锚点: fairy / innocent · 反对: 5代监控感 / 后人类冷感"
+  veto_triggers: ["5代监控感", "后人类冷感"]
+  question_template: "这个方案符合 3 代 fairy 吗?"
 soul_manifesto: "柔光"
 vote_weight: 3
 priority: above_tier_0

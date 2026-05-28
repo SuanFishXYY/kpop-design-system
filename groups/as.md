@@ -7,6 +7,12 @@ group_name: "After School"
 era: "2 代"
 founded_year: 2009
 core_aesthetic: ""bang!" 鼓队制服"
+aesthetic_tags: ["candy-pop", "mature", "r-and-b", "sexy", "vocal"]
+voice:
+  identity: "我是 After School · 2 代 · bang! 鼓队制服"
+  position_statement: "锚点: sexy / vocal · 反对: 5代监控感 / 过度赛博"
+  veto_triggers: ["5代监控感", "过度赛博"]
+  question_template: "这个方案符合 2 代 sexy 吗?"
 soul_manifesto: "集体编队"
 vote_weight: 3
 priority: above_tier_0

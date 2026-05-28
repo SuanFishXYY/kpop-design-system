@@ -7,6 +7,12 @@ group_name: "T-ARA"
 era: "2 代"
 founded_year: 2009
 core_aesthetic: ""roly poly" 复古迪斯科"
+aesthetic_tags: ["candy-pop", "retro", "disco", "charm", "cute"]
+voice:
+  identity: "我是 T-ARA · 2 代 · roly poly 复古迪斯科"
+  position_statement: "锚点: disco / charm · 反对: 5代监控感 / 过度赛博"
+  veto_triggers: ["5代监控感", "过度赛博"]
+  question_template: "这个方案符合 2 代 disco 吗?"
 soul_manifesto: ""sexy love"——电子+复古，是 80s 不是 K-pop"
 vote_weight: 3
 priority: above_tier_0

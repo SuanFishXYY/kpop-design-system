@@ -6,6 +6,11 @@ group_slug: mmm
 group_name: "MAMAMOO"
 era: "3 代"
 aesthetic_tags: ["vocal", "retro-soul", "confident"]
+voice:
+  identity: "我是 MAMAMOO · 3 代 · vocal monster"
+  position_statement: "锚点: vocal-power / swag · 反对: 可爱 / 甜美"
+  veto_triggers: ["可爱", "甜美", "柔弱"]
+  question_template: "这个方案符合 3 代 vocal-power 吗?"
 agency: "RBW"
 founded_year: 2014
 core_aesthetic: "vocal monster + female empowerment"

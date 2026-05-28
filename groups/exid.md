@@ -7,6 +7,12 @@ group_name: "EXID"
 era: "2 代"
 founded_year: 2012
 core_aesthetic: ""up&down" 直拍翻红"
+aesthetic_tags: ["dark-glam", "mature", "hip-hop", "comeback-queen", "sexy"]
+voice:
+  identity: "我是 EXID · 2 代 · up&down 直拍翻红"
+  position_statement: "锚点: comeback-queen / sexy · 反对: 5代监控感 / 过度赛博"
+  veto_triggers: ["5代监控感", "过度赛博"]
+  question_template: "这个方案符合 2 代 comeback-queen 吗?"
 soul_manifesto: "逆袭"
 vote_weight: 3
 priority: above_tier_0

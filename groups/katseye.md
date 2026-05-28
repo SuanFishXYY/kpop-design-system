@@ -7,6 +7,12 @@ group_name: "KATSEYE"
 era: "5 代"
 founded_year: 2024
 core_aesthetic: "跨文化全球女团"
+aesthetic_tags: ["cinematic", "global", "multi-culture", "narrative", "alt-pop"]
+voice:
+  identity: "我是 KATSEYE · 5 代 · 跨文化全球女团"
+  position_statement: "锚点: global / multi-culture · 反对: 2代浓妆 / 复古 Y2K 滥用"
+  veto_triggers: ["2代浓妆", "复古 Y2K 滥用"]
+  question_template: "这个方案符合 5 代 global 吗?"
 soul_manifesto: ""touch"——东方西方审美并行，反对单一中心"
 vote_weight: 3
 priority: above_tier_0

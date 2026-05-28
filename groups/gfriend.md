@@ -7,6 +7,12 @@ group_name: "GFriend"
 era: "2.5 代"
 founded_year: 2015
 core_aesthetic: ""glass bead" 体育生"
+aesthetic_tags: ["retro", "disco", "sporty", "fierce", "cinematic"]
+voice:
+  identity: "我是 GFriend · 2.5 代 · glass bead 体育生"
+  position_statement: "锚点: power-vocal / cinematic · 反对: 2代浓妆 / 复古 Y2K 滥用"
+  veto_triggers: ["2代浓妆", "复古 Y2K 滥用"]
+  question_template: "这个方案符合 2.5 代 power-vocal 吗?"
 soul_manifesto: "纯净"
 vote_weight: 3
 priority: above_tier_0

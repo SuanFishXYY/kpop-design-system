@@ -7,6 +7,12 @@ group_name: "Brown Eyed Girls"
 era: "2 代"
 founded_year: 2006
 core_aesthetic: ""abracadabra" 暗黑电子"
+aesthetic_tags: ["dark-glam", "cyber", "fierce", "mature", "abracadabra"]
+voice:
+  identity: "我是 Brown Eyed Girls · 2 代 · abracadabra 暗黑电子"
+  position_statement: "锚点: abracadabra / sexy · 反对: 5代监控感 / 过度赛博"
+  veto_triggers: ["5代监控感", "过度赛博"]
+  question_template: "这个方案符合 2 代 abracadabra 吗?"
 soul_manifesto: "实力派"
 vote_weight: 3
 priority: above_tier_0

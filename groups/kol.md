@@ -7,6 +7,12 @@ group_name: "KISS OF LIFE"
 era: "4 代"
 founded_year: 2023
 core_aesthetic: "R&B 实力新人"
+aesthetic_tags: ["fierce", "mature", "r-and-b", "sensual", "warm"]
+voice:
+  identity: "我是 KISS OF LIFE · 4 代 · R&B 实力新人"
+  position_statement: "锚点: r&b / sensual · 反对: 2代浓妆 / 过度怀旧"
+  veto_triggers: ["2代浓妆", "过度怀旧"]
+  question_template: "这个方案符合 4 代 r&b 吗?"
 soul_manifesto: ""shhh"——气声 R&B + 慢速性感美学"
 vote_weight: 3
 priority: above_tier_0

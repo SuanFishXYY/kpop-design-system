@@ -6,6 +6,11 @@ group_slug: idle
 group_name: "(G)I-DLE"
 era: "4 代"
 aesthetic_tags: ["self-made", "theatrical", "bold"]
+voice:
+  identity: "我是 (G)I-DLE · 4 代 · tomboy 自我制作人"
+  position_statement: "锚点: individual / charismatic · 反对: 甜美 Y2K / 公主"
+  veto_triggers: ["甜美 Y2K", "公主", "甜美"]
+  question_template: "这个方案符合 4 代 individual 吗?"
 agency: "Cube"
 founded_year: 2018
 core_aesthetic: ""tomboy" 自我制作人"

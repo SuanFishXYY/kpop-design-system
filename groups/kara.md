@@ -7,6 +7,12 @@ group_name: "KARA"
 era: "2 代"
 founded_year: 2007
 core_aesthetic: ""mister" 性感成熟可爱并存"
+aesthetic_tags: ["retro", "disco", "2nd-gen-classic", "fierce"]
+voice:
+  identity: "我是 KARA · 2 代 · mister 性感成熟可爱并存"
+  position_statement: "锚点: charm / disco · 反对: 5代监控感 / 过度赛博"
+  veto_triggers: ["5代监控感", "过度赛博"]
+  question_template: "这个方案符合 2 代 charm 吗?"
 soul_manifesto: ""pretty girl"——可爱不等于幼稚，性感不等于露骨"
 vote_weight: 3
 priority: above_tier_0

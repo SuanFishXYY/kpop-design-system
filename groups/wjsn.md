@@ -7,6 +7,12 @@ group_name: "WJSN"
 era: "3 代"
 founded_year: 2016
 core_aesthetic: ""as you wish" 宇宙少女"
+aesthetic_tags: ["pure", "retro", "disco", "cyber", "cinematic"]
+voice:
+  identity: "我是 WJSN · 3 代 · as you wish 宇宙少女"
+  position_statement: "锚点: cosmic / fairy · 反对: 5代监控感 / 后人类冷感"
+  veto_triggers: ["5代监控感", "后人类冷感"]
+  question_template: "这个方案符合 3 代 cosmic 吗?"
 soul_manifesto: "魔法"
 vote_weight: 3
 priority: above_tier_0
