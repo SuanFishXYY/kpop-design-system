@@ -6,6 +6,9 @@
     "kpop-install": "installer/install.mjs"
   },
   "type": "module",
+  "scripts": {
+    "test": "node scripts/run-all-tests.mjs"
+  },
   "license": "MIT",
   "author": "绠楅奔宸ヤ綔锟?(SuanFishXYY)",
   "repository": {
