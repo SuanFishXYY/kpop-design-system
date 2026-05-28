@@ -1,3 +1,15 @@
+## v3.4.3 - Host-AI mode (de-LLM)
+
+Architectural pivot: removed engine/llm/* provider abstraction.
+
+- Realization: skill users are already in Claude/Copilot/Cursor; the host AI IS the LLM.
+- Engine no longer self-calls external LLM APIs.
+- deliberation.mjs repositioned as "protocol script generator" — host AI fills in member speech.
+- Removed: engine/llm/{index,deepseek,claude,gemini,stub,llm.test}.mjs · scripts/llm-smoke-test.mjs · docs/LLM-VERIFICATION.md · package.json llm:smoke script · bin/council.mjs --llm flag
+- README/SKILL/docs all repositioned around "zero API key · zero config · host AI native execution"
+- Tests: 96 → 91 (removed 5 LLM provider tests; rest unchanged)
+
+---
 ## v3.4.2 (2026-05-31) - Cleanup pack
 
 - Counterpoint backfill: all 10 documented aesthetic counterpoint pairs now have both-sided `counterpoint_axis` frontmatter and reciprocal rivals.

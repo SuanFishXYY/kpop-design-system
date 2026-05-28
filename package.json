@@ -1,15 +1,14 @@
 {
   "name": "kpop-design-system",
-  "version": "3.4.2",
-  "description": "K-pop industrial visual strategy system · 52 groups × multi-era × mixed council · 96+ tests",
+  "version": "3.4.3",
+  "description": "K-pop industrial visual strategy system · host-AI protocol mode · 91+ tests",
   "bin": {
     "kpop-install": "installer/install.mjs",
     "kpop-council": "bin/council.mjs"
   },
   "type": "module",
   "scripts": {
-    "test": "node scripts/run-all-tests.mjs",
-    "llm:smoke": "node scripts/llm-smoke-test.mjs"
+    "test": "node scripts/run-all-tests.mjs"
   },
   "license": "MIT",
   "author": "SuanFishXYY (算鱼工作室)",

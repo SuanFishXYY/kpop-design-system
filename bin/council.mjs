@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // bin/council.mjs
-// v3.4.2 · Canonical Mixed Council room, with v3.1 review mode folded in.
+// v3.4.3 - Canonical Mixed Council room for standalone / embedding usage.
 
 import readline from "node:readline";
 import { writeFileSync } from "node:fs";
@@ -13,15 +13,24 @@ import { loadUserPrefs, saveUserPrefs, recordOverride, recordFavorite } from "..
 
 const args = process.argv.slice(2);
 const reviewMode = args.includes("review") || args.includes("--review");
+const helpMode = args.includes("--help") || args.includes("-h");
 const briefArg = args.find(arg => arg.startsWith("--brief="));
 const brief = briefArg?.slice("--brief=".length).replace(/^"|"$/g, "");
-const useLLM = args.includes("--llm");
 const sizeArg = args.find(arg => arg.startsWith("--council-size="));
 const requestedSize = Number(sizeArg?.split("=")[1] || 0);
 const autoMode = args.includes("--auto") || !process.stdin.isTTY || !process.stdout.isTTY;
 
+function printHelp() {
+  console.log('Usage: node bin/council.mjs --brief="aespa next era visualization" [--council-size=5|7] [--review] [--auto]\n\nThis CLI is for standalone / embedding usage. The primary mode is loading this skill into Claude/Copilot/Cursor where the host AI runs the deliberation natively.');
+}
+
+if (helpMode) {
+  printHelp();
+  process.exit(0);
+}
+
 if (!brief) {
-  console.error("Usage: node bin/council.mjs --brief=\"aespa next era visualization\" [--llm] [--council-size=5|7] [--review]");
+  printHelp();
   process.exit(1);
 }
 
@@ -83,7 +92,7 @@ async function runReviewMode() {
   ];
 
   log("╔═══════════════════════════════════════════════╗");
-  log("║  🎙️  K-pop Council Review Mode v3.4.2        ║");
+  log("║  🎙️  K-pop Council Review Mode v3.4.3        ║");
   log("╚═══════════════════════════════════════════════╝");
   log(`Brief: ${brief}`);
   log("");
@@ -135,16 +144,17 @@ async function runCouncilMode() {
   const council = applyCouncilSize(assembleCouncil(brief), requestedSize);
 
   print("╔══════════════════════════════════════════════════╗");
-  print("║  🏛️  K-pop Interactive Council Room v3.4.2       ║");
+  print("║  🏛️  K-pop Interactive Council Room v3.4.3       ║");
   print("╚══════════════════════════════════════════════════╝");
   print(`Brief: ${brief}`);
-  print(`Mode: ${useLLM ? "LLM when available" : "stub"}${autoMode ? " · auto" : ""}`);
+  print(`Mode: host-AI script generator${autoMode ? " · auto" : ""}`);
+  print("Primary mode: load the skill in Claude/Copilot/Cursor; the host AI runs deliberation natively.");
   print(`Council: ${council.members.map(member => member.name || member.slug).join(" · ")}`);
 
   print("\n=== Voice identities ===");
   for (const member of council.members) print(`- ${member.slug}: ${voiceIdentity(member, brief)}`);
 
-  const deliberation = await orchestrateDeliberation(council, brief, { useLLM });
+  const deliberation = orchestrateDeliberation(council, brief);
   print(`\nDeliberation mode: ${deliberation.mode}`);
 
   printR1(deliberation.rounds.R1);
