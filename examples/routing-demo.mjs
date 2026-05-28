@@ -4,7 +4,7 @@ import { getRoutingPlan, estimateCost, MODEL_TIERS } from "../engine/routing.mjs
 const BRIEFS = [
   "BLACKPINK × TWICE 跨厂牌 comeback landing",
   "IVE 风格 SaaS B 端 dashboard",
-  "全员议会 · 大型平台改版",
+  "BLACKPINK × TWICE × IVE 大型平台改版",
 ];
 
 console.log("=== Model Tier Definitions ===");

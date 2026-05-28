@@ -1,3 +1,12 @@
+## v3.4.1 (2026-05-31) - Critical fixes for v3.4 baseline
+
+- Fixes `examples/awards-demo.mjs` final verdict display by reading `yes_ratio` / `decision_reason` from the engine decision shape.
+- Fixes `examples/routing-demo.mjs` by using routable briefs so tiers and savings show real non-zero data.
+- Confirms stale `.idols-*.xml` files are ignored and absent from the Git index.
+- Syncs `SKILL.md` metadata from v3.3 drift to v3.4 and 96/96 tests.
+- Adds `scripts/llm-smoke-test.mjs` plus `docs/LLM-VERIFICATION.md` for live DeepSeek verification without CI API calls.
+
+---
 ## v3.4.0 (2026-05-31) - Quickstart + LLM + Interactive CLI
 
 **v3.4 ships the onboarding and runtime bridge: users get a 5-minute path, deliberation can call real LLM providers, and `kpop-council` opens an interactive room.**

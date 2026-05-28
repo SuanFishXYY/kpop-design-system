@@ -1,7 +1,7 @@
 ---
 name: kpop-design-system
-description: "K-pop industrial visual strategy system v3.3 - Mixed Council: idols + groups + user, sister relations, aesthetic counterpoint, voice veto triggers, R1/R2/R3 deliberation, strict >2/3 verdict, 91/91 node tests PASS. Activate on /kpop, /idol-congress, /kpop-design, /kpop-era."
-version: 3.3.0
+description: "K-pop industrial visual strategy system v3.4 - Quickstart + LLM bridge + interactive council, mixed council, routing, strict verdicts, 96/96 node tests PASS. Activate on /kpop, /idol-congress, /kpop-design, /kpop-era."
+version: 3.4.0
 author: 算鱼工作室
 license: MIT
 language: zh-CN
@@ -10,7 +10,7 @@ philosophy: enabled
 tags: [design-system, multi-agent, kpop, idol, era, comeback-cycle, touchpoint, generation-lint, user-as-judge, ui, brand, ai-native]
 ---
 
-# KPOP Design System - The Idol Congress - v3.3
+# KPOP Design System - The Idol Congress - v3.4
 
 > 🎯 **快速召唤**: 在 Copilot / Claude / Codex / Gemini / Antigravity 任一 CLI 输入 `/kpop` 或 `/女团` 即可强制激活。
 >
@@ -18,7 +18,7 @@ tags: [design-system, multi-agent, kpop, idol, era, comeback-cycle, touchpoint, 
 
 ---
 
-## v3.3 - Mixed Council System
+## v3.4 - Quickstart + LLM + Interactive Council
 
 - Mixed council: idol specialists + group representatives + user, one vote each.
 - Sister group invitation: same generation, same agency, same aesthetic, aesthetic counterpoint.

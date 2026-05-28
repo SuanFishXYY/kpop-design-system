@@ -43,5 +43,5 @@ for (const [layer, t] of Object.entries(byLayer)) {
 
 console.log("\n=== FINAL DECISION ===");
 console.log("passed:", result.decision.passed);
-console.log("ratio:", result.decision.ratio?.toFixed(3));
-console.log("reason:", result.decision.reason);
+console.log("ratio:", result.decision.yes_ratio?.toFixed(3));
+console.log("reason:", result.decision.decision_reason || result.decision.reason);
