@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: lapillus
 group_name: "Lapillus"
 era: "4 代"
+agency: "MLD"
 founded_year: 2022
 core_aesthetic: "多国籍 latin pop · MLD 万花筒"
 aesthetic_tags: ["fierce", "global", "latin", "sparkle", "bouncy"]

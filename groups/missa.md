@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: missa
 group_name: "miss A"
 era: "2 代"
+agency: "JYP"
 founded_year: 2010
 core_aesthetic: "强女权+china line 跨国"
 aesthetic_tags: ["retro", "disco", "fierce", "r-and-b", "hip-hop"]

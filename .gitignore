@@ -1,9 +1,16 @@
-﻿node_modules/
+node_modules/
 .commit-msg.txt
 *.log
 .env
 .DS_Store
 .idols-*.xml
 .idols-persona.xml
-
 .marketing/
+
+# PUA loop state and generated runtime artifacts
+.claude/
+.codex/
+verdict-*.md
+review-*.md
+design-brief-*.md
+reports/

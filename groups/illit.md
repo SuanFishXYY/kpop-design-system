@@ -12,7 +12,7 @@ voice:
   position_statement: "锚点: magnetic / teen · 反对: 暗黑 / 重口"
   veto_triggers: ["暗黑", "重口", "锐利"]
   question_template: "这个方案符合 5 代 magnetic 吗?"
-agency: "HYBE?Belift"
+agency: "Belift"
 founded_year: 2024
 core_aesthetic: "y2k 治愈接班"
 soul_manifesto: ""magnetic"——不是吸引你，是磁场把你拉过来"

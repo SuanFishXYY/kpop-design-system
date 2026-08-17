@@ -6,8 +6,8 @@ real_name: "Lee Ga-won"
 group: "MEOVV"
 era: "5 代"
 role: "Leader / Main Vocal"
-tier: 0
-vote_weight: 2
+tier: 2
+vote_weight: 1.5
 ui_specialty: "韩国 traditional + 现代 girl crush"
 personality: "5代队长·稳定输出"
 vibe: "MEOVV 队长 + 主唱"
@@ -22,7 +22,7 @@ invited_helpers: ["bp-jisoo","ive-yujin"]
 - **代际**: 5 代
 - **风格**: 韩国 traditional + 现代 girl crush
 - **关键词**: 5代队长·稳定输出
-- **投票权重**: 2 (Tier 0)
+- **投票权重**: 2 (Tier 2)
 
 ## 🌐 触发短语
 

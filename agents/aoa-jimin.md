@@ -6,8 +6,8 @@ real_name: "Shin Ji-min (신지민)"
 group: "AOA"
 era: "2.5 代"
 role: "Leader / Main Rapper"
-tier: 1
-vote_weight: 1.5
+tier: 0
+vote_weight: 2
 ui_specialty: "心跳 short hook"
 personality: "2.5代队长·rapper·腿"
 vibe: "AOA 队长 + rapper"

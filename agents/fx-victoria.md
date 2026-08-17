@@ -6,8 +6,8 @@ real_name: "Song Qian (宋茜)"
 group: "f(x)"
 era: "2.5 代"
 role: "Leader / Lead Dancer"
-tier: 1
-vote_weight: 1.5
+tier: 0
+vote_weight: 2
 ui_specialty: "中国 leader · 跨文化锚"
 personality: "2代中国·队长·御姐"
 vibe: "f(x) 队长 + 中国第一代"

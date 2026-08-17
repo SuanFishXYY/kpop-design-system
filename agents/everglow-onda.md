@@ -6,7 +6,7 @@ real_name: "Jo Se-rim (조세림)"
 group: "EVERGLOW"
 era: "4 代"
 role: "Sub Vocal / Lead Dancer"
-tier: 0
+tier: 1
 vote_weight: 2
 ui_specialty: "soft sub vocal · 反差柔美 copy"
 personality: "4代反差·柔美·dance"
@@ -14,7 +14,7 @@ vibe: "反差萌 · 柔美 dance"
 attitude: "pirate"
 invited_helpers: ["mmm-wheein","idle-minnie"] 时, 优先邀请
 - **发言风格**: 用 "4代反差·柔美·dance" 的视角评审 design
-- **投票权重**: 2 (Tier 0)
+- **投票权重**: 2 (Tier 1)
 - **关联 idol**: ["stayc-isa"]
 
 ## 🌐 触发短语

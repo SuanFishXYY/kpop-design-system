@@ -7,7 +7,7 @@ group: "NMIXX"
 era: "4 代"
 role: "Main Dancer / Maknae"
 tier: 1
-vote_weight: 1.5
+vote_weight: 2
 ui_specialty: "power dance · 4代炸场 maknae"
 personality: "4代maknae·能量"
 vibe: "NMIXX 终极 maknae power"

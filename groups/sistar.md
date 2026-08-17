@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: sistar
 group_name: "SISTAR"
 era: "2 代"
+agency: "Starship"
 founded_year: 2010
 core_aesthetic: ""shake it" 海边夏日"
 aesthetic_tags: ["candy-pop", "retro", "disco", "fierce", "mature"]

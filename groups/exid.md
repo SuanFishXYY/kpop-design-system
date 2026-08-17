@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: exid
 group_name: "EXID"
 era: "2 代"
+agency: "Banana Culture"
 founded_year: 2012
 core_aesthetic: ""up&down" 直拍翻红"
 aesthetic_tags: ["dark-glam", "mature", "hip-hop", "comeback-queen", "sexy"]

@@ -47,6 +47,7 @@ export const LAYER_TIER_MAP = {
   group_soul:    "standard",  // 向后兼容
   performer_t0:  "fast",
   performer_t1:  "fast",
+  performer_t2:  "fast",
   tier_0:        "fast",      // 向后兼容
   tier_1:        "fast",      // 向后兼容
   audience:      "fast",

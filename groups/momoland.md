@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: momoland
 group_name: "MOMOLAND"
 era: "3 代"
+agency: "MLD"
 founded_year: 2016
 core_aesthetic: ""BBoom BBoom" 复古洗脑"
 aesthetic_tags: ["retro", "disco", "hip-hop", "fun", "carefree"]

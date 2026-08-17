@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: secret
 group_name: "Secret"
 era: "2 代"
+agency: "TS"
 founded_year: 2009
 core_aesthetic: ""madonna" 性感舞曲"
 aesthetic_tags: ["candy-pop", "retro", "mature", "sexy", "swing"]

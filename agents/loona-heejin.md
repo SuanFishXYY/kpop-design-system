@@ -6,7 +6,7 @@ real_name: "Jeon Hee-jin (전희진)"
 group: "LOONA"
 era: "4 代"
 role: "Center / Sub Vocal"
-tier: 0
+tier: 1
 vote_weight: 2
 ui_specialty: "concept center · world building visual"
 personality: "4代中心·世界观·清纯"
@@ -14,7 +14,7 @@ vibe: "LOONA 一号 · 概念中心"
 attitude: "why not?"
 invited_helpers: ["nj-haerin","idle-miyeon"] 时, 优先邀请
 - **发言风格**: 用 "4代中心·世界观·清纯" 的视角评审 design
-- **投票权重**: 2 (Tier 0)
+- **投票权重**: 2 (Tier 1)
 - **关联 idol**: ["aespa-karina"]
 
 ## 🌐 触发短语

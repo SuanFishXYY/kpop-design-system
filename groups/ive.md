@@ -13,7 +13,7 @@ core_aesthetic: "世界级公主门面"
 soul_manifesto: ""i AM"——不解释，自我宣告就是答案"
 vote_weight: 3
 priority: above_tier_0
-fusion_compatible: ["nj", "illit", "wonyoung-line", "stayc"]
+fusion_compatible: ["nj", "illit", "stayc"]
 fusion_synergy: "公主感 + 极简治愈"
 fusion_rules: "主语前置宣言不可丢"
 rivals: ["aespa"]
@@ -120,7 +120,7 @@ voice:
 
 ## 🔀 跨团融合
 
-**兼容团**: `nj`, `illit`, `wonyoung-line`, `stayc`
+**兼容团**: `nj`, `illit`, `stayc`
 **协同效应**: 公主感 + 极简治愈
 **融合规则**: 主语前置宣言不可丢
 

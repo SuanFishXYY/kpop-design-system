@@ -1,6 +1,6 @@
 # 🎤 K-pop 议会 · 名单大全 (v2.7.0)
 
-> 算鱼设计系统 · **7 评委 + 52 团魂 + 186 idol** 三层完整名单
+> 算鱼设计系统 · **7 评委 + 53 团魂 + 248 idol** 三层完整名单
 
 唯一权威名单. 之前的 `IDOL-ROSTER.md` 和 `SPECIALTY-INDEX.md` 已合并到本表.
 
@@ -11,8 +11,8 @@
 | 层 | 数量 | 权重 | 角色 |
 |---|---|---|---|
 | 🏛 评委 (judges) | 7 | 5 | 厂牌级 veto · portfolio_only |
-| 👯 团魂 (group souls) | 52 | 3 | 集体 DNA 守护 · 高于个体 idol |
-| 🌟 idol (Tier 0+1) | 186 | 1.5-2 | 设计维度专业担当 |
+| 👯 团魂 (group souls) | 53 | 3 | 集体 DNA 守护 · 高于个体 idol |
+| 🌟 idol (Tier 0+1) | 248 | 1.5-2 | 设计维度专业担当 |
 
 ---
 
@@ -30,7 +30,7 @@
 - **创立**: 1997
 - **评审风格**: noise level + 真诚共鸣 + Half Korean swagger
 - **宣言**: > _Half Korean Half Asian"——一首歌要有 noise level (引发讨论度) + 真诚 (打到心)_
-- **旗下团 (portfolio)**: `twice` · `itzy` · `nmixx` · `missa` · `wg` · `2pm` · `day6` · `niziu`
+- **旗下团 (portfolio)**: `twice` · `itzy` · `nmixx` · `missa` · `wg` · `niziu`
 
 ### 🎙 민희진 Min Hee-jin · ADOR (HYBE sub)
 
@@ -51,7 +51,7 @@
 - **创立**: 2008
 - **评审风格**: majestic + 出道即顶流 + 公主感 prestige
 - **宣言**: > _majestic from day one"——出道即顶流,公主感 prestige 不需要解释,自我宣告即答案_
-- **旗下团 (portfolio)**: `ive` · `wjsn` · `kep1er` · `monsta`
+- **旗下团 (portfolio)**: `ive` · `wjsn` · `kep1er`
 
 ### 🎙 Teddy Park · THEBLACKLABEL (YG sub)
 
@@ -69,7 +69,7 @@
 
 ---
 
-## 👯 团魂 + Idol 全员 (52 团)
+## 👯 团魂 + Idol 全员 (53 团)
 
 每个团展示: **代际 / 美学基因 / 集体宣言 / fandom** + 全员 idol 表
 
@@ -103,11 +103,14 @@
 
 > 🌟 **团魂宣言**: _i am the best"——大字大写不留余地，反甜美_
 
-**成员 (1)**:
+**成员 (4)**:
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
+| **Bom** | Main Vocal | 蜜嗓 · 梦幻 pastel palette | 反差萌女王 | _"pastel power"_ |
 | **CL** | Leader / Main Rapper | The Baddest Female · 反叛 tagline | 2代女王·rapper·态度 | _"the baddest female"_ |
+| **Dara** | Vocal / Visual | 菠萝头 icon · 视觉 brand | 童颜怪咖 | _"unique icon"_ |
+| **Minzy** | Main Dancer / Vocal | 舞蹈机器 · 精准 motion | 低调实力派 | _"precision move"_ |
 
 ---
 
@@ -115,11 +118,14 @@
 
 _(无团魂条目)_
 
-**成员 (1)**:
+**成员 (4)**:
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
 | **Jihyun** | Leader / Vocal | Crazy edm pulse · BPM 高节奏 | 2.5代队长·成熟·性感 | _"crazy"_ |
+| **Gayoon** | Main Vocal | 力量主唱 · 高音 typography | 实力派 | _"power high"_ |
+| **Jiyoon** | Lead Vocal / Rapper | 沙哑嗓音 · 反差 copy | 酷girl 主唱 | _"husky power"_ |
+| **Sohyun** | Vocal / Rapper / Maknae | 忙内 visual · 少年感 hero | 少年感少女 | _"boyish charm"_ |
 
 ---
 
@@ -131,11 +137,16 @@ _(无团魂条目)_
 
 > 🌟 **团魂宣言**: _like a cat"——视觉敢用裁切+特写，性感不羞涩_
 
-**成员 (1)**:
+**成员 (6)**:
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
+| **Choa** | Main Vocal | 短发女神 · 清爽 vocal copy | 清凉主唱 | _"short hair goddess"_ |
+| **Hyejeong** | Vocal / Visual | 门面副唱 · 甜美 brand | 温柔 visual | _"soft brand"_ |
 | **Jimin** | Leader / Main Rapper | 心跳 short hook | 2.5代队长·rapper·腿 | _"miniskirt"_ |
+| **Mina** | Lead Vocal / Bass | 贝斯 · 节奏 interaction | 乐队少女 | _"bass groove"_ |
+| **Seolhyun** | Vocal / Visual | 广告女王 · 高级 photography | 清纯性感 | _"cf queen"_ |
+| **Yuna** | Main Vocal | 高音 · 情感 copy | 感性主唱 | _"emotional high"_ |
 
 ---
 
@@ -147,11 +158,15 @@ _(无团魂条目)_
 
 > 🌟 **团魂宣言**: _集体编队_
 
-**成员 (1)**:
+**成员 (5)**:
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
 | **Kahi** | Leader / Main Dancer | 军舞 group dance · 阵型 grid | 2代队长·after school·御姐 | _"because of you"_ |
+| **Lizzy** | Vocal | 果汁美 · 微交互 sparkle | 元气甜妹 | _"juice sparkle"_ |
+| **Nana** | Lead Dancer / Visual | 世首美 · 高级 photography | 冷艳美人 | _"visual no.1"_ |
+| **Raina** | Main Vocal | 蜜嗓 · 甜美 copy | OST 女神 | _"honey voice"_ |
+| **UEE** | Lead Dancer / Vocal / Actress | 蜜大腿 · 健康美 hero | 运动女神 | _"honey thigh"_ |
 
 ---
 
@@ -168,11 +183,11 @@ _(无团魂条目)_
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
 | **Bomi** | Main Dancer / Sub Vocal | 兔系 motion · 蹦跶 hook 节奏 | 2.5代担当·活泼·兔系 | _"no no no"_ |
+| **Chorong** | Leader / Sub Vocal | 清纯长青 · pure brand voice | 2.5代队长·初恋·清纯 | _"luv"_ |
 | **Eunji** | Main Vocal | OST vocal · 痛点共鸣 microcopy | 2.5代主唱·OST·共鸣 | _"mr chu"_ |
 | **Hayoung** | Maknae / Vocal | maknae brightness · sticker 系装饰 | 2.5代maknae·阳光·撒娇 | _"dumhdurum"_ |
 | **Naeun** | Visual / Sub Vocal | visual hero · 仙气 KV | 2.5代门面·仙气·氛围 | _"lovely day"_ |
 | **Namjoo** | Lead Vocal / Sub Rapper | sub vocal sparkle · 转音 micro | 2.5代副主唱·灵动·甜 | _"remember"_ |
-| **Chorong** | Leader / Sub Vocal | 清纯长青 · pure brand voice | 2.5代队长·初恋·清纯 | _"luv"_ |
 
 ---
 
@@ -280,11 +295,11 @@ _(无团魂条目)_
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
+| **Sihyeon** | Main Vocal / Visual | main vocal hero · sharp visual KV | 4代主唱·visual·sharp | _"la di da"_ |
 | **Aisha** | Lead Vocal / Lead Rapper | cross-lingual copy · 中英韩 tagline | 4代多语·rapper·全能 | _"adios"_ |
 | **E:U** | Leader / Main Rapper | leader rapper · sharp killing tagline | 4代队长·rapper·sharp | _"dun dun"_ |
 | **Mia** | Main Dancer / Lead Vocal | dance motion · 力量 hook 节拍 | 4代dancer·力量·sharp | _"first"_ |
 | **Onda** | Sub Vocal / Lead Dancer | soft sub vocal · 反差柔美 copy | 4代反差·柔美·dance | _"pirate"_ |
-| **Sihyeon** | Main Vocal / Visual | main vocal hero · sharp visual KV | 4代主唱·visual·sharp | _"la di da"_ |
 | **Yiren** | Visual / Maknae | maknae visual hero · 中国担当 KV | 4代maknae·visual·中国 | _"last melody"_ |
 
 ---
@@ -297,10 +312,14 @@ _(无团魂条目)_
 
 > 🌟 **团魂宣言**: _逆袭_
 
-**成员 (1)**:
+**成员 (5)**:
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
+| **Hani** | Lead Vocal / Visual / Dancer | Up&Down 直拍 · 病毒 motion | 反差 IQ 担当 | _"fancam queen"_ |
+| **Hyelin** | Main Vocal | 稳定主唱 · 均衡 copy | 可靠主唱 | _"steady vocal"_ |
+| **Junghwa** | Lead Dancer / Vocal / Visual / Maknae | 忙内 visual · 清纯 hero | 清纯忙内 | _"pure visual"_ |
+| **LE** | Main Rapper | 制作型 rapper · 强烈 brand | 酷飒制作人 | _"rap producer"_ |
 | **Solji** | Leader / Main Vocal | Up & Down dynamic curve | 2.5代主唱·实力·迟开 | _"up & down"_ |
 
 ---
@@ -309,11 +328,16 @@ _(无团魂条目)_
 
 _(无团魂条目)_
 
-**成员 (1)**:
+**成员 (6)**:
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
+| **Eunha** | Lead Vocal | 银河音色 · 梦幻 hero | 精灵 vocal | _"galaxy voice"_ |
+| **SinB** | Main Dancer / Vocal | 刀群舞核心 · 精准 motion | 冷面舞担 | _"knife dance"_ |
 | **Sowon** | Leader / Sub Vocal | 校园纯爱 · 蓝白色板 | 3代队长·长腿·氛围 | _"navillera"_ |
+| **Umji** | Vocal / Maknae | 忙内成长 · 温暖 illustration | 治愈忙内 | _"healing maknae"_ |
+| **Yerin** | Lead Dancer / Vocal | 活力可爱 · 明亮 hero | 阳光维他命 | _"vitamin hero"_ |
+| **Yuju** | Main Vocal | 力量主唱 · 情感 copy | 热血主唱 | _"rough power"_ |
 
 ---
 
@@ -330,9 +354,9 @@ _(无团魂条目)_
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
 | **Hyeri** | Maknae / Vocal / Actress | cross-platform 出圈 brand voice | 2.5代maknae·演员·爱嘤 | _"expectation"_ |
+| **Sojin** | Leader / Lead Vocal | 期待 anticipation copy | 2.5代队长·御姐·甜美 | _"something"_ |
 | **Minah** | Main Vocal | main vocal · 甜美 microcopy | 2.5代主唱·甜美·邻家 | _"female president"_ |
 | **Yura** | Lead Dancer / Visual | sexy motion hook · 长腿 hero | 2.5代dancer·性感·腿 | _"something"_ |
-| **Sojin** | Leader / Lead Vocal | 期待 anticipation copy | 2.5代队长·御姐·甜美 | _"something"_ |
 
 ---
 
@@ -344,11 +368,18 @@ _(无团魂条目)_
 
 > 🌟 **团魂宣言**: _into the new world"——开启 K-pop 全球化的 1 号舰队_
 
-**成员 (1)**:
+**成员 (8)**:
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
+| **Hyoyeon** | Main Dancer | 舞后 · 强烈 motion | 酷飒舞者 | _"dance break"_ |
+| **Seohyun** | Lead Vocal / Maknae | 正直忙内 · 清晰 typography | 自律优等生 | _"clean type"_ |
+| **Sooyoung** | Lead Dancer / Rapper | 长腿模特 · editorial photography | 时尚编辑 | _"editorial frame"_ |
+| **Sunny** | Lead Vocal | 活力小太阳 · 微交互 feedback | 气氛担当 | _"sunny micro"_ |
 | **Taeyeon** | Leader / Main Vocal | 国民主唱 · 长内容 voice | 2代国民妹妹·主唱女皇·音色 | _"i"_ |
+| **Tiffany** | Lead Vocal | 粉红怪兽 · 双语 brand voice | 美式甜心 | _"pink monster"_ |
+| **Yoona** | Lead Dancer / Visual / Actress | Center visual · 清纯 hero | 国民初恋 | _"visual center"_ |
+| **Yuri** | Lead Dancer / Vocal | 黑珍珠 · 健康美 palette | 运动系女神 | _"healthy glow"_ |
 
 ---
 
@@ -437,11 +468,15 @@ _(无团魂条目)_
 
 > 🌟 **团魂宣言**: _pretty girl"——可爱不等于幼稚，性感不等于露骨_
 
-**成员 (1)**:
+**成员 (5)**:
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
 | **Park Gyuri** | Leader / Lead Vocal | elegant 入门 · 优雅 onboarding | 2代队长·骄傲女王·女团 BJ | _"step"_ |
+| **Hara** | Lead Dancer / Vocal / Visual | 洋娃娃 visual · 高端 brand | 精致 icon | _"doll brand"_ |
+| **Jiyoung** | Vocal / Visual | 忙内 visual · 甜美 hero | 清纯忙内 | _"sweet hero"_ |
+| **Nicole** | Main Dancer / Lead Vocal | LA 甜心 · 活力 motion | 阳光舞者 | _"jumping"_ |
+| **Seungyeon** | Leader / Main Vocal | 队长 vocal · 稳重 copy | 可靠队长 | _"steady voice"_ |
 
 ---
 
@@ -480,8 +515,8 @@ _(无团魂条目)_
 |---|---|---|---|---|
 | **Belle** | Leader / Main Vocal | r&b main vocal · groove brand voice | 4代队长·r&b·jazzy | _"shhh"_ |
 | **Haneul** | Main Rapper / Producer | producer rapper · self-made hook | 4代rapper·制作人·sharp | _"bad news"_ |
-| **Natty** | Main Dancer / Sub Vocal | global motion · 国际舞蹈 hook | 4代海外·dance·泰意混血 | _"midas touch"_ |
 | **Julie** | Leader / Main Rapper | 美韩混血 · 跨文化 hero | 5代队长·性感·氛围 | _"midas touch"_ |
+| **Natty** | Main Dancer / Sub Vocal | global motion · 国际舞蹈 hook | 4代海外·dance·泰意混血 | _"midas touch"_ |
 
 ---
 
@@ -498,9 +533,9 @@ _(无团魂条目)_
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
 | **Chaehyun** | Main Vocal | 选秀冠军·主唱稳定 | 4代主唱·实力派 | _""_ |
-| **Xiaoting** | Lead Dancer / Visual | 9 头身中国 visual · 模特 | 4代中国线·完美比例 | _""_ |
 | **Hikaru** | Lead Vocal / Sub Dancer | 日韩混血 · vocal | 4代日韩 J-line·主唱 | _""_ |
 | **Mashiro** | Lead Dancer / Vocal | 日本 J-line · 精致舞蹈 | 4代日本线·精致 | _""_ |
+| **Xiaoting** | Lead Dancer / Visual | 9 头身中国 visual · 模特 | 4代中国线·完美比例 | _""_ |
 | **Yeseo** | Sub Vocal / Sub Rapper | 韩国选秀·全能型 | 4代全能·均衡 | _""_ |
 | **Choi Yujin** | Leader / Lead Vocal | 选秀王 · 竞争 ui | 4代队长·选秀·活力 | _"wa da da"_ |
 
@@ -521,8 +556,8 @@ _(无团魂条目)_
 | **Haum** | Lead Dancer / Sub Vocal | fresh motion · 5代 dance hook | 5代dancer·清新·活力 | _"i do me"_ |
 | **Kasia** | Visual / Sub Vocal / Maknae | visual maknae hero · fresh KV | 5代maknae·visual·清纯 | _"i do me"_ |
 | **Kya** | Main Rapper / Lead Dancer | rapper hook · sharp tagline | 5代rapper·sharp·attitude | _"i do me"_ |
-| **Sui** | Leader / Main Vocal | 5代 leader · sharp brand voice | 5代队长·main vocal·sharp | _"i do me"_ |
 | **Leesa** | Leader / Vocal | 2025新团 · 极简 visual | 5代队长·新人·氛围 | _"i do me"_ |
+| **Sui** | Leader / Main Vocal | 5代 leader · sharp brand voice | 5代队长·main vocal·sharp | _"i do me"_ |
 
 ---
 
@@ -636,8 +671,8 @@ _(无团魂条目)_
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
 | **Anna** | Lead Vocal / Visual | 美韩混血 · 复古时尚 | 5代炸场·混血visual | _""_ |
-| **Gawon** | Leader / Main Vocal | 韩国 traditional + 现代 girl crush | 5代队长·稳定输出 | _""_ |
 | **Ella** | Lead Dancer / Vocal | 美韩混血 · 模特感 | 5代模特身材·小腰精 | _""_ |
+| **Gawon** | Leader / Main Vocal | 韩国 traditional + 现代 girl crush | 5代队长·稳定输出 | _""_ |
 | **Narin** | Main Dancer / Vocal | 硬核 girl crush · power dance | 5代硬核女团·power | _""_ |
 | **Sooin** | Leader | YG 新作 · futuristic vis | 5代队长·yg·御姐 | _"meow"_ |
 
@@ -671,12 +706,12 @@ _(无团魂条目)_
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
-| **Haewon** | Leader / Main Vocal | 队长稳定 · 主唱力量 | 4代队长·稳定实力 | _""_ |
-| **Sullyoon** | Main Vocal / Visual | 美貌即配置 · 实力主唱 | 4代神颜·实力 | _""_ |
 | **Bae** | Lead Vocal / Lead Dancer | 混搭舞蹈 · 切换流畅 | 4代多面手·风格转换 | _""_ |
+| **Haewon** | Leader / Main Vocal | 队长稳定 · 主唱力量 | 4代队长·稳定实力 | _""_ |
 | **Jiwoo** | Sub Vocal / Sub Dancer | 活力青春 · 真诚表达 | 4代maknae·活力 | _""_ |
 | **Kyujin** | Main Dancer / Maknae | power dance · 4代炸场 maknae | 4代maknae·能量 | _""_ |
 | **Lily** | Main Vocal / Center | 澳韩混血 · 复合调声 | 4代主唱·混血·实力 | _"o.o"_ |
+| **Sullyoon** | Main Vocal / Visual | 美貌即配置 · 实力主唱 | 4代神颜·实力 | _""_ |
 
 ---
 
@@ -736,6 +771,27 @@ _(无团魂条目)_
 
 ---
 
+### Oh My Girl
+
+**代际**: 3 代 · **出道**: 2015 · **fandom**: MIRACLE
+
+**美学基因**: closer" 童话治愈
+
+> 🌟 **团魂宣言**: _柔光_
+
+**成员 (6)**:
+
+| Stage | Role | UI Specialty | Personality | Quote |
+|---|---|---|---|---|
+| **Arin** | Lead Dancer / Vocal / Maknae | 清纯忙内 · 微交互 smile | 初恋忙内 | _"smile interaction"_ |
+| **Binnie** | Lead Vocal | 温柔音色 · 舒缓 copy | 温柔姐姐 | _"soft voice"_ |
+| **Jiho** | Lead Vocal / Visual | 小鹿眼 visual · 清纯 hero | 清纯 visual | _"deer eyes"_ |
+| **Mimi** | Main Rapper / Lead Dancer | 创作 rapper · 独特 brand | 鬼马 rapper | _"quirky rap"_ |
+| **Seunghee** | Main Vocal | 实力主唱 · 电影感 copy | OST 担当 | _"movie voice"_ |
+| **YooA** | Main Dancer / Lead Vocal | 精灵舞担 · 梦幻 motion | 人间樱桃 | _"fairy dance"_ |
+
+---
+
 ### Red Velvet  💎 SM Entertainment
 
 **代际**: 3 代 · **出道**: 2014 · **fandom**: ReVeluv
@@ -786,8 +842,8 @@ _(无团魂条目)_
 |---|---|---|---|---|
 | **Bora** | Main Rapper / Lead Dancer | 夏日 rapper hook · 短句 tagline | 2.5代rapper·腿·夏日 | _"shake it"_ |
 | **Dasom** | Visual / Sub Vocal / Maknae | maknae visual · 夏日 hero KV | 2.5代maknae·visual·甜美 | _"touch my body"_ |
-| **Soyou** | Lead Vocal | duet vocal · 二重唱 harmony | 2.5代副主唱·二重唱·情歌 | _"some"_ |
 | **Hyolyn** | Leader / Main Vocal | 夏日 power vocal · 高峰 CTA | 2.5代主唱女王·R&B·sexy | _"touch my body"_ |
+| **Soyou** | Lead Vocal | duet vocal · 二重唱 harmony | 2.5代副主唱·二重唱·情歌 | _"some"_ |
 
 ---
 
@@ -799,11 +855,16 @@ _(无团魂条目)_
 
 > 🌟 **团魂宣言**: _asap"——清新但有态度_
 
-**成员 (1)**:
+**成员 (6)**:
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
 | **Sumin** | Leader / Lead Vocal | ASAP 复古 · 90s revival | 4代队长·清纯·御姐 | _"asap"_ |
+| **Isa** | Lead Vocal | 猫系音色 · 慵懒 copy | 猫系主唱 | _"cat voice"_ |
+| **J** | Lead Rapper / Maknae | 少年感 rap · 活力 motion | 酷帅忙内 | _"boyish rap"_ |
+| **Seeun** | Vocal / Visual | 演员脸 visual · 高级 hero | 清冷 visual | _"actress visual"_ |
+| **Sieun** | Main Vocal | 清亮主唱 · 高辨识度 copy | 演员相主唱 | _"clear voice"_ |
+| **Yoon** | Lead Vocal | 低音炮 · 反差 brand | 反差魅力 | _"deep tone"_ |
 
 ---
 
@@ -820,6 +881,28 @@ _(无团魂条目)_
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
 | **Hyoseong** | Leader (现) / Main Vocal | 性感成熟 · adult ui | 2代主唱·身材·清纯 | _"shy boy"_ |
+
+---
+
+### Solo
+
+**代际**: 跨代 · **出道**: - · **fandom**: Solo listeners
+
+**美学基因**: 独立艺人个人符号
+
+> 🌟 **团魂宣言**: __
+
+**成员 (7)**:
+
+| Stage | Role | UI Specialty | Personality | Quote |
+|---|---|---|---|---|
+| **BoA** | Soloist / SM 理事 | K-pop 女王 · 舞台架构师 | 全能 icon | _"No.1"_ |
+| **Chungha** | Soloist / Dancer | Snapping 编舞 · 利落 transition | 独舞女王 | _"Snapping"_ |
+| **Hyuna** | Soloist / Rapper | 性感红色炸弹 · 高饱和 CTA | 叛逆性感 icon | _"Red is my color"_ |
+| **IU** | Soloist / Actress | 国民妹妹 · vocal storytelling UI | 治愈系叙事者 | _"把歌讲成故事"_ |
+| **Lee Hyori** | Soloist | 国民妖精 · 复古性感 landing | 性感天后 | _"10 Minutes"_ |
+| **Somi** | Soloist | XOXO 混血甜酷 · pop brand | 甜酷混血公主 | _"XOXO"_ |
+| **Sunmi** | Soloist | Gashina 手枪舞 · 尖锐 iconography | 怪诞美学女王 | _"Why are you leaving such a beautiful woman like me?"_ |
 
 ---
 
@@ -903,11 +986,14 @@ _(无团魂条目)_
 
 > 🌟 **团魂宣言**: _nobody"——一个 hook 横扫世界_
 
-**成员 (1)**:
+**成员 (4)**:
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
+| **Lim** | Rapper / Vocal | 港风混血 · 国际感 hero |  multilingual 酷 girl | _"global hero"_ |
 | **Sunye** | Leader / Lead Vocal | Tell Me 复古 · retro hero | 2代队长·tell me·开创者 | _"nobody"_ |
+| **Yeeun** | Main Vocal | 复古 synthesizer · 叙事 copy | 创作才女 | _"retro synth"_ |
+| **Yubin** | Rapper | rap 节奏 · 强烈 motion | 酷飒 rapper | _"rap beat"_ |
 
 ---
 
@@ -960,10 +1046,13 @@ _(无团魂条目)_
 
 > 🌟 **团魂宣言**: _4 walls"——SM 的实验室，反对主流K-pop 公式_
 
-**成员 (1)**:
+**成员 (4)**:
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
+| **Amber** | Main Rapper / Vocal | 中性短发 · 双语 typography | 酷帅rapper | _"androgynous type"_ |
+| **Krystal** | Lead Vocal / Visual | 冰山公主 · 高级 brand | 冷都女 | _"ice princess"_ |
+| **Luna** | Main Vocal | 力量主唱 · 高音 copy | 热血主唱 | _"power vocal"_ |
 | **Victoria** | Leader / Lead Dancer | 中国 leader · 跨文化锚 | 2代中国·队长·御姐 | _"electric shock"_ |
 
 ---
@@ -1016,11 +1105,14 @@ _(无团魂条目)_
 
 > 🌟 **团魂宣言**: _i don't need a man"——独立宣言_
 
-**成员 (1)**:
+**成员 (4)**:
 
 | Stage | Role | UI Specialty | Personality | Quote |
 |---|---|---|---|---|
 | **Fei** | Leader / Lead Dancer | 中国双语锚 · zh-CN i18n | 2代中国·rapper·性感 | _"hush"_ |
+| **Jia** | Lead Dancer / Rapper | 中国舞功底 · 优雅 motion | 酷飒舞担 | _"elegant move"_ |
+| **Min** | Main Dancer / Lead Vocal | 高音弹簧 · 弹性 motion | 活力主舞 | _"bounce"_ |
+| **Suzy** | Vocal / Visual / Actress | 国民初恋 · 清纯 hero | 初恋脸 | _"first love"_ |
 
 ---
 

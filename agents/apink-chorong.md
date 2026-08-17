@@ -6,8 +6,8 @@ real_name: "Park Cho-rong (박초롱)"
 group: "Apink"
 era: "2.5 代"
 role: "Leader / Sub Vocal"
-tier: 1
-vote_weight: 1.5
+tier: 0
+vote_weight: 2
 ui_specialty: "清纯长青 · pure brand voice"
 personality: "2.5代队长·初恋·清纯"
 vibe: "Apink 队长，初恋系开创者"

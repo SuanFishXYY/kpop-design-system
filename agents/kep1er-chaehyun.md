@@ -6,8 +6,8 @@ real_name: "Kim Chae-hyun"
 group: "Kep1er"
 era: "4 代"
 role: "Main Vocal"
-tier: 0
-vote_weight: 2
+tier: 2
+vote_weight: 1.5
 ui_specialty: "选秀冠军·主唱稳定"
 personality: "4代主唱·实力派"
 vibe: "Kep1er 主唱基石"
@@ -22,7 +22,7 @@ invited_helpers: ["ive-wonyoung","twice-jihyo"]
 - **代际**: 4 代
 - **风格**: 选秀冠军·主唱稳定
 - **关键词**: 4代主唱·实力派
-- **投票权重**: 2 (Tier 0)
+- **投票权重**: 2 (Tier 2)
 
 ## 🌐 触发短语
 

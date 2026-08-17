@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: tara
 group_name: "T-ARA"
 era: "2 代"
+agency: "MBK"
 founded_year: 2009
 core_aesthetic: ""roly poly" 复古迪斯科"
 aesthetic_tags: ["candy-pop", "retro", "disco", "charm", "cute"]

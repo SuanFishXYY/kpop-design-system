@@ -6,8 +6,8 @@ real_name: "Daniela Avanzini"
 group: "KATSEYE"
 era: "5 代"
 role: "Main Dancer / Lead Vocal"
-tier: 0
-vote_weight: 2
+tier: 2
+vote_weight: 1.5
 ui_specialty: "拉丁裔美式 · 街舞底"
 personality: "5代全球女团·拉丁张力"
 vibe: "KATSEYE 舞蹈中枢"
@@ -22,7 +22,7 @@ invited_helpers: ["bp-lisa","twice-momo"]
 - **代际**: 5 代
 - **风格**: 拉丁裔美式 · 街舞底
 - **关键词**: 5代全球女团·拉丁张力
-- **投票权重**: 2 (Tier 0)
+- **投票权重**: 2 (Tier 2)
 
 ## 🌐 触发短语
 

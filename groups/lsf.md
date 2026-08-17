@@ -7,7 +7,7 @@ group_name: "LE SSERAFIM"
 era: "4 代"
 counterpoint_axis: "Cinematic fearlessness vs luxury combat"
 aesthetic_tags: ["cinematic", "dark-elegant", "fierce"]
-agency: "HYBE?Source"
+agency: "Source"
 founded_year: 2022
 core_aesthetic: ""fearless" 自由女王"
 soul_manifesto: ""i'm fearless"——不需要被认可，我自己定义自己"

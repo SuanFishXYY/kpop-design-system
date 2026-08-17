@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: lovelyz
 group_name: "Lovelyz"
 era: "2.5 代"
+agency: "Woollim"
 founded_year: 2014
 core_aesthetic: ""candy jelly love" 纯爱"
 aesthetic_tags: ["candy-pop", "pure", "cyber", "fairy", "theme-park"]

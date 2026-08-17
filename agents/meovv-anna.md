@@ -6,8 +6,8 @@ real_name: "Anna Kim"
 group: "MEOVV"
 era: "5 代"
 role: "Lead Vocal / Visual"
-tier: 0
-vote_weight: 2
+tier: 2
+vote_weight: 1.5
 ui_specialty: "美韩混血 · 复古时尚"
 personality: "5代炸场·混血visual"
 vibe: "MEOVV 颜值担当 + 主唱"
@@ -22,7 +22,7 @@ invited_helpers: ["bp-jennie","bp-lisa","aespa-karina"]
 - **代际**: 5 代
 - **风格**: 美韩混血 · 复古时尚
 - **关键词**: 5代炸场·混血visual
-- **投票权重**: 2 (Tier 0)
+- **投票权重**: 2 (Tier 2)
 
 ## 🌐 触发短语
 

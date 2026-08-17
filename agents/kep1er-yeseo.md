@@ -6,7 +6,7 @@ real_name: "Kang Ye-seo"
 group: "Kep1er"
 era: "4 代"
 role: "Sub Vocal / Sub Rapper"
-tier: 1
+tier: 2
 vote_weight: 1.5
 ui_specialty: "韩国选秀·全能型"
 personality: "4代全能·均衡"
@@ -22,7 +22,7 @@ invited_helpers: ["ive-rei","stayc-isa"]
 - **代际**: 4 代
 - **风格**: 韩国选秀·全能型
 - **关键词**: 4代全能·均衡
-- **投票权重**: 1.5 (Tier 1)
+- **投票权重**: 1.5 (Tier 2)
 
 ## 🌐 触发短语
 

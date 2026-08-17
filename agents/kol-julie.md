@@ -6,7 +6,7 @@ real_name: "Hur Yun-jin (허윤진)"
 group: "KISS OF LIFE"
 era: "5 代"
 role: "Leader / Main Rapper"
-tier: 1
+tier: 2
 vote_weight: 1.5
 ui_specialty: "美韩混血 · 跨文化 hero"
 personality: "5代队长·性感·氛围"
@@ -14,7 +14,7 @@ vibe: "KISS OF LIFE 队长"
 attitude: "midas touch"
 invited_helpers: ["meovv-sooin", "triples-saem", "bm-ruka"] 时, 优先邀请
 - **发言风格**: 用 "5代队长·性感·氛围" 的视角评审 design
-- **投票权重**: 1.5 (Tier 1)
+- **投票权重**: 1.5 (Tier 2)
 - **关联 idol**: ["katseye-lara", "triples-saem"]
 
 ## 🌐 触发短语

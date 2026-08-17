@@ -1,21 +1,49 @@
 {
   "name": "kpop-design-system",
-  "version": "3.4.3",
-  "description": "K-pop industrial visual strategy system · host-AI protocol mode · 91+ tests",
+  "version": "3.7.0",
+  "description": "K-pop industrial visual strategy system · style-first idol council · host-AI protocol mode · MCP server · 179+ tests",
   "bin": {
     "kpop-install": "installer/install.mjs",
     "kpop-council": "bin/council.mjs"
   },
   "type": "module",
   "scripts": {
-    "test": "node scripts/run-all-tests.mjs"
+    "test": "node scripts/run-all-tests.mjs",
+    "audit-voice": "node scripts/audit-voice-coverage.mjs",
+    "validate-links": "node scripts/validate-links.mjs"
   },
   "license": "MIT",
   "author": "SuanFishXYY (算鱼工作室)",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/SuanFishXYY/kpop-design-system.git"
   },
+  "bugs": {
+    "url": "https://github.com/SuanFishXYY/kpop-design-system/issues"
+  },
+  "homepage": "https://github.com/SuanFishXYY/kpop-design-system#readme",
+  "files": [
+    "bin/",
+    "engine/",
+    "docs/",
+    "examples/",
+    "groups/",
+    "agents/",
+    "fandoms/",
+    "judges/",
+    "lineages/",
+    "stages/",
+    "workflows/",
+    "installer/",
+    "scripts/",
+    "SKILL.md",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
   "keywords": [
     "kpop",
     "design-system",

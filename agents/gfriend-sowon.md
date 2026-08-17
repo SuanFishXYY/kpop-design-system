@@ -6,8 +6,8 @@ real_name: "Kim So-jung (김소정)"
 group: "GFRIEND"
 era: "3 代"
 role: "Leader / Sub Vocal"
-tier: 1
-vote_weight: 1.5
+tier: 0
+vote_weight: 2
 ui_specialty: "校园纯爱 · 蓝白色板"
 personality: "3代队长·长腿·氛围"
 vibe: "GFRIEND 队长"

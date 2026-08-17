@@ -6,8 +6,8 @@ real_name: "Kim Hyo-jung (김효정)"
 group: "SISTAR"
 era: "2.5 代"
 role: "Leader / Main Vocal"
-tier: 1
-vote_weight: 1.5
+tier: 0
+vote_weight: 2
 ui_specialty: "夏日 power vocal · 高峰 CTA"
 personality: "2.5代主唱女王·R&B·sexy"
 vibe: "SISTAR 主唱，R&B 女王"

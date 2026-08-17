@@ -1,4 +1,4 @@
-# Architecture Map - KPOP Design System v3.4.3
+# Architecture Map - KPOP Design System v3.6.1
 
 Default runtime is host-AI mode: Claude/Copilot/Cursor executes the protocol, while this repository keeps deterministic structure and tests.
 
@@ -13,7 +13,9 @@ flowchart TD
   dispatch --> synthesize[synthesize.mjs]
   cycle[cycle.mjs] --> eras[eras.mjs]
   council[council-assembly.mjs] --> relations[relations.mjs]
+  council --> specialty[specialty.mjs]
   bin[bin/council.mjs] --> council
+  bin --> reviewers[reviewers.mjs]
   bin --> deliberation[deliberation.mjs]
   deliberation --> voice[voice-synthesis.mjs]
   host[Host AI: Claude/Copilot/Cursor] --> deliberation
@@ -23,7 +25,7 @@ flowchart TD
   bin --> prefs[user-prefs.mjs]
 ```
 
-## Sixteen engines table
+## Engine table
 
 | Engine | Purpose | Key API | Imported by | Status |
 |---|---|---|---|---|
@@ -40,7 +42,11 @@ flowchart TD
 | `user-prefs.mjs` | Local preference memory | `loadUserPrefs, recordFavorite` | council CLI | production |
 | `relations.mjs` | Sister group relation discovery | `getAllSisterGroups` | council-assembly | production |
 | `council-assembly.mjs` | Compact mixed council assembly | `assembleCouncil` | bin/council | production |
+| `specialty.mjs` | Style-specialty ranking & matching | `rankIdolsByBrief, selectDiverseStyleIdols` | council-assembly | production |
 | `voice-synthesis.mjs` | Group voice template synthesis | `synthesizeVoice` | deliberation, bin/council | production |
+| `voice-persona.mjs` | Per-idol deterministic tone/persona derivation | `derivePersona` | speak, deliberation | production |
+| `speak.mjs` | In-character line + cross-examination reply generator | `speakInCharacter, speakReply` | deliberation | production |
+| `reviewers.mjs` | Configurable default review panel | `getReviewers` | bin/council | production |
 | `deliberation.mjs` | Host-AI protocol script generator for R1/R2/R3 | `orchestrateDeliberation` | bin/council | production |
 | `verdict.mjs` | Clause classification and strict verdict | `classifyClauses, tallyVote` | bin/council | production |
 
@@ -48,6 +54,6 @@ flowchart TD
 
 Host-AI mode is the primary architecture. Skill users already operate inside Claude, Copilot, Cursor, or similar tools, so the host AI is the language model. This repository does not need a second provider abstraction or API key layer.
 
-- Host-AI mode: `deliberation.mjs` emits the structured R1/R2/R3 script; the host AI fills member speech, cross-examination, and stance synthesis.
-- Standalone mode: Node executes the same deterministic scaffold and produces stub text for demos, embedding, tests, and CLI transcripts.
+- Host-AI mode: `deliberation.mjs` emits the structured R1/R2/R3 script. The JS engine now fills R1/R3 in-character lines and R2 directed replies deterministically; the host AI can use these as-is or layer improvisation on top.
+- Standalone mode: Node executes the same deterministic scaffold and produces in-character transcript text for demos, embedding, tests, and CLI transcripts.
 - Shared invariant: council assembly, token accounting, vote math, and verdict formatting remain deterministic and testable.

@@ -7,7 +7,7 @@ group: "NMIXX"
 era: "4 代"
 role: "Lead Vocal / Lead Dancer"
 tier: 1
-vote_weight: 1.5
+vote_weight: 2
 ui_specialty: "混搭舞蹈 · 切换流畅"
 personality: "4代多面手·风格转换"
 vibe: "NMIXX MIXX POP 切换中坚"

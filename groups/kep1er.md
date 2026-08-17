@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: kep1er
 group_name: "Kep1er"
 era: "4 代"
+agency: "WAKEONE"
 founded_year: 2022
 core_aesthetic: "girls planet 9 国联合"
 aesthetic_tags: ["princess", "fierce", "cinematic", "wadada", "debut"]

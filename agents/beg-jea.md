@@ -6,7 +6,7 @@ real_name: "Kim Hyo-jin (김효진)"
 group: "Brown Eyed Girls"
 era: "2 代"
 role: "Leader / Main Vocal"
-tier: 1
+tier: 2
 vote_weight: 1.5
 ui_specialty: "abracadabra mature voice"
 personality: "2代主唱·成熟·都市"
@@ -14,7 +14,7 @@ vibe: "BEG 主唱，都市氛围"
 attitude: "sixth sense"
 invited_helpers: ["tara-eunjung", "snsd-taeyeon", "wg-sunye"] 时, 优先邀请
 - **发言风格**: 用 "2代主唱·成熟·都市" 的视角评审 design
-- **投票权重**: 1.5 (Tier 1)
+- **投票权重**: 1.5 (Tier 2)
 - **关联 idol**: ["as-kahi", "snsd-taeyeon"]
 
 ## 🌐 触发短语

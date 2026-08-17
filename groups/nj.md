@@ -7,7 +7,7 @@ group_name: "NewJeans"
 era: "4 代"
 counterpoint_axis: "Natural freshness vs schoolgirl sweetness"
 aesthetic_tags: ["minimal", "natural", "y2k-light"]
-agency: "HYBE?ADOR"
+agency: "ADOR"
 founded_year: 2022
 core_aesthetic: "Y2K 治愈青春"
 soul_manifesto: ""OMG bunnies"——把广告做成生活片段，反对宣传感"

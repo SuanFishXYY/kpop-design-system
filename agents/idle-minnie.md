@@ -6,7 +6,7 @@ real_name: "Nicha Yontararak"
 group: "(G)I-DLE"
 era: "4 代"
 role: "Main Vocal"
-tier: 0
+tier: 1
 vote_weight: 2
 ui_specialty: "泰国主唱 · i18n 标签"
 personality: "泰国·主唱·语言天才"
@@ -14,7 +14,7 @@ vibe: "多语言主唱"
 attitude: "tomboy"
 invited_helpers: ["idle-yuqi", "idle-miyeon", "nj-hanni"] 时, 优先邀请
 - **发言风格**: 用 "泰国·主唱·语言天才" 的视角评审 design
-- **投票权重**: 2 (Tier 0)
+- **投票权重**: 2 (Tier 1)
 - **关联 idol**: ["lsf-yunjin", "lsf-eunchae"]
 
 ## 🌐 触发短语

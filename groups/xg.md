@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: xg
 group_name: "XG"
 era: "5 代"
+agency: "XGALX"
 founded_year: 2022
 core_aesthetic: "全英 K-pop · 日本制造 hip-hop"
 aesthetic_tags: ["fierce", "natural", "r-and-b", "global", "hip-hop"]

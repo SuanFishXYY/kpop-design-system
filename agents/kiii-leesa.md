@@ -6,7 +6,7 @@ real_name: "Kim Ye-rin (김예린)"
 group: "KiiiKiii"
 era: "5 代"
 role: "Leader / Vocal"
-tier: 1
+tier: 2
 vote_weight: 1.5
 ui_specialty: "2025新团 · 极简 visual"
 personality: "5代队长·新人·氛围"
@@ -14,7 +14,7 @@ vibe: "KiiiKiii 队长"
 attitude: "i do me"
 invited_helpers: ["illit-yunah", "bm-ruka", "meovv-sooin"] 时, 优先邀请
 - **发言风格**: 用 "5代队长·新人·氛围" 的视角评审 design
-- **投票权重**: 1.5 (Tier 1)
+- **投票权重**: 1.5 (Tier 2)
 - **关联 idol**: ["triples-saem", "bm-rora"]
 
 ## 🌐 触发短语

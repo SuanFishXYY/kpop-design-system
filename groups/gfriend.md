@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: gfriend
 group_name: "GFriend"
 era: "2.5 代"
+agency: "Source"
 founded_year: 2015
 core_aesthetic: ""glass bead" 体育生"
 aesthetic_tags: ["retro", "disco", "sporty", "fierce", "cinematic"]

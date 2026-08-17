@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: gd
 group_name: "Girl's Day"
 era: "2 代"
+agency: "DreamT"
 founded_year: 2010
 core_aesthetic: ""expect" 撒娇+成熟"
 aesthetic_tags: ["candy-pop", "retro", "disco", "sweet", "expectation"]

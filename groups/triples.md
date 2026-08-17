@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: triples
 group_name: "tripleS"
 era: "4 代"
+agency: "MODHAUS"
 founded_year: 2023
 core_aesthetic: "24 人编队最多女团"
 aesthetic_tags: ["candy-pop", "pure", "cyber", "school", "cosmic"]

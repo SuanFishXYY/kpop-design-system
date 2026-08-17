@@ -7,6 +7,7 @@ import { readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { summonCouncil } from "./dispatch.mjs";
+import { classifyIdolSpecialty } from "./specialty.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -124,28 +125,6 @@ function deriveCopyTone(constraints, anchors) {
 }
 
 // ============ v2.4.0 · Performer DNA 聚合 ============
-
-const SPECIALTY_KEYWORDS = {
-  typography: /typo|font|衬线|字|serif|sans|letter|kerning|leading/i,
-  motion:     /motion|animation|动效|easing|spring|节奏|tempo|transition/i,
-  palette:    /palette|color|配色|hex|swatch|hue|tone|gradient/i,
-  layout:     /layout|grid|ia|architect|架构|栏|布局|composition/i,
-  brand:      /brand|品牌|logo|identity|mark|象征|signature/i,
-  hero:       /hero|kv|key.?visual|首屏|landing|banner/i,
-  interaction:/micro|interaction|hover|交互|tap|gesture|haptic/i,
-  illustration:/illust|绘|graphic|icon|插画|sticker/i,
-  photography:/photo|拍|镜头|frame|视觉|cinematic|filmic/i,
-  copy:       /copy|文案|tone|voice|tagline|claim|wording/i,
-};
-
-function classifyIdolSpecialty(idol) {
-  const blob = `${idol.ui_specialty || ""} ${idol.personality || ""} ${idol.vibe || ""} ${idol.attitude || ""}`;
-  const hits = [];
-  for (const [tag, re] of Object.entries(SPECIALTY_KEYWORDS)) {
-    if (re.test(blob)) hits.push(tag);
-  }
-  return hits.length ? hits : ["general"];
-}
 
 /**
  * 把 council 召唤的所有 performer (invited) 按 ui_specialty 关键词聚类.

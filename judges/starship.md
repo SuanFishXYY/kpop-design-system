@@ -7,7 +7,7 @@ judge_name: "홍승성"
 judge_ko: "Hong Seung-sung"
 label: "Starship Entertainment"
 founded_year: 2008
-portfolio: ["ive","wjsn","kep1er","monsta"]
+portfolio: ["ive","wjsn","kep1er"]
 judging_style: "majestic + 出道即顶流 + 公主感 prestige"
 manifesto: ""majestic from day one"——出道即顶流,公主感 prestige 不需要解释,自我宣告即答案"
 inter_label_tension: ["sm","jyp"]
@@ -26,7 +26,6 @@ priority: above_group_soul
 - ive
 - wjsn
 - kep1er
-- monsta
 
 ## 🎯 评审风格
 

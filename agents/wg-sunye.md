@@ -6,8 +6,8 @@ real_name: "Min Sun-ye (민선예)"
 group: "Wonder Girls"
 era: "2 代"
 role: "Leader / Lead Vocal"
-tier: 1
-vote_weight: 1.5
+tier: 0
+vote_weight: 2
 ui_specialty: "Tell Me 复古 · retro hero"
 personality: "2代队长·tell me·开创者"
 vibe: "Wonder Girls 队长，复古开创者"

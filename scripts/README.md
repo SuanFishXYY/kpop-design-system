@@ -17,3 +17,6 @@ Historical v2.8 expansion generator. One-shot; retained to show how the large ro
 
 ## gen-v30-eras.mjs
 Historical v3.0 era generator. One-shot; retained for audit of era universe backfill.
+
+## gen-council-transcript.mjs
+Generate `docs/EXAMPLE-COUNCIL-TRANSCRIPT.md` — a full in-character council session (R1, R2, R2b, R3, verdict, host prompt) for demos and documentation.

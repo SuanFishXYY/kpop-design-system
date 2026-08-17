@@ -6,7 +6,7 @@ real_name: "Park Ji-yeon (박지연)"
 group: "T-ara"
 era: "2.5 代"
 role: "Lead Vocal / Lead Dancer / Center"
-tier: 0
+tier: 1
 vote_weight: 2
 ui_specialty: "killing part · 视线锁定 hero"
 personality: "2.5代center·性感·氛围"
@@ -14,7 +14,7 @@ vibe: "舞台杀气 · 视线锁定 center"
 attitude: "numuna"
 invited_helpers: ["snsd-yoona","aoa-seolhyun"] 时, 优先邀请
 - **发言风格**: 用 "2.5代center·性感·氛围" 的视角评审 design
-- **投票权重**: 2 (Tier 0)
+- **投票权重**: 2 (Tier 1)
 - **关联 idol**: ["twice-tzuyu"]
 
 ## 🌐 触发短语

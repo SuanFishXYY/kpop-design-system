@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: apink
 group_name: "Apink"
 era: "2 代"
+agency: "IST"
 founded_year: 2011
 core_aesthetic: "纯爱+童话治愈"
 aesthetic_tags: ["pure", "candy-pop", "sweet", "schoolgirl"]

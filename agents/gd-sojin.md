@@ -6,8 +6,8 @@ real_name: "Park So-jin (박소진)"
 group: "Girl's Day"
 era: "2.5 代"
 role: "Leader / Lead Vocal"
-tier: 1
-vote_weight: 1.5
+tier: 0
+vote_weight: 2
 ui_specialty: "期待 anticipation copy"
 personality: "2.5代队长·御姐·甜美"
 vibe: "Girl's Day 队长"

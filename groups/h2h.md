@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: h2h
 group_name: "Hearts2Hearts"
 era: "5 代"
+agency: "SM"
 founded_year: 2025
 core_aesthetic: "纯净接班 girl group"
 aesthetic_tags: ["candy-pop", "pure", "y2k", "school", "natural"]

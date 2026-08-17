@@ -6,15 +6,15 @@ real_name: "Hanabashi Rio (花橋梨緒)"
 group: "NiziU"
 era: "4 代"
 role: "Lead Vocal / Lead Dancer"
-tier: 0
-vote_weight: 2
+tier: 2
+vote_weight: 1.5
 ui_specialty: "visual + vocal + dance triple anchor"
 personality: "4代全能·visual·dance"
 vibe: "全能 anchor · J-pop visual"
 attitude: "step and a step"
 invited_helpers: ["twice-sana","twice-momo"] 时, 优先邀请
 - **发言风格**: 用 "4代全能·visual·dance" 的视角评审 design
-- **投票权重**: 2 (Tier 0)
+- **投票权重**: 2 (Tier 2)
 - **关联 idol**: ["stayc-isa"]
 
 ## 🌐 触发短语

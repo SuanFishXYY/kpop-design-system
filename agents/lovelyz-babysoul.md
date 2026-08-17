@@ -6,7 +6,7 @@ real_name: "Lee Su-jung (이수정)"
 group: "Lovelyz"
 era: "3 代"
 role: "Leader / Lead Rapper"
-tier: 1
+tier: 2
 vote_weight: 1.5
 ui_specialty: "rap leader · 节拍 microcopy"
 personality: "3代队长·rapper·主唱"
@@ -14,7 +14,7 @@ vibe: "Lovelyz 队长"
 attitude: "ah-choo"
 invited_helpers: ["gfriend-sowon", "bp-jisoo", "momoland-hyebin"] 时, 优先邀请
 - **发言风格**: 用 "3代队长·rapper·主唱" 的视角评审 design
-- **投票权重**: 1.5 (Tier 1)
+- **投票权重**: 1.5 (Tier 2)
 - **关联 idol**: ["twice-momo", "twice-nayeon"]
 
 ## 🌐 触发短语

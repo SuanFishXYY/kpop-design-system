@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: bravegirls
 group_name: "Brave Girls"
 era: "2.5 代"
+agency: "Brave"
 founded_year: 2011
 core_aesthetic: "夏日翻红 · 军营 anthem"
 aesthetic_tags: ["mature", "disco", "comeback-energy"]

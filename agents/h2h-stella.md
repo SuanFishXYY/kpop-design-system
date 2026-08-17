@@ -6,7 +6,7 @@ real_name: "Stella Jang"
 group: "Hearts2Hearts"
 era: "5 代"
 role: "Leader"
-tier: 1
+tier: 2
 vote_weight: 1.5
 ui_specialty: "2024 SM 系 · gen-z theme"
 personality: "5代队长·SM·御姐"
@@ -14,7 +14,7 @@ vibe: "Hearts2Hearts 队长 (SM)"
 attitude: "the chase"
 invited_helpers: ["kiii-leesa", "bm-ruka", "katseye-lara"] 时, 优先邀请
 - **发言风格**: 用 "5代队长·SM·御姐" 的视角评审 design
-- **投票权重**: 1.5 (Tier 1)
+- **投票权重**: 1.5 (Tier 2)
 - **关联 idol**: ["bm-rora", "kol-julie"]
 
 ## 🌐 触发短语

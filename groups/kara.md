@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: kara
 group_name: "KARA"
 era: "2 代"
+agency: "DSP"
 founded_year: 2007
 core_aesthetic: ""mister" 性感成熟可爱并存"
 aesthetic_tags: ["retro", "disco", "2nd-gen-classic", "fierce"]

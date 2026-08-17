@@ -6,7 +6,7 @@ real_name: "Ezaki Hikaru"
 group: "Kep1er"
 era: "4 代"
 role: "Lead Vocal / Sub Dancer"
-tier: 1
+tier: 2
 vote_weight: 1.5
 ui_specialty: "日韩混血 · vocal"
 personality: "4代日韩 J-line·主唱"
@@ -22,7 +22,7 @@ invited_helpers: ["twice-sana","lsf-kazuha"]
 - **代际**: 4 代
 - **风格**: 日韩混血 · vocal
 - **关键词**: 4代日韩 J-line·主唱
-- **投票权重**: 1.5 (Tier 1)
+- **投票权重**: 1.5 (Tier 2)
 
 ## 🌐 触发短语
 

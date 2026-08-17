@@ -6,7 +6,7 @@ real_name: "Seol Yoon-ah"
 group: "NMIXX"
 era: "4 代"
 role: "Main Vocal / Visual"
-tier: 0
+tier: 1
 vote_weight: 2
 ui_specialty: "美貌即配置 · 实力主唱"
 personality: "4代神颜·实力"
@@ -22,7 +22,7 @@ invited_helpers: ["twice-tzuyu","bp-jisoo","aespa-karina"]
 - **代际**: 4 代
 - **风格**: 美貌即配置 · 实力主唱
 - **关键词**: 4代神颜·实力
-- **投票权重**: 2 (Tier 0)
+- **投票权重**: 2 (Tier 1)
 
 ## 🌐 触发短语
 

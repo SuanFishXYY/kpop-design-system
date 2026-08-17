@@ -7,7 +7,7 @@ group: "Girl's Day"
 era: "2.5 代"
 role: "Maknae / Vocal / Actress"
 tier: 0
-vote_weight: 2
+vote_weight: 2.5
 ui_specialty: "cross-platform 出圈 brand voice"
 personality: "2.5代maknae·演员·爱嘤"
 vibe: "应回我的 1988 国民妹妹"

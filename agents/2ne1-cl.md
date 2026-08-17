@@ -6,8 +6,8 @@ real_name: "Lee Chae-rin (이채린)"
 group: "2NE1"
 era: "2 代"
 role: "Leader / Main Rapper"
-tier: 1
-vote_weight: 1.5
+tier: 0
+vote_weight: 2
 ui_specialty: "The Baddest Female · 反叛 tagline"
 personality: "2代女王·rapper·态度"
 vibe: "CL 黑女王，态度天花板"

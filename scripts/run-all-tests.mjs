@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // scripts/run-all-tests.mjs
-// v3.3.0+ unified test runner. Iterates engine/*.test.mjs, runs each as child process,
+// v3.5.0+ unified test runner. Iterates engine/*.test.mjs, runs each as child process,
 // parses "pass N" / "fail N" lines, prints per-file table + aggregate summary.
 // Exits 0 if all pass, 1 if any fail.
 
@@ -12,7 +12,7 @@ import { dirname } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
-const ENGINE = join(ROOT, "engine");
+const TEST_DIRS = [join(ROOT, "engine"), join(ROOT, "bin")];
 
 function findTestFiles(dir) {
   const out = [];
@@ -42,13 +42,13 @@ function runOne(file) {
   return { file, pass, fail, exit: res.status, elapsed, raw: stdout };
 }
 
-const files = findTestFiles(ENGINE).sort();
+const files = TEST_DIRS.flatMap(findTestFiles).sort();
 if (files.length === 0) {
-  console.error("No test files found under engine/");
+  console.error("No test files found under engine/ or bin/");
   process.exit(1);
 }
 
-console.log(`\n  v3.3.0+ test runner · ${files.length} files\n`);
+console.log(`\n  v3.5.0+ test runner · ${files.length} files\n`);
 console.log("  " + "─".repeat(64));
 console.log("  " + "FILE".padEnd(42) + "PASS".padStart(6) + "FAIL".padStart(6) + "TIME".padStart(10));
 console.log("  " + "─".repeat(64));

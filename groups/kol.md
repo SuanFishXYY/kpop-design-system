@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: kol
 group_name: "KISS OF LIFE"
 era: "4 代"
+agency: "S2"
 founded_year: 2023
 core_aesthetic: "R&B 实力新人"
 aesthetic_tags: ["fierce", "mature", "r-and-b", "sensual", "warm"]

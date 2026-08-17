@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: snsd
 group_name: "Girls' Generation"
 era: "2 代"
+agency: "SM"
 founded_year: 2007
 core_aesthetic: "9 人国民妹妹团"
 counterpoint_axis: "Third-gen bouquet vs second-gen national template"

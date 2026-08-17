@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: fromis
 group_name: "fromis_9"
 era: "4 代"
+agency: "Pledis"
 founded_year: 2018
 core_aesthetic: "邻家青春 · 9 人晴天"
 aesthetic_tags: ["candy-pop", "y2k", "school", "natural", "summer"]
@@ -16,7 +17,7 @@ voice:
 soul_manifesto: ""to heart"——9 个最亲近的姐妹, 把青春写成 demo"
 vote_weight: 3
 priority: above_tier_0
-fusion_compatible: ["weeekly","stayc","oh-my-girl"]
+fusion_compatible: ["stayc","omg"]
 fusion_synergy: "跨团协同 · 待评议"
 fusion_rules: "保留本团核心基因不丢"
 rivals: ["stayc","kep1er"]

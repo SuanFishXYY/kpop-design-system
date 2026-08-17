@@ -1,3 +1,221 @@
+## v3.7.0 - Conflict-aware R3 + dead-link validator
+
+**R3 最终立场现在由成员 DNA（veto 触发词、专长、对位轴）和对手在场共同决定，能产生真正的 `dissent` / `compromise`；新增 `npm run validate-links` 死链校验器。**
+
+### Conflict-aware R3 stances
+- Rewrites `engine/deliberation.mjs#runR3MergedDeclaration`:
+  - Per-member stance is resolved from `voice.veto_triggers`, rival presence, group `counterpoint_axis`, and R1 tension.
+  - A brief containing a member's hard veto now produces `dissent` for that member.
+  - Rival groups with a `counterpoint_axis` now produce axis-aware `compromise` declarations.
+  - Non-rival members fall back to `agree` / `reserve` / `dissent` based on R1 tension.
+- Adds `engine/deliberation.mjs#resolveR3Stance()` and `#compromiseDeclaration()` helpers.
+- Passes the brief explicitly through `orchestrateDeliberation` → `runR2CrossExamination` → `runR3MergedDeclaration` so real CLI runs use the actual brief text.
+- Adds `counterpoint_axis` to the `groupMember()` object in `engine/council-assembly.mjs` so group members carry their axis into deliberation.
+- Adds `engine/deliberation.test.mjs` guards:
+  - `orchestrateDeliberation` returns `mode: "host-ai-script"`.
+  - Veto trigger in brief → R3 `dissent`.
+  - Rival groups with `counterpoint_axis` → R3 `compromise` referencing the axis.
+
+### Honest scaffold mode
+- Replaces all `"stub"` round modes with `"host-ai-script"`.
+- `orchestrateDeliberation` now returns top-level `mode: "host-ai-script"` by default, accurately reflecting that the standalone engine produces host-AI prompts, not final member speech.
+- CLI startup prints `Deliberation mode: host-ai-script`.
+
+### Dead-link validator
+- Adds `scripts/validate-links.mjs`:
+  - Validates `invited_helpers`, `related_idols`, body `关联 idol:` → `agents/*.md`.
+  - Validates `rivals`, `fusion_compatible` → `groups/*.md`.
+  - Validates `portfolio` → `groups/*.md` and `inter_label_tension` → `judges/*.md`.
+  - Writes `reports/link-validation.md` and `reports/link-validation.json`.
+  - Exits non-zero when dead links remain.
+- Adds `npm run validate-links` to `package.json`.
+- Fixes 19 dead references across `agents/*.md`, `groups/*.md`, `judges/*.md` (e.g., `redvelvet-joy` → `rv-joy`, `dreamcatcher` → `dc`, removes male-group entries from female-roster judge portfolios).
+- Adds `reports/` to `.gitignore` so generated validation artifacts are not committed.
+- Regenerates `docs/MASTER-ROSTER.md` and `docs/EXAMPLE-COUNCIL-TRANSCRIPT.md` with cleaned data and new R3 behavior.
+
+### Versioning
+- Bumps package version and CLI version strings to v3.7.0.
+- Updates README badge, description, and feature table.
+- Updates SKILL.md frontmatter and title.
+- Full suite: 170 tests pass.
+
+---
+
+## v3.6.2 - CLI transcript export
+
+**新增 CLI `--transcript` 标志：一键导出完整 markdown 审议记录（R1/R2/R2b/R3/条款分类/判决/host-AI 系统提示附录），方便存档、分享和人工审阅。**
+
+### CLI `--transcript`
+- Adds `--transcript` flag to `bin/council.mjs`.
+- Writes `transcript-mixed-<hash>.md` alongside the verdict file in `--output-dir`.
+- Output sections mirror `docs/EXAMPLE-COUNCIL-TRANSCRIPT.md`:
+  - Header with brief, timestamp, mode, roster, token budget, and user vote.
+  - Roster & Tones
+  - R1 — Independent Statements
+  - R2 — Cross-examination
+  - R2b — Counter-rebuttals (when `--rebuttals` is enabled)
+  - R3 — Final Declarations
+  - Clause Classification (Consensus / Compromise / Dissent)
+  - Verdict
+  - Appendix: Host-AI System Prompt
+- Respects `--no-save` and writes nothing when the flag is set.
+- Includes `transcript_path` in `--json` output.
+- Adds `bin/council.test.mjs` integration tests:
+  - `--transcript` creates a markdown file with all expected sections.
+  - `--transcript --json` returns a valid `transcript_path`.
+  - `--transcript --no-save` does not write a file.
+- Regenerates `docs/EXAMPLE-COUNCIL-TRANSCRIPT.md` with the new format.
+- Updates `docs/CLI-INTERACTIVE-COUNCIL.md` to document `--transcript`.
+
+### Versioning
+- Bumps package version and CLI version strings to v3.6.2.
+- Updates README badge, description, and feature table.
+- Updates SKILL.md frontmatter and title.
+- Full suite: 167 tests pass (includes 3 new CLI transcript tests).
+
+---
+
+## v3.6.1 - Cross-examination replies & host-AI prompt
+
+**R2 交叉质询不再只是 host-AI 提示，每个 directed pair 都有一条带人设的定向回怼；新增可选 R2b 回击链；新增 host-AI 系统提示生成器。**
+
+### R2 in-character replies
+- Integrates `engine/speak.mjs#speakReply` into `engine/deliberation.mjs` R2 cross-examination.
+- Each directed pair now has a `reply` field: an in-character challenge from speaker to target, using the speaker's tone and the target's negotiation lever.
+- R2 output keeps the host-AI `question` prompt and adds:
+  - `reply` — first-person challenge line
+  - `speaker_tone` — speaker's derived tone
+  - `target_lever` — target's negotiation dimensions
+- Adds `engine/deliberation.test.mjs` guards:
+  - Every directed pair has a non-empty in-character reply.
+  - Replies are unique per directed pair.
+
+### R2b counter-rebuttals
+- Adds `engine/deliberation.mjs#runR2bRebuttals(council, R2_output)`.
+- Each R2 target fires back at the challenger using `speakReply(target, speaker)` with a deterministic seed derived from the prior reply.
+- `orchestrateDeliberation(council, brief, { rebuttals: true })` includes `rounds.R2b` and updates `allowed_rounds` to `["R1","R2","R2b","R3"]`.
+- Adds CLI flag `--rebuttals` and MCP param `rebuttals?: boolean` to `kpop_run_deliberation`.
+
+### Host-AI system prompt
+- Adds `engine/host-prompt.mjs#buildHostPrompt(council, opts)`.
+- Produces a ready-to-use system prompt for external LLMs (Claude / GPT / etc.) with round protocol, rules, and per-member tone/signature/lever/veto.
+- Optional `includeSampleLines: true` embeds agree/reserve/dissent samples per member.
+- Adds MCP tool `kpop_build_host_prompt` and CLI flag `--host-prompt`.
+- Adds `engine/host-prompt.test.mjs` and MCP integration test.
+
+### CLI / packaging
+- Updates `bin/council.mjs`:
+  - Bumps version strings to v3.6.1.
+  - R2 output now prints both the host-AI prompt and the in-character `reply` line.
+  - Adds `--rebuttals` and `--host-prompt` flags.
+  - Updates CLI version test to match v3.6.1.
+- Adds `scripts/gen-council-transcript.mjs` and generated artifact `docs/EXAMPLE-COUNCIL-TRANSCRIPT.md`, showcasing a full in-character council session (R1, R2, R2b, R3, verdict, host prompt appendix).
+- Bumps package version to 3.6.1.
+- Full suite: 170 → 178 tests.
+
+### Post-release hardening
+- Fixes group-type persona derivation in `engine/voice-persona.mjs`:
+  - Group members now resolve to the rich group frontmatter from `buildGroupsMap()` instead of the trimmed member stub, so tone scoring, levers, and habits actually fire.
+  - `leversFor()` and `habitsFrom()` now emit group-specific anchors (`core_aesthetic`, aesthetic tags, `counterpoint_axis`, `fusion_rules`) instead of empty lists.
+  - Adds a tone rule for `dual-mode` / `velvet` / `odd` / `magic` so Red Velvet no longer falls back to the generic default tone.
+- Expands `engine/speak.mjs#speakReply` template banks from 1 to 3 variants per tone, picked deterministically by speaker+target seed, reducing repeated endings.
+- Adds `engine/voice-persona.test.mjs` guard that every group gets concrete levers, habits, and a non-default tone.
+- Regenerates `docs/IDOL-VOICES.md`, `docs/IDOL-SOULS.md`, and `docs/EXAMPLE-COUNCIL-TRANSCRIPT.md` with the improved group personas and replies.
+- Adds `groups/solo.md` so the 7 standalone soloists (BoA, IU, Sunmi, Hyuna, Chungha, Somi, Lee Hyori) get hard-veto triggers and a group-level anchor instead of empty voice data.
+- Adds per-idol voice override support:
+  - `engine/council-assembly.mjs#loadIdols()` now reads `voice_identity`, `voice_position_statement`, `voice_veto_triggers`, `voice_question_template` from agent frontmatter.
+  - `engine/voice-persona.mjs#derivePersona()` merges group voice template with member-level overrides; member fields win on identity/position/question, and member veto triggers replace group triggers when present.
+  - Gives each of the 7 soloists a distinct voice identity and veto list (e.g., IU = 叙事纯美，Hyuna = 性感红色炸弹，Sunmi = Gashina 手枪舞).
+- Adds `scripts/audit-voice-coverage.mjs` (`npm run audit-voice`) and generated `docs/VOICE-COVERAGE-AUDIT.md` for ongoing persona quality checks.
+- Updates `docs/CLI-INTERACTIVE-COUNCIL.md` to document `--host-prompt` and `--rebuttals`.
+- Full suite: 178 → 179 tests.
+
+---
+
+## v3.6.0 - Every idol speaks in character
+
+**248 位 idol 现在都有确定性的说话人格，0 人落在默认 tone；审议 stub 直接产出带角色特征的第一人称台词。**
+
+- Rewrites `engine/voice-persona.mjs` tone engine:
+  - Loads full group frontmatter (`core_aesthetic`, `mood_keywords`, `aesthetic_tags`, `voice` block, `fusion_rules`, `rivals`, `counterpoint_axis`) instead of the trimmed `relations.mjs` view.
+  - Adds weighted tone scoring: `core_aesthetic` (×3), `mood_keywords` (×2), tags/voice/member fields (×1), so the most representative tone wins instead of the first substring match.
+  - Expands tone palette from 4 to 12: 冷峻未来感 / 高贵仪式感 / 华丽戏剧感 / 空灵电影感 / 活泼俏皮 / 清淡呼吸感 / 慵懒性感 / 热辣弹跳 / 宣言剧场感 / 怪诞危险感 / 锋利压迫感 / 复古颗粒感.
+  - Per-idol `attitude` becomes a signature hook: embedded in `signature_phrase` and `speech_habits` when it is short enough to be spoken.
+  - Adds group `fusion_rules`, `rivals`, and `counterpoint_axis` to `speech_habits` so every member defends their collective DNA in debate.
+- Adds `engine/speak.mjs`: deterministic in-character dialogue generator.
+  - `speakInCharacter(persona, { topic, stance })` returns a first-person line using tone-specific templates + signature phrase + negotiation levers + hard veto.
+  - `speakReply(speaker, target, { topic })` returns a cross-examination reply in the speaker's tone, addressing the target by name.
+  - 12 tone-specific template banks keep lines recognizably different.
+- Integrates `engine/speak.mjs` into `engine/deliberation.mjs` so R1 statements and R3 declarations are now in-character lines instead of generic stubs.
+- Adds new MCP tool `kpop_speak_in_character` to generate a first-person line for any idol/group.
+- Adds `engine/voice-persona.test.mjs` guards:
+  - No idol falls back to the generic default tone.
+  - Signature phrase includes the idol's attitude hook.
+  - Representative idols produce at least 5 distinct tones.
+- Adds `engine/speak.test.mjs` covering in-character lines, stance variance, distinctness, replies, and determinism.
+- Bumps package version to 3.6.0.
+- Full suite: 160 → 170 tests.
+
+---
+
+## v3.5.0 - Style-first idol council + famous female roster expansion
+
+**任意 idol 都可以凭设计风格被召集；显式名字/团体仅作辅助召回。**
+
+- Adds `engine/specialty.mjs`: shared 10-dimension design specialty classifier for idols and briefs.
+- Refactors `engine/synthesize.mjs` to import specialty classification from `engine/specialty.mjs`.
+- Rewrites `engine/council-assembly.mjs` for style-first, name-assisted assembly:
+  - Ranks all idols by brief-to-idol specialty match.
+  - Derives anchor groups from style-matched idols to preserve mix quotas.
+  - Keeps explicit name/group mentions as strong recall signals.
+  - Maintains ≥2 groups and ≥2 idols when council ≥4.
+- Adds `engine/specialty.test.mjs` and extends `engine/council-assembly.test.mjs` for style-first behavior.
+- **Roster expansion**: adds 62 famous female idols (SNSD, 2NE1, Wonder Girls, KARA, miss A, After School, 4Minute, AOA, EXID, f(x), GFRIEND, Oh My Girl, STAYC, IU, Sunmi, Hyuna, Chungha, Somi, BoA, Lee Hyori, etc.) and upgrades 24 existing idols to Tier 0.
+- Adds `docs/FEMALE-IDOL-ROSTER.md` as the complete roster + design attributes guide.
+- CLI hardening in `bin/council.mjs`: restores missing shebang/imports, adds `--explain`/`-e`, `--add`, `--veto`, `--version`/`-v`, and improves `--help`.
+- Adds fuzzy `--add`/`--veto` slug resolution (`resolveMemberSlug`) in `engine/council-assembly.mjs` so names like `Karina` map to `aespa-karina`.
+- Extracts hardcoded review-mode reviewers into `engine/reviewers.mjs` with `getReviewers(brief)` and adds `engine/reviewers.test.mjs`.
+- Fixes council-size handling: `applyCouncilSize()` respects `council.max_members` while preserving explicit `--add` members, and the user seat stays at the end after overrides.
+- CLI now warns when `--add`/`--veto` tokens cannot be resolved.
+- Adds CLI integration tests in `bin/council.test.mjs` and updates the test runner to include `bin/*.test.mjs`.
+- Makes `council_id` deterministic via `deriveCouncilId()` so identical CLI invocations produce the same verdict file name.
+- Adds `--output-dir=PATH` flag to `bin/council.mjs` for verdict and review-transcript output.
+- Adds `--json`, `--list-idols`, `--list-groups`, and `--brief-file=PATH` CLI flags for embedding and discoverability.
+- Passes `aesthetic_tags` through group members and uses the first tag as the voice trait in `bin/council.mjs`.
+- Adds `engine/synthesize.test.mjs` covering `aggregatePerformerDNA`, `getPerformersBySpecialty`, and `synthesizeDesignBrief`.
+- Adds `.github/workflows/ci.yml` (Node 18/20/22 matrix) and `engines: { node: ">=18.0.0" }` to `package.json`.
+- Refactors `bin/council.mjs` argument parsing to `node:util parseArgs` for better flag handling and short-option support.
+- Fixes `--council-size` to accept any integer ≥ 2 instead of hardcoding only 5/7.
+- Adds `bugs`, `homepage`, and `files` metadata to `package.json`.
+- Adds `--no-save` flag to skip writing verdict / review transcript files.
+- Adds `--design-brief` CLI mode that uses `engine/synthesize.mjs` to generate a complete design-brief markdown document.
+- Fixes combined `--list-idols --list-groups --json` to emit a single JSON object instead of two.
+- Adds `bin/mcp-server.mjs`: an MCP (Model Context Protocol) server over stdio exposing the council engine as host-callable tools.
+- Adds `kpop_assemble_council`, `kpop_run_deliberation`, `kpop_generate_design_brief`, `kpop_review_design`, and `kpop_list_roster` tools.
+- Adds `bin/mcp-server.test.mjs` with stdio JSON-RPC tests.
+- Adds `docs/MCP-SERVER.md` with run instructions and sample configuration.
+- Fixes `bin/council.mjs` deliberation tally so the user seat is counted once instead of being double-counted (stance-derived abstain + explicit user vote).
+- Adds `user_vote` parameter to the MCP `kpop_run_deliberation` tool.
+- MCP server reads version from `package.json` instead of hardcoding it.
+- Adds `limit`/`offset` pagination to the MCP `kpop_list_roster` tool.
+- Adds server-side argument validation for all MCP tools with clear JSON-RPC error messages.
+- Adds HTTP+SSE transport to the MCP server: `node bin/mcp-server.mjs --transport=http --port=3000`.
+- Adds `kpop_conflicts` MCP tool for label-dispute and personal-conflict awareness.
+- Adds `kpop_synthesize_voice` MCP tool for group/idol voice identity generation.
+- Makes `engine/reviewers.mjs` brief-aware: reviewers are scored and ordered by the brief's design dimensions.
+- **Smart council assembly**: `--strict-size` mode in CLI and MCP caps the final council at the requested `size`, trimming non-override members so `add`/`veto` cannot blow the cap.
+- **Relevance-weighted strict-size trim**: `applyUserOverrides()` scores each member by seed mention, DRI, style-match depth, and fallback risk, then trims the lowest-relevance members first.
+- **Deliberation stub enrichment**: `engine/deliberation.mjs` now computes per-member `tension` and `stance` (agree/reserve/dissent), generates conflict-aware cross-examination questions, and exposes aggregate `stance_map` / `aggregate_tension` in R3.
+- **Expanded MCP tools**: adds `kpop_search_roster` (name/slug + filters) and `kpop_compare_idols` (relationship, shared dimensions, style distance).
+- **Roster search ranking**: `kpop_search_roster` now ranks exact slug/name matches first, then prefix matches, then substring matches.
+- **Per-member voice persona**: adds `engine/voice-persona.mjs` with `derivePersona(member, brief, opts)`; each persona includes `tone`, `speech_habits`, `conflict_posture`, `negotiation_levers`, `signature_phrase`, `hard_veto`, and `brief_match`.
+- **Persona in deliberation**: `engine/deliberation.mjs` now attaches a `persona` object to every member in R1 and R3, so host AI can speak in character.
+- **New MCP tool**: `kpop_get_member_persona` returns a deterministic speaking guide for any idol or group.
+- Adds validators, handlers, and integration tests for the new MCP tools.
+- Updates `docs/MCP-SERVER.md`, `docs/CLI-INTERACTIVE-COUNCIL.md`, and `README.md` with new flags/tools.
+- Full suite: 91 → 160 tests.
+
+---
 ## v3.4.3 - Host-AI mode (de-LLM)
 
 Architectural pivot: removed engine/llm/* provider abstraction.

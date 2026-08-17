@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: wjsn
 group_name: "WJSN"
 era: "3 代"
+agency: "Starship"
 founded_year: 2016
 core_aesthetic: ""as you wish" 宇宙少女"
 aesthetic_tags: ["pure", "retro", "disco", "cyber", "cinematic"]

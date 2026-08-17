@@ -6,7 +6,7 @@ real_name: "Lee Na-rin"
 group: "MEOVV"
 era: "5 代"
 role: "Main Dancer / Vocal"
-tier: 1
+tier: 2
 vote_weight: 1.5
 ui_specialty: "硬核 girl crush · power dance"
 personality: "5代硬核女团·power"
@@ -22,7 +22,7 @@ invited_helpers: ["bp-lisa","itzy-yeji"]
 - **代际**: 5 代
 - **风格**: 硬核 girl crush · power dance
 - **关键词**: 5代硬核女团·power
-- **投票权重**: 1.5 (Tier 1)
+- **投票权重**: 1.5 (Tier 2)
 
 ## 🌐 触发短语
 

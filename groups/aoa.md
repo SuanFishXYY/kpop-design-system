@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: aoa
 group_name: "AOA"
 era: "2.5 代"
+agency: "FNC"
 founded_year: 2012
 core_aesthetic: ""miniskirt" 性感概念旗手"
 aesthetic_tags: ["candy-pop", "retro", "disco", "mature", "sexy"]

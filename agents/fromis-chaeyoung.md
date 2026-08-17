@@ -6,7 +6,7 @@ real_name: "Lee Chae-young (이채영)"
 group: "fromis_9"
 era: "4 代"
 role: "Vocal / Rapper"
-tier: 0
+tier: 1
 vote_weight: 2
 ui_specialty: "rapper hook · sharp tagline"
 personality: "4代rapper·sharp·attitude"
@@ -14,8 +14,8 @@ vibe: "团内 rapper · 短句 hook"
 attitude: "unlock my world"
 invited_helpers: ["idle-soyeon","nmixx-bae"] 时, 优先邀请
 - **发言风格**: 用 "4代rapper·sharp·attitude" 的视角评审 design
-- **投票权重**: 2 (Tier 0)
-- **关联 idol**: ["stayc-jay"]
+- **投票权重**: 2 (Tier 1)
+- **关联 idol**: ["stayc-j"]
 
 ## 🌐 触发短语
 

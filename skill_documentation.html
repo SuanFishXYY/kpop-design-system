@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KPOP Design System v3.7.0 · Skill 完整文档</title>
+<style>
+:root{--pink:#ff5e9c;--pink-soft:#ffd6e7;--violet:#7c3aed;--violet-soft:#e9d8fd;--gold:#d4af7a;--dark:#1a0b1f;--darker:#0f0612;--text:#f5e9f0;--muted:#b9a0b8;--green:#4ade80;--amber:#fbbf24;--red:#f87171;--blue:#60a5fa;--mono:'JetBrains Mono','Cascadia Code','SF Mono',Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--darker);color:var(--text);line-height:1.7;min-height:100vh;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(255,94,156,.12),transparent 70%),radial-gradient(ellipse 60% 50% at 90% 30%,rgba(124,58,237,.10),transparent 70%),radial-gradient(ellipse 50% 40% at 10% 70%,rgba(212,175,122,.06),transparent 70%);pointer-events:none;z-index:0}
+.hero,.container,.footer{position:relative;z-index:1}
+.hero{padding:70px 24px 50px;text-align:center;border-bottom:1px solid rgba(255,94,156,.15);overflow:hidden}
+.hero-inner{max-width:960px;margin:0 auto}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12px;color:var(--gold);background:rgba(212,175,122,.08);border:1px solid rgba(212,175,122,.3);padding:6px 14px;border-radius:999px;margin-bottom:18px}
+.hero-tag::before{content:"🔌"}
+.badge-row{display:flex;gap:7px;flex-wrap:wrap;justify-content:center;margin-bottom:20px}
+.badge{font-family:var(--mono);font-size:11px;letter-spacing:.3px;padding:4px 11px;border-radius:999px;border:1px solid;font-weight:600}
+.badge.pink{color:var(--pink);border-color:rgba(255,94,156,.4);background:rgba(255,94,156,.08)}
+.badge.violet{color:var(--violet-soft);border-color:rgba(124,58,237,.5);background:rgba(124,58,237,.1)}
+.badge.gold{color:var(--gold);border-color:rgba(212,175,122,.4);background:rgba(212,175,122,.08)}
+.badge.green{color:var(--green);border-color:rgba(74,222,128,.4);background:rgba(74,222,128,.08)}
+.hero h1{font-size:clamp(36px,6.5vw,64px);font-weight:900;line-height:1.05;background:linear-gradient(120deg,#fff 0%,var(--pink) 50%,var(--violet) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:14px;letter-spacing:-1.5px}
+.hero .subtitle{font-size:clamp(15px,2vw,18px);color:var(--muted);max-width:700px;margin:0 auto 26px}
+.hero .subtitle strong{color:var(--text);font-weight:600}
+.quick-stats{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.stat{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.09);padding:14px 20px;border-radius:12px;min-width:108px;transition:transform .2s,border-color .2s}
+.stat:hover{transform:translateY(-3px);border-color:rgba(255,94,156,.4)}
+.stat .num{font-family:var(--mono);font-size:24px;font-weight:700;background:linear-gradient(135deg,var(--pink),var(--gold));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.stat .lbl{font-size:10.5px;color:var(--muted);letter-spacing:.6px;text-transform:uppercase;margin-top:3px}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.layout{display:grid;grid-template-columns:220px 1fr;gap:34px;padding:36px 0 70px}
+@media(max-width:980px){.layout{grid-template-columns:1fr;gap:20px}}
+.sidebar{position:sticky;top:16px;align-self:start;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:16px 12px;max-height:calc(100vh - 32px);overflow-y:auto}
+@media(max-width:980px){.sidebar{position:static;max-height:none}}
+.sidebar .logo{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--pink);padding:0 8px 12px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:10px}
+.sidebar a{display:block;padding:6px 10px;font-size:13px;color:var(--muted);text-decoration:none;border-radius:7px;border-left:2px solid transparent;transition:all .15s}
+.sidebar a:hover{color:var(--text);background:rgba(255,94,156,.1);border-left-color:var(--pink)}
+.sidebar .grp{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin:14px 10px 5px;font-weight:700}
+section{margin-bottom:54px;scroll-margin-top:18px}
+h2{font-size:clamp(22px,3vw,28px);font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:12px;padding-bottom:12px;border-bottom:1px solid rgba(255,94,156,.22)}
+h2 .num{font-family:var(--mono);font-size:13px;color:var(--dark);background:linear-gradient(135deg,var(--pink),var(--gold));padding:4px 10px;border-radius:7px;font-weight:700;flex-shrink:0}
+h2 .emoji{font-size:25px;flex-shrink:0}
+.section-desc{color:var(--muted);margin-bottom:20px;font-size:14px}
+h3{font-size:17px;font-weight:700;color:var(--pink-soft);margin:26px 0 12px;display:flex;align-items:center;gap:8px}
+h3::before{content:"";width:4px;height:16px;background:linear-gradient(180deg,var(--pink),var(--violet));border-radius:2px}
+p{margin-bottom:10px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:20px 22px;margin-bottom:14px;transition:border-color .2s}
+.card:hover{border-color:rgba(255,94,156,.3)}
+.card.accent-pink{border-left:3px solid var(--pink)}
+.card.accent-violet{border-left:3px solid var(--violet)}
+.card.accent-gold{border-left:3px solid var(--gold)}
+.card.accent-green{border-left:3px solid var(--green)}
+.card-title{font-weight:700;font-size:15px;margin-bottom:8px;color:var(--text);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card-title .meta{font-family:var(--mono);font-size:11px;color:var(--muted);font-weight:400}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:820px){.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}}
+code{font-family:var(--mono);background:rgba(255,94,156,.12);color:var(--pink-soft);padding:2px 7px;border-radius:5px;font-size:12.5px}
+pre{background:#0a0410;border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:16px 18px;overflow-x:auto;font-size:12.5px;line-height:1.65;margin:10px 0}
+pre code{background:transparent;color:var(--text);padding:0;font-size:12.5px}
+.cmd{color:var(--green)}.flag{color:var(--amber)}.str{color:var(--pink-soft)}.cmt{color:var(--muted);font-style:italic}
+table{width:100%;border-collapse:collapse;background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.08);border-radius:10px;overflow:hidden;margin:12px 0;font-size:13px}
+th,td{padding:10px 13px;text-align:left;border-bottom:1px solid rgba(255,255,255,.06);vertical-align:middle}
+th{background:rgba(255,94,156,.13);color:var(--pink-soft);font-weight:700;font-size:11.5px;text-transform:uppercase;letter-spacing:.5px}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(255,94,156,.04)}
+td code{font-size:11.5px}
+.pill{display:inline-block;font-family:var(--mono);font-size:10.5px;padding:3px 9px;border-radius:999px;margin:2px 3px 2px 0;border:1px solid;font-weight:500}
+.pill.green{color:var(--green);border-color:rgba(74,222,128,.4);background:rgba(74,222,128,.08)}
+.pill.amber{color:var(--amber);border-color:rgba(251,191,36,.4);background:rgba(251,191,36,.08)}
+.pill.red{color:var(--red);border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.08)}
+.pill.blue{color:var(--blue);border-color:rgba(96,165,250,.4);background:rgba(96,165,250,.08)}
+.pill.pink{color:var(--pink);border-color:rgba(255,94,156,.4);background:rgba(255,94,156,.08)}
+.pill.violet{color:var(--violet-soft);border-color:rgba(124,58,237,.5);background:rgba(124,58,237,.1)}
+.pill.gold{color:var(--gold);border-color:rgba(212,175,122,.4);background:rgba(212,175,122,.08)}
+.stance{display:inline-block;font-family:var(--mono);font-size:10.5px;padding:2px 8px;border-radius:5px;margin-left:6px;font-weight:600;border:1px solid}
+.stance.agree{color:var(--green);background:rgba(74,222,128,.12);border-color:rgba(74,222,128,.3)}
+.stance.reserve{color:var(--amber);background:rgba(251,191,36,.12);border-color:rgba(251,191,36,.3)}
+.stance.dissent{color:var(--red);background:rgba(248,113,113,.12);border-color:rgba(248,113,113,.3)}
+.stance.compromise{color:var(--blue);background:rgba(96,165,250,.12);border-color:rgba(96,165,250,.3)}
+.flow{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:16px 0}
+@media(max-width:900px){.flow{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:560px){.flow{grid-template-columns:repeat(2,1fr)}}
+.flow-step{background:linear-gradient(180deg,rgba(255,94,156,.08),rgba(124,58,237,.04));border:1px solid rgba(255,94,156,.2);padding:13px 8px;text-align:center;border-radius:10px}
+.flow-step .letter{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--pink);letter-spacing:1px;display:inline-block;width:22px;height:22px;line-height:22px;border-radius:50%;background:rgba(255,94,156,.15);margin-bottom:6px}
+.flow-step .name{font-size:12.5px;font-weight:700;margin:2px 0 4px}
+.flow-step .engine{font-family:var(--mono);font-size:10px;color:var(--gold);margin-bottom:3px}
+.flow-step .out{font-size:10.5px;color:var(--muted);line-height:1.4}
+.round-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}
+@media(max-width:820px){.round-grid{grid-template-columns:1fr 1fr}}
+.round-card{background:linear-gradient(180deg,rgba(255,94,156,.09),rgba(124,58,237,.04));border:1px solid rgba(255,94,156,.22);border-radius:12px;padding:15px;position:relative;overflow:hidden}
+.round-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--pink)}
+.round-card.optional::before{background:var(--violet)}
+.round-card .r-tag{display:inline-block;font-family:var(--mono);font-size:10.5px;background:var(--pink);color:#fff;padding:2px 8px;border-radius:5px;font-weight:700}
+.round-card.optional{border-color:rgba(124,58,237,.3);background:linear-gradient(180deg,rgba(124,58,237,.1),rgba(124,58,237,.03))}
+.round-card.optional .r-tag{background:var(--violet)}
+.round-card .r-name{font-size:14px;font-weight:700;margin:8px 0 6px}
+.round-card .r-desc{font-size:12px;color:var(--muted);line-height:1.55}
+.round-card .r-token{font-family:var(--mono);font-size:10.5px;color:var(--gold);margin-top:8px;padding-top:6px;border-top:1px dashed rgba(255,255,255,.08)}
+.token-meter{background:linear-gradient(180deg,#0a0410,#14081a);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:20px;margin:14px 0}
+.meter-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:8px}
+.meter-head .title{font-weight:700;font-size:14px}
+.meter-head .val{font-family:var(--mono);font-size:13px;font-weight:700;padding:3px 9px;border-radius:6px;border:1px solid}
+.meter-head .val.ok{color:var(--green);border-color:rgba(74,222,128,.4);background:rgba(74,222,128,.08)}
+.meter-head .val.warn{color:var(--amber);border-color:rgba(251,191,36,.4);background:rgba(251,191,36,.08)}
+.meter-head .val.danger{color:var(--red);border-color:rgba(248,113,113,.4);background:rgba(248,113,113,.08)}
+.meter-bar{height:26px;background:rgba(255,255,255,.05);border-radius:7px;overflow:hidden;position:relative;margin:6px 0;border:1px solid rgba(255,255,255,.06)}
+.meter-fill{height:100%;display:flex;align-items:center;justify-content:flex-end;padding-right:10px;font-family:var(--mono);font-size:10.5px;color:#0a0410;font-weight:700}
+.meter-fill.case1{background:linear-gradient(90deg,var(--green) 0%,var(--amber) 70%,var(--pink) 100%)}
+.meter-fill.case2{background:linear-gradient(90deg,var(--green),#86efac)}
+.meter-fill.case3{background:linear-gradient(90deg,var(--amber),var(--red))}
+.meter-labels{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:2px}
+.token-breakdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+@media(max-width:600px){.token-breakdown{grid-template-columns:1fr 1fr}}
+.tb-item{background:rgba(255,255,255,.04);border-radius:9px;padding:10px 12px;border-left:3px solid var(--pink);text-align:center}
+.tb-item.r2{border-color:var(--violet)}.tb-item.r2b{border-color:var(--amber)}.tb-item.r3{border-color:var(--gold)}
+.tb-item .lbl{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-bottom:2px}
+.tb-item .val{font-family:var(--mono);font-size:18px;font-weight:700;color:var(--text)}
+.transcript{background:#0a0410;border:1px solid rgba(255,94,156,.25);border-radius:12px;margin:14px 0;overflow:hidden}
+.transcript-head{background:linear-gradient(90deg,rgba(255,94,156,.15),rgba(124,58,237,.1));padding:11px 18px;border-bottom:1px solid rgba(255,94,156,.2);font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.transcript-head strong{color:var(--text)}
+.transcript-body{padding:8px 18px}
+.speak-line{padding:11px 0;border-bottom:1px dashed rgba(255,255,255,.07)}
+.speak-line:last-child{border-bottom:none}
+.speak-line .row1{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px}
+.speak-line .who{font-family:var(--mono);font-weight:700;color:var(--pink);font-size:12.5px}
+.speak-line .tone{color:var(--gold);font-size:11.5px;font-family:var(--mono)}
+.speak-line .text{color:var(--text);font-size:13px;padding-left:4px}
+.speak-line .q{color:var(--muted);font-size:11.5px;font-style:italic}
+.speak-line .a{color:var(--text);font-size:12.5px;margin-top:3px}
+.verdict-box{background:linear-gradient(135deg,rgba(74,222,128,.1),rgba(212,175,122,.06));border:1px solid rgba(74,222,128,.35);border-radius:12px;padding:18px 22px;margin:14px 0;text-align:center}
+.verdict-box .v-title{font-family:var(--mono);font-size:11.5px;color:var(--green);letter-spacing:1.5px;text-transform:uppercase;font-weight:700}
+.verdict-box .v-result{font-size:24px;font-weight:800;margin:6px 0;color:var(--green)}
+.arch-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:11px;margin:16px 0}
+.arch-card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 14px;border-top:3px solid var(--pink);transition:transform .2s,border-color .2s}
+.arch-card:hover{transform:translateY(-2px);border-color:rgba(255,94,156,.3)}
+.arch-card .a-name{font-family:var(--mono);font-size:12.5px;font-weight:700;color:var(--gold);margin-bottom:5px}
+.arch-card .a-purpose{font-size:12px;color:var(--text);margin-bottom:5px;line-height:1.45}
+.arch-card .a-api{font-family:var(--mono);font-size:10.5px;color:var(--muted);background:rgba(0,0,0,.25);padding:4px 7px;border-radius:5px;display:inline-block}
+.layer-stack{display:flex;flex-direction:column;gap:8px;margin:16px 0}
+.layer-row{display:grid;grid-template-columns:50px 1fr 70px 75px 1.4fr;gap:14px;align-items:center;background:linear-gradient(90deg,rgba(255,255,255,.04),rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px 16px;transition:border-color .2s}
+.layer-row:hover{border-color:rgba(255,94,156,.3)}
+@media(max-width:820px){.layer-row{grid-template-columns:40px 1fr;gap:8px}.layer-row .l-count,.layer-row .l-weight,.layer-row .l-desc{grid-column:2;text-align:left;font-size:11.5px}}
+.layer-row .l-num{font-family:var(--mono);font-size:17px;font-weight:800;text-align:center;background:linear-gradient(135deg,var(--pink),var(--violet));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.layer-row .l-name{font-weight:700;font-size:14px}
+.layer-row .l-count{font-family:var(--mono);font-size:12px;color:var(--gold);text-align:center;font-weight:600}
+.layer-row .l-weight{font-family:var(--mono);font-size:12px;text-align:center;color:var(--pink-soft);font-weight:600}
+.layer-row .l-desc{font-size:12px;color:var(--muted);line-height:1.45}
+.callout{background:rgba(251,191,36,.07);border-left:3px solid var(--amber);border-radius:8px;padding:13px 16px;margin:14px 0;font-size:13px;line-height:1.6}
+.callout strong{color:var(--amber)}
+.callout.info{background:rgba(96,165,250,.07);border-left-color:var(--blue)}
+.callout.info strong{color:var(--blue)}
+.callout.warn{background:rgba(248,113,113,.07);border-left-color:var(--red)}
+.callout.warn strong{color:var(--red)}
+.callout ul{margin:8px 0 0 18px}
+.callout li{margin-bottom:4px}
+.trig-card{text-align:center;padding:16px 10px;background:linear-gradient(180deg,rgba(212,175,122,.08),rgba(212,175,122,.02));border:1px solid rgba(212,175,122,.25);border-radius:11px;transition:transform .2s}
+.trig-card:hover{transform:translateY(-3px)}
+.trig-card .cmd-text{font-family:var(--mono);font-size:15px;color:var(--gold);font-weight:700}
+.trig-card .cmd-text.sm{font-size:13px}
+.trig-card .cmd-desc{font-size:11.5px;color:var(--muted);margin-top:6px}
+.dna-card{background:linear-gradient(180deg,rgba(212,175,122,.06),rgba(255,255,255,.015));border:1px solid rgba(212,175,122,.2);border-radius:11px;padding:15px}
+.dna-card .dna-num{font-family:var(--mono);font-size:11px;color:var(--gold);font-weight:700;margin-bottom:4px}
+.dna-card .dna-title{font-weight:700;font-size:14px;margin-bottom:8px;color:var(--text)}
+.dna-card .dna-body{font-size:12.5px;color:var(--muted);line-height:1.55}
+.mini-stat{text-align:center;padding:16px 12px;background:linear-gradient(180deg,rgba(74,222,128,.06),rgba(255,255,255,.015));border:1px solid rgba(74,222,128,.22);border-radius:11px}
+.mini-stat .ms-icon{font-size:26px}
+.mini-stat .ms-title{font-weight:700;margin-top:6px;font-size:14px}
+.mini-stat .ms-desc{font-size:11.5px;color:var(--muted);margin-top:4px}
+.footer{border-top:1px solid rgba(255,255,255,.08);padding:32px 24px;text-align:center;color:var(--muted);font-size:12.5px}
+.footer a{color:var(--pink);text-decoration:none}
+.footer a:hover{text-decoration:underline}
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(255,94,156,.3);border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:rgba(255,94,156,.5)}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">零配置 · 插宿主 AI 即用 · 不需要任何 API key</div>
+    <div class="badge-row">
+      <span class="badge pink">v3.7.0</span>
+      <span class="badge violet">style-first idol council</span>
+      <span class="badge gold">248 female roster</span>
+      <span class="badge green">179+ tests PASS</span>
+      <span class="badge pink">MCP server</span>
+      <span class="badge violet">host-AI native</span>
+    </div>
+    <h1>KPOP Design System</h1>
+    <p class="subtitle">把 K-pop 工业视觉策略代码化为<strong>多智能体审议协议</strong>——248 位女 idol 以"风格优先"被召集入议会，每位都用人设发言，R1/R2/R2b/R3 四轮交叉质询产出可执行的设计决议。</p>
+    <div class="quick-stats">
+      <div class="stat"><div class="num">248</div><div class="lbl">女 idol</div></div>
+      <div class="stat"><div class="num">52+</div><div class="lbl">团魂</div></div>
+      <div class="stat"><div class="num">7</div><div class="lbl">评委 CEO</div></div>
+      <div class="stat"><div class="num">20</div><div class="lbl">引擎模块</div></div>
+      <div class="stat"><div class="num">4550</div><div class="lbl">Token Cap</div></div>
+      <div class="stat"><div class="num">179+</div><div class="lbl">Tests PASS</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<div class="layout">
+
+<aside class="sidebar">
+  <div class="logo">📐 KPOP DS</div>
+  <div class="grp">章节导航</div>
+  <a href="#overview">1 · Skill 概览</a>
+  <a href="#identity">2 · 身份与人设</a>
+  <a href="#mechanism">3 · 核心机制</a>
+  <a href="#example">4 · 完整案例</a>
+  <a href="#tokens">5 · Token 消耗</a>
+  <a href="#cli">6 · CLI 命令</a>
+  <a href="#mcp">7 · MCP 工具</a>
+  <a href="#arch">8 · 架构</a>
+  <a href="#versions">9 · 版本演进</a>
+</aside>
+
+<main>
+
+<section id="overview">
+  <h2><span class="num">01</span><span class="emoji">🌸</span> Skill 概览</h2>
+  <p class="section-desc">从 SKILL.md frontmatter 与 README 提取的核心元数据。</p>
+
+  <div class="card accent-pink">
+    <div class="card-title">SKILL.md frontmatter <span class="meta">name · description · v3.7.0</span></div>
+    <table>
+      <tr><th style="width:140px">字段</th><th>值</th></tr>
+      <tr><td><code>name</code></td><td><code>kpop-design-system</code></td></tr>
+      <tr><td><code>version</code></td><td><code>3.7.0</code></td></tr>
+      <tr><td><code>author</code></td><td>SuanFishXYY（算鱼工作室）</td></tr>
+      <tr><td><code>license</code></td><td>MIT</td></tr>
+      <tr><td><code>language</code></td><td>zh-CN</td></tr>
+      <tr><td><code>flavor</code></td><td>kpop</td></tr>
+      <tr><td><code>philosophy</code></td><td>enabled</td></tr>
+      <tr><td><code>tags</code></td><td>
+        <span class="pill pink">design-system</span><span class="pill pink">multi-agent</span><span class="pill pink">kpop</span><span class="pill pink">idol</span><span class="pill pink">era</span><span class="pill pink">comeback-cycle</span><span class="pill pink">touchpoint</span><span class="pill pink">generation-lint</span><span class="pill pink">user-as-judge</span><span class="pill pink">ui</span><span class="pill pink">brand</span><span class="pill pink">ai-native</span><span class="pill pink">zero-config</span>
+      </td></tr>
+      <tr><td><code>description</code></td><td>K-pop industrial visual strategy system v3.7.0 · zero API key required · host AI executes protocol natively · style-first idol council, 248 female roster, every idol speaks in character, R2/R2b cross-examination, host-AI prompt builder, CLI transcript export, conflict-aware R3 stances, dead-link validator, 179+ node tests PASS. Activate on /kpop, /idol-congress, /kpop-design, /kpop-era.</td></tr>
+    </table>
+  </div>
+
+  <h3>触发方式</h3>
+  <div class="grid-4">
+    <div class="trig-card"><div class="cmd-text">/kpop</div><div class="cmd-desc">主入口</div></div>
+    <div class="trig-card"><div class="cmd-text sm">/idol-congress</div><div class="cmd-desc">议会模式</div></div>
+    <div class="trig-card"><div class="cmd-text sm">/kpop-design</div><div class="cmd-desc">设计 brief</div></div>
+    <div class="trig-card"><div class="cmd-text sm">/kpop-era</div><div class="cmd-desc">era 锁定</div></div>
+  </div>
+
+  <h3>核心定位</h3>
+  <div class="grid-2">
+    <div class="card accent-violet">
+      <div class="card-title">🎹 风格优先 (Style-first)</div>
+      <p style="font-size:13px">任意 idol 都可凭<strong>设计风格专长</strong>被召集，显式名字/团体仅作辅助召回信号。引擎按 brief→specialty 匹配度给所有 idol 排名，派生 anchor 团体，cap 在 5/7。</p>
+    </div>
+    <div class="card accent-violet">
+      <div class="card-title">🎭 角色发言 (In-character)</div>
+      <p style="font-size:13px">每位 idol 都有<strong>确定性说话人格</strong>：tone（12 色调）、signature phrase、speech habits、negotiation levers、hard veto。0 人落在默认 tone。</p>
+    </div>
+    <div class="card accent-violet">
+      <div class="card-title">🏠 宿主 AI 原生 (Host-AI native)</div>
+      <p style="font-size:13px">用户已在 Claude/Copilot/Cursor 里，宿主 AI <strong>就是</strong> LLM。JS 引擎只保结构、投票、判决的确定性；成员发言由宿主 AI 原生执行。</p>
+    </div>
+    <div class="card accent-violet">
+      <div class="card-title">⚡ 零配置 (Zero-config)</div>
+      <p style="font-size:13px">无 API key、无 provider 抽象层。v3.4.3 删掉了 DeepSeek/Claude/Gemini wrapper，因为宿主 AI 本身就能跑协议。</p>
+    </div>
+  </div>
+
+  <div class="callout info">
+    <strong>关键词：</strong>K-pop · 工业级视觉策略 · 多智能体议会 · 加权陪审团 2/3 表决 · 团魂否决 · 用户评委 · era 锁定 · comeback cycle · 5 媒介一致性 · 4 代审美 lint
+  </div>
+</section>
+<section id="identity">
+  <h2><span class="num">02</span><span class="emoji">👩‍🎤</span> 身份与人设</h2>
+  <p class="section-desc">议会的 5 层投票结构与每位 idol 的说话 DNA。</p>
+
+  <h3>5 层加权议会结构</h3>
+  <div class="layer-stack">
+    <div class="layer-row"><div class="l-num">L5</div><div class="l-name">User 用户评委</div><div class="l-count">1</div><div class="l-weight">×1-3</div><div class="l-desc">veto / override / 偏好学习 · 最终品味权威</div></div>
+    <div class="layer-row"><div class="l-num">L4</div><div class="l-name">Anchor 团魂代表</div><div class="l-count">1-2</div><div class="l-weight">×2</div><div class="l-desc">团体核心 · 一票否决权（veto）· 仅在 anchor 团出现</div></div>
+    <div class="layer-row"><div class="l-num">L3</div><div class="l-name">CeO 评委席</div><div class="l-count">7</div><div class="l-weight">×3</div><div class="l-desc">资深设计师偶像 · 高权重票 · 主持 R2 交叉质询</div></div>
+    <div class="layer-row"><div class="l-num">L2</div><div class="l-name">Specialty 专家</div><div class="l-count">3-5</div><div class="l-weight">×1.5</div><div class="l-desc">按 brief 专长匹配 · 风格优先召集</div></div>
+    <div class="layer-row"><div class="l-num">L1</div><div class="l-name">Roster 女偶像</div><div class="l-count">5-7</div><div class="l-weight">×1</div><div class="l-desc">248 人名单 · 基础票 · 按人设发言</div></div>
+  </div>
+
+  <div class="callout">
+    <strong>表决规则：</strong>加权陪审团需达到 <code>2/3</code> 多数才能通过；Anchor 团魂有<code>veto</code>一票否决权（仅限该团本命风格）。表诀僵局时进入 R2b 补充质询。
+  </div>
+
+  <h3>Idol 说话 DNA（7 项）</h3>
+  <p class="section-desc">每位 idol 都被注入确定性人设，0 人落在默认 tone。以下来自 FEMALE-IDOL-ROSTER。</p>
+  <div class="grid-3">
+    <div class="dna-card"><div class="dna-num">01</div><div class="dna-title">🎭 Tone 色调</div><div class="dna-body">12 色调枚举：温暖长辈 / 清冷姐姐 / 活力少女 / 暖心姐姐 / 干练队长 / 豆离古怪 / 贵气女王 / 俏皮女孩 / 腼腆内向 / 中性飒爽 / 御姐毒舌 / 温柔治愈。</div></div>
+    <div class="dna-card"><div class="dna-num">02</div><div class="dna-title">💬 Signature Phrase</div><div class="dna-body">每人一句标志性台词，作为发言开头/结尾的确定信号，帮助用户识别“是谁在说话”。</div></div>
+    <div class="dna-card"><div class="dna-num">03</div><div class="dna-title">🔁 Speech Habits</div><div class="dna-body">语言习惯：句长偏好、口头禅、是否用反问、是否使用专业术语 vs 俚语。</div></div>
+    <div class="dna-card"><div class="dna-num">04</div><div class="dna-title">🤝 Negotiation Levers</div><div class="dna-body">让步杠杆：在 R2b 谈判中会交换/坚持什么（如“可让字体但坚持配色”）。</div></div>
+    <div class="dna-card"><div class="dna-num">05</div><div class="dna-title">🚫 Hard Veto</div><div class="dna-body">硬否决项：某些 idol 对特定风格/手法有不可逾越的底线（如“绝不接受廉价渐变”）。</div></div>
+    <div class="dna-card"><div class="dna-num">06</div><div class="dna-title">🎨 Specialty</div><div class="dna-body">设计专长标签：决定能否被召集。如 Y2K / cyberpunk / 极简 / 手绘 / 排版 / 配色 / 动效。</div></div>
+    <div class="dna-card"><div class="dna-num">07</div><div class="dna-title">🏠 Anchor Group</div><div class="dna-body">所属团体（52+ 团魂）· 用于派生 veto 权与团魂一致性检查。</div></div>
+  </div>
+
+  <h3>R3 立场分类（conflict-aware）</h3>
+  <p class="section-desc">R3 投票时每位 idol 必须表明立场，引擎按立场加权汇总。</p>
+  <div class="grid-4">
+    <div class="card accent-green"><div class="card-title">AGREE 同意 <span class="stance agree">+1.0</span></div><p style="font-size:12.5px">完全支持当前方案，认为可直接执行。</p></div>
+    <div class="card accent-gold"><div class="card-title">RESERVE 保留 <span class="stance reserve">+0.5</span></div><p style="font-size:12.5px">总体同意但有疑虑，需附加条件。会列出修改点。</p></div>
+    <div class="card accent-pink"><div class="card-title">COMPROMISE 妥协 <span class="stance compromise">+0.7</span></div><p style="font-size:12.5px">放弃部分坚持换取整体推进，贡献 R2b 谈判结果。</p></div>
+    <div class="card accent-pink" style="border-left-color:var(--red)"><div class="card-title">DISSENT 反对 <span class="stance dissent">+0</span></div><p style="font-size:12.5px">明确反对，必须给出替代方案或否决理由。</p></div>
+  </div>
+</section>
+<section id="mechanism">
+  <h2><span class="num">03</span><span class="emoji">⚙️</span> 核心机制</h2>
+  <p class="section-desc">从 brief 输入到设计决议输出的完整流水线，以及四轮审议协议。</p>
+
+  <h3>7 步议会流水线</h3>
+  <div class="flow">
+    <div class="flow-step"><div class="letter">A</div><div class="name">Brief</div><div class="engine">engine/parse</div><div class="out">解析设计需求</div></div>
+    <div class="flow-step"><div class="letter">B</div><div class="name">Convene</div><div class="engine">engine/roster</div><div class="out">风格优先召集 5-7 idol</div></div>
+    <div class="flow-step"><div class="letter">C</div><div class="name">R1</div><div class="engine">engine/round1</div><div class="out">初始立场发言</div></div>
+    <div class="flow-step"><div class="letter">D</div><div class="name">R2</div><div class="engine">engine/round2</div><div class="out">交叉质询</div></div>
+    <div class="flow-step"><div class="letter">E</div><div class="name">R2b</div><div class="engine">engine/round2b</div><div class="out">冲突谈判（可选）</div></div>
+    <div class="flow-step"><div class="letter">F</div><div class="name">R3</div><div class="engine">engine/round3</div><div class="out">立场投票 + 判决</div></div>
+    <div class="flow-step"><div class="letter">G</div><div class="name">Output</div><div class="engine">engine/prompt</div><div class="out">生成可执行设计 brief</div></div>
+  </div>
+
+  <h3>四轮审议协议</h3>
+  <div class="round-grid">
+    <div class="round-card">
+      <span class="r-tag">R1</span>
+      <div class="r-name">初始立场发言</div>
+      <div class="r-desc">每位召集的 idol 以人设发言，表明对 brief 的初始态度，提出初步设计观点。</div>
+      <div class="r-token">cap 200 token/人</div>
+    </div>
+    <div class="round-card">
+      <span class="r-tag">R2</span>
+      <div class="r-name">交叉质询</div>
+      <div class="r-desc">CeO 评委主持，成员互相质询观点分歧。引擎检测冲突点并组织针对性提问。</div>
+      <div class="r-token">cap 300 token/人</div>
+    </div>
+    <div class="round-card optional">
+      <span class="r-tag">R2b</span>
+      <div class="r-name">冲突谈判（可选）</div>
+      <div class="r-desc">仅在 R2 产生不可调和冲突时触发。成员用 negotiation levers 交换让步，寻求妥协。</div>
+      <div class="r-token">按冲突数动态</div>
+    </div>
+    <div class="round-card">
+      <span class="r-tag">R3</span>
+      <div class="r-name">立场投票 + 判决</div>
+      <div class="r-desc">每位 idol 表明最终立场（agree/reserve/compromise/dissent），加权汇总，2/3 多数判决。</div>
+      <div class="r-token">cap 150 token/人</div>
+    </div>
+  </div>
+
+  <h3>Token 预算常量</h3>
+  <p class="section-desc">来自 <code>engine/deliberation.mjs</code> 源码，确保总消耗控制在宿主 AI 上下文窗口内。</p>
+  <div class="card accent-gold">
+    <pre><code><span class="cmt">// engine/deliberation.mjs</span>
+<span class="kw">export const</span> TOKEN_CAP = <span class="str">4550</span>;  <span class="cmt">// 单次议会总 token 上限</span>
+<span class="kw">export const</span> ROUND_LIMITS = {
+  R1:  <span class="str">200</span>,   <span class="cmt">// 初始发言 · 每人上限</span>
+  R2:  <span class="str">300</span>,   <span class="cmt">// 交叉质询 · 每人上限</span>
+  R3:  <span class="str">150</span>    <span class="cmt">// 立场投票 · 每人上限</span>
+};</code></pre>
+  </div>
+
+  <h3>关键引擎机制</h3>
+  <div class="grid-2">
+    <div class="card accent-pink">
+      <div class="card-title">🔒 Era 锁定</div>
+      <p style="font-size:13px">一旦 brief 锁定 era（如 Y2K / cyberpunk），所有后续发言与投票必须在 era 范围内，避免风格漂移。违反者被引擎标记为 generation-lint 错误。</p>
+    </div>
+    <div class="card accent-pink">
+      <div class="card-title">🌐 5 媒介一致性</div>
+      <p style="font-size:13px">设计决议必须同时覆盖 5 个 touchpoint（web / social / print / motion / merch），引擎检查跨媒介风格一致性。</p>
+    </div>
+    <div class="card accent-pink">
+      <div class="card-title">🧹 4 代审美 lint</div>
+      <p style="font-size:13px">对生成的设计输出做代际审美校验（1代经典 / 2代过渡 / 3代现代 / 4代前沿），防止产出过时或超前于目标受众的视觉。</p>
+    </div>
+    <div class="card accent-pink">
+      <div class="card-title">🔗 Dead-link 校验器</div>
+      <p style="font-size:13px">输出前扫描所有引用的资源链接，确保无死链。是 v3.7.0 新增的输出守门机制。</p>
+    </div>
+  </div>
+</section>
+<section id="example">
+  <h2><span class="num">04</span><span class="emoji">📋</span> 完整案例：Y2K 兼具未来感女孩组合回归</h2>
+  <p class="section-desc">来自 docs/EXAMPLE-COUNCIL-TRANSCRIPT.md 的真实议会运行记录。</p>
+
+  <div class="card accent-gold">
+    <div class="card-title">Brief 输入 <span class="meta">7 名成员 · Y2K + 未来感</span></div>
+    <p style="font-size:13px">为一个 7 人女孩组合设计回归落地页，要求风格 <strong>Y2K 兼具未来感</strong>，需覆盖 web 主视觉，体现团体个性与成员分工。</p>
+  </div>
+
+  <h3>召集名单（风格优先匹配）</h3>
+  <table>
+    <tr><th>Idol</th><th>Anchor 团</th><th>Specialty</th><th>Tone</th><th>层级</th></tr>
+    <tr><td>Irene</td><td>Red Velvet</td><td><span class="pill pink">极简</span><span class="pill pink">配色</span></td><td>清冷姐姐</td><td><span class="pill violet">CeO ×3</span></td></tr>
+    <tr><td>Karina</td><td>aespa</td><td><span class="pill pink">cyberpunk</span><span class="pill pink">动效</span></td><td>贵气女王</td><td><span class="pill violet">CeO ×3</span></td></tr>
+    <tr><td>Wonyoung</td><td>IVE</td><td><span class="pill pink">排版</span><span class="pill pink">贵气</span></td><td>俏皮女孩</td><td><span class="pill violet">CeO ×3</span></td></tr>
+    <tr><td>Hanni</td><td>NewJeans</td><td><span class="pill pink">Y2K</span><span class="pill pink">手绘</span></td><td>腼腆内向</td><td><span class="pill gold">Specialist ×1.5</span></td></tr>
+    <tr><td>Sana</td><td>TWICE</td><td><span class="pill pink">活力</span><span class="pill pink">配色</span></td><td>活力少女</td><td><span class="pill gold">Specialist ×1.5</span></td></tr>
+    <tr><td>Ryujin</td><td>ITZY</td><td><span class="pill pink">中性饒爽</span><span class="pill pink">动效</span></td><td>中性饒爽</td><td><span class="pill blue">Roster ×1</span></td></tr>
+    <tr><td>Winter</td><td>aespa</td><td><span class="pill pink">cyberpunk</span></td><td>豆离古怪</td><td><span class="pill blue">Roster ×1</span></td></tr>
+  </table>
+
+  <h3>R1 初始发言摘要</h3>
+  <div class="transcript">
+    <div class="transcript-head"><strong>R1 · 初始立场</strong> · cap 200 token/人</div>
+    <div class="transcript-body">
+      <div class="speak-line">
+        <div class="row1"><span class="who">Irene</span><span class="tone">清冷姐姐</span><span class="stance agree">AGREE</span></div>
+        <div class="text">"Y2K 的金属质感配上未来感的横向滚动布局，可以保留 Y2K 的锐度又不显复古。我倾向用 chrome 渐变 + 大量留白。"</div>
+      </div>
+      <div class="speak-line">
+        <div class="row1"><span class="who">Karina</span><span class="tone">贵气女王</span><span class="stance reserve">RESERVE</span></div>
+        <div class="text">"未来感部分我会加 holographic 故障动效，但担心和 Y2K 的 pixel aesthetic 冲突。需明确哪个为主调。"</div>
+      </div>
+      <div class="speak-line">
+        <div class="row1"><span class="who">Hanni</span><span class="tone">腼腆内向</span><span class="stance agree">AGREE</span></div>
+        <div class="text">"Y2K 的手绘字体 + 未来感的网格背景，两者可共存。我提议成员介绍区用手绘气泡框。"</div>
+      </div>
+      <div class="speak-line">
+        <div class="row1"><span class="who">Sana</span><span class="tone">活力少女</span><span class="stance agree">AGREE</span></div>
+        <div class="text">"配色可以用 Y2K 的粉紫为主，点缀赛博聂虹蓝！超有活力的～"</div>
+      </div>
+    </div>
+  </div>
+
+  <h3>R2 交叉质询</h3>
+  <div class="transcript">
+    <div class="transcript-head"><strong>R2 · 交叉质询</strong> · CeO 主持 · cap 300 token/人</div>
+    <div class="transcript-body">
+      <div class="speak-line">
+        <div class="row1"><span class="who">Wonyoung</span><span class="tone">俏皮女孩</span><span class="stance">质询 Karina</span></div>
+        <div class="text q">Q: holographic 故障动效会不会干扰 7 人成员卡的可读性？落地页要快速识别成员。</div>
+        <div class="text a">A (Karina): 故障动效只用于 hero 背景与过场，成员卡保持静态高对比。可接受这个边界。</div>
+      </div>
+      <div class="speak-line">
+        <div class="row1"><span class="who">Ryujin</span><span class="tone">中性饒爽</span><span class="stance">质询 Hanni</span></div>
+        <div class="text q">Q: 手绘气泡框配 cyberpunk 网格，风格拼贴感太重。怎么统一？</div>
+        <div class="text a">A (Hanni): 气泡框用 chrome 描边而非黑色描边，与赛博网格的金属感联动。这样统一。</div>
+      </div>
+    </div>
+  </div>
+
+  <h3>R3 立场投票与判决</h3>
+  <div class="transcript">
+    <div class="transcript-head"><strong>R3 · 最终立场</strong> · cap 150 token/人 · 加权汇总</div>
+    <div class="transcript-body">
+      <div class="speak-line"><div class="row1"><span class="who">Irene</span><span class="stance agree">AGREE</span></div><div class="text">chrome 渐变 + 留白方案保留，成员卡静态。</div></div>
+      <div class="speak-line"><div class="row1"><span class="who">Karina</span><span class="stance compromise">COMPROMISE</span></div><div class="text">放弃全页故障动效，仅限 hero 过场。</div></div>
+      <div class="speak-line"><div class="row1"><span class="who">Wonyoung</span><span class="stance agree">AGREE</span></div><div class="text">成员卡可读性优先，支持。</div></div>
+      <div class="speak-line"><div class="row1"><span class="who">Hanni</span><span class="stance agree">AGREE</span></div><div class="text">chrome 描边气泡框方案采纳。</div></div>
+      <div class="speak-line"><div class="row1"><span class="who">Sana</span><span class="stance agree">AGREE</span></div><div class="text">粉紫 + 赛博聂虹蓝配色通过。</div></div>
+      <div class="speak-line"><div class="row1"><span class="who">Ryujin</span><span class="stance reserve">RESERVE</span></div><div class="text">风格拼贴风险仍在，需后期 lint 复查。</div></div>
+      <div class="speak-line"><div class="row1"><span class="who">Winter</span><span class="stance agree">AGREE</span></div><div class="text">cyberpunk 网格背景与 Y2K 字体共存可行。</div></div>
+    </div>
+  </div>
+
+  <div class="verdict-box">
+    <div class="v-title">议会判决</div>
+    <div class="v-result">✅ PASS · 3/3</div>
+    <p style="font-size:13px;color:var(--muted)">加权票数达到 2/3 多数，方案通过。Ryujin 的保留意见纳入 generation-lint 复查清单。</p>
+  </div>
+</section>
+<section id="tokens">
+  <h2><span class="num">05</span><span class="emoji">📊</span> Token 消耗仪表盘</h2>
+  <p class="section-desc">基于 TOKEN_CAP=4550 与 ROUND_LIMITS 的实际消耗可视化。以上文案例为基准。</p>
+
+  <h3>案例消耗 vs 总预算</h3>
+  <div class="token-meter">
+    <div class="meter-head">
+      <span class="title">Y2K 兼具未来感案例 · 7 名成员</span>
+      <span class="val ok">1713 / 4550 · 37.6%</span>
+    </div>
+    <div class="meter-bar"><div class="meter-fill case1" style="width:37.6%">1713 tok</div></div>
+    <div class="meter-labels"><span>0</span><span>1000</span><span>2000</span><span>3000</span><span>4000</span><span>4550 cap</span></div>
+  </div>
+
+  <h3>分轮次 Token 拆解</h3>
+  <div class="token-breakdown">
+    <div class="tb-item"><div class="lbl">R1 · 初始发言</div><div class="val">560</div></div>
+    <div class="tb-item r2"><div class="lbl">R2 · 交叉质询</div><div class="val">680</div></div>
+    <div class="tb-item r2b"><div class="lbl">R2b · 谈判</div><div class="val">0</div></div>
+    <div class="tb-item r3"><div class="lbl">R3 · 投票</div><div class="val">473</div></div>
+  </div>
+  <div class="callout info" style="margin-top:14px">
+    <strong>说明：</strong>本案例 R2 未产生不可调和冲突，R2b 未触发（0 token）。总消耗 1713 token，占预算 37.6%，远低于上限，为用户后续交互预留充足上下文。
+  </div>
+
+  <h3>三种场景消耗对比</h3>
+  <table>
+    <tr><th>场景</th><th>成员数</th><th>R2b</th><th>消耗</th><th>占比</th><th>状态</th></tr>
+    <tr><td>简单单一风格</td><td>5</td><td>未触发</td><td><code>~1200</code></td><td>26%</td><td><span class="pill green">宽松</span></td></tr>
+    <tr><td>Y2K+未来感（上文）</td><td>7</td><td>未触发</td><td><code>1713</code></td><td>37.6%</td><td><span class="pill green">健康</span></td></tr>
+    <tr><td>多风格冲突 + 谈判</td><td>7</td><td>触发</td><td><code>~3800</code></td><td>83%</td><td><span class="pill amber">接近上限</span></td></tr>
+  </table>
+
+  <div class="callout warn">
+    <strong>超限保护：</strong>当总 token 接近 4550 时，引擎会自动截断低优先级发言并提示"预算紧张"。任何单轮超出 ROUND_LIMITS 的发言会被裁剪到上限并标记 <code>[truncated]</code>。
+  </div>
+</section>
+<section id="cli">
+  <h2><span class="num">06</span><span class="emoji">⌨️</span> CLI 命令与交互</h2>
+  <p class="section-desc">来自 package.json bin 与 docs/CLI-INTERACTIVE-COUNCIL.md。</p>
+
+  <h3>主命令</h3>
+  <div class="card accent-pink">
+    <pre><code><span class="cmt"># 启动议会（主入口）</span>
+<span class="cmd">npx</span> kpop-design-system <span class="flag">--brief</span> <span class="str">"7人女孩组合 Y2K+未来感落地页"</span>
+
+<span class="cmt"># 或用触发词</span>
+<span class="cmd">/kpop</span> <span class="str">"你的设计需求"</span>
+<span class="cmd">/idol-congress</span> <span class="flag">--era</span> <span class="str">y2k</span>
+<span class="cmd">/kpop-design</span> <span class="flag">--touchpoints</span> <span class="str">web,social</span>
+<span class="cmd">/kpop-era</span> <span class="str">cyberpunk</span></code></pre>
+  </div>
+
+  <h3>常用 flag</h3>
+  <table>
+    <tr><th>Flag</th><th>类型</th><th>说明</th></tr>
+    <tr><td><code>--brief</code></td><td>string</td><td>设计需求文本（必填）</td></tr>
+    <tr><td><code>--era</code></td><td>enum</td><td>锁定 era：y2k / cyberpunk / minimal / retro / ...</td></tr>
+    <tr><td><code>--members</code></td><td>number</td><td>召集人数（5-7，默认按 brief 推荐决定）</td></tr>
+    <tr><td><code>--touchpoints</code></td><td>csv</td><td>覆盖媒介：web,social,print,motion,merch</td></tr>
+    <tr><td><code>--roster</code></td><td>list</td><td>指定召集名单（覆盖风格优先匹配）</td></tr>
+    <tr><td><code>--export</code></td><td>path</td><td>导出议会 transcript 到文件</td></tr>
+    <tr><td><code>--no-r2b</code></td><td>bool</td><td>禁用 R2b 谈判轮次</td></tr>
+  </table>
+
+  <h3>交互式议会流程</h3>
+  <p class="section-desc">CLI 会逐轮展示发言，用户可在每轮后介入。</p>
+  <div class="card accent-violet">
+    <pre><code><span class="cmt">$ npx kpop-design-system --brief "..."</span>
+
+<span class="kw">[召集]</span> 风格优先匹配中... 召集 7 位 idol
+  ✓ Irene (Red Velvet) · 清冷姐姐 · CeO
+  ✓ Karina (aespa) · 贵气女王 · CeO
+  ...
+
+<span class="kw">[R1]</span> 初始发言
+  Irene: "Y2K 的金属质感配上未来感..."
+  Karina: "未来感部分我会加 holographic..."
+  ...
+<span class="cmt">▸ 按 Enter 继续，输入备注 override 发言</span>
+
+<span class="kw">[R2]</span> 交叉质询
+  Wonyoung → Karina: "holographic 故障动效会干扰成员卡可读性?"
+  ...
+
+<span class="kw">[R3]</span> 立场投票
+  Irene: AGREE   Karina: COMPROMISE   ...
+
+<span class="kw">[判决]</span> ✅ PASS · 3/3 加权多数
+  输出可执行设计 brief → exported to ./transcript.md</code></pre>
+  </div>
+
+  <h3>导出格式</h3>
+  <div class="grid-3">
+    <div class="mini-stat"><div class="ms-icon">📄</div><div class="ms-title">Markdown</div><div class="ms-desc">transcript.md · 含每轮发言与判决</div></div>
+    <div class="mini-stat"><div class="ms-icon">🔢</div><div class="ms-title">JSON</div><div class="ms-desc">transcript.json · 结构化可复用</div></div>
+    <div class="mini-stat"><div class="ms-icon">🎨</div><div class="ms-title">Design Brief</div><div class="ms-desc">可执行设计指令 · 直接送宿主 AI</div></div>
+  </div>
+</section>
+<section id="mcp">
+  <h2><span class="num">07</span><span class="emoji">🔌</span> MCP Server 工具</h2>
+  <p class="section-desc">来自 docs/MCP-SERVER.md · 可被任何 MCP 兼容客户端调用。</p>
+
+  <div class="card accent-gold">
+    <div class="card-title">MCP Server 配置</div>
+    <pre><code><span class="cmt">// .mcp.json 或客户端配置</span>
+{
+  <span class="str">"mcpServers"</span>: {
+    <span class="str">"kpop-design-system"</span>: {
+      <span class="str">"command"</span>: <span class="str">"node"</span>,
+      <span class="str">"args"</span>: [<span class="str">"./engine/mcp-server.mjs"</span>]
+    }
+  }
+}</code></pre>
+  </div>
+
+  <h3>暴露的 MCP 工具</h3>
+  <div class="arch-grid">
+    <div class="arch-card">
+      <div class="a-name">kpop.convene</div>
+      <div class="a-purpose">按 brief 召集议会名单</div>
+      <div class="a-api">in: brief, era? -> roster[]</div>
+    </div>
+    <div class="arch-card">
+      <div class="a-name">kpop.deliberate</div>
+      <div class="a-purpose">运行完整四轮审议</div>
+      <div class="a-api">in: roster, brief -> transcript</div>
+    </div>
+    <div class="arch-card">
+      <div class="a-name">kpop.round1</div>
+      <div class="a-purpose">单执行 R1 初始发言</div>
+      <div class="a-api">in: roster -> speeches[]</div>
+    </div>
+    <div class="arch-card">
+      <div class="a-name">kpop.round2</div>
+      <div class="a-purpose">单执行 R2 交叉质询</div>
+      <div class="a-api">in: r1 -> cross-exam[]</div>
+    </div>
+    <div class="arch-card">
+      <div class="a-name">kpop.round3</div>
+      <div class="a-purpose">单执行 R3 投票判决</div>
+      <div class="a-api">in: r2 -> verdict</div>
+    </div>
+    <div class="arch-card">
+      <div class="a-name">kpop.export</div>
+      <div class="a-purpose">导出 transcript</div>
+      <div class="a-api">in: transcript, fmt</div>
+    </div>
+    <div class="arch-card">
+      <div class="a-name">kpop.roster</div>
+      <div class="a-purpose">查询 248 人名单</div>
+      <div class="a-api">in: filter? -> idols[]</div>
+    </div>
+    <div class="arch-card">
+      <div class="a-name">kpop.validate</div>
+      <div class="a-purpose">dead-link + lint 校验</div>
+      <div class="a-api">in: output -> report</div>
+    </div>
+  </div>
+
+  <div class="callout info">
+    <strong>设计理念：</strong>MCP 工具仅暴露引擎的确定性部分（召集、轮次调度、投票、导出、校验）。成员发言由宿主 AI 原生执行，因此<strong>无需传递 API key</strong>--宿主本身就是 LLM。
+  </div>
+</section>
+<section id="arch">
+  <h2><span class="num">08</span><span class="emoji">🏗️</span> 架构与引擎模块</h2>
+  <p class="section-desc">来自 docs/ARCHITECTURE.md 与 engine/ 目录结构 · 20 个模块化文件。</p>
+
+  <h3>引擎模块清单</h3>
+  <div class="arch-grid">
+    <div class="arch-card"><div class="a-name">deliberation.mjs</div><div class="a-purpose">审议主调度 · TOKEN_CAP / ROUND_LIMITS 常量</div><div class="a-api">runCouncil()</div></div>
+    <div class="arch-card"><div class="a-name">parse.mjs</div><div class="a-purpose">brief 解析与 era 提取</div><div class="a-api">parseBrief()</div></div>
+    <div class="arch-card"><div class="a-name">roster.mjs</div><div class="a-purpose">248 人名单加载与查询</div><div class="a-api">loadRoster()</div></div>
+    <div class="arch-card"><div class="a-name">convene.mjs</div><div class="a-purpose">风格优先召集与 anchor 派生</div><div class="a-api">convene()</div></div>
+    <div class="arch-card"><div class="a-name">round1.mjs</div><div class="a-purpose">R1 初始发言调度</div><div class="a-api">runR1()</div></div>
+    <div class="arch-card"><div class="a-name">round2.mjs</div><div class="a-purpose">R2 交叉质询 · 冲突检测</div><div class="a-api">runR2()</div></div>
+    <div class="arch-card"><div class="a-name">round2b.mjs</div><div class="a-purpose">R2b 谈判 · 让步交换</div><div class="a-api">runR2b()</div></div>
+    <div class="arch-card"><div class="a-name">round3.mjs</div><div class="a-purpose">R3 立场投票 · 加权汇总</div><div class="a-api">runR3()</div></div>
+    <div class="arch-card"><div class="a-name">verdict.mjs</div><div class="a-purpose">判决 · 2/3 多数判定</div><div class="a-api">judgeVerdict()</div></div>
+    <div class="arch-card"><div class="a-name">prompt.mjs</div><div class="a-purpose">生成可执行设计 brief</div><div class="a-api">buildPrompt()</div></div>
+    <div class="arch-card"><div class="a-name">era.mjs</div><div class="a-purpose">era 锁定与漂移检测</div><div class="a-api">lockEra()</div></div>
+    <div class="arch-card"><div class="a-name">lint.mjs</div><div class="a-purpose">4 代审美 lint 校验</div><div class="a-api">generationLint()</div></div>
+    <div class="arch-card"><div class="a-name">touchpoint.mjs</div><div class="a-purpose">5 媒介一致性检查</div><div class="a-api">checkTouchpoints()</div></div>
+    <div class="arch-card"><div class="a-name">validator.mjs</div><div class="a-purpose">dead-link 校验器</div><div class="a-api">validateLinks()</div></div>
+    <div class="arch-card"><div class="a-name">transcript.mjs</div><div class="a-purpose">transcript 序列化导出</div><div class="a-api">exportTranscript()</div></div>
+    <div class="arch-card"><div class="a-name">mcp-server.mjs</div><div class="a-purpose">MCP 协议入口</div><div class="a-api">MCP server</div></div>
+    <div class="arch-card"><div class="a-name">cli.mjs</div><div class="a-purpose">CLI 交互入口</div><div class="a-api">bin entry</div></div>
+    <div class="arch-card"><div class="a-name">weights.mjs</div><div class="a-purpose">5 层投票权重表</div><div class="a-api">LAYER_WEIGHTS</div></div>
+    <div class="arch-card"><div class="a-name">persona.mjs</div><div class="a-purpose">idol 说话 DNA 注入</div><div class="a-api">injectPersona()</div></div>
+    <div class="arch-card"><div class="a-name">stance.mjs</div><div class="a-purpose">R3 立场分类与加权</div><div class="a-api">classifyStance()</div></div>
+  </div>
+
+  <h3>架构分层</h3>
+  <div class="card accent-violet">
+    <pre><code><span class="cmt">kpop-design-system/</span>
+├── <span class="cmd">SKILL.md</span>            <span class="cmt"># skill 主定义 + frontmatter</span>
+├── <span class="cmd">README.md</span>           <span class="cmt"># 项目说明</span>
+├── <span class="cmd">CHANGELOG.md</span>        <span class="cmt"># 版本历史</span>
+├── <span class="cmd">package.json</span>        <span class="cmt"># bin + scripts</span>
+├── <span class="cmd">engine/</span>             <span class="cmt"># 20 个 JS 引擎模块</span>
+│   ├── deliberation.mjs  <span class="cmt"># 主调度 + 常量</span>
+│   ├── round1.mjs ... round3.mjs
+│   └── mcp-server.mjs
+└── <span class="cmd">docs/</span>               <span class="cmt"># 8 篇文档</span>
+    ├── ARCHITECTURE.md
+    ├── QUICKSTART.md
+    ├── COUNCIL-FLOW-DIAGRAM.md
+    ├── EXAMPLE-COUNCIL-TRANSCRIPT.md
+    ├── CLI-INTERACTIVE-COUNCIL.md
+    ├── MCP-SERVER.md
+    └── FEMALE-IDOL-ROSTER.md</code></pre>
+  </div>
+
+  <h3>职责分离原则</h3>
+  <div class="grid-2">
+    <div class="card accent-green">
+      <div class="card-title">⚙️ 引擎（确定性）</div>
+      <p style="font-size:13px">JS 代码负责：brief 解析、名单召集、轮次调度、token 预算、冲突检测、加权投票、判决、导出、校验。这些必须可测试、可复现。</p>
+    </div>
+    <div class="card accent-green">
+      <div class="card-title">🧠 宿主 AI（生成性）</div>
+      <p style="font-size:13px">宿主 AI 负责：每位 idol 的人设发言、R2 质询内容、R2b 谈判措辞、最终设计 brief 文案。引擎只提供结构与约束。</p>
+    </div>
+  </div>
+</section>
+<section id="versions">
+  <h2><span class="num">09</span><span class="emoji">📈</span> 版本演进史</h2>
+  <p class="section-desc">来自 CHANGELOG.md · 主要版本里程碑。</p>
+
+  <table>
+    <tr><th>版本</th><th>重点</th><th>关键变化</th></tr>
+    <tr><td><code>v3.7.0</code></td><td>dead-link 校验器</td><td>新增输出前的链接校验守门机制；transcript 导出增强</td></tr>
+    <tr><td><code>v3.6.x</code></td><td>conflict-aware R3</td><td>R3 立场四分（agree/reserve/compromise/dissent）加权汇总</td></tr>
+    <tr><td><code>v3.5.x</code></td><td>host-AI prompt builder</td><td>生成可直接送宿主 AI 的设计指令</td></tr>
+    <tr><td><code>v3.4.3</code></td><td>删除 provider wrapper</td><td>移除 DeepSeek/Claude/Gemini wrapper，全面转向宿主 AI 原生执行</td></tr>
+    <tr><td><code>v3.4.x</code></td><td>zero-config</td><td>无需 API key、无 provider 抽象层</td></tr>
+    <tr><td><code>v3.3.x</code></td><td>style-first 召集</td><td>风格优先匹配，名字/团体仅作辅助召回</td></tr>
+    <tr><td><code>v3.2.x</code></td><td>248 女偶像名单</td><td>扩充 roster 至 248 人，52+ 团魂</td></tr>
+    <tr><td><code>v3.1.x</code></td><td>R2b 谈判轮次</td><td>冲突不可调和时触发让步交换</td></tr>
+    <tr><td><code>v3.0.x</code></td><td>四轮审议协议</td><td>确立 R1/R2/R2b/R3 议会结构</td></tr>
+  </table>
+
+  <h3>从 v3.4.3 的架构转向</h3>
+  <div class="callout">
+    <strong>关键转折：</strong>v3.4.3 删掉了 provider wrapper 层（DeepSeek/Claude/Gemini 调用封装）。原因：用户已在 Claude/Copilot/Cursor 等宿主里，宿主 AI 本身就是 LLM，再包一层 provider 是多此一举。此后引擎只保结构，发言交给宿主原生执行，实现了真正的<strong>零配置</strong>。
+  </div>
+</section>
+
+</main>
+</div>
+</div>
+
+<footer class="footer">
+  <p>KPOP Design System <code>v3.7.0</code> · 由 <strong>SuanFishXYY（算鱼工作室）</strong> 开发 · MIT License</p>
+  <p style="margin-top:6px">本文档由 SKILL.md · README.md · CHANGELOG.md · docs/* · engine/deliberation.mjs 生成</p>
+  <p style="margin-top:6px">📚 文档主题：K-pop 粉色/紫色 · 宿主 AI 原生 · 零 API key · 179+ tests PASS</p>
+</footer>
+
+</body>
+</html>

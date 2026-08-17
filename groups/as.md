@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: as
 group_name: "After School"
 era: "2 代"
+agency: "Pledis"
 founded_year: 2009
 core_aesthetic: ""bang!" 鼓队制服"
 aesthetic_tags: ["candy-pop", "mature", "r-and-b", "sexy", "vocal"]

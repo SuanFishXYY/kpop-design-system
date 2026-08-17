@@ -6,8 +6,8 @@ real_name: "Heo Sol-ji (허솔지)"
 group: "EXID"
 era: "2.5 代"
 role: "Leader / Main Vocal"
-tier: 1
-vote_weight: 1.5
+tier: 0
+vote_weight: 2
 ui_specialty: "Up & Down dynamic curve"
 personality: "2.5代主唱·实力·迟开"
 vibe: "EXID 主唱，大器晚成"

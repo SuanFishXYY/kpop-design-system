@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: wg
 group_name: "Wonder Girls"
 era: "2 代"
+agency: "JYP"
 founded_year: 2007
 core_aesthetic: "complex band 复古"
 aesthetic_tags: ["retro", "disco", "nobody", "classic", "retro-disco"]

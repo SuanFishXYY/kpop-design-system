@@ -7,7 +7,7 @@ judge_name: "朴轸永"
 judge_ko: "J.Y. Park"
 label: "JYP Entertainment"
 founded_year: 1997
-portfolio: ["twice","itzy","nmixx","missa","wg","2pm","day6","niziu"]
+portfolio: ["twice","itzy","nmixx","missa","wg","niziu"]
 judging_style: "noise level + 真诚共鸣 + Half Korean swagger"
 manifesto: ""Half Korean Half Asian"——一首歌要有 noise level (引发讨论度) + 真诚 (打到心)"
 inter_label_tension: ["yg","bang-pd"]
@@ -28,8 +28,6 @@ priority: above_group_soul
 - nmixx
 - missa
 - wg
-- 2pm
-- day6
 
 ## 🎯 评审风格
 

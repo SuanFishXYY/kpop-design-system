@@ -7,7 +7,7 @@ group: "NMIXX"
 era: "4 代"
 role: "Sub Vocal / Sub Dancer"
 tier: 1
-vote_weight: 1.5
+vote_weight: 2
 ui_specialty: "活力青春 · 真诚表达"
 personality: "4代maknae·活力"
 vibe: "NMIXX 活力发动机"

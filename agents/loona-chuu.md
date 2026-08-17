@@ -7,7 +7,7 @@ group: "LOONA"
 era: "4 代"
 role: "Sub Vocal / 出圈担当"
 tier: 0
-vote_weight: 2
+vote_weight: 2.5
 ui_specialty: "sunny sticker · heart 装饰 graphic"
 personality: "4代阳光·爱心·治愈"
 vibe: "Heart Attack · 团内阳光"

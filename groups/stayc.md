@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: stayc
 group_name: "STAYC"
 era: "4 代"
+agency: "Highup"
 founded_year: 2020
 core_aesthetic: "teen fresh"
 aesthetic_tags: ["candy-pop", "pure", "y2k", "school", "teen-fresh"]

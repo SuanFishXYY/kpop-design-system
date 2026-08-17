@@ -6,7 +6,7 @@ real_name: "Manon Bannerman"
 group: "KATSEYE"
 era: "5 代"
 role: "Lead Dancer / Vocal"
-tier: 1
+tier: 2
 vote_weight: 1.5
 ui_specialty: "瑞士裔非洲 · 模特感"
 personality: "5代国际visual·欧美摩登"
@@ -22,7 +22,7 @@ invited_helpers: ["lsf-kazuha","aespa-giselle"]
 - **代际**: 5 代
 - **风格**: 瑞士裔非洲 · 模特感
 - **关键词**: 5代国际visual·欧美摩登
-- **投票权重**: 1.5 (Tier 1)
+- **投票权重**: 1.5 (Tier 2)
 
 ## 🌐 触发短语
 

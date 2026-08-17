@@ -6,8 +6,8 @@ real_name: "Kim Tae-yeon (김태연)"
 group: "Girls' Generation"
 era: "2 代"
 role: "Leader / Main Vocal"
-tier: 1
-vote_weight: 1.5
+tier: 0
+vote_weight: 2
 ui_specialty: "国民主唱 · 长内容 voice"
 personality: "2代国民妹妹·主唱女皇·音色"
 vibe: "SNSD 队长 + solo OST 顶流"

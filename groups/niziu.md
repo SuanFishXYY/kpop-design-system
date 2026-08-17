@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: niziu
 group_name: "NiziU"
 era: "4 代"
+agency: "JYP"
 founded_year: 2020
 core_aesthetic: "J-pop 治愈 + K-pop 训练 · nizi project"
 aesthetic_tags: ["candy-pop", "pure", "cyber", "mature", "natural"]

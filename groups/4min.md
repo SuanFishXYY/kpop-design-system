@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: 4min
 group_name: "4MINUTE"
 era: "2 代"
+agency: "Cube"
 founded_year: 2009
 core_aesthetic: "短暂高密度爆款"
 aesthetic_tags: ["fierce", "mature", "hip-hop", "hot-issue", "sexy"]

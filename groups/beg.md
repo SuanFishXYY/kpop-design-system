@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: beg
 group_name: "Brown Eyed Girls"
 era: "2 代"
+agency: "Nega Network"
 founded_year: 2006
 core_aesthetic: ""abracadabra" 暗黑电子"
 aesthetic_tags: ["dark-glam", "cyber", "fierce", "mature", "abracadabra"]

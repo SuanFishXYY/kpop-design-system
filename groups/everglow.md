@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: everglow
 group_name: "EVERGLOW"
 era: "4 代"
+agency: "Yuehua"
 founded_year: 2019
 core_aesthetic: "冷艳 dance 军团 · sharp killing"
 aesthetic_tags: ["fierce", "sharp", "dance", "brass", "march"]

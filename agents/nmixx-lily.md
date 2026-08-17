@@ -7,7 +7,7 @@ group: "NMIXX"
 era: "4 代"
 role: "Main Vocal / Center"
 tier: 1
-vote_weight: 1.5
+vote_weight: 2
 ui_specialty: "澳韩混血 · 复合调声"
 personality: "4代主唱·混血·实力"
 vibe: "NMIXX 主唱，混血实力派"

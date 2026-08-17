@@ -6,7 +6,7 @@ real_name: "Sakaguchi Mashiro"
 group: "Kep1er"
 era: "4 代"
 role: "Lead Dancer / Vocal"
-tier: 1
+tier: 2
 vote_weight: 1.5
 ui_specialty: "日本 J-line · 精致舞蹈"
 personality: "4代日本线·精致"
@@ -22,7 +22,7 @@ invited_helpers: ["twice-mina","twice-sana","lsf-sakura"]
 - **代际**: 4 代
 - **风格**: 日本 J-line · 精致舞蹈
 - **关键词**: 4代日本线·精致
-- **投票权重**: 1.5 (Tier 1)
+- **投票权重**: 1.5 (Tier 2)
 
 ## 🌐 触发短语
 

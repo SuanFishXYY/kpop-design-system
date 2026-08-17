@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: meovv
 group_name: "MEOVV"
 era: "5 代"
+agency: "THEBLACKLABEL"
 founded_year: 2024
 core_aesthetic: "THE BLACK LABEL 新女团"
 aesthetic_tags: ["dark-glam", "cyber", "school", "fierce", "hip-hop"]

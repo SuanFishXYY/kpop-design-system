@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: dc
 group_name: "Dreamcatcher"
 era: "3 代"
+agency: "Dreamcatcher Company"
 founded_year: 2017
 core_aesthetic: "metal+ballet 黑暗童话"
 aesthetic_tags: ["dark-glam", "metal", "nightmare", "dark", "rock-metal"]

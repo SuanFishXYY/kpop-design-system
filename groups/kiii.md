@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: kiii
 group_name: "KiiiKiii"
 era: "5 代"
+agency: "Starship"
 founded_year: 2025
 core_aesthetic: "Y2K 复古 girl crush"
 aesthetic_tags: ["retro", "y2k", "school", "fierce", "girl-crush"]

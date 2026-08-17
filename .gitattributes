@@ -1,0 +1,9 @@
+# Normalize line endings for text files across platforms.
+* text=auto
+
+# Markdown and source files should always use LF in the repository.
+*.md text eol=lf
+*.mjs text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf

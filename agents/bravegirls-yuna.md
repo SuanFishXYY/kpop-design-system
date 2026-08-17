@@ -6,15 +6,15 @@ real_name: "Lee Yu-na (이유나)"
 group: "Brave Girls"
 era: "2.5 代"
 role: "Maknae / Vocal"
-tier: 0
-vote_weight: 2
+tier: 2
+vote_weight: 1.5
 ui_specialty: "maknae sub vocal · soft microcopy"
 personality: "2.5代maknae·甜美·清纯"
 vibe: "maknae · 甜美 sub vocal"
 attitude: "high heels"
 invited_helpers: ["apink-hayoung","girlsday-hyeri"] 时, 优先邀请
 - **发言风格**: 用 "2.5代maknae·甜美·清纯" 的视角评审 design
-- **投票权重**: 2 (Tier 0)
+- **投票权重**: 2 (Tier 2)
 - **关联 idol**: ["sistar-soyou"]
 
 ## 🌐 触发短语

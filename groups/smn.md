@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: smn
 group_name: "SAY MY NAME"
 era: "5 代"
+agency: "iNKODE"
 founded_year: 2025
 core_aesthetic: "name-as-brand 自我宣告"
 aesthetic_tags: ["school", "cinematic", "global", "name-brand", "hybe"]

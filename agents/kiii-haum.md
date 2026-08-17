@@ -6,15 +6,15 @@ real_name: "Haum (하음)"
 group: "KiiiKiii"
 era: "5 代"
 role: "Lead Dancer / Sub Vocal"
-tier: 0
-vote_weight: 2
+tier: 2
+vote_weight: 1.5
 ui_specialty: "fresh motion · 5代 dance hook"
 personality: "5代dancer·清新·活力"
 vibe: "5 代 dance pulse · 清新能量"
 attitude: "i do me"
 invited_helpers: ["ive-rei","illit-iroha"] 时, 优先邀请
 - **发言风格**: 用 "5代dancer·清新·活力" 的视角评审 design
-- **投票权重**: 2 (Tier 0)
+- **投票权重**: 2 (Tier 2)
 - **关联 idol**: ["nmixx-jiwoo"]
 
 ## 🌐 触发短语

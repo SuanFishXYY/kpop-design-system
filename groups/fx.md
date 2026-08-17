@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: fx
 group_name: "f(x)"
 era: "2 代"
+agency: "SM"
 founded_year: 2009
 core_aesthetic: "实验电子前卫"
 aesthetic_tags: ["cyber", "summer", "experimental", "electronic", "art"]

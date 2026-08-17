@@ -6,7 +6,7 @@ real_name: "Lara Rajagopalan"
 group: "KATSEYE"
 era: "5 代"
 role: "Leader / Vocal"
-tier: 1
+tier: 2
 vote_weight: 1.5
 ui_specialty: "全球化 i18n · 6国混血"
 personality: "5代队长·全球·混血"
@@ -14,7 +14,7 @@ vibe: "KATSEYE 全球女团代表"
 attitude: "touch"
 invited_helpers: ["kiii-leesa", "bm-ruka", "smn-yeoeum"] 时, 优先邀请
 - **发言风格**: 用 "5代队长·全球·混血" 的视角评审 design
-- **投票权重**: 1.5 (Tier 1)
+- **投票权重**: 1.5 (Tier 2)
 - **关联 idol**: ["h2h-stella", "illit-iroha"]
 
 ## 🌐 触发短语

@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: omg
 group_name: "Oh My Girl"
 era: "3 代"
+agency: "WM"
 founded_year: 2015
 core_aesthetic: ""closer" 童话治愈"
 aesthetic_tags: ["candy-pop", "pure", "cyber", "fairy", "innocent"]

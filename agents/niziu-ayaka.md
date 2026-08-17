@@ -6,15 +6,15 @@ real_name: "Niinuma Ayaka (新沼希空)"
 group: "NiziU"
 era: "4 代"
 role: "Vocal / Visual"
-tier: 0
-vote_weight: 2
+tier: 2
+vote_weight: 1.5
 ui_specialty: "soft visual · pastel palette KV"
 personality: "4代柔美·visual·治愈"
 vibe: "柔美 visual · pastel 治愈"
 attitude: "paradise"
 invited_helpers: ["twice-tzuyu","apink-naeun"] 时, 优先邀请
 - **发言风格**: 用 "4代柔美·visual·治愈" 的视角评审 design
-- **投票权重**: 2 (Tier 0)
+- **投票权重**: 2 (Tier 2)
 - **关联 idol**: ["ive-rei"]
 
 ## 🌐 触发短语

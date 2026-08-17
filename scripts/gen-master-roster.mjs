@@ -9,7 +9,7 @@ const ROOT = path.resolve(__dirname, '..');
 const OUT  = path.join(ROOT, 'docs', 'MASTER-ROSTER.md');
 
 function parseFM(text) {
-  const m = text.match(/^---\n([\s\S]+?)\n---/);
+  const m = text.replace(/\r\n/g, '\n').match(/^---\n([\s\S]+?)\n---/);
   if (!m) return null;
   const body = m[1];
   const get = (k) => {

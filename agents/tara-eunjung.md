@@ -6,8 +6,8 @@ real_name: "Ham Eun-jung (함은정)"
 group: "T-ARA"
 era: "2 代"
 role: "Leader / Vocal"
-tier: 1
-vote_weight: 1.5
+tier: 0
+vote_weight: 2
 ui_specialty: "Roly-Poly retro · 80s revival"
 personality: "2代队长·演员·跨界"
 vibe: "T-ARA 队长，演员跨界"

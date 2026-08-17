@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: izna
 group_name: "izna"
 era: "5 代"
+agency: "WAKEONE"
 founded_year: 2024
 core_aesthetic: "i-LAND2 选秀新团"
 aesthetic_tags: ["candy-pop", "school", "debut", "fresh", "teen"]

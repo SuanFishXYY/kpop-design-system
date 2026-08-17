@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: katseye
 group_name: "KATSEYE"
 era: "5 代"
+agency: "HYBE"
 founded_year: 2024
 core_aesthetic: "跨文化全球女团"
 aesthetic_tags: ["cinematic", "global", "multi-culture", "narrative", "alt-pop"]

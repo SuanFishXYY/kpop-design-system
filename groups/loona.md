@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: loona
 group_name: "LOONA"
 era: "4 代"
+agency: "Blockberry"
 founded_year: 2018
 core_aesthetic: "月之少女 · 世界观 12 章"
 aesthetic_tags: ["cyber", "school", "cinematic", "cosmic", "ethereal"]
@@ -16,7 +17,7 @@ voice:
 soul_manifesto: ""orbit"——12 个月亮, 每个独立颜色独立宇宙, 拼成完整月相"
 vote_weight: 3
 priority: above_tier_0
-fusion_compatible: ["aespa","gfriend","dreamcatcher"]
+fusion_compatible: ["aespa","gfriend","dc"]
 fusion_synergy: "跨团协同 · 待评议"
 fusion_rules: "保留本团核心基因不丢"
 rivals: ["aespa"]

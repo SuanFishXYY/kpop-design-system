@@ -5,6 +5,7 @@ layer: group_anchor
 group_slug: nmixx
 group_name: "NMIXX"
 era: "4 代"
+agency: "JYP"
 founded_year: 2022
 core_aesthetic: "MIXX POP 多曲风混搭"
 aesthetic_tags: ["dark-glam", "fierce", "global", "mixxpop", "switch"]

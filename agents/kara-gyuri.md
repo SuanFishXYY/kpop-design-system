@@ -6,8 +6,8 @@ real_name: "Park Gyu-ri (박규리)"
 group: "KARA"
 era: "2 代"
 role: "Leader / Lead Vocal"
-tier: 1
-vote_weight: 1.5
+tier: 0
+vote_weight: 2
 ui_specialty: "elegant 入门 · 优雅 onboarding"
 personality: "2代队长·骄傲女王·女团 BJ"
 vibe: "KARA 队长 + 综艺女王"
